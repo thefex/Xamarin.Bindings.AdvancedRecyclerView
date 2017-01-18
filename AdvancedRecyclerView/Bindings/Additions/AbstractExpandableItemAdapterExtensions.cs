@@ -5,10 +5,12 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Database;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Object = Java.Lang.Object;
 
 namespace Com.H6ah4i.Android.Widget.Advrecyclerview.Utils
 {
@@ -36,6 +38,5 @@ namespace Com.H6ah4i.Android.Widget.Advrecyclerview.Utils
         public abstract bool OnCheckCanExpandOrCollapseGroup(global::Java.Lang.Object holder, int groupPosition, int x, int y, bool expand);
     }
 
-
-
+   
 }

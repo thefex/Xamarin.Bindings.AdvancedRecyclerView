@@ -12,7 +12,7 @@
         name="managedType">
     Android.Support.V7.Widget.RecyclerView.ViewHolder
   </attr>
-
+  
   <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.utils']/class[@name='BaseWrapperAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]/parameter[1]"
         name="managedReturn">
     Android.Support.V7.Widget.RecyclerView.ViewHolder
@@ -78,12 +78,7 @@
         name="managedType">
     Java.Lang.Object
   </attr>
-
-  <attr  path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.SwipeDismissItemChangeAnimationManager']/method[@name='onAnimationCancel' and count(parameter)=2 and parameter[1][@type='com.h6ah4i.android.widget.advrecyclerview.animator.impl.ItemAnimationInfo'] and parameter[2][@type='android.support.v7.widget.RecyclerView.ViewHolder']]/parameter[1]"
-         name="managedType">
-    Java.Lang.Object
-  </attr>
-
+ 
   <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.SwipeDismissItemChangeAnimationManager']/method[@name='onAnimationEndedBeforeStarted' and count(parameter)=2 and parameter[1][@type='com.h6ah4i.android.widget.advrecyclerview.animator.impl.ItemAnimationInfo'] and parameter[2][@type='android.support.v7.widget.RecyclerView.ViewHolder']]/parameter[1]"
         name="managedType">
     Java.Lang.Object
@@ -256,4 +251,40 @@
   <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.DefaultItemAddAnimationManager']/method[@name='onCreateAnimation' and count(parameter)=1 and parameter[1][@type='com.h6ah4i.android.widget.advrecyclerview.animator.impl.ItemAnimationInfo']]"/>
   <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.DefaultItemAddAnimationManager']/method[@name='onAnimationEndedSuccessfully' and count(parameter)=2 and parameter[1][@type='com.h6ah4i.android.widget.advrecyclerview.animator.impl.ItemAnimationInfo'] and parameter[2][@type='android.support.v7.widget.RecyclerView.ViewHolder']]"/>
   <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.animator']/class[@name='SwipeDismissItemAnimator.DefaultItemAddAnimationManager']/method[@name='onAnimationEndedBeforeStarted' and count(parameter)=2 and parameter[1][@type='com.h6ah4i.android.widget.advrecyclerview.animator.impl.ItemAnimationInfo'] and parameter[2][@type='android.support.v7.widget.RecyclerView.ViewHolder']]"/>
+
+
+  <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.composedadapter']/class[@name='ComposedAdapter']/method[@name='onFailedToRecycleView' and count(parameter)=2 and parameter[1][@type='android.support.v7.widget.RecyclerView.ViewHolder'] and parameter[2][@type='int']]/parameter[1]"
+         name="managedType">
+    Java.Lang.Object
+  </attr>
+
+  <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.composedadapter']/class[@name='ComposedAdapter']/method[@name='onViewAttachedToWindow' and count(parameter)=2 and parameter[1][@type='android.support.v7.widget.RecyclerView.ViewHolder'] and parameter[2][@type='int']]/parameter[1]"
+         name="managedType">
+    Java.Lang.Object
+  </attr>
+
+  <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.composedadapter']/class[@name='ComposedAdapter']/method[@name='onViewDetachedFromWindow' and count(parameter)=2 and parameter[1][@type='android.support.v7.widget.RecyclerView.ViewHolder'] and parameter[2][@type='int']]/parameter[1]"
+       name="managedType">
+    Java.Lang.Object
+  </attr>
+
+  <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.composedadapter']/class[@name='ComposedAdapter']/method[@name='onViewRecycled' and count(parameter)=2 and parameter[1][@type='android.support.v7.widget.RecyclerView.ViewHolder'] and parameter[2][@type='int']]/parameter[1]"
+       name="managedType">
+    Java.Lang.Object
+  </attr>
+  
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.adapter']/class[@name='SimpleWrapperAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]"/>
+
+
+  <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.adapter']/class[@name='SimpleWrapperAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='VH'] and parameter[2][@type='int']]/parameter[1]"
+        name="managedType">
+    Android.Support.V7.Widget.RecyclerView.ViewHolder
+  </attr>
+  
+  <attr path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.adapter']/class[@name='SimpleWrapperAdapter']/method[@name='onCreateViewHolder' and count(parameter)=2 and parameter[1][@type='android.view.ViewGroup'] and parameter[2][@type='int']]"
+name="managedReturn">
+    Android.Support.V7.Widget.RecyclerView.ViewHolder
+  </attr>
+  
+  <remove-node path="/api/package[@name='com.h6ah4i.android.widget.advrecyclerview.adapter']/class[@name='SimpleWrapperAdapter']/method[@name='onBindViewHolder' and count(parameter)=2 and parameter[1][@type='VH'] and parameter[2][@type='int']]"/>
 </metadata>
