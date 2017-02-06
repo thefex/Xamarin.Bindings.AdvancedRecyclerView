@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MvvmCross.AdvancedRecyclerView</id>
+    <version>0.10.2-beta1</version>
+    <title>MvvmCross.Bindings.AdvancedRecyclerView</title>
+    <authors>Przemyslaw Raciborski [thefex]</authors>
+    <projectUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Mvx Wrapper for AdvancedRecyclerView library.
+    </description>
+    <tags>xamarin android mvvmcross</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Mono.Android.Export" targetFramework="MonoAndroid" />
+    </frameworkAssemblies>
+    <dependencies>
+      <group targetFramework="monoandroid70">
+        <dependency id="MvvmCross.Binding" version="4.4.0" />
+        <dependency id="MvvmCross.Core" version="4.4.0" />
+        <dependency id="MvvmCross.Platform" version="4.4.0" />
+        <dependency id="Xamarin.Bindings.AdvancedRecyclerView" version="0.10.2" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\MvvmCross.AdvancedRecyclerView\bin\Release\MvvmCross.AdvancedRecyclerView.dll" target="lib\MonoAndroid" />
+  </files>
+</package>
+
+
+
+
+
+
+
+
+
+
+
+
+
