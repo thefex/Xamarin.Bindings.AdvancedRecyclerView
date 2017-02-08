@@ -85,8 +85,10 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\advrecyclerview-0.10.2.aar" />
-    <None Include="packages.config" />
+    <LibraryProjectZip Include="Jars\advrecyclerview-0.10.3.aar" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
