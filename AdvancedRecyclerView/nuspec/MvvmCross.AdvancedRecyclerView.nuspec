@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>MvvmCross.AdvancedRecyclerView-unstable1869</id>
-    <version>0.10.3</version>
+    <id>MvvmCross.AdvancedRecyclerView</id>
+    <version>0.10.3-unstable1869</version>
     <title>MvvmCross.Bindings.AdvancedRecyclerView</title>
     <authors>Przemyslaw Raciborski [thefex]</authors>
     <projectUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</projectUrl>

@@ -1,17 +1,20 @@
+using System;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Headerfooter;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Droid.Support.V7.RecyclerView.Model;
 using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
-    public class MvxHeaderFooterWrapperAdapter : AbstractHeaderFooterWrapperAdapter
+    public class MvxHeaderFooterWrapperAdapter : AbstractHeaderFooterWrapperAdapter, IMvxRecyclerAdapterBindableHolder
     {
-        public override int FooterItemCount { get; } = 1;
-        public override int HeaderItemCount { get; } = 1;
+        public override int FooterItemCount => (HeaderFooterTemplateSelector?.HasFooterLayoutId ?? false) ? 1 : 0;
+        public override int HeaderItemCount => (HeaderFooterTemplateSelector?.HasHeaderLayoutId ?? false) ? 1 : 0;
 
         public MvxExpandableTemplateSelector HeaderFooterTemplateSelector { get; set; }
 
@@ -31,11 +34,13 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         public override void OnBindFooterItemViewHolder(Object p0, int p1)
         {
             (p0 as IMvxRecyclerViewHolder).DataContext = BindingContext.DataContext;
+            OnMvxViewHolderBound(new MvxViewHolderBoundEventArgs(-1, BindingContext.DataContext, p0 as RecyclerView.ViewHolder));
         }
 
         public override void OnBindHeaderItemViewHolder(Object p0, int p1)
         {
             (p0 as IMvxRecyclerViewHolder).DataContext = BindingContext.DataContext;
+            OnMvxViewHolderBound(new MvxViewHolderBoundEventArgs(-1, BindingContext.DataContext, p0 as RecyclerView.ViewHolder));
         }
 
         public override Object OnCreateFooterItemViewHolder(ViewGroup p0, int p1)
@@ -78,5 +83,12 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public MvxCommand FooterClickCommand { get; set; }
         public MvxCommand FooterLongClickCommand { get; set; }
+
+        public event Action<MvxViewHolderBoundEventArgs> MvxViewHolderBound;
+
+        protected virtual void OnMvxViewHolderBound(MvxViewHolderBoundEventArgs obj)
+        {
+            MvxViewHolderBound?.Invoke(obj);
+        }
     }
 }
