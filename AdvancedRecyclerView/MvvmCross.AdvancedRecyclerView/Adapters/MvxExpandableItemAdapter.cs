@@ -148,7 +148,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
             var viewHolder =
                 new MvxExpandableRecyclerViewHolder(
-                    InflateViewForHolder(TemplateSelector.GetItemLayoutId(viewType), parent, viewType, itemBindingContext),
+                    InflateViewForHolder(TemplateSelector.GetLayoutId(viewType), parent, viewType, itemBindingContext),
                     itemBindingContext)
                 {
                     Click = ChildItemClickCommand,
@@ -164,7 +164,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
             var viewHolder =
                 new MvxExpandableRecyclerViewHolder(
-                    InflateViewForHolder(TemplateSelector.GetItemLayoutId(viewType), parent, viewType, itemBindingContext),
+                    InflateViewForHolder(TemplateSelector.GetLayoutId(viewType), parent, viewType, itemBindingContext),
                     itemBindingContext)
                 {
                     Click = GroupItemClickCommand,

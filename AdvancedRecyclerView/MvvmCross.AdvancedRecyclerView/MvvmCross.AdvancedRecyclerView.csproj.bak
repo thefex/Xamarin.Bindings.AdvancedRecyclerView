@@ -15,7 +15,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\MvxExpandableItemAdapter.cs" />
+    <Compile Include="Adapters\MvxHeaderFooterWrapperAdapter.cs" />
     <Compile Include="Data\EventArguments\MvxExpandableItemAdapterBoundedArgs.cs" />
     <Compile Include="Data\EventArguments\MvxHookGroupExpandCollapseArgs.cs" />
     <Compile Include="Data\MvxExpandableDataConverter.cs" />

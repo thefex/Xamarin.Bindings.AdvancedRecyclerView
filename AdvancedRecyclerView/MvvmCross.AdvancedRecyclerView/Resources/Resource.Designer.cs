@@ -27,29 +27,62 @@ namespace MvvmCross.AdvancedRecyclerView
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010001
-			public static int MvxBind = 2130771969;
+			// aapt resource value: 0x7f01000b
+			public static int FocusFirstChildOnLaidOut = 2130771979;
 			
-			// aapt resource value: 0x7f010005
-			public static int MvxDropDownItemTemplate = 2130771973;
+			// aapt resource value: 0x7f01000c
+			public static int MvxBind = 2130771980;
+			
+			// aapt resource value: 0x7f010010
+			public static int MvxDropDownItemTemplate = 2130771984;
 			
 			// aapt resource value: 0x7f010006
-			public static int MvxGroupItemTemplate = 2130771974;
+			public static int MvxFooterLayoutId = 2130771974;
 			
-			// aapt resource value: 0x7f010004
-			public static int MvxItemTemplate = 2130771972;
+			// aapt resource value: 0x7f010011
+			public static int MvxGroupItemTemplate = 2130771985;
 			
-			// aapt resource value: 0x7f010002
-			public static int MvxLang = 2130771970;
+			// aapt resource value: 0x7f010008
+			public static int MvxGroupSectionLayoutId = 2130771976;
 			
 			// aapt resource value: 0x7f010007
-			public static int MvxSource = 2130771975;
+			public static int MvxGroupedDataConverter = 2130771975;
 			
-			// aapt resource value: 0x7f010003
-			public static int MvxTemplate = 2130771971;
+			// aapt resource value: 0x7f010005
+			public static int MvxHeaderLayoutId = 2130771973;
+			
+			// aapt resource value: 0x7f01000a
+			public static int MvxHidesFooterIfEmpty = 2130771978;
+			
+			// aapt resource value: 0x7f010009
+			public static int MvxHidesHeaderIfEmpty = 2130771977;
+			
+			// aapt resource value: 0x7f01000f
+			public static int MvxItemTemplate = 2130771983;
+			
+			// aapt resource value: 0x7f01000d
+			public static int MvxLang = 2130771981;
+			
+			// aapt resource value: 0x7f010012
+			public static int MvxSource = 2130771986;
+			
+			// aapt resource value: 0x7f01000e
+			public static int MvxTemplate = 2130771982;
+			
+			// aapt resource value: 0x7f010004
+			public static int MvxTemplateSelector = 2130771972;
 			
 			// aapt resource value: 0x7f010000
-			public static int MvxTemplateSelector = 2130771968;
+			public static int layoutManager = 2130771968;
+			
+			// aapt resource value: 0x7f010002
+			public static int reverseLayout = 2130771970;
+			
+			// aapt resource value: 0x7f010001
+			public static int spanCount = 2130771969;
+			
+			// aapt resource value: 0x7f010003
+			public static int stackFromEnd = 2130771971;
 			
 			static Attribute()
 			{
@@ -61,14 +94,39 @@ namespace MvvmCross.AdvancedRecyclerView
 			}
 		}
 		
-		public partial class Id
+		public partial class Dimension
 		{
 			
 			// aapt resource value: 0x7f020000
-			public static int MvvmCrossTagId = 2130837504;
+			public static int item_touch_helper_max_drag_scroll_per_frame = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public static int MvxBindingTagUnique = 2130837505;
+			public static int item_touch_helper_swipe_escape_max_velocity = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public static int item_touch_helper_swipe_escape_velocity = 2130837506;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f030001
+			public static int MvvmCrossTagId = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public static int MvxBindingTagUnique = 2130903042;
+			
+			// aapt resource value: 0x7f030000
+			public static int item_touch_helper_previous_elevation = 2130903040;
 			
 			static Id()
 			{
@@ -83,11 +141,17 @@ namespace MvvmCross.AdvancedRecyclerView
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030001
-			public static int ApplicationName = 2130903041;
+			// aapt resource value: 0x7f040003
+			public static int ApplicationName = 2130968579;
 			
-			// aapt resource value: 0x7f030000
-			public static int Hello = 2130903040;
+			// aapt resource value: 0x7f040002
+			public static int Hello = 2130968578;
+			
+			// aapt resource value: 0x7f040000
+			public static int fab_scroll_shrink_grow_autohide_behavior = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public static int view_scroll_translation_autohide_behavior = 2130968577;
 			
 			static String()
 			{
@@ -103,8 +167,8 @@ namespace MvvmCross.AdvancedRecyclerView
 		{
 			
 			public static int[] MvxBinding = new int[] {
-					2130771969,
-					2130771970};
+					2130771980,
+					2130771981};
 			
 			// aapt resource value: 0
 			public static int MvxBinding_MvxBind = 0;
@@ -113,26 +177,32 @@ namespace MvvmCross.AdvancedRecyclerView
 			public static int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130771971};
+					2130771982};
 			
 			// aapt resource value: 0
 			public static int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[] {
-					2130771974};
+					2130771985};
 			
 			// aapt resource value: 0
 			public static int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
+			public static int[] MvxHorizontalGridView = new int[] {
+					2130771979};
+			
+			// aapt resource value: 0
+			public static int MvxHorizontalGridView_FocusFirstChildOnLaidOut = 0;
+			
 			public static int[] MvxImageView = new int[] {
-					2130771975};
+					2130771986};
 			
 			// aapt resource value: 0
 			public static int MvxImageView_MvxSource = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130771972,
-					2130771973};
+					2130771983,
+					2130771984};
 			
 			// aapt resource value: 1
 			public static int MvxListView_MvxDropDownItemTemplate = 1;
@@ -141,10 +211,60 @@ namespace MvvmCross.AdvancedRecyclerView
 			public static int MvxListView_MvxItemTemplate = 0;
 			
 			public static int[] MvxRecyclerView = new int[] {
-					2130771968};
+					2130771972,
+					2130771973,
+					2130771974,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978};
+			
+			// aapt resource value: 2
+			public static int MvxRecyclerView_MvxFooterLayoutId = 2;
+			
+			// aapt resource value: 4
+			public static int MvxRecyclerView_MvxGroupSectionLayoutId = 4;
+			
+			// aapt resource value: 3
+			public static int MvxRecyclerView_MvxGroupedDataConverter = 3;
+			
+			// aapt resource value: 1
+			public static int MvxRecyclerView_MvxHeaderLayoutId = 1;
+			
+			// aapt resource value: 6
+			public static int MvxRecyclerView_MvxHidesFooterIfEmpty = 6;
+			
+			// aapt resource value: 5
+			public static int MvxRecyclerView_MvxHidesHeaderIfEmpty = 5;
 			
 			// aapt resource value: 0
 			public static int MvxRecyclerView_MvxTemplateSelector = 0;
+			
+			public static int[] RecyclerView = new int[] {
+					16842948,
+					16842993,
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971};
+			
+			// aapt resource value: 1
+			public static int RecyclerView_android_descendantFocusability = 1;
+			
+			// aapt resource value: 0
+			public static int RecyclerView_android_orientation = 0;
+			
+			// aapt resource value: 2
+			public static int RecyclerView_layoutManager = 2;
+			
+			// aapt resource value: 4
+			public static int RecyclerView_reverseLayout = 4;
+			
+			// aapt resource value: 3
+			public static int RecyclerView_spanCount = 3;
+			
+			// aapt resource value: 5
+			public static int RecyclerView_stackFromEnd = 5;
 			
 			static Styleable()
 			{

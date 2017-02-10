@@ -3,7 +3,7 @@ using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 
 namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
 {
-    public abstract class MvxExpandableTemplateSelector : IMvxTemplateSelector
+    public abstract class MvxExpandableTemplateSelector : MvxBaseTemplateSelector
     {
         private const int GroupViewType = 12345276;
 
@@ -14,7 +14,7 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
 
         public int GroupLayoutId { get; }
 
-        public int GetItemViewType(object forItemObject)
+        protected override int GetItemViewType(object forItemObject)
         {
             if (forItemObject is MvxGroupedData)
                 return GroupViewType;
@@ -22,7 +22,7 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
             return GetChildItemViewType(forItemObject);
         }
 
-        public int GetItemLayoutId(int fromViewType)
+        protected override int GetItemLayoutId(int fromViewType)
         {
             if (fromViewType == GroupViewType)
                 return GroupLayoutId;
