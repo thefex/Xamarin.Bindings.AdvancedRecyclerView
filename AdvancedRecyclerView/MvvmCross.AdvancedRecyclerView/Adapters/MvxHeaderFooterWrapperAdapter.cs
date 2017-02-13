@@ -11,25 +11,25 @@ using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
-    public class MvxHeaderFooterWrapperAdapter : AbstractHeaderFooterWrapperAdapter, IMvxRecyclerAdapterBindableHolder
+    public sealed class MvxHeaderFooterWrapperAdapter : AbstractHeaderFooterWrapperAdapter, IMvxRecyclerAdapterBindableHolder
     {
         public override int FooterItemCount => (HeaderFooterTemplateSelector?.HasFooterLayoutId ?? false) ? 1 : 0;
         public override int HeaderItemCount => (HeaderFooterTemplateSelector?.HasHeaderLayoutId ?? false) ? 1 : 0;
 
         public MvxExpandableTemplateSelector HeaderFooterTemplateSelector { get; set; }
 
-        public MvxHeaderFooterWrapperAdapter() : this (MvxAndroidBindingContextHelpers.Current())
+        public MvxHeaderFooterWrapperAdapter(RecyclerView.Adapter baseAdapter) : this (baseAdapter, MvxAndroidBindingContextHelpers.Current())
         {
             
         }
 
-        public MvxHeaderFooterWrapperAdapter(IMvxAndroidBindingContext bindingContext)
+        public MvxHeaderFooterWrapperAdapter(RecyclerView.Adapter baseAdapter, IMvxAndroidBindingContext bindingContext)
         {
+            SetAdapter(baseAdapter);
             BindingContext = bindingContext;
         }
 
-        protected IMvxAndroidBindingContext BindingContext { get; }
-
+        private IMvxAndroidBindingContext BindingContext { get; }
 
         public override void OnBindFooterItemViewHolder(Object p0, int p1)
         {
@@ -86,7 +86,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public event Action<MvxViewHolderBoundEventArgs> MvxViewHolderBound;
 
-        protected virtual void OnMvxViewHolderBound(MvxViewHolderBoundEventArgs obj)
+        protected void OnMvxViewHolderBound(MvxViewHolderBoundEventArgs obj)
         {
             MvxViewHolderBound?.Invoke(obj);
         }
