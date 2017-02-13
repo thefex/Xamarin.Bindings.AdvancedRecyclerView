@@ -16,7 +16,6 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Binding.ExtensionMethods;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.RecyclerView;
-using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Exceptions;
 using Object = Java.Lang.Object;
@@ -68,7 +67,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public IMvxGroupExpandController GroupExpandController { get; set; } = new DefaultMvxGroupExpandController();
 
-        public override int GroupCount {
+        public override int GroupCount
+        {
             get
             {
                 return
@@ -132,7 +132,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
             var groupItemDetails = new MvxGroupDetails
             {
                 Holder = holder as RecyclerView.ViewHolder,
-                Item = (GroupedItems.ElementAt(groupPosition) as MvxGroupedData),
+                Item = GroupedItems.ElementAt(groupPosition) as MvxGroupedData,
                 GroupIndex = groupPosition
             };
 
@@ -231,7 +231,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         public override long GetChildId(int p0, int p1)
         {
             var childItem = GetItemAt(p0, p1);
-            
+
             return ExpandableDataConverter.GetItemUniqueId(GetItemAt(p0, p1));
         }
 
@@ -251,6 +251,11 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         public event Action<MvxExpandableItemAdapterBoundedArgs> GroupItemBound;
 
         public event Action<MvxExpandableItemAdapterBoundedArgs> ChildItemBound;
+
+        public override int GetGroupItemViewType(int p0) => TemplateSelector.GetViewType(GetItemAt(p0));
+
+
+        public override int GetChildItemViewType(int p0, int p1) => TemplateSelector.GetViewType(GetItemAt(p0, p1));
 
         protected virtual void OnGroupItemBound(MvxExpandableItemAdapterBoundedArgs obj)
         {
