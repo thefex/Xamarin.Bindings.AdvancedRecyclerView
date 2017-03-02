@@ -43,5 +43,7 @@ namespace Sample.ViewModels
 
 
         public IEnumerable<ItemGroupModel> Items { get; }
+
+        public MvxCommand GoToSwipeExample => new MvxCommand(() => ShowViewModel<SwipeExampleViewModel>());
     }
 }

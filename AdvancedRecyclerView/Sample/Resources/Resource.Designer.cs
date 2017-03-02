@@ -26,64 +26,1488 @@ namespace Sample
 		
 		public static void UpdateIdValues()
 		{
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.FocusFirstChildOnLaidOut = global::Sample.Resource.Attribute.FocusFirstChildOnLaidOut;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxBind = global::Sample.Resource.Attribute.MvxBind;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxDropDownItemTemplate = global::Sample.Resource.Attribute.MvxDropDownItemTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxFooterLayoutId = global::Sample.Resource.Attribute.MvxFooterLayoutId;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxGroupItemTemplate = global::Sample.Resource.Attribute.MvxGroupItemTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxGroupSectionLayoutId = global::Sample.Resource.Attribute.MvxGroupSectionLayoutId;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxGroupedDataConverter = global::Sample.Resource.Attribute.MvxGroupedDataConverter;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxHeaderLayoutId = global::Sample.Resource.Attribute.MvxHeaderLayoutId;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxHidesFooterIfEmpty = global::Sample.Resource.Attribute.MvxHidesFooterIfEmpty;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxHidesHeaderIfEmpty = global::Sample.Resource.Attribute.MvxHidesHeaderIfEmpty;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxItemTemplate = global::Sample.Resource.Attribute.MvxItemTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxLang = global::Sample.Resource.Attribute.MvxLang;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxSource = global::Sample.Resource.Attribute.MvxSource;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxTemplate = global::Sample.Resource.Attribute.MvxTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxTemplateSelector = global::Sample.Resource.Attribute.MvxTemplateSelector;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.layoutManager = global::Sample.Resource.Attribute.layoutManager;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.reverseLayout = global::Sample.Resource.Attribute.reverseLayout;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.spanCount = global::Sample.Resource.Attribute.spanCount;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.stackFromEnd = global::Sample.Resource.Attribute.stackFromEnd;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Sample.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Sample.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Sample.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Id.MvvmCrossTagId = global::Sample.Resource.Id.MvvmCrossTagId;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Id.MvxBindingTagUnique = global::Sample.Resource.Id.MvxBindingTagUnique;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Id.item_touch_helper_previous_elevation = global::Sample.Resource.Id.item_touch_helper_previous_elevation;
-			global::MvvmCross.AdvancedRecyclerView.Resource.String.ApplicationName = global::Sample.Resource.String.ApplicationName;
-			global::MvvmCross.AdvancedRecyclerView.Resource.String.Hello = global::Sample.Resource.String.Hello;
-			global::MvvmCross.AdvancedRecyclerView.Resource.String.fab_scroll_shrink_grow_autohide_behavior = global::Sample.Resource.String.fab_scroll_shrink_grow_autohide_behavior;
-			global::MvvmCross.AdvancedRecyclerView.Resource.String.view_scroll_translation_autohide_behavior = global::Sample.Resource.String.view_scroll_translation_autohide_behavior;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxBinding = global::Sample.Resource.Styleable.MvxBinding;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxBinding_MvxBind = global::Sample.Resource.Styleable.MvxBinding_MvxBind;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxBinding_MvxLang = global::Sample.Resource.Styleable.MvxBinding_MvxLang;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxControl = global::Sample.Resource.Styleable.MvxControl;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxControl_MvxTemplate = global::Sample.Resource.Styleable.MvxControl_MvxTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxExpandableListView = global::Sample.Resource.Styleable.MvxExpandableListView;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::Sample.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxHorizontalGridView = global::Sample.Resource.Styleable.MvxHorizontalGridView;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxHorizontalGridView_FocusFirstChildOnLaidOut = global::Sample.Resource.Styleable.MvxHorizontalGridView_FocusFirstChildOnLaidOut;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxImageView = global::Sample.Resource.Styleable.MvxImageView;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxImageView_MvxSource = global::Sample.Resource.Styleable.MvxImageView_MvxSource;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxListView = global::Sample.Resource.Styleable.MvxListView;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::Sample.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxListView_MvxItemTemplate = global::Sample.Resource.Styleable.MvxListView_MvxItemTemplate;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView = global::Sample.Resource.Styleable.MvxRecyclerView;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxFooterLayoutId = global::Sample.Resource.Styleable.MvxRecyclerView_MvxFooterLayoutId;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxGroupSectionLayoutId = global::Sample.Resource.Styleable.MvxRecyclerView_MvxGroupSectionLayoutId;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxGroupedDataConverter = global::Sample.Resource.Styleable.MvxRecyclerView_MvxGroupedDataConverter;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId = global::Sample.Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty = global::Sample.Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty = global::Sample.Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector = global::Sample.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.RecyclerView = global::Sample.Resource.Styleable.RecyclerView;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Sample.Resource.Styleable.RecyclerView_android_descendantFocusability;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.RecyclerView_android_orientation = global::Sample.Resource.Styleable.RecyclerView_android_orientation;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.RecyclerView_layoutManager = global::Sample.Resource.Styleable.RecyclerView_layoutManager;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.RecyclerView_reverseLayout = global::Sample.Resource.Styleable.RecyclerView_reverseLayout;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.RecyclerView_spanCount = global::Sample.Resource.Styleable.RecyclerView_spanCount;
-			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.RecyclerView_stackFromEnd = global::Sample.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_fade_in = global::Sample.Resource.Animation.abc_fade_in;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_fade_out = global::Sample.Resource.Animation.abc_fade_out;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_grow_fade_in_from_bottom = global::Sample.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_popup_enter = global::Sample.Resource.Animation.abc_popup_enter;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_popup_exit = global::Sample.Resource.Animation.abc_popup_exit;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Sample.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_slide_in_bottom = global::Sample.Resource.Animation.abc_slide_in_bottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_slide_in_top = global::Sample.Resource.Animation.abc_slide_in_top;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_slide_out_bottom = global::Sample.Resource.Animation.abc_slide_out_bottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Animation.abc_slide_out_top = global::Sample.Resource.Animation.abc_slide_out_top;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.FocusFirstChildOnLaidOut = global::Sample.Resource.Attribute.FocusFirstChildOnLaidOut;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxBind = global::Sample.Resource.Attribute.MvxBind;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxDropDownItemTemplate = global::Sample.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxFooterLayoutId = global::Sample.Resource.Attribute.MvxFooterLayoutId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxGroupItemTemplate = global::Sample.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxGroupSectionLayoutId = global::Sample.Resource.Attribute.MvxGroupSectionLayoutId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxGroupedDataConverter = global::Sample.Resource.Attribute.MvxGroupedDataConverter;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxHeaderLayoutId = global::Sample.Resource.Attribute.MvxHeaderLayoutId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxHidesFooterIfEmpty = global::Sample.Resource.Attribute.MvxHidesFooterIfEmpty;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxHidesHeaderIfEmpty = global::Sample.Resource.Attribute.MvxHidesHeaderIfEmpty;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxItemTemplate = global::Sample.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxLang = global::Sample.Resource.Attribute.MvxLang;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxSource = global::Sample.Resource.Attribute.MvxSource;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxTemplate = global::Sample.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.MvxTemplateSelector = global::Sample.Resource.Attribute.MvxTemplateSelector;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarDivider = global::Sample.Resource.Attribute.actionBarDivider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarItemBackground = global::Sample.Resource.Attribute.actionBarItemBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarPopupTheme = global::Sample.Resource.Attribute.actionBarPopupTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarSize = global::Sample.Resource.Attribute.actionBarSize;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarSplitStyle = global::Sample.Resource.Attribute.actionBarSplitStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarStyle = global::Sample.Resource.Attribute.actionBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarTabBarStyle = global::Sample.Resource.Attribute.actionBarTabBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarTabStyle = global::Sample.Resource.Attribute.actionBarTabStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarTabTextStyle = global::Sample.Resource.Attribute.actionBarTabTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarTheme = global::Sample.Resource.Attribute.actionBarTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionBarWidgetTheme = global::Sample.Resource.Attribute.actionBarWidgetTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionButtonStyle = global::Sample.Resource.Attribute.actionButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionDropDownStyle = global::Sample.Resource.Attribute.actionDropDownStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionLayout = global::Sample.Resource.Attribute.actionLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionMenuTextAppearance = global::Sample.Resource.Attribute.actionMenuTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionMenuTextColor = global::Sample.Resource.Attribute.actionMenuTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeBackground = global::Sample.Resource.Attribute.actionModeBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeCloseButtonStyle = global::Sample.Resource.Attribute.actionModeCloseButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeCloseDrawable = global::Sample.Resource.Attribute.actionModeCloseDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeCopyDrawable = global::Sample.Resource.Attribute.actionModeCopyDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeCutDrawable = global::Sample.Resource.Attribute.actionModeCutDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeFindDrawable = global::Sample.Resource.Attribute.actionModeFindDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModePasteDrawable = global::Sample.Resource.Attribute.actionModePasteDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModePopupWindowStyle = global::Sample.Resource.Attribute.actionModePopupWindowStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeSelectAllDrawable = global::Sample.Resource.Attribute.actionModeSelectAllDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeShareDrawable = global::Sample.Resource.Attribute.actionModeShareDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeSplitBackground = global::Sample.Resource.Attribute.actionModeSplitBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeStyle = global::Sample.Resource.Attribute.actionModeStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionModeWebSearchDrawable = global::Sample.Resource.Attribute.actionModeWebSearchDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionOverflowButtonStyle = global::Sample.Resource.Attribute.actionOverflowButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionOverflowMenuStyle = global::Sample.Resource.Attribute.actionOverflowMenuStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionProviderClass = global::Sample.Resource.Attribute.actionProviderClass;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.actionViewClass = global::Sample.Resource.Attribute.actionViewClass;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.activityChooserViewStyle = global::Sample.Resource.Attribute.activityChooserViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.alertDialogButtonGroupStyle = global::Sample.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.alertDialogCenterButtons = global::Sample.Resource.Attribute.alertDialogCenterButtons;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.alertDialogStyle = global::Sample.Resource.Attribute.alertDialogStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.alertDialogTheme = global::Sample.Resource.Attribute.alertDialogTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.allowStacking = global::Sample.Resource.Attribute.allowStacking;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.alpha = global::Sample.Resource.Attribute.alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.arrowHeadLength = global::Sample.Resource.Attribute.arrowHeadLength;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.arrowShaftLength = global::Sample.Resource.Attribute.arrowShaftLength;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.autoCompleteTextViewStyle = global::Sample.Resource.Attribute.autoCompleteTextViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.background = global::Sample.Resource.Attribute.background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.backgroundSplit = global::Sample.Resource.Attribute.backgroundSplit;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.backgroundStacked = global::Sample.Resource.Attribute.backgroundStacked;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.backgroundTint = global::Sample.Resource.Attribute.backgroundTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.backgroundTintMode = global::Sample.Resource.Attribute.backgroundTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.barLength = global::Sample.Resource.Attribute.barLength;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.borderlessButtonStyle = global::Sample.Resource.Attribute.borderlessButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonBarButtonStyle = global::Sample.Resource.Attribute.buttonBarButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonBarNegativeButtonStyle = global::Sample.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonBarNeutralButtonStyle = global::Sample.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonBarPositiveButtonStyle = global::Sample.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonBarStyle = global::Sample.Resource.Attribute.buttonBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonGravity = global::Sample.Resource.Attribute.buttonGravity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonPanelSideLayout = global::Sample.Resource.Attribute.buttonPanelSideLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonStyle = global::Sample.Resource.Attribute.buttonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonStyleSmall = global::Sample.Resource.Attribute.buttonStyleSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonTint = global::Sample.Resource.Attribute.buttonTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.buttonTintMode = global::Sample.Resource.Attribute.buttonTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.checkboxStyle = global::Sample.Resource.Attribute.checkboxStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.checkedTextViewStyle = global::Sample.Resource.Attribute.checkedTextViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.closeIcon = global::Sample.Resource.Attribute.closeIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.closeItemLayout = global::Sample.Resource.Attribute.closeItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.collapseContentDescription = global::Sample.Resource.Attribute.collapseContentDescription;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.collapseIcon = global::Sample.Resource.Attribute.collapseIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.color = global::Sample.Resource.Attribute.color;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorAccent = global::Sample.Resource.Attribute.colorAccent;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorBackgroundFloating = global::Sample.Resource.Attribute.colorBackgroundFloating;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorButtonNormal = global::Sample.Resource.Attribute.colorButtonNormal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorControlActivated = global::Sample.Resource.Attribute.colorControlActivated;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorControlHighlight = global::Sample.Resource.Attribute.colorControlHighlight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorControlNormal = global::Sample.Resource.Attribute.colorControlNormal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorPrimary = global::Sample.Resource.Attribute.colorPrimary;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorPrimaryDark = global::Sample.Resource.Attribute.colorPrimaryDark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.colorSwitchThumbNormal = global::Sample.Resource.Attribute.colorSwitchThumbNormal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.commitIcon = global::Sample.Resource.Attribute.commitIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.contentInsetEnd = global::Sample.Resource.Attribute.contentInsetEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.contentInsetEndWithActions = global::Sample.Resource.Attribute.contentInsetEndWithActions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.contentInsetLeft = global::Sample.Resource.Attribute.contentInsetLeft;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.contentInsetRight = global::Sample.Resource.Attribute.contentInsetRight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.contentInsetStart = global::Sample.Resource.Attribute.contentInsetStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.contentInsetStartWithNavigation = global::Sample.Resource.Attribute.contentInsetStartWithNavigation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.controlBackground = global::Sample.Resource.Attribute.controlBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.customNavigationLayout = global::Sample.Resource.Attribute.customNavigationLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.defaultQueryHint = global::Sample.Resource.Attribute.defaultQueryHint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.dialogPreferredPadding = global::Sample.Resource.Attribute.dialogPreferredPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.dialogTheme = global::Sample.Resource.Attribute.dialogTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.displayOptions = global::Sample.Resource.Attribute.displayOptions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.divider = global::Sample.Resource.Attribute.divider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.dividerHorizontal = global::Sample.Resource.Attribute.dividerHorizontal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.dividerPadding = global::Sample.Resource.Attribute.dividerPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.dividerVertical = global::Sample.Resource.Attribute.dividerVertical;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.drawableSize = global::Sample.Resource.Attribute.drawableSize;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.drawerArrowStyle = global::Sample.Resource.Attribute.drawerArrowStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.dropDownListViewStyle = global::Sample.Resource.Attribute.dropDownListViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.dropdownListPreferredItemHeight = global::Sample.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.editTextBackground = global::Sample.Resource.Attribute.editTextBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.editTextColor = global::Sample.Resource.Attribute.editTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.editTextStyle = global::Sample.Resource.Attribute.editTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.elevation = global::Sample.Resource.Attribute.elevation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Sample.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.gapBetweenBars = global::Sample.Resource.Attribute.gapBetweenBars;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.goIcon = global::Sample.Resource.Attribute.goIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.height = global::Sample.Resource.Attribute.height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.hideOnContentScroll = global::Sample.Resource.Attribute.hideOnContentScroll;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.homeAsUpIndicator = global::Sample.Resource.Attribute.homeAsUpIndicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.homeLayout = global::Sample.Resource.Attribute.homeLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.icon = global::Sample.Resource.Attribute.icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.iconifiedByDefault = global::Sample.Resource.Attribute.iconifiedByDefault;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.imageButtonStyle = global::Sample.Resource.Attribute.imageButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.indeterminateProgressStyle = global::Sample.Resource.Attribute.indeterminateProgressStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.initialActivityCount = global::Sample.Resource.Attribute.initialActivityCount;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.isLightTheme = global::Sample.Resource.Attribute.isLightTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.itemPadding = global::Sample.Resource.Attribute.itemPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.layout = global::Sample.Resource.Attribute.layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.layoutManager = global::Sample.Resource.Attribute.layoutManager;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listChoiceBackgroundIndicator = global::Sample.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listDividerAlertDialog = global::Sample.Resource.Attribute.listDividerAlertDialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listItemLayout = global::Sample.Resource.Attribute.listItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listLayout = global::Sample.Resource.Attribute.listLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listMenuViewStyle = global::Sample.Resource.Attribute.listMenuViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listPopupWindowStyle = global::Sample.Resource.Attribute.listPopupWindowStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listPreferredItemHeight = global::Sample.Resource.Attribute.listPreferredItemHeight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listPreferredItemHeightLarge = global::Sample.Resource.Attribute.listPreferredItemHeightLarge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listPreferredItemHeightSmall = global::Sample.Resource.Attribute.listPreferredItemHeightSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listPreferredItemPaddingLeft = global::Sample.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.listPreferredItemPaddingRight = global::Sample.Resource.Attribute.listPreferredItemPaddingRight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.logo = global::Sample.Resource.Attribute.logo;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.logoDescription = global::Sample.Resource.Attribute.logoDescription;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.maxButtonHeight = global::Sample.Resource.Attribute.maxButtonHeight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.measureWithLargestChild = global::Sample.Resource.Attribute.measureWithLargestChild;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.multiChoiceItemLayout = global::Sample.Resource.Attribute.multiChoiceItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.navigationContentDescription = global::Sample.Resource.Attribute.navigationContentDescription;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.navigationIcon = global::Sample.Resource.Attribute.navigationIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.navigationMode = global::Sample.Resource.Attribute.navigationMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.overlapAnchor = global::Sample.Resource.Attribute.overlapAnchor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.paddingBottomNoButtons = global::Sample.Resource.Attribute.paddingBottomNoButtons;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.paddingEnd = global::Sample.Resource.Attribute.paddingEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.paddingStart = global::Sample.Resource.Attribute.paddingStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.paddingTopNoTitle = global::Sample.Resource.Attribute.paddingTopNoTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.panelBackground = global::Sample.Resource.Attribute.panelBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.panelMenuListTheme = global::Sample.Resource.Attribute.panelMenuListTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.panelMenuListWidth = global::Sample.Resource.Attribute.panelMenuListWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.popupMenuStyle = global::Sample.Resource.Attribute.popupMenuStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.popupTheme = global::Sample.Resource.Attribute.popupTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.popupWindowStyle = global::Sample.Resource.Attribute.popupWindowStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.preserveIconSpacing = global::Sample.Resource.Attribute.preserveIconSpacing;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.progressBarPadding = global::Sample.Resource.Attribute.progressBarPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.progressBarStyle = global::Sample.Resource.Attribute.progressBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.queryBackground = global::Sample.Resource.Attribute.queryBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.queryHint = global::Sample.Resource.Attribute.queryHint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.radioButtonStyle = global::Sample.Resource.Attribute.radioButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.ratingBarStyle = global::Sample.Resource.Attribute.ratingBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.ratingBarStyleIndicator = global::Sample.Resource.Attribute.ratingBarStyleIndicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.ratingBarStyleSmall = global::Sample.Resource.Attribute.ratingBarStyleSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.reverseLayout = global::Sample.Resource.Attribute.reverseLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.searchHintIcon = global::Sample.Resource.Attribute.searchHintIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.searchIcon = global::Sample.Resource.Attribute.searchIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.searchViewStyle = global::Sample.Resource.Attribute.searchViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.seekBarStyle = global::Sample.Resource.Attribute.seekBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.selectableItemBackground = global::Sample.Resource.Attribute.selectableItemBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.selectableItemBackgroundBorderless = global::Sample.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.showAsAction = global::Sample.Resource.Attribute.showAsAction;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.showDividers = global::Sample.Resource.Attribute.showDividers;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.showText = global::Sample.Resource.Attribute.showText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.showTitle = global::Sample.Resource.Attribute.showTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.singleChoiceItemLayout = global::Sample.Resource.Attribute.singleChoiceItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.spanCount = global::Sample.Resource.Attribute.spanCount;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.spinBars = global::Sample.Resource.Attribute.spinBars;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.spinnerDropDownItemStyle = global::Sample.Resource.Attribute.spinnerDropDownItemStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.spinnerStyle = global::Sample.Resource.Attribute.spinnerStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.splitTrack = global::Sample.Resource.Attribute.splitTrack;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.srcCompat = global::Sample.Resource.Attribute.srcCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.stackFromEnd = global::Sample.Resource.Attribute.stackFromEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.state_above_anchor = global::Sample.Resource.Attribute.state_above_anchor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.subMenuArrow = global::Sample.Resource.Attribute.subMenuArrow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.submitBackground = global::Sample.Resource.Attribute.submitBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.subtitle = global::Sample.Resource.Attribute.subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.subtitleTextAppearance = global::Sample.Resource.Attribute.subtitleTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.subtitleTextColor = global::Sample.Resource.Attribute.subtitleTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.subtitleTextStyle = global::Sample.Resource.Attribute.subtitleTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.suggestionRowLayout = global::Sample.Resource.Attribute.suggestionRowLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.switchMinWidth = global::Sample.Resource.Attribute.switchMinWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.switchPadding = global::Sample.Resource.Attribute.switchPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.switchStyle = global::Sample.Resource.Attribute.switchStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.switchTextAppearance = global::Sample.Resource.Attribute.switchTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAllCaps = global::Sample.Resource.Attribute.textAllCaps;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAppearanceLargePopupMenu = global::Sample.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAppearanceListItem = global::Sample.Resource.Attribute.textAppearanceListItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAppearanceListItemSmall = global::Sample.Resource.Attribute.textAppearanceListItemSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAppearancePopupMenuHeader = global::Sample.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Sample.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAppearanceSearchResultTitle = global::Sample.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textAppearanceSmallPopupMenu = global::Sample.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textColorAlertDialogListItem = global::Sample.Resource.Attribute.textColorAlertDialogListItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.textColorSearchUrl = global::Sample.Resource.Attribute.textColorSearchUrl;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.theme = global::Sample.Resource.Attribute.theme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.thickness = global::Sample.Resource.Attribute.thickness;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.thumbTextPadding = global::Sample.Resource.Attribute.thumbTextPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.thumbTint = global::Sample.Resource.Attribute.thumbTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.thumbTintMode = global::Sample.Resource.Attribute.thumbTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.tickMark = global::Sample.Resource.Attribute.tickMark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.tickMarkTint = global::Sample.Resource.Attribute.tickMarkTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.tickMarkTintMode = global::Sample.Resource.Attribute.tickMarkTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.title = global::Sample.Resource.Attribute.title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleMargin = global::Sample.Resource.Attribute.titleMargin;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleMarginBottom = global::Sample.Resource.Attribute.titleMarginBottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleMarginEnd = global::Sample.Resource.Attribute.titleMarginEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleMarginStart = global::Sample.Resource.Attribute.titleMarginStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleMarginTop = global::Sample.Resource.Attribute.titleMarginTop;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleMargins = global::Sample.Resource.Attribute.titleMargins;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleTextAppearance = global::Sample.Resource.Attribute.titleTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleTextColor = global::Sample.Resource.Attribute.titleTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.titleTextStyle = global::Sample.Resource.Attribute.titleTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.toolbarNavigationButtonStyle = global::Sample.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.toolbarStyle = global::Sample.Resource.Attribute.toolbarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.track = global::Sample.Resource.Attribute.track;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.trackTint = global::Sample.Resource.Attribute.trackTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.trackTintMode = global::Sample.Resource.Attribute.trackTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.voiceIcon = global::Sample.Resource.Attribute.voiceIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowActionBar = global::Sample.Resource.Attribute.windowActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowActionBarOverlay = global::Sample.Resource.Attribute.windowActionBarOverlay;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowActionModeOverlay = global::Sample.Resource.Attribute.windowActionModeOverlay;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowFixedHeightMajor = global::Sample.Resource.Attribute.windowFixedHeightMajor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowFixedHeightMinor = global::Sample.Resource.Attribute.windowFixedHeightMinor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowFixedWidthMajor = global::Sample.Resource.Attribute.windowFixedWidthMajor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowFixedWidthMinor = global::Sample.Resource.Attribute.windowFixedWidthMinor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowMinWidthMajor = global::Sample.Resource.Attribute.windowMinWidthMajor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowMinWidthMinor = global::Sample.Resource.Attribute.windowMinWidthMinor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Attribute.windowNoTitle = global::Sample.Resource.Attribute.windowNoTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Boolean.abc_action_bar_embed_tabs = global::Sample.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Boolean.abc_allow_stacked_button_bar = global::Sample.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Sample.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Sample.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Sample.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Sample.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_background_cache_hint_selector_material_light = global::Sample.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_btn_colored_borderless_text_material = global::Sample.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_btn_colored_text_material = global::Sample.Resource.Color.abc_btn_colored_text_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_color_highlight_material = global::Sample.Resource.Color.abc_color_highlight_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_hint_foreground_material_dark = global::Sample.Resource.Color.abc_hint_foreground_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_hint_foreground_material_light = global::Sample.Resource.Color.abc_hint_foreground_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_input_method_navigation_guard = global::Sample.Resource.Color.abc_input_method_navigation_guard;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_primary_text_disable_only_material_dark = global::Sample.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_primary_text_disable_only_material_light = global::Sample.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_primary_text_material_dark = global::Sample.Resource.Color.abc_primary_text_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_primary_text_material_light = global::Sample.Resource.Color.abc_primary_text_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_search_url_text = global::Sample.Resource.Color.abc_search_url_text;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_search_url_text_normal = global::Sample.Resource.Color.abc_search_url_text_normal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_search_url_text_pressed = global::Sample.Resource.Color.abc_search_url_text_pressed;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_search_url_text_selected = global::Sample.Resource.Color.abc_search_url_text_selected;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_secondary_text_material_dark = global::Sample.Resource.Color.abc_secondary_text_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_secondary_text_material_light = global::Sample.Resource.Color.abc_secondary_text_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_tint_btn_checkable = global::Sample.Resource.Color.abc_tint_btn_checkable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_tint_default = global::Sample.Resource.Color.abc_tint_default;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_tint_edittext = global::Sample.Resource.Color.abc_tint_edittext;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_tint_seek_thumb = global::Sample.Resource.Color.abc_tint_seek_thumb;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_tint_spinner = global::Sample.Resource.Color.abc_tint_spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_tint_switch_thumb = global::Sample.Resource.Color.abc_tint_switch_thumb;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.abc_tint_switch_track = global::Sample.Resource.Color.abc_tint_switch_track;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.accent_material_dark = global::Sample.Resource.Color.accent_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.accent_material_light = global::Sample.Resource.Color.accent_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.background_floating_material_dark = global::Sample.Resource.Color.background_floating_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.background_floating_material_light = global::Sample.Resource.Color.background_floating_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.background_material_dark = global::Sample.Resource.Color.background_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.background_material_light = global::Sample.Resource.Color.background_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.bright_foreground_disabled_material_dark = global::Sample.Resource.Color.bright_foreground_disabled_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.bright_foreground_disabled_material_light = global::Sample.Resource.Color.bright_foreground_disabled_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.bright_foreground_inverse_material_dark = global::Sample.Resource.Color.bright_foreground_inverse_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.bright_foreground_inverse_material_light = global::Sample.Resource.Color.bright_foreground_inverse_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.bright_foreground_material_dark = global::Sample.Resource.Color.bright_foreground_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.bright_foreground_material_light = global::Sample.Resource.Color.bright_foreground_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.button_material_dark = global::Sample.Resource.Color.button_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.button_material_light = global::Sample.Resource.Color.button_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.dim_foreground_disabled_material_dark = global::Sample.Resource.Color.dim_foreground_disabled_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.dim_foreground_disabled_material_light = global::Sample.Resource.Color.dim_foreground_disabled_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.dim_foreground_material_dark = global::Sample.Resource.Color.dim_foreground_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.dim_foreground_material_light = global::Sample.Resource.Color.dim_foreground_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.foreground_material_dark = global::Sample.Resource.Color.foreground_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.foreground_material_light = global::Sample.Resource.Color.foreground_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.highlighted_text_material_dark = global::Sample.Resource.Color.highlighted_text_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.highlighted_text_material_light = global::Sample.Resource.Color.highlighted_text_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_blue_grey_800 = global::Sample.Resource.Color.material_blue_grey_800;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_blue_grey_900 = global::Sample.Resource.Color.material_blue_grey_900;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_blue_grey_950 = global::Sample.Resource.Color.material_blue_grey_950;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_deep_teal_200 = global::Sample.Resource.Color.material_deep_teal_200;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_deep_teal_500 = global::Sample.Resource.Color.material_deep_teal_500;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_grey_100 = global::Sample.Resource.Color.material_grey_100;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_grey_300 = global::Sample.Resource.Color.material_grey_300;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_grey_50 = global::Sample.Resource.Color.material_grey_50;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_grey_600 = global::Sample.Resource.Color.material_grey_600;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_grey_800 = global::Sample.Resource.Color.material_grey_800;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_grey_850 = global::Sample.Resource.Color.material_grey_850;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.material_grey_900 = global::Sample.Resource.Color.material_grey_900;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.notification_action_color_filter = global::Sample.Resource.Color.notification_action_color_filter;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.notification_icon_bg_color = global::Sample.Resource.Color.notification_icon_bg_color;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.notification_material_background_media_default_color = global::Sample.Resource.Color.notification_material_background_media_default_color;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_dark_material_dark = global::Sample.Resource.Color.primary_dark_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_dark_material_light = global::Sample.Resource.Color.primary_dark_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_material_dark = global::Sample.Resource.Color.primary_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_material_light = global::Sample.Resource.Color.primary_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_text_default_material_dark = global::Sample.Resource.Color.primary_text_default_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_text_default_material_light = global::Sample.Resource.Color.primary_text_default_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_text_disabled_material_dark = global::Sample.Resource.Color.primary_text_disabled_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.primary_text_disabled_material_light = global::Sample.Resource.Color.primary_text_disabled_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.ripple_material_dark = global::Sample.Resource.Color.ripple_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.ripple_material_light = global::Sample.Resource.Color.ripple_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.secondary_text_default_material_dark = global::Sample.Resource.Color.secondary_text_default_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.secondary_text_default_material_light = global::Sample.Resource.Color.secondary_text_default_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.secondary_text_disabled_material_dark = global::Sample.Resource.Color.secondary_text_disabled_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.secondary_text_disabled_material_light = global::Sample.Resource.Color.secondary_text_disabled_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.switch_thumb_disabled_material_dark = global::Sample.Resource.Color.switch_thumb_disabled_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.switch_thumb_disabled_material_light = global::Sample.Resource.Color.switch_thumb_disabled_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.switch_thumb_material_dark = global::Sample.Resource.Color.switch_thumb_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.switch_thumb_material_light = global::Sample.Resource.Color.switch_thumb_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.switch_thumb_normal_material_dark = global::Sample.Resource.Color.switch_thumb_normal_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Color.switch_thumb_normal_material_light = global::Sample.Resource.Color.switch_thumb_normal_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_content_inset_material = global::Sample.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Sample.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_default_height_material = global::Sample.Resource.Dimension.abc_action_bar_default_height_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Sample.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Sample.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_elevation_material = global::Sample.Resource.Dimension.abc_action_bar_elevation_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Sample.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Sample.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Sample.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_progress_bar_size = global::Sample.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_stacked_max_height = global::Sample.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Sample.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Sample.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Sample.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_button_min_height_material = global::Sample.Resource.Dimension.abc_action_button_min_height_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_button_min_width_material = global::Sample.Resource.Dimension.abc_action_button_min_width_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Sample.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Sample.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_button_inset_horizontal_material = global::Sample.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_button_inset_vertical_material = global::Sample.Resource.Dimension.abc_button_inset_vertical_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_button_padding_horizontal_material = global::Sample.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_button_padding_vertical_material = global::Sample.Resource.Dimension.abc_button_padding_vertical_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Sample.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_config_prefDialogWidth = global::Sample.Resource.Dimension.abc_config_prefDialogWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_control_corner_material = global::Sample.Resource.Dimension.abc_control_corner_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_control_inset_material = global::Sample.Resource.Dimension.abc_control_inset_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_control_padding_material = global::Sample.Resource.Dimension.abc_control_padding_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_fixed_height_major = global::Sample.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_fixed_height_minor = global::Sample.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_fixed_width_major = global::Sample.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_fixed_width_minor = global::Sample.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Sample.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Sample.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_min_width_major = global::Sample.Resource.Dimension.abc_dialog_min_width_major;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_min_width_minor = global::Sample.Resource.Dimension.abc_dialog_min_width_minor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_padding_material = global::Sample.Resource.Dimension.abc_dialog_padding_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_padding_top_material = global::Sample.Resource.Dimension.abc_dialog_padding_top_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dialog_title_divider_material = global::Sample.Resource.Dimension.abc_dialog_title_divider_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_disabled_alpha_material_dark = global::Sample.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_disabled_alpha_material_light = global::Sample.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dropdownitem_icon_width = global::Sample.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Sample.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Sample.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Sample.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Sample.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_edit_text_inset_top_material = global::Sample.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_floating_window_z = global::Sample.Resource.Dimension.abc_floating_window_z;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Sample.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_panel_menu_list_width = global::Sample.Resource.Dimension.abc_panel_menu_list_width;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_progress_bar_height_material = global::Sample.Resource.Dimension.abc_progress_bar_height_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_search_view_preferred_height = global::Sample.Resource.Dimension.abc_search_view_preferred_height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_search_view_preferred_width = global::Sample.Resource.Dimension.abc_search_view_preferred_width;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_seekbar_track_background_height_material = global::Sample.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Sample.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_select_dialog_padding_start_material = global::Sample.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_switch_padding = global::Sample.Resource.Dimension.abc_switch_padding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_body_1_material = global::Sample.Resource.Dimension.abc_text_size_body_1_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_body_2_material = global::Sample.Resource.Dimension.abc_text_size_body_2_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_button_material = global::Sample.Resource.Dimension.abc_text_size_button_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_caption_material = global::Sample.Resource.Dimension.abc_text_size_caption_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_display_1_material = global::Sample.Resource.Dimension.abc_text_size_display_1_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_display_2_material = global::Sample.Resource.Dimension.abc_text_size_display_2_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_display_3_material = global::Sample.Resource.Dimension.abc_text_size_display_3_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_display_4_material = global::Sample.Resource.Dimension.abc_text_size_display_4_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_headline_material = global::Sample.Resource.Dimension.abc_text_size_headline_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_large_material = global::Sample.Resource.Dimension.abc_text_size_large_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_medium_material = global::Sample.Resource.Dimension.abc_text_size_medium_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_menu_header_material = global::Sample.Resource.Dimension.abc_text_size_menu_header_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_menu_material = global::Sample.Resource.Dimension.abc_text_size_menu_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_small_material = global::Sample.Resource.Dimension.abc_text_size_small_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_subhead_material = global::Sample.Resource.Dimension.abc_text_size_subhead_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Sample.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_title_material = global::Sample.Resource.Dimension.abc_text_size_title_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.abc_text_size_title_material_toolbar = global::Sample.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.disabled_alpha_material_dark = global::Sample.Resource.Dimension.disabled_alpha_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.disabled_alpha_material_light = global::Sample.Resource.Dimension.disabled_alpha_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.highlight_alpha_material_colored = global::Sample.Resource.Dimension.highlight_alpha_material_colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.highlight_alpha_material_dark = global::Sample.Resource.Dimension.highlight_alpha_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.highlight_alpha_material_light = global::Sample.Resource.Dimension.highlight_alpha_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.hint_alpha_material_dark = global::Sample.Resource.Dimension.hint_alpha_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.hint_alpha_material_light = global::Sample.Resource.Dimension.hint_alpha_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.hint_pressed_alpha_material_dark = global::Sample.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.hint_pressed_alpha_material_light = global::Sample.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Sample.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Sample.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Sample.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_action_icon_size = global::Sample.Resource.Dimension.notification_action_icon_size;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_action_text_size = global::Sample.Resource.Dimension.notification_action_text_size;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_big_circle_margin = global::Sample.Resource.Dimension.notification_big_circle_margin;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_content_margin_start = global::Sample.Resource.Dimension.notification_content_margin_start;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_large_icon_height = global::Sample.Resource.Dimension.notification_large_icon_height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_large_icon_width = global::Sample.Resource.Dimension.notification_large_icon_width;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_main_column_padding_top = global::Sample.Resource.Dimension.notification_main_column_padding_top;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_media_narrow_margin = global::Sample.Resource.Dimension.notification_media_narrow_margin;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_right_icon_size = global::Sample.Resource.Dimension.notification_right_icon_size;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_right_side_padding_top = global::Sample.Resource.Dimension.notification_right_side_padding_top;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_small_icon_background_padding = global::Sample.Resource.Dimension.notification_small_icon_background_padding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_small_icon_size_as_large = global::Sample.Resource.Dimension.notification_small_icon_size_as_large;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_subtext_size = global::Sample.Resource.Dimension.notification_subtext_size;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_top_pad = global::Sample.Resource.Dimension.notification_top_pad;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Dimension.notification_top_pad_large_text = global::Sample.Resource.Dimension.notification_top_pad_large_text;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Sample.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_action_bar_item_background_material = global::Sample.Resource.Drawable.abc_action_bar_item_background_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_borderless_material = global::Sample.Resource.Drawable.abc_btn_borderless_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_check_material = global::Sample.Resource.Drawable.abc_btn_check_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Sample.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Sample.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_colored_material = global::Sample.Resource.Drawable.abc_btn_colored_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_default_mtrl_shape = global::Sample.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_radio_material = global::Sample.Resource.Drawable.abc_btn_radio_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Sample.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Sample.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Sample.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Sample.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_cab_background_internal_bg = global::Sample.Resource.Drawable.abc_cab_background_internal_bg;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_cab_background_top_material = global::Sample.Resource.Drawable.abc_cab_background_top_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Sample.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_control_background_material = global::Sample.Resource.Drawable.abc_control_background_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_dialog_material_background = global::Sample.Resource.Drawable.abc_dialog_material_background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_edit_text_material = global::Sample.Resource.Drawable.abc_edit_text_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_ab_back_material = global::Sample.Resource.Drawable.abc_ic_ab_back_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Sample.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_clear_material = global::Sample.Resource.Drawable.abc_ic_clear_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Sample.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_go_search_api_material = global::Sample.Resource.Drawable.abc_ic_go_search_api_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Sample.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Sample.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_menu_overflow_material = global::Sample.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Sample.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Sample.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Sample.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_search_api_material = global::Sample.Resource.Drawable.abc_ic_search_api_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_star_black_16dp = global::Sample.Resource.Drawable.abc_ic_star_black_16dp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_star_black_36dp = global::Sample.Resource.Drawable.abc_ic_star_black_36dp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_star_black_48dp = global::Sample.Resource.Drawable.abc_ic_star_black_48dp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_star_half_black_16dp = global::Sample.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_star_half_black_36dp = global::Sample.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_star_half_black_48dp = global::Sample.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ic_voice_search_api_material = global::Sample.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_item_background_holo_dark = global::Sample.Resource.Drawable.abc_item_background_holo_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_item_background_holo_light = global::Sample.Resource.Drawable.abc_item_background_holo_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Sample.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_focused_holo = global::Sample.Resource.Drawable.abc_list_focused_holo;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_longpressed_holo = global::Sample.Resource.Drawable.abc_list_longpressed_holo;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_pressed_holo_dark = global::Sample.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_pressed_holo_light = global::Sample.Resource.Drawable.abc_list_pressed_holo_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Sample.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Sample.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Sample.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Sample.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_selector_holo_dark = global::Sample.Resource.Drawable.abc_list_selector_holo_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_list_selector_holo_light = global::Sample.Resource.Drawable.abc_list_selector_holo_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Sample.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_popup_background_mtrl_mult = global::Sample.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ratingbar_indicator_material = global::Sample.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ratingbar_material = global::Sample.Resource.Drawable.abc_ratingbar_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_ratingbar_small_material = global::Sample.Resource.Drawable.abc_ratingbar_small_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Sample.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Sample.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Sample.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Sample.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Sample.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_seekbar_thumb_material = global::Sample.Resource.Drawable.abc_seekbar_thumb_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_seekbar_tick_mark_material = global::Sample.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_seekbar_track_material = global::Sample.Resource.Drawable.abc_seekbar_track_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Sample.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_spinner_textfield_background_material = global::Sample.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_switch_thumb_material = global::Sample.Resource.Drawable.abc_switch_thumb_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Sample.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_tab_indicator_material = global::Sample.Resource.Drawable.abc_tab_indicator_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Sample.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_text_cursor_material = global::Sample.Resource.Drawable.abc_text_cursor_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Sample.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Sample.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Sample.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Sample.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Sample.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Sample.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Sample.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Sample.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Sample.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Sample.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_textfield_search_material = global::Sample.Resource.Drawable.abc_textfield_search_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.abc_vector_test = global::Sample.Resource.Drawable.abc_vector_test;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_action_background = global::Sample.Resource.Drawable.notification_action_background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_bg = global::Sample.Resource.Drawable.notification_bg;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_bg_low = global::Sample.Resource.Drawable.notification_bg_low;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_bg_low_normal = global::Sample.Resource.Drawable.notification_bg_low_normal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_bg_low_pressed = global::Sample.Resource.Drawable.notification_bg_low_pressed;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_bg_normal = global::Sample.Resource.Drawable.notification_bg_normal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_bg_normal_pressed = global::Sample.Resource.Drawable.notification_bg_normal_pressed;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_icon_background = global::Sample.Resource.Drawable.notification_icon_background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_template_icon_bg = global::Sample.Resource.Drawable.notification_template_icon_bg;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_template_icon_low_bg = global::Sample.Resource.Drawable.notification_template_icon_low_bg;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notification_tile_bg = global::Sample.Resource.Drawable.notification_tile_bg;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Drawable.notify_panel_notification_icon_bg = global::Sample.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.MvvmCrossTagId = global::Sample.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.MvxBindingTagUnique = global::Sample.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action0 = global::Sample.Resource.Id.action0;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_bar = global::Sample.Resource.Id.action_bar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_bar_activity_content = global::Sample.Resource.Id.action_bar_activity_content;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_bar_container = global::Sample.Resource.Id.action_bar_container;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_bar_root = global::Sample.Resource.Id.action_bar_root;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_bar_spinner = global::Sample.Resource.Id.action_bar_spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_bar_subtitle = global::Sample.Resource.Id.action_bar_subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_bar_title = global::Sample.Resource.Id.action_bar_title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_container = global::Sample.Resource.Id.action_container;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_context_bar = global::Sample.Resource.Id.action_context_bar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_divider = global::Sample.Resource.Id.action_divider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_image = global::Sample.Resource.Id.action_image;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_menu_divider = global::Sample.Resource.Id.action_menu_divider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_menu_presenter = global::Sample.Resource.Id.action_menu_presenter;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_mode_bar = global::Sample.Resource.Id.action_mode_bar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_mode_bar_stub = global::Sample.Resource.Id.action_mode_bar_stub;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_mode_close_button = global::Sample.Resource.Id.action_mode_close_button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.action_text = global::Sample.Resource.Id.action_text;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.actions = global::Sample.Resource.Id.actions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.activity_chooser_view_content = global::Sample.Resource.Id.activity_chooser_view_content;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.add = global::Sample.Resource.Id.add;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.alertTitle = global::Sample.Resource.Id.alertTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.always = global::Sample.Resource.Id.always;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.beginning = global::Sample.Resource.Id.beginning;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.bottom = global::Sample.Resource.Id.bottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.buttonPanel = global::Sample.Resource.Id.buttonPanel;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.cancel_action = global::Sample.Resource.Id.cancel_action;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.checkbox = global::Sample.Resource.Id.checkbox;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.chronometer = global::Sample.Resource.Id.chronometer;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.collapseActionView = global::Sample.Resource.Id.collapseActionView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.contentPanel = global::Sample.Resource.Id.contentPanel;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.custom = global::Sample.Resource.Id.custom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.customPanel = global::Sample.Resource.Id.customPanel;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.decor_content_parent = global::Sample.Resource.Id.decor_content_parent;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.default_activity_button = global::Sample.Resource.Id.default_activity_button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.disableHome = global::Sample.Resource.Id.disableHome;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.edit_query = global::Sample.Resource.Id.edit_query;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.end = global::Sample.Resource.Id.end;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.end_padder = global::Sample.Resource.Id.end_padder;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.expand_activities_button = global::Sample.Resource.Id.expand_activities_button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.expanded_menu = global::Sample.Resource.Id.expanded_menu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.home = global::Sample.Resource.Id.home;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.homeAsUp = global::Sample.Resource.Id.homeAsUp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.icon = global::Sample.Resource.Id.icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.icon_group = global::Sample.Resource.Id.icon_group;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.ifRoom = global::Sample.Resource.Id.ifRoom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.image = global::Sample.Resource.Id.image;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.info = global::Sample.Resource.Id.info;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.item_touch_helper_previous_elevation = global::Sample.Resource.Id.item_touch_helper_previous_elevation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.line1 = global::Sample.Resource.Id.line1;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.line3 = global::Sample.Resource.Id.line3;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.listMode = global::Sample.Resource.Id.listMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.list_item = global::Sample.Resource.Id.list_item;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.media_actions = global::Sample.Resource.Id.media_actions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.middle = global::Sample.Resource.Id.middle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.multiply = global::Sample.Resource.Id.multiply;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.never = global::Sample.Resource.Id.never;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.none = global::Sample.Resource.Id.none;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.normal = global::Sample.Resource.Id.normal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.notification_background = global::Sample.Resource.Id.notification_background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.notification_main_column = global::Sample.Resource.Id.notification_main_column;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.notification_main_column_container = global::Sample.Resource.Id.notification_main_column_container;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.parentPanel = global::Sample.Resource.Id.parentPanel;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.progress_circular = global::Sample.Resource.Id.progress_circular;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.progress_horizontal = global::Sample.Resource.Id.progress_horizontal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.radio = global::Sample.Resource.Id.radio;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.right_icon = global::Sample.Resource.Id.right_icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.right_side = global::Sample.Resource.Id.right_side;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.screen = global::Sample.Resource.Id.screen;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.scrollIndicatorDown = global::Sample.Resource.Id.scrollIndicatorDown;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.scrollIndicatorUp = global::Sample.Resource.Id.scrollIndicatorUp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.scrollView = global::Sample.Resource.Id.scrollView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_badge = global::Sample.Resource.Id.search_badge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_bar = global::Sample.Resource.Id.search_bar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_button = global::Sample.Resource.Id.search_button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_close_btn = global::Sample.Resource.Id.search_close_btn;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_edit_frame = global::Sample.Resource.Id.search_edit_frame;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_go_btn = global::Sample.Resource.Id.search_go_btn;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_mag_icon = global::Sample.Resource.Id.search_mag_icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_plate = global::Sample.Resource.Id.search_plate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_src_text = global::Sample.Resource.Id.search_src_text;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.search_voice_btn = global::Sample.Resource.Id.search_voice_btn;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.select_dialog_listview = global::Sample.Resource.Id.select_dialog_listview;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.shortcut = global::Sample.Resource.Id.shortcut;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.showCustom = global::Sample.Resource.Id.showCustom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.showHome = global::Sample.Resource.Id.showHome;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.showTitle = global::Sample.Resource.Id.showTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.spacer = global::Sample.Resource.Id.spacer;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.split_action_bar = global::Sample.Resource.Id.split_action_bar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.src_atop = global::Sample.Resource.Id.src_atop;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.src_in = global::Sample.Resource.Id.src_in;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.src_over = global::Sample.Resource.Id.src_over;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.status_bar_latest_event_content = global::Sample.Resource.Id.status_bar_latest_event_content;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.submenuarrow = global::Sample.Resource.Id.submenuarrow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.submit_area = global::Sample.Resource.Id.submit_area;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.tabMode = global::Sample.Resource.Id.tabMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.text = global::Sample.Resource.Id.text;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.text2 = global::Sample.Resource.Id.text2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.textSpacerNoButtons = global::Sample.Resource.Id.textSpacerNoButtons;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.textSpacerNoTitle = global::Sample.Resource.Id.textSpacerNoTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.time = global::Sample.Resource.Id.time;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.title = global::Sample.Resource.Id.title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.titleDividerNoCustom = global::Sample.Resource.Id.titleDividerNoCustom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.title_template = global::Sample.Resource.Id.title_template;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.top = global::Sample.Resource.Id.top;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.topPanel = global::Sample.Resource.Id.topPanel;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.up = global::Sample.Resource.Id.up;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.useLogo = global::Sample.Resource.Id.useLogo;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.withText = global::Sample.Resource.Id.withText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Id.wrap_content = global::Sample.Resource.Id.wrap_content;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Integer.abc_config_activityDefaultDur = global::Sample.Resource.Integer.abc_config_activityDefaultDur;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Integer.abc_config_activityShortDur = global::Sample.Resource.Integer.abc_config_activityShortDur;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Integer.cancel_button_image_alpha = global::Sample.Resource.Integer.cancel_button_image_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Integer.status_bar_notification_info_maxnum = global::Sample.Resource.Integer.status_bar_notification_info_maxnum;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_action_bar_title_item = global::Sample.Resource.Layout.abc_action_bar_title_item;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_action_bar_up_container = global::Sample.Resource.Layout.abc_action_bar_up_container;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Sample.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_action_menu_item_layout = global::Sample.Resource.Layout.abc_action_menu_item_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_action_menu_layout = global::Sample.Resource.Layout.abc_action_menu_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_action_mode_bar = global::Sample.Resource.Layout.abc_action_mode_bar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_action_mode_close_item_material = global::Sample.Resource.Layout.abc_action_mode_close_item_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_activity_chooser_view = global::Sample.Resource.Layout.abc_activity_chooser_view;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_activity_chooser_view_list_item = global::Sample.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_alert_dialog_button_bar_material = global::Sample.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_alert_dialog_material = global::Sample.Resource.Layout.abc_alert_dialog_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_alert_dialog_title_material = global::Sample.Resource.Layout.abc_alert_dialog_title_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_dialog_title_material = global::Sample.Resource.Layout.abc_dialog_title_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_expanded_menu_layout = global::Sample.Resource.Layout.abc_expanded_menu_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_list_menu_item_checkbox = global::Sample.Resource.Layout.abc_list_menu_item_checkbox;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_list_menu_item_icon = global::Sample.Resource.Layout.abc_list_menu_item_icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_list_menu_item_layout = global::Sample.Resource.Layout.abc_list_menu_item_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_list_menu_item_radio = global::Sample.Resource.Layout.abc_list_menu_item_radio;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_popup_menu_header_item_layout = global::Sample.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_popup_menu_item_layout = global::Sample.Resource.Layout.abc_popup_menu_item_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_screen_content_include = global::Sample.Resource.Layout.abc_screen_content_include;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_screen_simple = global::Sample.Resource.Layout.abc_screen_simple;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Sample.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_screen_toolbar = global::Sample.Resource.Layout.abc_screen_toolbar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Sample.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_search_view = global::Sample.Resource.Layout.abc_search_view;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.abc_select_dialog_material = global::Sample.Resource.Layout.abc_select_dialog_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_action = global::Sample.Resource.Layout.notification_action;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_action_tombstone = global::Sample.Resource.Layout.notification_action_tombstone;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_media_action = global::Sample.Resource.Layout.notification_media_action;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_media_cancel_action = global::Sample.Resource.Layout.notification_media_cancel_action;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_big_media = global::Sample.Resource.Layout.notification_template_big_media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_big_media_custom = global::Sample.Resource.Layout.notification_template_big_media_custom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_big_media_narrow = global::Sample.Resource.Layout.notification_template_big_media_narrow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_big_media_narrow_custom = global::Sample.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_custom_big = global::Sample.Resource.Layout.notification_template_custom_big;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_icon_group = global::Sample.Resource.Layout.notification_template_icon_group;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_lines_media = global::Sample.Resource.Layout.notification_template_lines_media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_media = global::Sample.Resource.Layout.notification_template_media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_media_custom = global::Sample.Resource.Layout.notification_template_media_custom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_part_chronometer = global::Sample.Resource.Layout.notification_template_part_chronometer;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.notification_template_part_time = global::Sample.Resource.Layout.notification_template_part_time;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.select_dialog_item_material = global::Sample.Resource.Layout.select_dialog_item_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.select_dialog_multichoice_material = global::Sample.Resource.Layout.select_dialog_multichoice_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.select_dialog_singlechoice_material = global::Sample.Resource.Layout.select_dialog_singlechoice_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Layout.support_simple_spinner_dropdown_item = global::Sample.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.ApplicationName = global::Sample.Resource.String.ApplicationName;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.Hello = global::Sample.Resource.String.Hello;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_action_bar_home_description = global::Sample.Resource.String.abc_action_bar_home_description;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_action_bar_home_description_format = global::Sample.Resource.String.abc_action_bar_home_description_format;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_action_bar_home_subtitle_description_format = global::Sample.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_action_bar_up_description = global::Sample.Resource.String.abc_action_bar_up_description;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_action_menu_overflow_description = global::Sample.Resource.String.abc_action_menu_overflow_description;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_action_mode_done = global::Sample.Resource.String.abc_action_mode_done;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_activity_chooser_view_see_all = global::Sample.Resource.String.abc_activity_chooser_view_see_all;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_activitychooserview_choose_application = global::Sample.Resource.String.abc_activitychooserview_choose_application;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_capital_off = global::Sample.Resource.String.abc_capital_off;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_capital_on = global::Sample.Resource.String.abc_capital_on;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_body_1_material = global::Sample.Resource.String.abc_font_family_body_1_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_body_2_material = global::Sample.Resource.String.abc_font_family_body_2_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_button_material = global::Sample.Resource.String.abc_font_family_button_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_caption_material = global::Sample.Resource.String.abc_font_family_caption_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_display_1_material = global::Sample.Resource.String.abc_font_family_display_1_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_display_2_material = global::Sample.Resource.String.abc_font_family_display_2_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_display_3_material = global::Sample.Resource.String.abc_font_family_display_3_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_display_4_material = global::Sample.Resource.String.abc_font_family_display_4_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_headline_material = global::Sample.Resource.String.abc_font_family_headline_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_menu_material = global::Sample.Resource.String.abc_font_family_menu_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_subhead_material = global::Sample.Resource.String.abc_font_family_subhead_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_font_family_title_material = global::Sample.Resource.String.abc_font_family_title_material;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_search_hint = global::Sample.Resource.String.abc_search_hint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_searchview_description_clear = global::Sample.Resource.String.abc_searchview_description_clear;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_searchview_description_query = global::Sample.Resource.String.abc_searchview_description_query;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_searchview_description_search = global::Sample.Resource.String.abc_searchview_description_search;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_searchview_description_submit = global::Sample.Resource.String.abc_searchview_description_submit;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_searchview_description_voice = global::Sample.Resource.String.abc_searchview_description_voice;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_shareactionprovider_share_with = global::Sample.Resource.String.abc_shareactionprovider_share_with;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_shareactionprovider_share_with_application = global::Sample.Resource.String.abc_shareactionprovider_share_with_application;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.abc_toolbar_collapse_description = global::Sample.Resource.String.abc_toolbar_collapse_description;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.fab_scroll_shrink_grow_autohide_behavior = global::Sample.Resource.String.fab_scroll_shrink_grow_autohide_behavior;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.search_menu_title = global::Sample.Resource.String.search_menu_title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.status_bar_notification_info_overflow = global::Sample.Resource.String.status_bar_notification_info_overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.String.view_scroll_translation_autohide_behavior = global::Sample.Resource.String.view_scroll_translation_autohide_behavior;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.AlertDialog_AppCompat = global::Sample.Resource.Style.AlertDialog_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.AlertDialog_AppCompat_Light = global::Sample.Resource.Style.AlertDialog_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Animation_AppCompat_Dialog = global::Sample.Resource.Style.Animation_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Animation_AppCompat_DropDownUp = global::Sample.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_AlertDialog_AppCompat = global::Sample.Resource.Style.Base_AlertDialog_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Sample.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Animation_AppCompat_Dialog = global::Sample.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Sample.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Sample.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Sample.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat = global::Sample.Resource.Style.Base_TextAppearance_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Sample.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Sample.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Sample.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Sample.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat = global::Sample.Resource.Style.Base_Theme_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Sample.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Dialog = global::Sample.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Sample.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Sample.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Sample.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Sample.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Light = global::Sample.Resource.Style.Base_Theme_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Sample.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Sample.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Sample.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Sample.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Sample.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Sample.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_ThemeOverlay_AppCompat = global::Sample.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Sample.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Sample.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Sample.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Sample.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Sample.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Sample.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Sample.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Sample.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Sample.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Sample.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Sample.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V21_Theme_AppCompat = global::Sample.Resource.Style.Base_V21_Theme_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Sample.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Sample.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Sample.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Sample.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V22_Theme_AppCompat = global::Sample.Resource.Style.Base_V22_Theme_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Sample.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V23_Theme_AppCompat = global::Sample.Resource.Style.Base_V23_Theme_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Sample.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V7_Theme_AppCompat = global::Sample.Resource.Style.Base_V7_Theme_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Sample.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Sample.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Sample.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Sample.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Sample.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Sample.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Sample.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Sample.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Sample.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Button = global::Sample.Resource.Style.Base_Widget_AppCompat_Button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Sample.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Sample.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Sample.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Sample.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Sample.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Sample.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Sample.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Sample.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Sample.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Sample.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Sample.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Sample.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Sample.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_EditText = global::Sample.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Sample.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Sample.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Sample.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Sample.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ListView = global::Sample.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Sample.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Sample.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Sample.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Sample.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Sample.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Sample.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Sample.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Sample.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Sample.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Sample.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_SearchView = global::Sample.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Sample.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Sample.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Sample.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Spinner = global::Sample.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Sample.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Sample.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Sample.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Sample.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_AppCompat = global::Sample.Resource.Style.Platform_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_AppCompat_Light = global::Sample.Resource.Style.Platform_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Sample.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Sample.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Sample.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V11_AppCompat = global::Sample.Resource.Style.Platform_V11_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V11_AppCompat_Light = global::Sample.Resource.Style.Platform_V11_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V14_AppCompat = global::Sample.Resource.Style.Platform_V14_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V14_AppCompat_Light = global::Sample.Resource.Style.Platform_V14_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V21_AppCompat = global::Sample.Resource.Style.Platform_V21_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V21_AppCompat_Light = global::Sample.Resource.Style.Platform_V21_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V25_AppCompat = global::Sample.Resource.Style.Platform_V25_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_V25_AppCompat_Light = global::Sample.Resource.Style.Platform_V25_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Sample.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Sample.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Sample.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Sample.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Sample.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat = global::Sample.Resource.Style.TextAppearance_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Body1 = global::Sample.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Body2 = global::Sample.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Button = global::Sample.Resource.Style.TextAppearance_AppCompat_Button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Caption = global::Sample.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Display1 = global::Sample.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Display2 = global::Sample.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Display3 = global::Sample.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Display4 = global::Sample.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Headline = global::Sample.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Large = global::Sample.Resource.Style.TextAppearance_AppCompat_Large;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Sample.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Sample.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Sample.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Sample.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Medium = global::Sample.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Menu = global::Sample.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Info = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Info;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Line2 = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Line2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Media = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Time = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Time;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Title = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media = global::Sample.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Sample.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Sample.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Small = global::Sample.Resource.Style.TextAppearance_AppCompat_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Subhead = global::Sample.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Title = global::Sample.Resource.Style.TextAppearance_AppCompat_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Sample.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_StatusBar_EventContent = global::Sample.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::Sample.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::Sample.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::Sample.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::Sample.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Sample.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Sample.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Sample.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat = global::Sample.Resource.Style.Theme_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_CompactMenu = global::Sample.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DayNight = global::Sample.Resource.Style.Theme_AppCompat_DayNight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Sample.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Sample.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Sample.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Sample.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Sample.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Sample.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Dialog = global::Sample.Resource.Style.Theme_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Sample.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Sample.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Sample.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Light = global::Sample.Resource.Style.Theme_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Sample.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Light_Dialog = global::Sample.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Sample.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Sample.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Sample.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Sample.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Theme_AppCompat_NoActionBar = global::Sample.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.ThemeOverlay_AppCompat = global::Sample.Resource.Style.ThemeOverlay_AppCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Sample.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Sample.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Sample.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Sample.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Sample.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.ThemeOverlay_AppCompat_Light = global::Sample.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionBar = global::Sample.Resource.Style.Widget_AppCompat_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Sample.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Sample.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Sample.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Sample.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionButton = global::Sample.Resource.Style.Widget_AppCompat_ActionButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Sample.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Sample.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActionMode = global::Sample.Resource.Style.Widget_AppCompat_ActionMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Sample.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Sample.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Button = global::Sample.Resource.Style.Widget_AppCompat_Button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Button_Borderless = global::Sample.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Sample.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Sample.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Button_Colored = global::Sample.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Button_Small = global::Sample.Resource.Style.Widget_AppCompat_Button_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ButtonBar = global::Sample.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Sample.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Sample.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Sample.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Sample.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Sample.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Sample.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_EditText = global::Sample.Resource.Style.Widget_AppCompat_EditText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ImageButton = global::Sample.Resource.Style.Widget_AppCompat_ImageButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Sample.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Sample.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Sample.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Sample.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Sample.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Sample.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Sample.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Sample.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_SearchView = global::Sample.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Sample.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ListMenuView = global::Sample.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Sample.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ListView = global::Sample.Resource.Style.Widget_AppCompat_ListView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Sample.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ListView_Menu = global::Sample.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_NotificationActionContainer = global::Sample.Resource.Style.Widget_AppCompat_NotificationActionContainer;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_NotificationActionText = global::Sample.Resource.Style.Widget_AppCompat_NotificationActionText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_PopupMenu = global::Sample.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Sample.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_PopupWindow = global::Sample.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ProgressBar = global::Sample.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Sample.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_RatingBar = global::Sample.Resource.Style.Widget_AppCompat_RatingBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Sample.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Sample.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_SearchView = global::Sample.Resource.Style.Widget_AppCompat_SearchView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Sample.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_SeekBar = global::Sample.Resource.Style.Widget_AppCompat_SeekBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Sample.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Spinner = global::Sample.Resource.Style.Widget_AppCompat_Spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Sample.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Sample.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Sample.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Sample.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Toolbar = global::Sample.Resource.Style.Widget_AppCompat_Toolbar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Sample.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar = global::Sample.Resource.Styleable.ActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_background = global::Sample.Resource.Styleable.ActionBar_background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_backgroundSplit = global::Sample.Resource.Styleable.ActionBar_backgroundSplit;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_backgroundStacked = global::Sample.Resource.Styleable.ActionBar_backgroundStacked;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_contentInsetEnd = global::Sample.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Sample.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_contentInsetLeft = global::Sample.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_contentInsetRight = global::Sample.Resource.Styleable.ActionBar_contentInsetRight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_contentInsetStart = global::Sample.Resource.Styleable.ActionBar_contentInsetStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Sample.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_customNavigationLayout = global::Sample.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_displayOptions = global::Sample.Resource.Styleable.ActionBar_displayOptions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_divider = global::Sample.Resource.Styleable.ActionBar_divider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_elevation = global::Sample.Resource.Styleable.ActionBar_elevation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_height = global::Sample.Resource.Styleable.ActionBar_height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_hideOnContentScroll = global::Sample.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Sample.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_homeLayout = global::Sample.Resource.Styleable.ActionBar_homeLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_icon = global::Sample.Resource.Styleable.ActionBar_icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Sample.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_itemPadding = global::Sample.Resource.Styleable.ActionBar_itemPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_logo = global::Sample.Resource.Styleable.ActionBar_logo;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_navigationMode = global::Sample.Resource.Styleable.ActionBar_navigationMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_popupTheme = global::Sample.Resource.Styleable.ActionBar_popupTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_progressBarPadding = global::Sample.Resource.Styleable.ActionBar_progressBarPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_progressBarStyle = global::Sample.Resource.Styleable.ActionBar_progressBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_subtitle = global::Sample.Resource.Styleable.ActionBar_subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_subtitleTextStyle = global::Sample.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_title = global::Sample.Resource.Styleable.ActionBar_title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBar_titleTextStyle = global::Sample.Resource.Styleable.ActionBar_titleTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBarLayout = global::Sample.Resource.Styleable.ActionBarLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Sample.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMenuItemView = global::Sample.Resource.Styleable.ActionMenuItemView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Sample.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMenuView = global::Sample.Resource.Styleable.ActionMenuView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMode = global::Sample.Resource.Styleable.ActionMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMode_background = global::Sample.Resource.Styleable.ActionMode_background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMode_backgroundSplit = global::Sample.Resource.Styleable.ActionMode_backgroundSplit;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMode_closeItemLayout = global::Sample.Resource.Styleable.ActionMode_closeItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMode_height = global::Sample.Resource.Styleable.ActionMode_height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMode_subtitleTextStyle = global::Sample.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActionMode_titleTextStyle = global::Sample.Resource.Styleable.ActionMode_titleTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActivityChooserView = global::Sample.Resource.Styleable.ActivityChooserView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Sample.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Sample.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog = global::Sample.Resource.Styleable.AlertDialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog_android_layout = global::Sample.Resource.Styleable.AlertDialog_android_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Sample.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog_listItemLayout = global::Sample.Resource.Styleable.AlertDialog_listItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog_listLayout = global::Sample.Resource.Styleable.AlertDialog_listLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Sample.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog_showTitle = global::Sample.Resource.Styleable.AlertDialog_showTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Sample.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatImageView = global::Sample.Resource.Styleable.AppCompatImageView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatImageView_android_src = global::Sample.Resource.Styleable.AppCompatImageView_android_src;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatImageView_srcCompat = global::Sample.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatSeekBar = global::Sample.Resource.Styleable.AppCompatSeekBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Sample.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatSeekBar_tickMark = global::Sample.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Sample.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Sample.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper = global::Sample.Resource.Styleable.AppCompatTextHelper;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Sample.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Sample.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Sample.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Sample.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Sample.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Sample.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Sample.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextView = global::Sample.Resource.Styleable.AppCompatTextView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Sample.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTextView_textAllCaps = global::Sample.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme = global::Sample.Resource.Styleable.AppCompatTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Sample.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Sample.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Sample.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarSize = global::Sample.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Sample.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Sample.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Sample.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Sample.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Sample.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Sample.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Sample.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Sample.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Sample.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Sample.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Sample.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Sample.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Sample.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Sample.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Sample.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Sample.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Sample.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_buttonStyle = global::Sample.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Sample.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Sample.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Sample.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorAccent = global::Sample.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Sample.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Sample.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Sample.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Sample.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Sample.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorPrimary = global::Sample.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Sample.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Sample.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_controlBackground = global::Sample.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Sample.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_dialogTheme = global::Sample.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Sample.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_dividerVertical = global::Sample.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Sample.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Sample.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_editTextBackground = global::Sample.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_editTextColor = global::Sample.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_editTextStyle = global::Sample.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Sample.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Sample.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Sample.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Sample.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Sample.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Sample.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Sample.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Sample.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Sample.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Sample.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_panelBackground = global::Sample.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Sample.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Sample.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Sample.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Sample.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Sample.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Sample.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Sample.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Sample.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Sample.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Sample.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Sample.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Sample.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Sample.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_switchStyle = global::Sample.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Sample.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Sample.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Sample.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Sample.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Sample.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Sample.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Sample.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Sample.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Sample.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Sample.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Sample.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowActionBar = global::Sample.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Sample.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Sample.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Sample.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Sample.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Sample.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Sample.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Sample.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Sample.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Sample.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ButtonBarLayout = global::Sample.Resource.Styleable.ButtonBarLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ButtonBarLayout_allowStacking = global::Sample.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ColorStateListItem = global::Sample.Resource.Styleable.ColorStateListItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ColorStateListItem_alpha = global::Sample.Resource.Styleable.ColorStateListItem_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ColorStateListItem_android_alpha = global::Sample.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ColorStateListItem_android_color = global::Sample.Resource.Styleable.ColorStateListItem_android_color;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.CompoundButton = global::Sample.Resource.Styleable.CompoundButton;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.CompoundButton_android_button = global::Sample.Resource.Styleable.CompoundButton_android_button;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.CompoundButton_buttonTint = global::Sample.Resource.Styleable.CompoundButton_buttonTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.CompoundButton_buttonTintMode = global::Sample.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle = global::Sample.Resource.Styleable.DrawerArrowToggle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Sample.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Sample.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_barLength = global::Sample.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_color = global::Sample.Resource.Styleable.DrawerArrowToggle_color;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Sample.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Sample.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_spinBars = global::Sample.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.DrawerArrowToggle_thickness = global::Sample.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat = global::Sample.Resource.Styleable.LinearLayoutCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Sample.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Sample.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Sample.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Sample.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Sample.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_divider = global::Sample.Resource.Styleable.LinearLayoutCompat_divider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Sample.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Sample.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_showDividers = global::Sample.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_Layout = global::Sample.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Sample.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Sample.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Sample.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Sample.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ListPopupWindow = global::Sample.Resource.Styleable.ListPopupWindow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Sample.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Sample.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuGroup = global::Sample.Resource.Styleable.MenuGroup;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Sample.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuGroup_android_enabled = global::Sample.Resource.Styleable.MenuGroup_android_enabled;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuGroup_android_id = global::Sample.Resource.Styleable.MenuGroup_android_id;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuGroup_android_menuCategory = global::Sample.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuGroup_android_orderInCategory = global::Sample.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuGroup_android_visible = global::Sample.Resource.Styleable.MenuGroup_android_visible;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem = global::Sample.Resource.Styleable.MenuItem;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_actionLayout = global::Sample.Resource.Styleable.MenuItem_actionLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_actionProviderClass = global::Sample.Resource.Styleable.MenuItem_actionProviderClass;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_actionViewClass = global::Sample.Resource.Styleable.MenuItem_actionViewClass;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Sample.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_checkable = global::Sample.Resource.Styleable.MenuItem_android_checkable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_checked = global::Sample.Resource.Styleable.MenuItem_android_checked;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_enabled = global::Sample.Resource.Styleable.MenuItem_android_enabled;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_icon = global::Sample.Resource.Styleable.MenuItem_android_icon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_id = global::Sample.Resource.Styleable.MenuItem_android_id;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_menuCategory = global::Sample.Resource.Styleable.MenuItem_android_menuCategory;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_numericShortcut = global::Sample.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_onClick = global::Sample.Resource.Styleable.MenuItem_android_onClick;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_orderInCategory = global::Sample.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_title = global::Sample.Resource.Styleable.MenuItem_android_title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_titleCondensed = global::Sample.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_android_visible = global::Sample.Resource.Styleable.MenuItem_android_visible;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuItem_showAsAction = global::Sample.Resource.Styleable.MenuItem_showAsAction;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView = global::Sample.Resource.Styleable.MenuView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_android_headerBackground = global::Sample.Resource.Styleable.MenuView_android_headerBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_android_horizontalDivider = global::Sample.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_android_itemBackground = global::Sample.Resource.Styleable.MenuView_android_itemBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Sample.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_android_itemTextAppearance = global::Sample.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_android_verticalDivider = global::Sample.Resource.Styleable.MenuView_android_verticalDivider;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Sample.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_preserveIconSpacing = global::Sample.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MenuView_subMenuArrow = global::Sample.Resource.Styleable.MenuView_subMenuArrow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxBinding = global::Sample.Resource.Styleable.MvxBinding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxBinding_MvxBind = global::Sample.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxBinding_MvxLang = global::Sample.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxControl = global::Sample.Resource.Styleable.MvxControl;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxControl_MvxTemplate = global::Sample.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxExpandableListView = global::Sample.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::Sample.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxHorizontalGridView = global::Sample.Resource.Styleable.MvxHorizontalGridView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxHorizontalGridView_FocusFirstChildOnLaidOut = global::Sample.Resource.Styleable.MvxHorizontalGridView_FocusFirstChildOnLaidOut;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxImageView = global::Sample.Resource.Styleable.MvxImageView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxImageView_MvxSource = global::Sample.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxListView = global::Sample.Resource.Styleable.MvxListView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::Sample.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxListView_MvxItemTemplate = global::Sample.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView = global::Sample.Resource.Styleable.MvxRecyclerView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView_MvxFooterLayoutId = global::Sample.Resource.Styleable.MvxRecyclerView_MvxFooterLayoutId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView_MvxGroupSectionLayoutId = global::Sample.Resource.Styleable.MvxRecyclerView_MvxGroupSectionLayoutId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView_MvxGroupedDataConverter = global::Sample.Resource.Styleable.MvxRecyclerView_MvxGroupedDataConverter;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId = global::Sample.Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty = global::Sample.Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty = global::Sample.Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector = global::Sample.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.PopupWindow = global::Sample.Resource.Styleable.PopupWindow;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Sample.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.PopupWindow_android_popupBackground = global::Sample.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.PopupWindow_overlapAnchor = global::Sample.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.PopupWindowBackgroundState = global::Sample.Resource.Styleable.PopupWindowBackgroundState;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Sample.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecycleListView = global::Sample.Resource.Styleable.RecycleListView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Sample.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Sample.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecyclerView = global::Sample.Resource.Styleable.RecyclerView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Sample.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecyclerView_android_orientation = global::Sample.Resource.Styleable.RecyclerView_android_orientation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecyclerView_layoutManager = global::Sample.Resource.Styleable.RecyclerView_layoutManager;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecyclerView_reverseLayout = global::Sample.Resource.Styleable.RecyclerView_reverseLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecyclerView_spanCount = global::Sample.Resource.Styleable.RecyclerView_spanCount;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.RecyclerView_stackFromEnd = global::Sample.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView = global::Sample.Resource.Styleable.SearchView;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_android_focusable = global::Sample.Resource.Styleable.SearchView_android_focusable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_android_imeOptions = global::Sample.Resource.Styleable.SearchView_android_imeOptions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_android_inputType = global::Sample.Resource.Styleable.SearchView_android_inputType;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_android_maxWidth = global::Sample.Resource.Styleable.SearchView_android_maxWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_closeIcon = global::Sample.Resource.Styleable.SearchView_closeIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_commitIcon = global::Sample.Resource.Styleable.SearchView_commitIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_defaultQueryHint = global::Sample.Resource.Styleable.SearchView_defaultQueryHint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_goIcon = global::Sample.Resource.Styleable.SearchView_goIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_iconifiedByDefault = global::Sample.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_layout = global::Sample.Resource.Styleable.SearchView_layout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_queryBackground = global::Sample.Resource.Styleable.SearchView_queryBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_queryHint = global::Sample.Resource.Styleable.SearchView_queryHint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_searchHintIcon = global::Sample.Resource.Styleable.SearchView_searchHintIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_searchIcon = global::Sample.Resource.Styleable.SearchView_searchIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_submitBackground = global::Sample.Resource.Styleable.SearchView_submitBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_suggestionRowLayout = global::Sample.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SearchView_voiceIcon = global::Sample.Resource.Styleable.SearchView_voiceIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Spinner = global::Sample.Resource.Styleable.Spinner;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Spinner_android_dropDownWidth = global::Sample.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Spinner_android_entries = global::Sample.Resource.Styleable.Spinner_android_entries;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Spinner_android_popupBackground = global::Sample.Resource.Styleable.Spinner_android_popupBackground;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Spinner_android_prompt = global::Sample.Resource.Styleable.Spinner_android_prompt;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Spinner_popupTheme = global::Sample.Resource.Styleable.Spinner_popupTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat = global::Sample.Resource.Styleable.SwitchCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_android_textOff = global::Sample.Resource.Styleable.SwitchCompat_android_textOff;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_android_textOn = global::Sample.Resource.Styleable.SwitchCompat_android_textOn;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_android_thumb = global::Sample.Resource.Styleable.SwitchCompat_android_thumb;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_showText = global::Sample.Resource.Styleable.SwitchCompat_showText;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_splitTrack = global::Sample.Resource.Styleable.SwitchCompat_splitTrack;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_switchMinWidth = global::Sample.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_switchPadding = global::Sample.Resource.Styleable.SwitchCompat_switchPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Sample.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Sample.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_thumbTint = global::Sample.Resource.Styleable.SwitchCompat_thumbTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_thumbTintMode = global::Sample.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_track = global::Sample.Resource.Styleable.SwitchCompat_track;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_trackTint = global::Sample.Resource.Styleable.SwitchCompat_trackTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.SwitchCompat_trackTintMode = global::Sample.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance = global::Sample.Resource.Styleable.TextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_shadowColor = global::Sample.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_shadowDx = global::Sample.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_shadowDy = global::Sample.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_shadowRadius = global::Sample.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_textColor = global::Sample.Resource.Styleable.TextAppearance_android_textColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_textColorHint = global::Sample.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_textSize = global::Sample.Resource.Styleable.TextAppearance_android_textSize;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_textStyle = global::Sample.Resource.Styleable.TextAppearance_android_textStyle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_android_typeface = global::Sample.Resource.Styleable.TextAppearance_android_typeface;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.TextAppearance_textAllCaps = global::Sample.Resource.Styleable.TextAppearance_textAllCaps;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar = global::Sample.Resource.Styleable.Toolbar;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_android_gravity = global::Sample.Resource.Styleable.Toolbar_android_gravity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_android_minHeight = global::Sample.Resource.Styleable.Toolbar_android_minHeight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_buttonGravity = global::Sample.Resource.Styleable.Toolbar_buttonGravity;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_collapseContentDescription = global::Sample.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_collapseIcon = global::Sample.Resource.Styleable.Toolbar_collapseIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_contentInsetEnd = global::Sample.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Sample.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_contentInsetLeft = global::Sample.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_contentInsetRight = global::Sample.Resource.Styleable.Toolbar_contentInsetRight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_contentInsetStart = global::Sample.Resource.Styleable.Toolbar_contentInsetStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Sample.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_logo = global::Sample.Resource.Styleable.Toolbar_logo;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_logoDescription = global::Sample.Resource.Styleable.Toolbar_logoDescription;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_maxButtonHeight = global::Sample.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_navigationContentDescription = global::Sample.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_navigationIcon = global::Sample.Resource.Styleable.Toolbar_navigationIcon;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_popupTheme = global::Sample.Resource.Styleable.Toolbar_popupTheme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_subtitle = global::Sample.Resource.Styleable.Toolbar_subtitle;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Sample.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_subtitleTextColor = global::Sample.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_title = global::Sample.Resource.Styleable.Toolbar_title;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleMargin = global::Sample.Resource.Styleable.Toolbar_titleMargin;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleMarginBottom = global::Sample.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleMarginEnd = global::Sample.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleMarginStart = global::Sample.Resource.Styleable.Toolbar_titleMarginStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleMarginTop = global::Sample.Resource.Styleable.Toolbar_titleMarginTop;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleMargins = global::Sample.Resource.Styleable.Toolbar_titleMargins;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleTextAppearance = global::Sample.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.Toolbar_titleTextColor = global::Sample.Resource.Styleable.Toolbar_titleTextColor;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.View = global::Sample.Resource.Styleable.View;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.View_android_focusable = global::Sample.Resource.Styleable.View_android_focusable;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.View_android_theme = global::Sample.Resource.Styleable.View_android_theme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.View_paddingEnd = global::Sample.Resource.Styleable.View_paddingEnd;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.View_paddingStart = global::Sample.Resource.Styleable.View_paddingStart;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.View_theme = global::Sample.Resource.Styleable.View_theme;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewBackgroundHelper = global::Sample.Resource.Styleable.ViewBackgroundHelper;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewBackgroundHelper_android_background = global::Sample.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Sample.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Sample.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewStubCompat = global::Sample.Resource.Styleable.ViewStubCompat;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewStubCompat_android_id = global::Sample.Resource.Styleable.ViewStubCompat_android_id;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Sample.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::MvvmCross.AdvancedRecyclerView.Resources.Resource.Styleable.ViewStubCompat_android_layout = global::Sample.Resource.Styleable.ViewStubCompat_android_layout;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::Sample.Resource.Attribute.MvxBind;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::Sample.Resource.Attribute.MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::Sample.Resource.Attribute.MvxGroupItemTemplate;
@@ -5095,44 +6519,44 @@ namespace Sample
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f09007a
-			public const int abc_background_cache_hint_selector_material_dark = 2131296378;
+			// aapt resource value: 0x7f09008e
+			public const int abc_background_cache_hint_selector_material_dark = 2131296398;
 			
-			// aapt resource value: 0x7f09007b
-			public const int abc_background_cache_hint_selector_material_light = 2131296379;
+			// aapt resource value: 0x7f09008f
+			public const int abc_background_cache_hint_selector_material_light = 2131296399;
 			
-			// aapt resource value: 0x7f09007c
-			public const int abc_btn_colored_borderless_text_material = 2131296380;
+			// aapt resource value: 0x7f090090
+			public const int abc_btn_colored_borderless_text_material = 2131296400;
 			
-			// aapt resource value: 0x7f09007d
-			public const int abc_btn_colored_text_material = 2131296381;
+			// aapt resource value: 0x7f090091
+			public const int abc_btn_colored_text_material = 2131296401;
 			
-			// aapt resource value: 0x7f09007e
-			public const int abc_color_highlight_material = 2131296382;
+			// aapt resource value: 0x7f090092
+			public const int abc_color_highlight_material = 2131296402;
 			
-			// aapt resource value: 0x7f09007f
-			public const int abc_hint_foreground_material_dark = 2131296383;
+			// aapt resource value: 0x7f090093
+			public const int abc_hint_foreground_material_dark = 2131296403;
 			
-			// aapt resource value: 0x7f090080
-			public const int abc_hint_foreground_material_light = 2131296384;
+			// aapt resource value: 0x7f090094
+			public const int abc_hint_foreground_material_light = 2131296404;
 			
 			// aapt resource value: 0x7f09000d
 			public const int abc_input_method_navigation_guard = 2131296269;
 			
-			// aapt resource value: 0x7f090081
-			public const int abc_primary_text_disable_only_material_dark = 2131296385;
+			// aapt resource value: 0x7f090095
+			public const int abc_primary_text_disable_only_material_dark = 2131296405;
 			
-			// aapt resource value: 0x7f090082
-			public const int abc_primary_text_disable_only_material_light = 2131296386;
+			// aapt resource value: 0x7f090096
+			public const int abc_primary_text_disable_only_material_light = 2131296406;
 			
-			// aapt resource value: 0x7f090083
-			public const int abc_primary_text_material_dark = 2131296387;
+			// aapt resource value: 0x7f090097
+			public const int abc_primary_text_material_dark = 2131296407;
 			
-			// aapt resource value: 0x7f090084
-			public const int abc_primary_text_material_light = 2131296388;
+			// aapt resource value: 0x7f090098
+			public const int abc_primary_text_material_light = 2131296408;
 			
-			// aapt resource value: 0x7f090085
-			public const int abc_search_url_text = 2131296389;
+			// aapt resource value: 0x7f090099
+			public const int abc_search_url_text = 2131296409;
 			
 			// aapt resource value: 0x7f09000e
 			public const int abc_search_url_text_normal = 2131296270;
@@ -5143,32 +6567,32 @@ namespace Sample
 			// aapt resource value: 0x7f090010
 			public const int abc_search_url_text_selected = 2131296272;
 			
-			// aapt resource value: 0x7f090086
-			public const int abc_secondary_text_material_dark = 2131296390;
+			// aapt resource value: 0x7f09009a
+			public const int abc_secondary_text_material_dark = 2131296410;
 			
-			// aapt resource value: 0x7f090087
-			public const int abc_secondary_text_material_light = 2131296391;
+			// aapt resource value: 0x7f09009b
+			public const int abc_secondary_text_material_light = 2131296411;
 			
-			// aapt resource value: 0x7f090088
-			public const int abc_tint_btn_checkable = 2131296392;
+			// aapt resource value: 0x7f09009c
+			public const int abc_tint_btn_checkable = 2131296412;
 			
-			// aapt resource value: 0x7f090089
-			public const int abc_tint_default = 2131296393;
+			// aapt resource value: 0x7f09009d
+			public const int abc_tint_default = 2131296413;
 			
-			// aapt resource value: 0x7f09008a
-			public const int abc_tint_edittext = 2131296394;
+			// aapt resource value: 0x7f09009e
+			public const int abc_tint_edittext = 2131296414;
 			
-			// aapt resource value: 0x7f09008b
-			public const int abc_tint_seek_thumb = 2131296395;
+			// aapt resource value: 0x7f09009f
+			public const int abc_tint_seek_thumb = 2131296415;
 			
-			// aapt resource value: 0x7f09008c
-			public const int abc_tint_spinner = 2131296396;
+			// aapt resource value: 0x7f0900a0
+			public const int abc_tint_spinner = 2131296416;
 			
-			// aapt resource value: 0x7f09008d
-			public const int abc_tint_switch_thumb = 2131296397;
+			// aapt resource value: 0x7f0900a1
+			public const int abc_tint_switch_thumb = 2131296417;
 			
-			// aapt resource value: 0x7f09008e
-			public const int abc_tint_switch_track = 2131296398;
+			// aapt resource value: 0x7f0900a2
+			public const int abc_tint_switch_track = 2131296418;
 			
 			// aapt resource value: 0x7f090011
 			public const int accent_material_dark = 2131296273;
@@ -5187,6 +6611,60 @@ namespace Sample
 			
 			// aapt resource value: 0x7f090016
 			public const int background_material_light = 2131296278;
+			
+			// aapt resource value: 0x7f090084
+			public const int bg_group_item_dragging_active_state = 2131296388;
+			
+			// aapt resource value: 0x7f090083
+			public const int bg_group_item_dragging_state = 2131296387;
+			
+			// aapt resource value: 0x7f090082
+			public const int bg_group_item_expanded_pressed_state = 2131296386;
+			
+			// aapt resource value: 0x7f090081
+			public const int bg_group_item_expanded_state = 2131296385;
+			
+			// aapt resource value: 0x7f090080
+			public const int bg_group_item_normal_pressed_state = 2131296384;
+			
+			// aapt resource value: 0x7f09007f
+			public const int bg_group_item_normal_state = 2131296383;
+			
+			// aapt resource value: 0x7f090086
+			public const int bg_group_item_swiping_active_state = 2131296390;
+			
+			// aapt resource value: 0x7f090085
+			public const int bg_group_item_swiping_state = 2131296389;
+			
+			// aapt resource value: 0x7f09007c
+			public const int bg_item_dragging_active_state = 2131296380;
+			
+			// aapt resource value: 0x7f09007b
+			public const int bg_item_dragging_state = 2131296379;
+			
+			// aapt resource value: 0x7f09007a
+			public const int bg_item_normal_state = 2131296378;
+			
+			// aapt resource value: 0x7f09007e
+			public const int bg_item_swiping_active_state = 2131296382;
+			
+			// aapt resource value: 0x7f09007d
+			public const int bg_item_swiping_state = 2131296381;
+			
+			// aapt resource value: 0x7f09008b
+			public const int bg_swipe_group_item_dismiss = 2131296395;
+			
+			// aapt resource value: 0x7f09008a
+			public const int bg_swipe_group_item_pinned = 2131296394;
+			
+			// aapt resource value: 0x7f090089
+			public const int bg_swipe_item_dismiss = 2131296393;
+			
+			// aapt resource value: 0x7f090087
+			public const int bg_swipe_item_neutral = 2131296391;
+			
+			// aapt resource value: 0x7f090088
+			public const int bg_swipe_item_pinned = 2131296392;
 			
 			// aapt resource value: 0x7f090017
 			public const int bright_foreground_disabled_material_dark = 2131296279;
@@ -5215,8 +6693,8 @@ namespace Sample
 			// aapt resource value: 0x7f090001
 			public const int design_bottom_navigation_shadow_color = 2131296257;
 			
-			// aapt resource value: 0x7f09008f
-			public const int design_error = 2131296399;
+			// aapt resource value: 0x7f0900a3
+			public const int design_error = 2131296419;
 			
 			// aapt resource value: 0x7f090002
 			public const int design_fab_shadow_end_color = 2131296258;
@@ -5248,8 +6726,8 @@ namespace Sample
 			// aapt resource value: 0x7f09000b
 			public const int design_textinput_error_color_light = 2131296267;
 			
-			// aapt resource value: 0x7f090090
-			public const int design_tint_password_toggle = 2131296400;
+			// aapt resource value: 0x7f0900a4
+			public const int design_tint_password_toggle = 2131296420;
 			
 			// aapt resource value: 0x7f09001f
 			public const int dim_foreground_disabled_material_dark = 2131296287;
@@ -5262,6 +6740,9 @@ namespace Sample
 			
 			// aapt resource value: 0x7f090022
 			public const int dim_foreground_material_light = 2131296290;
+			
+			// aapt resource value: 0x7f09008d
+			public const int expandable_item_indicator_color = 2131296397;
 			
 			// aapt resource value: 0x7f090023
 			public const int foreground_material_dark = 2131296291;
@@ -5518,17 +6999,20 @@ namespace Sample
 			// aapt resource value: 0x7f090042
 			public const int secondary_text_disabled_material_light = 2131296322;
 			
+			// aapt resource value: 0x7f09008c
+			public const int snackbar_action_color_done = 2131296396;
+			
 			// aapt resource value: 0x7f090043
 			public const int switch_thumb_disabled_material_dark = 2131296323;
 			
 			// aapt resource value: 0x7f090044
 			public const int switch_thumb_disabled_material_light = 2131296324;
 			
-			// aapt resource value: 0x7f090091
-			public const int switch_thumb_material_dark = 2131296401;
+			// aapt resource value: 0x7f0900a5
+			public const int switch_thumb_material_dark = 2131296421;
 			
-			// aapt resource value: 0x7f090092
-			public const int switch_thumb_material_light = 2131296402;
+			// aapt resource value: 0x7f0900a6
+			public const int switch_thumb_material_light = 2131296422;
 			
 			// aapt resource value: 0x7f090045
 			public const int switch_thumb_normal_material_dark = 2131296325;
@@ -6882,242 +8366,254 @@ namespace Sample
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02009d
-			public const int avd_hide_password_1 = 2130837661;
+			// aapt resource value: 0x7f0200a1
+			public const int avd_hide_password_1 = 2130837665;
 			
-			// aapt resource value: 0x7f02009e
-			public const int avd_hide_password_2 = 2130837662;
+			// aapt resource value: 0x7f0200a2
+			public const int avd_hide_password_2 = 2130837666;
 			
-			// aapt resource value: 0x7f02009f
-			public const int avd_hide_password_3 = 2130837663;
+			// aapt resource value: 0x7f0200a3
+			public const int avd_hide_password_3 = 2130837667;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f0200a0
-			public const int avd_show_password_1 = 2130837664;
+			// aapt resource value: 0x7f0200a4
+			public const int avd_show_password_1 = 2130837668;
 			
-			// aapt resource value: 0x7f0200a1
-			public const int avd_show_password_2 = 2130837665;
+			// aapt resource value: 0x7f0200a5
+			public const int avd_show_password_2 = 2130837669;
 			
-			// aapt resource value: 0x7f0200a2
-			public const int avd_show_password_3 = 2130837666;
+			// aapt resource value: 0x7f0200a6
+			public const int avd_show_password_3 = 2130837670;
 			
 			// aapt resource value: 0x7f020055
-			public const int design_bottom_navigation_item_background = 2130837589;
+			public const int bg_item_normal_state = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int design_fab_background = 2130837590;
+			public const int bg_item_swiping_active_state = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_ic_visibility = 2130837591;
+			public const int bg_item_swiping_state = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_ic_visibility_off = 2130837592;
+			public const int bg_swipe_item_neutral = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_password_eye = 2130837593;
+			public const int design_bottom_navigation_item_background = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_snackbar_background = 2130837594;
+			public const int design_fab_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int Icon = 2130837595;
+			public const int design_ic_visibility = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int lb_action_bg = 2130837596;
+			public const int design_ic_visibility_off = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int lb_action_bg_focused = 2130837597;
+			public const int design_password_eye = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int lb_background = 2130837598;
+			public const int design_snackbar_background = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int lb_card_foreground = 2130837599;
+			public const int Icon = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int lb_card_shadow_focused = 2130837600;
+			public const int lb_action_bg = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int lb_card_shadow_normal = 2130837601;
+			public const int lb_action_bg_focused = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int lb_control_button_primary = 2130837602;
+			public const int lb_background = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int lb_control_button_secondary = 2130837603;
+			public const int lb_card_foreground = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int lb_headers_right_fading = 2130837604;
+			public const int lb_card_shadow_focused = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int lb_ic_actions_right_arrow = 2130837605;
+			public const int lb_card_shadow_normal = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int lb_ic_cc = 2130837606;
+			public const int lb_control_button_primary = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int lb_ic_fast_forward = 2130837607;
+			public const int lb_control_button_secondary = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int lb_ic_fast_rewind = 2130837608;
+			public const int lb_headers_right_fading = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int lb_ic_guidedactions_item_chevron = 2130837609;
+			public const int lb_ic_actions_right_arrow = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int lb_ic_hq = 2130837610;
+			public const int lb_ic_cc = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int lb_ic_in_app_search = 2130837611;
+			public const int lb_ic_fast_forward = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int lb_ic_loop = 2130837612;
+			public const int lb_ic_fast_rewind = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int lb_ic_loop_one = 2130837613;
+			public const int lb_ic_guidedactions_item_chevron = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int lb_ic_more = 2130837614;
+			public const int lb_ic_hq = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int lb_ic_nav_arrow = 2130837615;
+			public const int lb_ic_in_app_search = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int lb_ic_pause = 2130837616;
+			public const int lb_ic_loop = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int lb_ic_pip = 2130837617;
+			public const int lb_ic_loop_one = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int lb_ic_play = 2130837618;
+			public const int lb_ic_more = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int lb_ic_play_fit = 2130837619;
+			public const int lb_ic_nav_arrow = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int lb_ic_playback_loop = 2130837620;
+			public const int lb_ic_pause = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int lb_ic_replay = 2130837621;
+			public const int lb_ic_pip = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int lb_ic_sad_cloud = 2130837622;
+			public const int lb_ic_play = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int lb_ic_search_mic = 2130837623;
+			public const int lb_ic_play_fit = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int lb_ic_search_mic_out = 2130837624;
+			public const int lb_ic_playback_loop = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int lb_ic_shuffle = 2130837625;
+			public const int lb_ic_replay = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int lb_ic_skip_next = 2130837626;
+			public const int lb_ic_sad_cloud = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int lb_ic_skip_previous = 2130837627;
+			public const int lb_ic_search_mic = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int lb_ic_stop = 2130837628;
+			public const int lb_ic_search_mic_out = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int lb_ic_thumb_down = 2130837629;
+			public const int lb_ic_shuffle = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int lb_ic_thumb_down_outline = 2130837630;
+			public const int lb_ic_skip_next = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int lb_ic_thumb_up = 2130837631;
+			public const int lb_ic_skip_previous = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int lb_ic_thumb_up_outline = 2130837632;
+			public const int lb_ic_stop = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int lb_in_app_search_bg = 2130837633;
+			public const int lb_ic_thumb_down = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int lb_in_app_search_shadow_focused = 2130837634;
+			public const int lb_ic_thumb_down_outline = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int lb_in_app_search_shadow_normal = 2130837635;
+			public const int lb_ic_thumb_up = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int lb_onboarding_start_button_background = 2130837636;
+			public const int lb_ic_thumb_up_outline = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int lb_playback_now_playing_bar = 2130837637;
+			public const int lb_in_app_search_bg = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int lb_playback_progress_bar = 2130837638;
+			public const int lb_in_app_search_shadow_focused = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int lb_search_orb = 2130837639;
+			public const int lb_in_app_search_shadow_normal = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int lb_selectable_item_rounded_rect = 2130837640;
+			public const int lb_onboarding_start_button_background = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int lb_speech_orb = 2130837641;
+			public const int lb_playback_now_playing_bar = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int lb_text_dot_one = 2130837642;
+			public const int lb_playback_progress_bar = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int lb_text_dot_one_small = 2130837643;
+			public const int lb_search_orb = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int lb_text_dot_two = 2130837644;
+			public const int lb_selectable_item_rounded_rect = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int lb_text_dot_two_small = 2130837645;
+			public const int lb_speech_orb = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int list_divider_h = 2130837646;
+			public const int lb_text_dot_one = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int navigation_empty_icon = 2130837647;
+			public const int lb_text_dot_one_small = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int notification_action_background = 2130837648;
+			public const int lb_text_dot_two = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int notification_bg = 2130837649;
+			public const int lb_text_dot_two_small = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int notification_bg_low = 2130837650;
+			public const int list_divider_h = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int notification_bg_low_normal = 2130837651;
+			public const int navigation_empty_icon = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int notification_bg_low_pressed = 2130837652;
+			public const int notification_action_background = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int notification_bg_normal = 2130837653;
+			public const int notification_bg = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int notification_bg_normal_pressed = 2130837654;
+			public const int notification_bg_low = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int notification_icon_background = 2130837655;
-			
-			// aapt resource value: 0x7f02009b
-			public const int notification_template_icon_bg = 2130837659;
-			
-			// aapt resource value: 0x7f02009c
-			public const int notification_template_icon_low_bg = 2130837660;
+			public const int notification_bg_low_normal = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int notification_tile_bg = 2130837656;
+			public const int notification_bg_low_pressed = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int notify_panel_notification_icon_bg = 2130837657;
+			public const int notification_bg_normal = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int preference_list_divider_material = 2130837658;
+			public const int notification_bg_normal_pressed = 2130837658;
+			
+			// aapt resource value: 0x7f02009b
+			public const int notification_icon_background = 2130837659;
+			
+			// aapt resource value: 0x7f02009f
+			public const int notification_template_icon_bg = 2130837663;
+			
+			// aapt resource value: 0x7f0200a0
+			public const int notification_template_icon_low_bg = 2130837664;
+			
+			// aapt resource value: 0x7f02009c
+			public const int notification_tile_bg = 2130837660;
+			
+			// aapt resource value: 0x7f02009d
+			public const int notify_panel_notification_icon_bg = 2130837661;
+			
+			// aapt resource value: 0x7f02009e
+			public const int preference_list_divider_material = 2130837662;
 			
 			static Drawable()
 			{
@@ -7178,6 +8674,9 @@ namespace Sample
 			// aapt resource value: 0x7f0d005f
 			public const int Content = 2131558495;
 			
+			// aapt resource value: 0x7f0d0128
+			public const int GoToSwipeExample = 2131558696;
+			
 			// aapt resource value: 0x7f0d0060
 			public const int IconOnLeft = 2131558496;
 			
@@ -7193,14 +8692,14 @@ namespace Sample
 			// aapt resource value: 0x7f0d0023
 			public const int MvxBindingTagUnique = 2131558435;
 			
-			// aapt resource value: 0x7f0d0128
-			public const int RecyclerView = 2131558696;
+			// aapt resource value: 0x7f0d0129
+			public const int RecyclerView = 2131558697;
 			
 			// aapt resource value: 0x7f0d0063
 			public const int Title = 2131558499;
 			
-			// aapt resource value: 0x7f0d012c
-			public const int action0 = 2131558700;
+			// aapt resource value: 0x7f0d012d
+			public const int action0 = 2131558701;
 			
 			// aapt resource value: 0x7f0d0116
 			public const int actionIcon = 2131558678;
@@ -7226,14 +8725,14 @@ namespace Sample
 			// aapt resource value: 0x7f0d0065
 			public const int action_bar_title = 2131558501;
 			
-			// aapt resource value: 0x7f0d0129
-			public const int action_container = 2131558697;
+			// aapt resource value: 0x7f0d012a
+			public const int action_container = 2131558698;
 			
 			// aapt resource value: 0x7f0d0089
 			public const int action_context_bar = 2131558537;
 			
-			// aapt resource value: 0x7f0d0130
-			public const int action_divider = 2131558704;
+			// aapt resource value: 0x7f0d0131
+			public const int action_divider = 2131558705;
 			
 			// aapt resource value: 0x7f0d00dd
 			public const int action_fragment = 2131558621;
@@ -7244,8 +8743,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d00db
 			public const int action_fragment_root = 2131558619;
 			
-			// aapt resource value: 0x7f0d012a
-			public const int action_image = 2131558698;
+			// aapt resource value: 0x7f0d012b
+			public const int action_image = 2131558699;
 			
 			// aapt resource value: 0x7f0d0005
 			public const int action_menu_divider = 2131558405;
@@ -7262,11 +8761,11 @@ namespace Sample
 			// aapt resource value: 0x7f0d0067
 			public const int action_mode_close_button = 2131558503;
 			
-			// aapt resource value: 0x7f0d012b
-			public const int action_text = 2131558699;
+			// aapt resource value: 0x7f0d012c
+			public const int action_text = 2131558700;
 			
-			// aapt resource value: 0x7f0d0138
-			public const int actions = 2131558712;
+			// aapt resource value: 0x7f0d0139
+			public const int actions = 2131558713;
 			
 			// aapt resource value: 0x7f0d005a
 			public const int activated = 2131558490;
@@ -7295,11 +8794,11 @@ namespace Sample
 			// aapt resource value: 0x7f0d00ee
 			public const int background_container = 2131558638;
 			
-			// aapt resource value: 0x7f0d0148
-			public const int background_imagein = 2131558728;
+			// aapt resource value: 0x7f0d014b
+			public const int background_imagein = 2131558731;
 			
-			// aapt resource value: 0x7f0d0147
-			public const int background_imageout = 2131558727;
+			// aapt resource value: 0x7f0d014a
+			public const int background_imageout = 2131558730;
 			
 			// aapt resource value: 0x7f0d0108
 			public const int bar1 = 2131558664;
@@ -7355,8 +8854,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d00f3
 			public const int button_start = 2131558643;
 			
-			// aapt resource value: 0x7f0d012d
-			public const int cancel_action = 2131558701;
+			// aapt resource value: 0x7f0d012e
+			public const int cancel_action = 2131558702;
 			
 			// aapt resource value: 0x7f0d002b
 			public const int center = 2131558443;
@@ -7370,8 +8869,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d007f
 			public const int checkbox = 2131558527;
 			
-			// aapt resource value: 0x7f0d0135
-			public const int chronometer = 2131558709;
+			// aapt resource value: 0x7f0d0136
+			public const int chronometer = 2131558710;
 			
 			// aapt resource value: 0x7f0d0037
 			public const int clip_horizontal = 2131558455;
@@ -7384,6 +8883,9 @@ namespace Sample
 			
 			// aapt resource value: 0x7f0d00f7
 			public const int column = 2131558647;
+			
+			// aapt resource value: 0x7f0d0147
+			public const int container = 2131558727;
 			
 			// aapt resource value: 0x7f0d0117
 			public const int container_list = 2131558679;
@@ -7505,8 +9007,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d002e
 			public const int end = 2131558446;
 			
-			// aapt resource value: 0x7f0d013e
-			public const int end_padder = 2131558718;
+			// aapt resource value: 0x7f0d013f
+			public const int end_padder = 2131558719;
 			
 			// aapt resource value: 0x7f0d0024
 			public const int enterAlways = 2131558436;
@@ -7640,11 +9142,11 @@ namespace Sample
 			// aapt resource value: 0x7f0d006d
 			public const int icon = 2131558509;
 			
-			// aapt resource value: 0x7f0d013f
-			public const int icon_frame = 2131558719;
+			// aapt resource value: 0x7f0d0140
+			public const int icon_frame = 2131558720;
 			
-			// aapt resource value: 0x7f0d0139
-			public const int icon_group = 2131558713;
+			// aapt resource value: 0x7f0d013a
+			public const int icon_group = 2131558714;
 			
 			// aapt resource value: 0x7f0d0053
 			public const int ifRoom = 2131558483;
@@ -7778,14 +9280,14 @@ namespace Sample
 			// aapt resource value: 0x7f0d0030
 			public const int left = 2131558448;
 			
-			// aapt resource value: 0x7f0d013a
-			public const int line1 = 2131558714;
+			// aapt resource value: 0x7f0d013b
+			public const int line1 = 2131558715;
 			
-			// aapt resource value: 0x7f0d013c
-			public const int line3 = 2131558716;
+			// aapt resource value: 0x7f0d013d
+			public const int line3 = 2131558717;
 			
-			// aapt resource value: 0x7f0d0141
-			public const int list = 2131558721;
+			// aapt resource value: 0x7f0d0142
+			public const int list = 2131558722;
 			
 			// aapt resource value: 0x7f0d0045
 			public const int listMode = 2131558469;
@@ -7805,8 +9307,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d00e1
 			public const int main_image = 2131558625;
 			
-			// aapt resource value: 0x7f0d0146
-			public const int masked = 2131558726;
+			// aapt resource value: 0x7f0d0149
+			public const int masked = 2131558729;
 			
 			// aapt resource value: 0x7f0d0064
 			public const int maxLines = 2131558500;
@@ -7838,8 +9340,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d010d
 			public const int mediaRowSeparator = 2131558669;
 			
-			// aapt resource value: 0x7f0d012f
-			public const int media_actions = 2131558703;
+			// aapt resource value: 0x7f0d0130
+			public const int media_actions = 2131558704;
 			
 			// aapt resource value: 0x7f0d00bd
 			public const int message = 2131558589;
@@ -7871,14 +9373,14 @@ namespace Sample
 			// aapt resource value: 0x7f0d003d
 			public const int normal = 2131558461;
 			
-			// aapt resource value: 0x7f0d0137
-			public const int notification_background = 2131558711;
+			// aapt resource value: 0x7f0d0138
+			public const int notification_background = 2131558712;
+			
+			// aapt resource value: 0x7f0d0133
+			public const int notification_main_column = 2131558707;
 			
 			// aapt resource value: 0x7f0d0132
-			public const int notification_main_column = 2131558706;
-			
-			// aapt resource value: 0x7f0d0131
-			public const int notification_main_column_container = 2131558705;
+			public const int notification_main_column_container = 2131558706;
 			
 			// aapt resource value: 0x7f0d00ed
 			public const int onboarding_fragment_root = 2131558637;
@@ -7928,11 +9430,11 @@ namespace Sample
 			// aapt resource value: 0x7f0d0031
 			public const int right = 2131558449;
 			
-			// aapt resource value: 0x7f0d0136
-			public const int right_icon = 2131558710;
+			// aapt resource value: 0x7f0d0137
+			public const int right_icon = 2131558711;
 			
-			// aapt resource value: 0x7f0d0133
-			public const int right_side = 2131558707;
+			// aapt resource value: 0x7f0d0134
+			public const int right_side = 2131558708;
 			
 			// aapt resource value: 0x7f0d00e6
 			public const int row_content = 2131558630;
@@ -8000,11 +9502,11 @@ namespace Sample
 			// aapt resource value: 0x7f0d0104
 			public const int secondary_controls_dock = 2131558660;
 			
-			// aapt resource value: 0x7f0d0142
-			public const int seekbar = 2131558722;
-			
 			// aapt resource value: 0x7f0d0143
-			public const int seekbar_value = 2131558723;
+			public const int seekbar = 2131558723;
+			
+			// aapt resource value: 0x7f0d0144
+			public const int seekbar_value = 2131558724;
 			
 			// aapt resource value: 0x7f0d0096
 			public const int select_dialog_listview = 2131558550;
@@ -8042,8 +9544,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d0070
 			public const int spacer = 2131558512;
 			
-			// aapt resource value: 0x7f0d0140
-			public const int spinner = 2131558720;
+			// aapt resource value: 0x7f0d0141
+			public const int spinner = 2131558721;
 			
 			// aapt resource value: 0x7f0d000a
 			public const int split_action_bar = 2131558410;
@@ -8060,8 +9562,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d0032
 			public const int start = 2131558450;
 			
-			// aapt resource value: 0x7f0d012e
-			public const int status_bar_latest_event_content = 2131558702;
+			// aapt resource value: 0x7f0d012f
+			public const int status_bar_latest_event_content = 2131558703;
 			
 			// aapt resource value: 0x7f0d0082
 			public const int submenuarrow = 2131558530;
@@ -8069,17 +9571,17 @@ namespace Sample
 			// aapt resource value: 0x7f0d0093
 			public const int submit_area = 2131558547;
 			
-			// aapt resource value: 0x7f0d0144
-			public const int switchWidget = 2131558724;
+			// aapt resource value: 0x7f0d0145
+			public const int switchWidget = 2131558725;
 			
 			// aapt resource value: 0x7f0d0046
 			public const int tabMode = 2131558470;
 			
-			// aapt resource value: 0x7f0d013d
-			public const int text = 2131558717;
+			// aapt resource value: 0x7f0d013e
+			public const int text = 2131558718;
 			
-			// aapt resource value: 0x7f0d013b
-			public const int text2 = 2131558715;
+			// aapt resource value: 0x7f0d013c
+			public const int text2 = 2131558716;
 			
 			// aapt resource value: 0x7f0d0076
 			public const int textSpacerNoButtons = 2131558518;
@@ -8096,8 +9598,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d0001
 			public const int textinput_error = 2131558401;
 			
-			// aapt resource value: 0x7f0d0134
-			public const int time = 2131558708;
+			// aapt resource value: 0x7f0d0135
+			public const int time = 2131558709;
 			
 			// aapt resource value: 0x7f0d006e
 			public const int title = 2131558510;
@@ -8138,6 +9640,9 @@ namespace Sample
 			// aapt resource value: 0x7f0d0021
 			public const int transition_scene_layoutid_cache = 2131558433;
 			
+			// aapt resource value: 0x7f0d0146
+			public const int underSwipe = 2131558726;
+			
 			// aapt resource value: 0x7f0d000b
 			public const int up = 2131558411;
 			
@@ -8153,8 +9658,8 @@ namespace Sample
 			// aapt resource value: 0x7f0d0002
 			public const int view_offset_helper = 2131558402;
 			
-			// aapt resource value: 0x7f0d0145
-			public const int visible = 2131558725;
+			// aapt resource value: 0x7f0d0148
+			public const int visible = 2131558728;
 			
 			// aapt resource value: 0x7f0d0055
 			public const int withText = 2131558485;
@@ -8717,7 +10222,13 @@ namespace Sample
 			public const int support_simple_spinner_dropdown_item = 2130903174;
 			
 			// aapt resource value: 0x7f030087
-			public const int video_surface_fragment = 2130903175;
+			public const int swipe_example = 2130903175;
+			
+			// aapt resource value: 0x7f030088
+			public const int swipe_item_template = 2130903176;
+			
+			// aapt resource value: 0x7f030089
+			public const int video_surface_fragment = 2130903177;
 			
 			static Layout()
 			{
@@ -10605,6 +12116,9 @@ namespace Sample
 			
 			// aapt resource value: 0x7f08019c
 			public const int Widget_LeanbackBase = 2131231132;
+			
+			// aapt resource value: 0x7f080204
+			public const int appThemeBase = 2131231236;
 			
 			static Style()
 			{
