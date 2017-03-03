@@ -119,6 +119,11 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
             if (e.Action == NotifyCollectionChangedAction.Reset)
                 SwipeItemPinnedStateController.ResetState();
+            else if (e.Action == NotifyCollectionChangedAction.Remove && e.OldItems != null)
+            {
+                foreach(var itemsToRemove in e.OldItems)
+                    SwipeItemPinnedStateController.SetPinnedForAllStates(itemsToRemove, false);
+            }
         }
     }
 }
