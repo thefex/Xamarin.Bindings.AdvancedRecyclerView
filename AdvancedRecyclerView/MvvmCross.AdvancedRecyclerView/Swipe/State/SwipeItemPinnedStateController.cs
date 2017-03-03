@@ -1,19 +1,27 @@
 using System.Collections.Generic;
+using MvvmCross.AdvancedRecyclerView.Data;
 
 namespace MvvmCross.AdvancedRecyclerView.Swipe.State
 {
     public class SwipeItemPinnedStateController
     {
-        private readonly Dictionary<int, bool> _pinnedStateDictionary = new Dictionary<int, bool>();
+        private readonly Dictionary<long, bool> _pinnedStateDictionary = new Dictionary<long, bool>();
 
-        public void SetPinnedState(int atPosition, bool isPinned)
+        public IMvxItemUniqueIdProvider UniqueIdProvider { get; set; }
+
+        public void SetPinnedState(object forItem, bool isPinned)
         {
-            if (!_pinnedStateDictionary.ContainsKey(atPosition))
-                _pinnedStateDictionary.Add(atPosition, false);
-            _pinnedStateDictionary[atPosition] = isPinned;
+            var itemId = UniqueIdProvider.GetUniqueId(forItem);
+            if (!_pinnedStateDictionary.ContainsKey(itemId))
+                _pinnedStateDictionary.Add(itemId, false);
+            _pinnedStateDictionary[itemId] = isPinned;
         }
 
-        public bool IsPinned(int atPosition) => _pinnedStateDictionary.ContainsKey(atPosition) && _pinnedStateDictionary[atPosition];
+        public bool IsPinned(object item)
+        {
+            var itemId = UniqueIdProvider.GetUniqueId(item);
+            return _pinnedStateDictionary.ContainsKey(itemId) && _pinnedStateDictionary[itemId];
+        }
 
         public void ResetState() => _pinnedStateDictionary.Clear();
     }

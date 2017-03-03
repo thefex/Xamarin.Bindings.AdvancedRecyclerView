@@ -1,9 +1,11 @@
 using System;
+using MvvmCross.AdvancedRecyclerView.Data;
 
 namespace MvvmCross.AdvancedRecyclerView.Swipe.State
 {
     public class SwipeItemPinnedStateControllerProvider
     {
+        private IMvxItemUniqueIdProvider uniqueIdProvider;
         private readonly SwipeItemPinnedStateController _bottomSwipeStateController;
         private readonly SwipeItemPinnedStateController _leftSwipeStateController;
         private readonly SwipeItemPinnedStateController _rightSwipeStateController;
@@ -15,6 +17,19 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.State
             _rightSwipeStateController = new SwipeItemPinnedStateController();
             _topSwipeStateController = new SwipeItemPinnedStateController();
             _bottomSwipeStateController = new SwipeItemPinnedStateController();
+        }
+
+        public IMvxItemUniqueIdProvider UniqueIdProvider
+        {
+            get { return uniqueIdProvider; }
+            set
+            {
+                uniqueIdProvider = value;
+                _leftSwipeStateController.UniqueIdProvider = value;
+                _rightSwipeStateController.UniqueIdProvider = value;
+                _topSwipeStateController.UniqueIdProvider = value;
+                _bottomSwipeStateController.UniqueIdProvider = value;
+            }
         }
 
         public SwipeItemPinnedStateController ForLeftSwipe() => _leftSwipeStateController;
@@ -42,20 +57,20 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.State
             throw new InvalidOperationException($"{swipeDirection} swipe direction is not implemented.");
         }
 
-        public bool IsPinnedForAnyState(int atPosition)
+        public bool IsPinnedForAnyState(object item)
         {
-            return ForTopSwipe().IsPinned(atPosition) ||
-                   ForRightSwipe().IsPinned(atPosition) ||
-                   ForLeftSwipe().IsPinned(atPosition) ||
-                   ForBottomSwipe().IsPinned(atPosition);
+            return ForTopSwipe().IsPinned(item) ||
+                   ForRightSwipe().IsPinned(item) ||
+                   ForLeftSwipe().IsPinned(item) ||
+                   ForBottomSwipe().IsPinned(item);
         }
 
-        public void SetPinnedForAllStates(int atPosition, bool isPinned)
+        public void SetPinnedForAllStates(object item, bool isPinned)
         {
-            ForTopSwipe().SetPinnedState(atPosition, isPinned);
-            ForBottomSwipe().SetPinnedState(atPosition, isPinned);
-            ForLeftSwipe().SetPinnedState(atPosition, isPinned);
-            ForRightSwipe().SetPinnedState(atPosition, isPinned);
+            ForTopSwipe().SetPinnedState(item, isPinned);
+            ForBottomSwipe().SetPinnedState(item, isPinned);
+            ForLeftSwipe().SetPinnedState(item, isPinned);
+            ForRightSwipe().SetPinnedState(item, isPinned);
         }
 
         public void ResetState()

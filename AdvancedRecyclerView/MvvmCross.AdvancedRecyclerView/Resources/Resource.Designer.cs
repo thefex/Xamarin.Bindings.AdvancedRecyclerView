@@ -11,7 +11,7 @@
 
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("MvvmCross.AdvancedRecyclerView.Resource", IsApplication=false)]
 
-namespace MvvmCross.AdvancedRecyclerView.Resources
+namespace MvvmCross.AdvancedRecyclerView
 {
 	
 	

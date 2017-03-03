@@ -100,7 +100,16 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public MvxSwipeResultActionFactory SwipeResultActionFactory { get; set; } = new MvxSwipeResultActionFactory();
 
-        public IMvxItemUniqueIdProvider UniqueIdProvider { get; set; }
+        private IMvxItemUniqueIdProvider uniqueIdProvider;
+        public IMvxItemUniqueIdProvider UniqueIdProvider
+        {
+            get { return uniqueIdProvider; }
+            set
+            {
+                uniqueIdProvider = value;
+                SwipeItemPinnedStateController.UniqueIdProvider = value;
+            }
+        }
 
         public SwipeItemPinnedStateControllerProvider SwipeItemPinnedStateController { get; } = new SwipeItemPinnedStateControllerProvider();
 

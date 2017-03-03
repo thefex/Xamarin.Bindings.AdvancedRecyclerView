@@ -29,9 +29,10 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 
             var stateController = _adpater.SwipeItemPinnedStateController.FromSwipeDirection(_swipeDirection);
 
-            if (!stateController.IsPinned(_position))
+            var item = _adpater.GetItem(_position);
+            if (!stateController.IsPinned(item))
             {
-                stateController.SetPinnedState(_position, true);
+                stateController.SetPinnedState(item, true);
                 isSetPinned = true;
                 _adpater.NotifyItemChanged(_position);
             }

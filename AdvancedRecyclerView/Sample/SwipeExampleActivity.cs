@@ -55,6 +55,7 @@ namespace Sample
             };
             mAdapter.UniqueIdProvider = new SwipeExampleUniqueIdProvider();
             mAdapter.SwipeResultActionFactory = new SwipeResultActionFactory();
+             
             mAdapter.MvxViewHolderBound += (args) =>
             {
                 var swipeHolder = args.Holder as MvxAdvancedRecyclerViewHolder;
@@ -74,8 +75,9 @@ namespace Sample
 
                 swipeHolder.MaxLeftSwipeAmount = -0.5f;
                 swipeHolder.MaxRightSwipeAmount = 0;
+
                 swipeHolder.SwipeItemHorizontalSlideAmount =
-                    mAdapter.SwipeItemPinnedStateController.ForRightSwipe().IsPinned(args.ItemPosition) ? -0.5f : 0;
+                    mAdapter.SwipeItemPinnedStateController.ForRightSwipe().IsPinned(args.DataContext) ? -0.5f : 0;
             };
 
 
@@ -111,14 +113,7 @@ namespace Sample
 
             if (mWrappedAdapter!=null)
                 WrapperAdapterUtils.ReleaseAll(mWrappedAdapter);
-
-            var bindingSet = this.CreateBindingSet<SwipeExampleActivity, SwipeExampleViewModel>();
-
-            bindingSet.Bind(mAdapter)
-                .For(x => x.ItemsSource)
-                .To(x => x.Items);
-
-            bindingSet.Apply();
+ 
         }
     }
 }
