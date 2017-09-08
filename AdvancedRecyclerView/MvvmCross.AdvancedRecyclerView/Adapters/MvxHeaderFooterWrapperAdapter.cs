@@ -2,6 +2,7 @@ using System;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Headerfooter;
+using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Core.ViewModels;
@@ -13,14 +14,14 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
     public sealed class MvxHeaderFooterWrapperAdapter : AbstractHeaderFooterWrapperAdapter, IMvxRecyclerAdapterBindableHolder
     {
-        public override int FooterItemCount => (HeaderFooterTemplateSelector?.HasFooterLayoutId ?? false) ? 1 : 0;
-        public override int HeaderItemCount => (HeaderFooterTemplateSelector?.HasHeaderLayoutId ?? false) ? 1 : 0;
+        public override int FooterItemCount => HeaderFooterDetails.HasFooter ? 1 : 0;
+        public override int HeaderItemCount => HeaderFooterDetails.HasHeader ? 1 : 0;
 
-        public MvxExpandableTemplateSelector HeaderFooterTemplateSelector { get; set; }
+        public MvxHeaderFooterDetails HeaderFooterDetails { get; set; } = new MvxHeaderFooterDetails();
 
-        public MvxHeaderFooterWrapperAdapter(RecyclerView.Adapter baseAdapter) : this (baseAdapter, MvxAndroidBindingContextHelpers.Current())
+        public MvxHeaderFooterWrapperAdapter(RecyclerView.Adapter baseAdapter) : this(baseAdapter, MvxAndroidBindingContextHelpers.Current())
         {
-            
+
         }
 
         public MvxHeaderFooterWrapperAdapter(RecyclerView.Adapter baseAdapter, IMvxAndroidBindingContext bindingContext)
@@ -49,7 +50,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
             var viewHolder =
                 new MvxRecyclerViewHolder(
-                    InflateViewForHolder(HeaderFooterTemplateSelector.FooterLayoutId, p0, p1, itemBindingContext),
+                    InflateViewForHolder(HeaderFooterDetails.FooterLayoutId, p0, p1, itemBindingContext),
                     itemBindingContext)
                 {
                     Click = FooterClickCommand,
@@ -65,7 +66,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
             var viewHolder =
                 new MvxRecyclerViewHolder(
-                    InflateViewForHolder(HeaderFooterTemplateSelector.HeaderLayoutId, p0, p1, itemBindingContext),
+                    InflateViewForHolder(HeaderFooterDetails.HeaderLayoutId, p0, p1, itemBindingContext),
                     itemBindingContext)
                 {
                     Click = HeaderClickCommand,
@@ -86,7 +87,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public event Action<MvxViewHolderBoundEventArgs> MvxViewHolderBound;
 
-        protected void OnMvxViewHolderBound(MvxViewHolderBoundEventArgs obj)
+        private void OnMvxViewHolderBound(MvxViewHolderBoundEventArgs obj)
         {
             MvxViewHolderBound?.Invoke(obj);
         }

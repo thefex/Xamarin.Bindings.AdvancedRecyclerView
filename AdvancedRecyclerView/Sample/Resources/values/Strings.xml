@@ -2,4 +2,8 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Sample</string>
+
+	<string name="GroupTemplateSelector">Sample.GroupedRelated.AppGroupTemplateSelector, Sample</string>
+	<string name="GroupDataConverter">Sample.GroupedRelated.ItemGroupModelDataConverter, Sample</string>
+	<string name="GroupExpandController">Sample.GroupedRelated.GroupExpandController, Sample</string>
 </resources>

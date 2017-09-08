@@ -9,7 +9,7 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
     public class MvxAdvancedRecyclerViewHolder : MvxRecyclerViewHolder, ISwipeableItemViewHolder
     {
         public MvxAdvancedRecyclerViewHolder(View itemView, int swipeableContainerViewId, int underSwipeContainerViewId, IMvxAndroidBindingContext context)
-            : base(itemView, context)
+			: base(itemView.FindViewById(underSwipeContainerViewId), context)
         {
             SwipeableContainerView = itemView.FindViewById(swipeableContainerViewId);
             UnderSwipeableContainerView = itemView.FindViewById(underSwipeContainerViewId);
@@ -28,6 +28,8 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
         public View SwipeableContainerView { get; }
 
         public View UnderSwipeableContainerView { get; }
+
+
 
         public void OnSlideAmountUpdated(float p0, float p1, bool p2)
         { 

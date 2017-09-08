@@ -30,27 +30,6 @@ namespace Sample
         private MvxExpandableItemAdapter expandableAdapter;
         private RecyclerView.Adapter wrappedAdapter;
         private RecyclerViewExpandableItemManager mRecyclerViewExpandableItemManager;
-
-        class ItemGroupModelDataConverter : MvxExpandableDataConverter
-        {
-            
-
-            protected override long GetChildItemUniqueId(object item)
-            {
-                return (item as ChildItemModel).UniqueId;
-            }
-
-            public override MvxGroupedData ConvertToMvxGroupedData(object item)
-            {
-                return new MvxGroupedData()
-                {
-                    GroupItems = (item as ItemGroupModel).Child,
-                    Key = (item as ItemGroupModel).Header,
-                    UniqueId = (item as ItemGroupModel).UniqueId
-                };
-            }
-        }
-
  
         public MainActivity()
         {
@@ -61,26 +40,26 @@ namespace Sample
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
 
-            var recyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
+            //var recyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
 
-            mRecyclerViewExpandableItemManager = new RecyclerViewExpandableItemManager(null);
+            //mRecyclerViewExpandableItemManager = new RecyclerViewExpandableItemManager(null);
 
-            mRecyclerViewExpandableItemManager.DefaultGroupsExpandedState = true;
+            //mRecyclerViewExpandableItemManager.DefaultGroupsExpandedState = true;
 
-            expandableAdapter = new MvxExpandableItemAdapter(BindingContext as IMvxAndroidBindingContext);
-            expandableAdapter.ExpandableDataConverter = new ItemGroupModelDataConverter();
-            expandableAdapter.TemplateSelector = new MvxDefaultExpandableTemplateSelector(Resource.Layout.expand_group_template, Resource.Layout.expand_child_template);
+            //expandableAdapter = new MvxExpandableItemAdapter(BindingContext as IMvxAndroidBindingContext);
+            //expandableAdapter.ExpandableDataConverter = new ItemGroupModelDataConverter();
+            //expandableAdapter.TemplateSelector = new MvxDefaultExpandableTemplateSelector(Resource.Layout.expand_group_template, Resource.Layout.expand_child_template);
 
-            wrappedAdapter = mRecyclerViewExpandableItemManager.CreateWrappedAdapter(expandableAdapter);
-            GeneralItemAnimator animator = new RefactoredDefaultItemAnimator();
+            //wrappedAdapter = mRecyclerViewExpandableItemManager.CreateWrappedAdapter(expandableAdapter);
+            //GeneralItemAnimator animator = new RefactoredDefaultItemAnimator();
 
-            // Change animations are enabled by default since support-v7-recyclerview v22.
-            // Need to disable them when using animation indicator.
-            animator.SupportsChangeAnimations = false;
+            //// Change animations are enabled by default since support-v7-recyclerview v22.
+            //// Need to disable them when using animation indicator.
+            //animator.SupportsChangeAnimations = false;
 
-            recyclerView.SetAdapter(wrappedAdapter);
-            recyclerView.SetItemAnimator(animator);
-            recyclerView.HasFixedSize = (false);
+            //recyclerView.SetAdapter(wrappedAdapter);
+            //recyclerView.SetItemAnimator(animator);
+            //recyclerView.HasFixedSize = (false);
 
             //// additional decorations
             ////noinspection StatementWithEmptyBody
@@ -93,24 +72,24 @@ namespace Sample
                 // check advancedrecyclerview samples
              //   recyclerView.AddItemDecoration(new ItemShadowDecorator((NinePatchDrawable)ContextCompat.GetDrawable(this, Resource.Drawable.material_shadow_z1)));
             }
-            recyclerView.AddItemDecoration(new SimpleListDividerDecorator(ContextCompat.GetDrawable(this, Resource.Drawable.list_divider_h), true));
-            recyclerView.SetLayoutManager(new LinearLayoutManager(this));
-            mRecyclerViewExpandableItemManager.AttachRecyclerView(recyclerView);
+            //recyclerView.AddItemDecoration(new SimpleListDividerDecorator(ContextCompat.GetDrawable(this, Resource.Drawable.list_divider_h), true));
+            //recyclerView.SetLayoutManager(new LinearLayoutManager(this));
+            //mRecyclerViewExpandableItemManager.AttachRecyclerView(recyclerView);
 
-            var bindingSet = this.CreateBindingSet<MainActivity, MainViewModel>();
+            //var bindingSet = this.CreateBindingSet<MainActivity, MainViewModel>();
 
-            bindingSet.Bind(expandableAdapter)
-                .For(x => x.ItemsSource)
-                .To(x => x.Items);
+            //bindingSet.Bind(expandableAdapter)
+            //    .For(x => x.ItemsSource)
+            //    .To(x => x.Items);
 
-            bindingSet.Apply();
+            //bindingSet.Apply();
         }
 
         protected override void OnDestroy()
         {
-            mRecyclerViewExpandableItemManager?.Release();
-            if (wrappedAdapter != null)
-                WrapperAdapterUtils.ReleaseAll(wrappedAdapter);
+            //mRecyclerViewExpandableItemManager?.Release();
+            //if (wrappedAdapter != null)
+                //WrapperAdapterUtils.ReleaseAll(wrappedAdapter);
             base.OnDestroy();    
         }
 

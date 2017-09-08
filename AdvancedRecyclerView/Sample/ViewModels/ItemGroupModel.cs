@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Sample.ViewModels
 {
@@ -8,12 +9,12 @@ namespace Sample.ViewModels
         {
             Header = "Group " + index;
             UniqueId = index;
-            Child = new List<ChildItemModel>();
+            Child = new ObservableCollection<ChildItemModel>();
         }
 
         public string Header { get; }
 
-        public IList<ChildItemModel> Child { get; }
+        public ObservableCollection<ChildItemModel> Child { get; }
 
         public long UniqueId { get; }
     }

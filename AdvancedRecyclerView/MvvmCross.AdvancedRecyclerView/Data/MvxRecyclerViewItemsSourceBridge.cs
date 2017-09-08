@@ -12,8 +12,9 @@ namespace MvvmCross.AdvancedRecyclerView.Data
     {
         private readonly ObservableCollection<object> _observableItemsSource = new ObservableCollection<object>();
         private readonly IList<IDisposable> _collectionChangedDisposables = new List<IDisposable>();
+		private readonly Dictionary<MvxGroupedData, IDisposable> _groupedDataDisposables = new Dictionary<MvxGroupedData, IDisposable>();
 
-        public ObservableCollection<object> Source => _observableItemsSource;
+		public ObservableCollection<object> Source => _observableItemsSource;
 
         public void Initialize(IEnumerable groupedItems, MvxExpandableDataConverter expandableDataConverter)
         {
@@ -23,7 +24,14 @@ namespace MvvmCross.AdvancedRecyclerView.Data
             _collectionChangedDisposables.Clear();
 
             foreach (var mvxGroupable in groupedItems.Cast<object>().Select(expandableDataConverter.ConvertToMvxGroupedData))
+            {
                 _observableItemsSource.Add(mvxGroupable);
+                var collectionChangedGroup = mvxGroupable.GroupItems as INotifyCollectionChanged;
+
+                if (collectionChangedGroup!=null){
+                    
+                }
+            }
 
             var observableGroups = groupedItems as INotifyCollectionChanged;
 
@@ -58,6 +66,5 @@ namespace MvvmCross.AdvancedRecyclerView.Data
                 _collectionChangedDisposables.Add(observableGroupsDisposeSubscription);
             }
         }
-
     }
 }

@@ -18,7 +18,7 @@ using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
-    public class MvxAdvancedRecyclerViewAdapter : MvxRecyclerAdapter, ISwipeableItemAdapter
+    public class MvxAdvancedRecyclerViewAdapter : MvxRecyclerAdapter, ISwipeableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
         public MvxAdvancedRecyclerViewAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
         {
@@ -40,10 +40,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
                 itemBindingContext)
             {
                 Click = ItemClick,
-                LongClick = ItemLongClick,
-                FooterClickCommand = FooterClickCommand,
-                HeaderClickCommand = FooterClickCommand,
-                GroupHeaderClickCommand = GroupHeaderClickCommand
+                LongClick = ItemLongClick
             };
 
             return vh;

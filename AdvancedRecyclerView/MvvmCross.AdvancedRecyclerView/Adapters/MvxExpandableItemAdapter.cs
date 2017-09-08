@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
+using System.Windows.Input;
 using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Views;
@@ -16,15 +17,16 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Binding.ExtensionMethods;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Exceptions;
 using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
-    public class MvxExpandableItemAdapter : AbstractExpandableItemAdapter
+    public class MvxExpandableItemAdapter : AbstractExpandableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
-        private readonly MvxExpandableGroupedItemsSourceProvider _expandableGroupedItemsSourceProvider;
+        private readonly MvxGroupedItemsSourceProvider _expandableGroupedItemsSourceProvider;
         private IEnumerable itemsSource;
 
         public MvxExpandableItemAdapter() : this(MvxAndroidBindingContextHelpers.Current())
@@ -35,8 +37,11 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         {
             BindingContext = androidBindingContext;
             HasStableIds = true;
-            _expandableGroupedItemsSourceProvider = new MvxExpandableGroupedItemsSourceProvider();
+            _expandableGroupedItemsSourceProvider = new MvxGroupedItemsSourceProvider();
             _expandableGroupedItemsSourceProvider.Source.CollectionChanged += SourceOnCollectionChanged;
+            _expandableGroupedItemsSourceProvider.ChildItemsAdded += SourceItemChildChanged;
+            _expandableGroupedItemsSourceProvider.ChildItemsRemoved += SourceItemChildChanged;
+            _expandableGroupedItemsSourceProvider.ChildItemsCollectionCleared += (group) => base.NotifyDataSetChanged();
         }
 
         protected MvxExpandableItemAdapter(IntPtr javaReference, JniHandleOwnership transfer)
@@ -83,6 +88,11 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         public IMvxCommand ChildItemClickCommand { get; set; }
 
         public IMvxCommand ChildItemLongClickCommand { get; set; }
+
+        void SourceItemChildChanged(Data.MvxGroupedData gropedData, IEnumerable newItems)
+        {
+            base.NotifyDataSetChanged();
+        }
 
         private void SourceOnCollectionChanged(object sender,
             NotifyCollectionChangedEventArgs notifyCollectionChangedEventArgs)
@@ -148,7 +158,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
             var viewHolder =
                 new MvxExpandableRecyclerViewHolder(
-                    InflateViewForHolder(TemplateSelector.GetLayoutId(viewType), parent, viewType, itemBindingContext),
+                    InflateViewForHolder(TemplateSelector.GetItemLayoutId(viewType), parent, viewType, itemBindingContext),
                     itemBindingContext)
                 {
                     Click = ChildItemClickCommand,
@@ -164,7 +174,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
             var viewHolder =
                 new MvxExpandableRecyclerViewHolder(
-                    InflateViewForHolder(TemplateSelector.GetLayoutId(viewType), parent, viewType, itemBindingContext),
+                    InflateViewForHolder(TemplateSelector.GetItemLayoutId(viewType), parent, viewType, itemBindingContext),
                     itemBindingContext)
                 {
                     Click = GroupItemClickCommand,
@@ -232,7 +242,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         {
             var childItem = GetItemAt(p0, p1);
 
-            return ExpandableDataConverter.GetItemUniqueId(GetItemAt(p0, p1));
+            return ExpandableDataConverter.GetItemUniqueId(childItem);
         }
 
         public override long GetGroupId(int p0)
@@ -252,10 +262,10 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public event Action<MvxExpandableItemAdapterBoundedArgs> ChildItemBound;
 
-        public override int GetGroupItemViewType(int p0) => TemplateSelector.GetViewType(GetItemAt(p0));
+        public override int GetGroupItemViewType(int p0) => TemplateSelector.GetItemViewType(GetItemAt(p0));
 
 
-        public override int GetChildItemViewType(int p0, int p1) => TemplateSelector.GetViewType(GetItemAt(p0, p1));
+        public override int GetChildItemViewType(int p0, int p1) => TemplateSelector.GetItemViewType(GetItemAt(p0, p1));
 
         protected virtual void OnGroupItemBound(MvxExpandableItemAdapterBoundedArgs obj)
         {

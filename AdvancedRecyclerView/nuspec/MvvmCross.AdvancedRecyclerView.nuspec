@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MvvmCross.AdvancedRecyclerView</id>
-    <version>0.10.3-unstable1869f</version>
+    <version>0.10.3-unstable1869m</version>
     <title>MvvmCross.Bindings.AdvancedRecyclerView</title>
     <authors>Przemyslaw Raciborski [thefex]</authors>
     <projectUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</projectUrl>
@@ -27,7 +27,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\MvvmCross.AdvancedRecyclerView\bin\Release\MvvmCross.AdvancedRecyclerView.dll" target="lib\MonoAndroid" />
+    <file src="../MvvmCross.AdvancedRecyclerView/bin/Release/MvvmCross.AdvancedRecyclerView.dll" target="lib/MonoAndroid" />
   </files>
 </package>
 
