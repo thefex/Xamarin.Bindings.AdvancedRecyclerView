@@ -70,7 +70,7 @@ namespace XamarinMvvmCross_MeetupSample.Core
                                 .Transform(CreatePersonGroup)
                                 .ObserveOn(SynchronizationContext.Current)
                                 .Bind(out observableCollection)
-                   //             .DisposeMany()
+                                .DisposeMany()
                                 .Subscribe());
 
             Items = observableCollection;

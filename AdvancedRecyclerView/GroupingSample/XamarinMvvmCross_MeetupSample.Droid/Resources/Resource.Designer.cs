@@ -48,8 +48,10 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxItemTemplate = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.MvxItemTemplate;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxLang = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.MvxLang;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxSource = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxSwipeableTemplate = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.MvxSwipeableTemplate;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxTemplate = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.MvxTemplate;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxTemplateSelector = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.MvxTemplateSelector;
+			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.MvxUniqueItemIdProvider = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.MvxUniqueItemIdProvider;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.actionBarDivider = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.actionBarDivider;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.actionBarItemBackground = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.actionBarItemBackground;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Attribute.actionBarPopupTheme = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Attribute.actionBarPopupTheme;
@@ -1396,7 +1398,9 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty;
+			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxSwipeableTemplate = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.MvxRecyclerView_MvxSwipeableTemplate;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.MvxRecyclerView_MvxTemplateSelector;
+			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.MvxRecyclerView_MvxUniqueItemIdProvider = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.MvxRecyclerView_MvxUniqueItemIdProvider;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.PopupWindow = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.PopupWindow;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Styleable.PopupWindow_android_popupBackground = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
@@ -3145,11 +3149,17 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			// aapt resource value: 0x7f010144
 			public const int MvxSource = 2130772292;
 			
+			// aapt resource value: 0x7f01014b
+			public const int MvxSwipeableTemplate = 2130772299;
+			
 			// aapt resource value: 0x7f010140
 			public const int MvxTemplate = 2130772288;
 			
 			// aapt resource value: 0x7f01013d
 			public const int MvxTemplateSelector = 2130772285;
+			
+			// aapt resource value: 0x7f01014c
+			public const int MvxUniqueItemIdProvider = 2130772300;
 			
 			// aapt resource value: 0x7f010047
 			public const int actionBarDivider = 2130772039;
@@ -8694,7 +8704,9 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 					2130772295,
 					2130772296,
 					2130772297,
-					2130772298};
+					2130772298,
+					2130772299,
+					2130772300};
 			
 			// aapt resource value: 2
 			public const int MvxRecyclerView_MvxFooterLayoutId = 2;
@@ -8714,8 +8726,14 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			// aapt resource value: 5
 			public const int MvxRecyclerView_MvxHidesHeaderIfEmpty = 5;
 			
+			// aapt resource value: 7
+			public const int MvxRecyclerView_MvxSwipeableTemplate = 7;
+			
 			// aapt resource value: 0
 			public const int MvxRecyclerView_MvxTemplateSelector = 0;
+			
+			// aapt resource value: 8
+			public const int MvxRecyclerView_MvxUniqueItemIdProvider = 8;
 			
 			public static int[] NavigationView = new int[] {
 					16842964,

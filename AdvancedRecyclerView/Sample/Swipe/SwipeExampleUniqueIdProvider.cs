@@ -1,3 +1,4 @@
+using System;
 using MvvmCross.AdvancedRecyclerView.Data;
 using Sample.ViewModels;
 

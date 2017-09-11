@@ -5,11 +5,14 @@ using XamarinMvvmCross_MeetupSample.Core;
 
 namespace XamarinMvvmCross_MeetupSample.Droid
 {
-    public class PeopleListTemplateSelector : MvxExpandableTemplateSelector 
+    public class PeopleListTemplateSelector : MvxExpandableTemplateSelector, IMvxHeaderTemplate, IMvxFooterTemplate
 	{
         public PeopleListTemplateSelector() : base(Resource.Layout.person_group_header)
         {
         }
+
+        public int HeaderLayoutId { get; set; }
+        public int FooterLayoutId { get; set; }
 
         protected override int GetChildItemLayoutId(int fromViewType)
         {

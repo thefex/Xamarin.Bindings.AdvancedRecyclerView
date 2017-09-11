@@ -2,27 +2,39 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MvvmCross.AdvancedRecyclerView</id>
-    <version>0.10.3-unstable1869m</version>
+    <version>1.10.6</version>
     <title>MvvmCross.Bindings.AdvancedRecyclerView</title>
     <authors>Przemyslaw Raciborski [thefex]</authors>
     <projectUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
-      Mvx Wrapper for AdvancedRecyclerView library.
+        Mvx Wrapper for AdvancedRecyclerView library.
+        Currently supports:
+        - grouping,
+        - swipe (without grouping),
+        - header/footer
     </description>
     <tags>xamarin android mvvmcross</tags>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="Mono.Android.Export" targetFramework="MonoAndroid" />
     </frameworkAssemblies>
     <dependencies>
-      <group targetFramework="monoandroid70">
-        <dependency id="MvvmCross.Core" version="4.5.0-unstable1869" />
-        <dependency id="MvvmCross.Droid.Support.V7.RecyclerView" version="4.5.0-unstable1869" />
-        <dependency id="MvvmCross.Platform" version="4.5.0-unstable1869" />
-        <dependency id="Xamarin.Android.Support.Compat" version="25.1.0" />
-        <dependency id="Xamarin.Android.Support.Core.UI" version="25.1.0" />
-        <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="25.1.0" />
-        <dependency id="Xamarin.Build.Download" version="0.4.2" />
+      <group targetFramework="monoandroid71">
+          <dependency id="MvvmCross.Binding" version="5.1.1"/>
+          <dependency id="MvvmCross.Core" version="5.1.1"/>
+          <dependency id="MvvmCross.Droid.Support.V7.RecyclerView" version="5.1.1" />
+          <dependency id="MvvmCross.Platform" version="5.1.1" />
+          <dependency id="Xamarin.Android.Support.Animated.Vector.Drawable" version="25.4.0.2" />
+          <dependency id="Xamarin.Android.Support.Annotations" version="25.4.0.2" />
+          <dependency id="Xamarin.Android.Support.Compat" version="25.4.0.2"  />
+          <dependency id="Xamarin.Android.Support.Core.UI" version="25.4.0.2"  />
+          <dependency id="Xamarin.Android.Support.Core.Utils" version="25.4.0.2" />
+          <dependency id="Xamarin.Android.Support.Fragment" version="25.4.0.2"  />
+          <dependency id="Xamarin.Android.Support.Media.Compat" version="25.4.0.2" />
+          <dependency id="Xamarin.Android.Support.v7.AppCompat" version="25.4.0.2" />
+          <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="25.4.0.2" />
+          <dependency id="Xamarin.Android.Support.Vector.Drawable" version="25.4.0.2" />
+          <dependency id="Xamarin.Build.Download" version="0.4.6" />
       </group>
     </dependencies>
   </metadata>

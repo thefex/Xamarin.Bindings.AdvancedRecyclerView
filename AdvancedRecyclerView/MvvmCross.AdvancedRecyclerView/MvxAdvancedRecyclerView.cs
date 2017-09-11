@@ -4,7 +4,9 @@ using Android.Runtime;
 using Android.Support.V7.Widget;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
 using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.Binding.Droid.BindingContext;
+using MvvmCross.Droid.Support.V7.RecyclerView;
 
 namespace MvvmCross.AdvancedRecyclerView
 {
@@ -23,32 +25,46 @@ namespace MvvmCross.AdvancedRecyclerView
 
         public MvxAdvancedRecyclerView(Android.Content.Context context, Android.Util.IAttributeSet attrs, int defStyle) : base(context, attrs, defStyle)
         {
+			var currentLayoutManager = base.GetLayoutManager();
+
+			if (currentLayoutManager == null)
+				SetLayoutManager(new LinearLayoutManager(context) { Orientation = LinearLayoutManager.Vertical });
+
             adapterController = new MvxAdvancedRecyclerViewAdapterController();
             var adapter = adapterController.BuildAdapter(context, attrs, this, MvxAndroidBindingContextHelpers.Current());
 
-            var currentLayoutManager = base.GetLayoutManager();
-
-            if (currentLayoutManager == null)
-                SetLayoutManager(new LinearLayoutManager(context));
-
             SetAdapter(adapter);
-            SetupDefaultItemAnimator();
+            SetupDefaultItemAnimator(MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(context, attrs));
             HasFixedSize = false;
+            adapterController.AttachRecyclerView(this);
         }
 
-        private void SetupDefaultItemAnimator()
+        private void SetupDefaultItemAnimator(bool isSwipeSupported)
         {
-            var itemAnimator = new RefactoredDefaultItemAnimator();
-            // Change animations are enabled by default since support-v7-recyclerview v22.
-            // Need to disable them when using animation indicator.
-            itemAnimator.SupportsChangeAnimations = false;
+            ItemAnimator itemAnimator = null;
+
+			// Change animations are enabled by default since support-v7-recyclerview v22.
+			// Need to disable them when using animation indicator.
+			if (isSwipeSupported)
+                itemAnimator = new SwipeDismissItemAnimator() { SupportsChangeAnimations = false };
+            else
+                itemAnimator = new RefactoredDefaultItemAnimator() { SupportsChangeAnimations = false };
+            
             SetItemAnimator(itemAnimator);
         }
 
         public IEnumerable ItemsSource
         {
             get { return AdvancedRecyclerViewAdapter.ItemsSource; }
-            set { AdvancedRecyclerViewAdapter.ItemsSource = value; }
+            set { 
+                AdvancedRecyclerViewAdapter.ItemsSource = value; 
+            }
+        }
+
+        protected override void OnDetachedFromWindow()
+        {
+            base.OnDetachedFromWindow();
+            adapterController?.Dispose();
         }
 
         public IMvxAdvancedRecyclerViewAdapter AdvancedRecyclerViewAdapter => adapterController.AdvancedRecyclerViewAdapter;

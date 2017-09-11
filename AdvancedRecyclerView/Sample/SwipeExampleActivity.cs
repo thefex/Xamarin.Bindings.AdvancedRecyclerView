@@ -5,6 +5,7 @@ using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
+using MvvmCross.AdvancedRecyclerView;
 using MvvmCross.AdvancedRecyclerView.Adapters;
 using MvvmCross.AdvancedRecyclerView.Swipe;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
@@ -22,13 +23,8 @@ namespace Sample
 
     public class SwipeExampleActivity : MvxAppCompatActivity<SwipeExampleViewModel>
     {
-        private RecyclerView mRecyclerView;
-        private RecyclerView.LayoutManager mLayoutManager;
-        private MvxAdvancedRecyclerViewAdapter mAdapter;
-        private RecyclerView.Adapter mWrappedAdapter;
-        private RecyclerViewSwipeManager mRecyclerViewSwipeManager;
-        private RecyclerViewTouchActionGuardManager mRecyclerViewTouchActionGuardManager;
-
+        private MvxAdvancedRecyclerView mRecyclerView;
+       
         public SwipeExampleActivity()
         {
         }
@@ -37,25 +33,11 @@ namespace Sample
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.swipe_example);
 
-            mRecyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
-            mLayoutManager = new LinearLayoutManager(this);
+            mRecyclerView = FindViewById<MvxAdvancedRecyclerView>(Resource.Id.RecyclerView);
 
-            mRecyclerViewTouchActionGuardManager = new RecyclerViewTouchActionGuardManager();
-            mRecyclerViewTouchActionGuardManager.SetInterceptVerticalScrollingWhileAnimationRunning(true);
-            mRecyclerViewTouchActionGuardManager.Enabled = true;
-
-            mRecyclerViewSwipeManager = new RecyclerViewSwipeManager();
-
-            mAdapter = new MvxAdvancedRecyclerViewAdapter((IMvxAndroidBindingContext) BindingContext)
-            {
-                ItemTemplateSelector =
-                    new MvxAdvancedRecyclerViewTemplateSelector(Resource.Layout.swipe_item_template,
-                        Resource.Id.container,
-                        Resource.Id.underSwipe)
-            };
-            mAdapter.UniqueIdProvider = new SwipeExampleUniqueIdProvider();
+            var mAdapter = mRecyclerView.AdvancedRecyclerViewAdapter as MvxAdvancedRecyclerViewAdapter;
             mAdapter.SwipeResultActionFactory = new SwipeResultActionFactory();
-             
+
             mAdapter.MvxViewHolderBound += (args) =>
             {
                 var swipeHolder = args.Holder as MvxAdvancedRecyclerViewHolder;
@@ -79,41 +61,8 @@ namespace Sample
                 swipeHolder.SwipeItemHorizontalSlideAmount =
                     mAdapter.SwipeItemPinnedStateController.ForRightSwipe().IsPinned(args.DataContext) ? -0.5f : 0;
             };
-
-
-            mWrappedAdapter = mRecyclerViewSwipeManager.CreateWrappedAdapter(mAdapter);
-
-            GeneralItemAnimator animator = new SwipeDismissItemAnimator();
-            animator.SupportsChangeAnimations = (false);
-
-            mRecyclerView.SetLayoutManager(mLayoutManager);
-            mRecyclerView.SetAdapter(mWrappedAdapter);
-            mRecyclerView.SetItemAnimator(animator);
-
-            mRecyclerViewTouchActionGuardManager.AttachRecyclerView(mRecyclerView);
-            mRecyclerViewSwipeManager.AttachRecyclerView(mRecyclerView);
-
-            var bindingSet = this.CreateBindingSet<SwipeExampleActivity, SwipeExampleViewModel>();
-
-            bindingSet.Bind(mAdapter)
-                .For(x => x.ItemsSource)
-                .To(x => x.Items);
-
-            bindingSet.Apply();
         }
 
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
 
-            mRecyclerViewSwipeManager?.Release();
-            mRecyclerViewTouchActionGuardManager?.Release();
-            mRecyclerView?.SetItemAnimator(null);
-            mRecyclerView?.SetAdapter(null);
-
-            if (mWrappedAdapter!=null)
-                WrapperAdapterUtils.ReleaseAll(mWrappedAdapter);
- 
-        }
     }
 }

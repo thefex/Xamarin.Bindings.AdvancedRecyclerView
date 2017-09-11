@@ -1,10 +1,8 @@
 ﻿using System;
 namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
 {
-    public interface IMvxHeaderFooterTemplate 
+    public interface IMvxFooterTemplate
     {
-        int HeaderLayoutId { get; set; }
-
         int FooterLayoutId { get; set; }
     }
 }

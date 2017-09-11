@@ -7,5 +7,7 @@
 		<attr name="MvxGroupExpandController" format="string" />
 		<attr name="MvxHidesHeaderIfEmpty" format="boolean"/>
 		<attr name="MvxHidesFooterIfEmpty" format="boolean"/>
+		<attr name="MvxSwipeableTemplate" format="string"/>
+		<attr name="MvxUniqueItemIdProvider" format="string"/>
 	</declare-styleable>
 </resources>

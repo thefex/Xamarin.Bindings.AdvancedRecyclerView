@@ -33,11 +33,13 @@ namespace MvvmCross.AdvancedRecyclerView.Data
                             switch (args.Action)
                             {
                                 case NotifyCollectionChangedAction.Reset:
+                                    var enumerableGroupedItems = sender as IEnumerable ?? Enumerable.Empty<object>();
                                     _observableItemsSource.Clear();
                                     foreach (var disposables in _groupedDataDisposables.Values)
                                         disposables.Dispose();
 
                                     _groupedDataDisposables.Clear();
+                                    AddItems(enumerableGroupedItems, groupedDataConverter);
                                     break;
                                 case NotifyCollectionChangedAction.Add:
                                     AddItems(args.NewItems, groupedDataConverter);
@@ -121,8 +123,11 @@ namespace MvvmCross.AdvancedRecyclerView.Data
         {
             isModyfingChildItems = true;
             var groupItems = toGroup.GroupItems as IList;
-            foreach (var item in items)
-                groupItems?.Add(item);
+            if (groupItems != null && !groupItems.IsReadOnly)
+            {
+                foreach (var item in items)
+                    groupItems.Add(item);
+            }
             isModyfingChildItems = false;
             ChildItemsAdded?.Invoke(toGroup, items);
         }

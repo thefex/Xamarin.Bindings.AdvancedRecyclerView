@@ -15,5 +15,9 @@ namespace MvvmCross.AdvancedRecyclerView.Data
         public string GroupedDataConverterClassName { get; set; }
 
         public string GroupExpandControllerClassName { get; set; }
+
+        public string SwipeableTemplateClassName { get; set; }
+
+        public string UniqueItemIdProviderClassName { get; set; }
     }
 }

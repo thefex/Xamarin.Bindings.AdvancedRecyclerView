@@ -119,7 +119,6 @@
     <Compile Include="Swipe\State\SwipeItemPinnedStateController.cs" />
     <Compile Include="Swipe\State\SwipeItemPinnedStateControllerProvider.cs" />
     <Compile Include="Swipe\SwipeDirection.cs" />
-    <Compile Include="TemplateSelectors\MvxAdvancedRecyclerViewTemplateSelector.cs" />
     <Compile Include="TemplateSelectors\MvxDefaultExpandableTemplateSelector.cs" />
     <Compile Include="TemplateSelectors\MvxExpandableTemplateSelector.cs" />
     <Compile Include="Utils\DefaultMvxGroupExpandController.cs" />
@@ -133,8 +132,11 @@
     <Compile Include="Data\MvxAdvancedRecyclerViewAttributes.cs" />
     <Compile Include="Adapters\MvxAdvancedRecyclerViewAdapterController.cs" />
     <Compile Include="Adapters\IMvxAdvancedRecyclerViewAdapter.cs" />
-    <Compile Include="TemplateSelectors\IMvxHeaderFooterTemplate.cs" />
+    <Compile Include="TemplateSelectors\IMvxHeaderTemplate.cs" />
     <Compile Include="Data\MvxGroupedItemsSourceProvider.cs" />
+    <Compile Include="TemplateSelectors\IMvxSwipeableTemplate.cs" />
+    <Compile Include="TemplateSelectors\DefaultSwipeableTemplate.cs" />
+    <Compile Include="TemplateSelectors\IMvxFooterTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\packages.config" />

@@ -153,6 +153,8 @@
     <Compile Include="GroupedRelated\AppGroupTemplateSelector.cs" />
     <Compile Include="GroupedRelated\ItemGroupedDataConverter.cs" />
     <Compile Include="GroupedRelated\GroupExpandController.cs" />
+    <Compile Include="Swipe\SwipeTemplateSelector.cs" />
+    <Compile Include="Swipe\SwipeableTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

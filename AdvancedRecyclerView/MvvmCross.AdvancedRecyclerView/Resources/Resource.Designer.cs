@@ -106,11 +106,17 @@ namespace MvvmCross.AdvancedRecyclerView
 			// aapt resource value: 0x7f0100f2
 			public static int MvxSource = 2130772210;
 			
+			// aapt resource value: 0x7f0100f9
+			public static int MvxSwipeableTemplate = 2130772217;
+			
 			// aapt resource value: 0x7f0100ee
 			public static int MvxTemplate = 2130772206;
 			
 			// aapt resource value: 0x7f0100eb
 			public static int MvxTemplateSelector = 2130772203;
+			
+			// aapt resource value: 0x7f0100fa
+			public static int MvxUniqueItemIdProvider = 2130772218;
 			
 			// aapt resource value: 0x7f010047
 			public static int actionBarDivider = 2130772039;
@@ -4487,7 +4493,9 @@ namespace MvvmCross.AdvancedRecyclerView
 					2130772213,
 					2130772214,
 					2130772215,
-					2130772216};
+					2130772216,
+					2130772217,
+					2130772218};
 			
 			// aapt resource value: 2
 			public static int MvxRecyclerView_MvxFooterLayoutId = 2;
@@ -4507,8 +4515,14 @@ namespace MvvmCross.AdvancedRecyclerView
 			// aapt resource value: 5
 			public static int MvxRecyclerView_MvxHidesHeaderIfEmpty = 5;
 			
+			// aapt resource value: 7
+			public static int MvxRecyclerView_MvxSwipeableTemplate = 7;
+			
 			// aapt resource value: 0
 			public static int MvxRecyclerView_MvxTemplateSelector = 0;
+			
+			// aapt resource value: 8
+			public static int MvxRecyclerView_MvxUniqueItemIdProvider = 8;
 			
 			public static int[] PopupWindow = new int[] {
 					16843126,

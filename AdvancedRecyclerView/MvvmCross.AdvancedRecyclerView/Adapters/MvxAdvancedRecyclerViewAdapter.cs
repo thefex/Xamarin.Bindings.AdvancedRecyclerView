@@ -20,6 +20,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
     public class MvxAdvancedRecyclerViewAdapter : MvxRecyclerAdapter, ISwipeableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
+        Lazy<DefaultSwipeableTemplate> _lazyDefaultSwipeableTemplate = new Lazy<DefaultSwipeableTemplate>();
+
         public MvxAdvancedRecyclerViewAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
         {
             HasStableIds = true;
@@ -27,16 +29,26 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public MvxAdvancedRecyclerViewAdapter(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
+
+        }
+
+        private IMvxSwipeableTemplate swipeableTemplate;
+        public IMvxSwipeableTemplate SwipeableTemplate
+        {
+            get { return swipeableTemplate ?? _lazyDefaultSwipeableTemplate.Value; }
+            set { swipeableTemplate = value; }
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             var itemBindingContext = new MvxAndroidBindingContext(parent.Context, BindingContext.LayoutInflaterHolder);
-            var itemTemplateSelector = ItemTemplateSelector as MvxAdvancedRecyclerViewTemplateSelector;
+            var itemTemplateSelector = ItemTemplateSelector;
 
-            var vh = new MvxAdvancedRecyclerViewHolder(InflateViewForHolder(parent, viewType, itemBindingContext),
-                itemTemplateSelector.SwipeContainerViewGroupId,
-                itemTemplateSelector.UnderSwipeContainerViewGroupId,
+            var viewForHolder = InflateViewForHolder(parent, viewType, itemBindingContext);
+
+            var vh = new MvxAdvancedRecyclerViewHolder(viewForHolder,
+                                                       SwipeableTemplate.SwipeContainerViewGroupId,
+                                                       SwipeableTemplate.UnderSwipeContainerViewGroupId,
                 itemBindingContext)
             {
                 Click = ItemClick,
@@ -93,7 +105,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         /// <summary>
         /// Use SwipeableItemConstants.ReactionCan/CanNotSwipe to determine available swipe type.
         /// </summary>
-        public int SwipeReactionType { get; set; } = SwipeableItemConstants.ReactionCanSwipeBothH;
+        public int SwipeReactionType => SwipeableTemplate.SwipeReactionType;
 
         public MvxSwipeResultActionFactory SwipeResultActionFactory { get; set; } = new MvxSwipeResultActionFactory();
 
