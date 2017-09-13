@@ -7,12 +7,12 @@ namespace MvvmCross.AdvancedRecyclerView.Data
         {
         }
 
-        public int HeaderLayoutId { get; set; } = -1;
+        public int HeaderLayoutId { get; set; } = 0;
 
-        public int FooterLayoutId { get; set; } = -1;
+        public int FooterLayoutId { get; set; } = 0;
 
-        public bool HasHeader => HeaderLayoutId != -1;
+        public bool HasHeader => HeaderLayoutId != 0;
 
-        public bool HasFooter => FooterLayoutId != -1;
+        public bool HasFooter => FooterLayoutId != 0;
     }
 }

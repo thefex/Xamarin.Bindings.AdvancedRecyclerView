@@ -31,7 +31,7 @@
     </dependencies>
 	</metadata>
 	<files>		
-		<file src="../Bindings/bin/Release/Xamarin.Bindings.AdvancedRecyclerView.dll" target="lib/MonoAndroid/Xamarin.Bindings.AdvancedRecyclerView.dll" />
+		<file src="..\Bindings\bin\Release\Xamarin.Bindings.AdvancedRecyclerView.*" target="lib\MonoAndroid\" />
 	</files>
 </package>
 

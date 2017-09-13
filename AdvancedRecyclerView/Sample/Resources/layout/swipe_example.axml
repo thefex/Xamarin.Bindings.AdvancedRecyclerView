@@ -8,7 +8,7 @@
         android:id="@+id/RecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        local:MvxTemplateSelector="@string/SwipeTemplateSelector"
+        local:MvxItemTemplate="@layout/swipe_item_template"
         local:MvxUniqueItemIdProvider="@string/UniqueItemIdProvider"
         local:MvxSwipeableTemplate="@string/SwipeableTemplate"
         local:MvxBind="ItemsSource Items" />
