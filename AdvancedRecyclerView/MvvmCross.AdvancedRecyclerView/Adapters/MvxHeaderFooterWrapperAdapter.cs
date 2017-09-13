@@ -1,4 +1,5 @@
 using System;
+using System.Windows.Input;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Headerfooter;
@@ -79,11 +80,11 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         private View InflateViewForHolder(int headerLayoutId, ViewGroup p0, int p1, MvxAndroidBindingContext itemBindingContext)
             => itemBindingContext.BindingInflate(headerLayoutId, p0, false);
 
-        public MvxCommand HeaderClickCommand { get; set; }
-        public MvxCommand HeaderLongClickCommand { get; set; }
+        public ICommand HeaderClickCommand { get; set; }
+        public ICommand HeaderLongClickCommand { get; set; }
 
-        public MvxCommand FooterClickCommand { get; set; }
-        public MvxCommand FooterLongClickCommand { get; set; }
+        public ICommand FooterClickCommand { get; set; }
+        public ICommand FooterLongClickCommand { get; set; }
 
         public event Action<MvxViewHolderBoundEventArgs> MvxViewHolderBound;
 

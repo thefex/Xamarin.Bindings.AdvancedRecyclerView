@@ -9,6 +9,7 @@ using MvvmCross.Binding.Droid.ResourceHelpers;
 using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 using MvvmCross.Platform;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
+using MvvmCross.Binding.Droid.Views;
 
 namespace MvvmCross.AdvancedRecyclerView.Extensions
 {
@@ -66,6 +67,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             return new MvxAdvancedRecyclerViewAttributes()
             {
                 TemplateSelectorClassName = templateSelectorClassName,
+                ItemTemplateLayoutId = MvxAttributeHelpers.ReadListItemTemplateId(context, attrs),
                 FooterLayoutId = footerLayoutId,
                 HeaderLayoutId = headerLayoutId,
                 GroupedDataConverterClassName = groupedDataConverterClassName,
@@ -116,7 +118,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.TemplateSelectorClassName);
 
-            if (type == null)
+            if (type == null && templateSelectorAttributes.ItemTemplateLayoutId == 0)
             {
                 var message = $"Sorry but type with class name: {templateSelectorAttributes} does not exist." +
                              $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
@@ -125,21 +127,26 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
                 throw new InvalidOperationException(message);
             }
 
-            if (!typeof(IMvxTemplateSelector).IsAssignableFrom(type))
+            if (type != null && !typeof(IMvxTemplateSelector).IsAssignableFrom(type))
             {
                 string message = $"Sorry but type: {type} does not implement {nameof(IMvxTemplateSelector)} interface.";
                 Mvx.Error(message);
                 throw new InvalidOperationException(message);
             }
 
-            if (type.IsAbstract)
+            if (type?.IsAbstract ?? false)
             {
                 string message = $"Sorry can not instatiate {nameof(IMvxTemplateSelector)} as provided type: {type} is abstract/interface.";
                 Mvx.Error(message);
                 throw new InvalidOperationException(message);
             }
 
-            var templateSelector = Activator.CreateInstance(type) as IMvxTemplateSelector;
+            IMvxTemplateSelector templateSelector = null;
+            if (type != null)
+                templateSelector = Activator.CreateInstance(type) as IMvxTemplateSelector;
+            else
+                templateSelector = new MvxDefaultHeaderFooterTemplateSelector(templateSelectorAttributes.ItemTemplateLayoutId);
+            
             var headerTemplate = templateSelector as IMvxHeaderTemplate;
             var footerTemplate = templateSelector as IMvxFooterTemplate;
 
@@ -152,7 +159,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             return templateSelector;
         }
 
-        public static IMvxGroupExpandController BuildGroupExpandController(Context context, IAttributeSet attrs)
+        public static MvxGroupExpandController BuildGroupExpandController(Context context, IAttributeSet attrs)
         {
             var groupExpandControllerClassName = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).GroupExpandControllerClassName;
             var type = Type.GetType(groupExpandControllerClassName);
@@ -165,21 +172,21 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
                 throw new InvalidOperationException(message);
             }
 
-            if (!typeof(IMvxGroupExpandController).IsAssignableFrom(type))
+            if (!typeof(MvxGroupExpandController).IsAssignableFrom(type))
             {
-                string message = $"Sorry but type: {type} does not implement {nameof(IMvxGroupExpandController)} interface.";
+                string message = $"Sorry but type: {type} does not implement {nameof(MvxGroupExpandController)} interface.";
                 Mvx.Error(message);
                 throw new InvalidOperationException(message);
             }
 
             if (type.IsAbstract)
             {
-                string message = $"Sorry can not instatiate {nameof(IMvxGroupExpandController)} as provided type: {type} is abstract/interface.";
+                string message = $"Sorry can not instatiate {nameof(MvxGroupExpandController)} as provided type: {type} is abstract/interface.";
                 Mvx.Error(message);
                 throw new InvalidOperationException(message);
             }
 
-            return Activator.CreateInstance(type) as IMvxGroupExpandController;
+            return Activator.CreateInstance(type) as MvxGroupExpandController;
         }
 
         public static IMvxSwipeableTemplate BuildSwipeableTemplate(Context context, IAttributeSet attrs)

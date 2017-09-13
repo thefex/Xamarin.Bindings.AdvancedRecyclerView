@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections;
+using System.Windows.Input;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Support.V7.Widget;
+using Android.Util;
+using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
+using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Adapters.Expandable;
+using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
+using MvvmCross.AdvancedRecyclerView.Extensions;
+using MvvmCross.Binding.Droid.BindingContext;
+using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
+
+namespace MvvmCross.AdvancedRecyclerView
+{
+	[Register("mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView")]
+	public sealed class MvxAdvancedNonExpandableRecyclerView : MvxAdvancedRecyclerView
+	{
+		public MvxAdvancedNonExpandableRecyclerView(IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer) : base(
+			javaReference, transfer)
+		{
+		}
+
+		public MvxAdvancedNonExpandableRecyclerView(Context context) : this(context, null)
+		{
+		}
+
+		public MvxAdvancedNonExpandableRecyclerView(Context context, IAttributeSet attrs) : this(context, attrs, 0)
+		{
+		}
+
+		public MvxAdvancedNonExpandableRecyclerView(Android.Content.Context context, Android.Util.IAttributeSet attrs,
+			int defStyle) : base(context, attrs, defStyle)
+		{
+			AdapterController =
+				new MvxAdvancedRecyclerViewNonExpandableAdapterController(context, attrs, this,
+					MvxAndroidBindingContextHelpers.Current());
+			SetupDefaultItemAnimator(MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(context, attrs));
+		}
+
+		private void SetupDefaultItemAnimator(bool isSwipeSupported)
+		{
+			ItemAnimator itemAnimator = null;
+
+			// Change animations are enabled by default since support-v7-recyclerview v22.
+			// Need to disable them when using animation indicator.
+			if (isSwipeSupported)
+				itemAnimator = new SwipeDismissItemAnimator() {SupportsChangeAnimations = false};
+			else
+				itemAnimator = new RefactoredDefaultItemAnimator() {SupportsChangeAnimations = false};
+
+			SetItemAnimator(itemAnimator);
+		}
+
+		public ICommand ItemClick
+		{
+			get => Adapter?.ItemClick;
+			set => Adapter.ItemClick = value;
+		}
+
+
+		public ICommand ItemLongClick
+		{
+			get => Adapter?.ItemLongClick;
+			set => Adapter.ItemLongClick = value;
+		}
+
+		public MvxNonExpandableAdapter Adapter => (AdapterController.AdvancedRecyclerViewAdapter as MvxNonExpandableAdapter);
+		
+		protected override MvxAdvancedRecyclerViewAdapterController AdapterController { get; }
+	}
+}

@@ -17,12 +17,11 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Binding.ExtensionMethods;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.RecyclerView;
-using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Exceptions;
 using Object = Java.Lang.Object;
 
-namespace MvvmCross.AdvancedRecyclerView.Adapters
+namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 {
     public class MvxExpandableItemAdapter : AbstractExpandableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
@@ -70,7 +69,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
 
         public MvxExpandableDataConverter ExpandableDataConverter { get; set; }
 
-        public IMvxGroupExpandController GroupExpandController { get; set; } = new DefaultMvxGroupExpandController();
+        public MvxGroupExpandController GroupExpandController { get; internal set; } = new DefaultMvxGroupExpandController();
 
         public override int GroupCount
         {
@@ -81,13 +80,13 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
             }
         }
 
-        public IMvxCommand GroupItemClickCommand { get; set; }
+        public ICommand GroupItemClickCommand { get; set; }
 
-        public IMvxCommand GroupItemLongClickCommand { get; set; }
+        public ICommand GroupItemLongClickCommand { get; set; }
 
-        public IMvxCommand ChildItemClickCommand { get; set; }
+        public ICommand ChildItemClickCommand { get; set; }
 
-        public IMvxCommand ChildItemLongClickCommand { get; set; }
+        public ICommand ChildItemLongClickCommand { get; set; }
 
         void SourceItemChildChanged(Data.MvxGroupedData gropedData, IEnumerable newItems)
         {

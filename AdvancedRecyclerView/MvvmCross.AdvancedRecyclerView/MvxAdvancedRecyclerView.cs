@@ -1,72 +1,103 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Windows.Input;
+using Android.Content;
+using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.Widget;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
+using Android.Util;
 using MvvmCross.AdvancedRecyclerView.Adapters;
-using MvvmCross.AdvancedRecyclerView.Extensions;
-using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Droid.Support.V7.RecyclerView;
 
 namespace MvvmCross.AdvancedRecyclerView
 {
     [Register("mvvmcross.advancedrecyclerview.MvxAdvancedRecyclerView")]
-    public sealed class MvxAdvancedRecyclerView : RecyclerView
+    public abstract class MvxAdvancedRecyclerView : RecyclerView
     {
-        private MvxAdvancedRecyclerViewAdapterController adapterController;
-
-        public MvxAdvancedRecyclerView(IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer) : base(javaReference, transfer)
+        protected MvxAdvancedRecyclerView(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
         }
 
-        public MvxAdvancedRecyclerView(Android.Content.Context context, Android.Util.IAttributeSet attrs) : this(context, attrs, 0)
+        protected MvxAdvancedRecyclerView(Context context) : this(context, null)
         {
         }
 
-        public MvxAdvancedRecyclerView(Android.Content.Context context, Android.Util.IAttributeSet attrs, int defStyle) : base(context, attrs, defStyle)
+        protected MvxAdvancedRecyclerView(Context context, IAttributeSet attrs) : this(context, attrs, 0)
         {
-			var currentLayoutManager = base.GetLayoutManager();
+        }
 
-			if (currentLayoutManager == null)
-				SetLayoutManager(new LinearLayoutManager(context) { Orientation = LinearLayoutManager.Vertical });
+        public MvxAdvancedRecyclerView(Context context, IAttributeSet attrs, int defStyle) : base(context, attrs, defStyle)
+        {
+            var currentLayoutManager = base.GetLayoutManager();
 
-            adapterController = new MvxAdvancedRecyclerViewAdapterController();
-            var adapter = adapterController.BuildAdapter(context, attrs, this, MvxAndroidBindingContextHelpers.Current());
+            if (currentLayoutManager == null)
+                SetLayoutManager(new LinearLayoutManager(context) { Orientation = LinearLayoutManager.Vertical });
+            
+            HasFixedSize = false;
+        }
+        
+        protected abstract MvxAdvancedRecyclerViewAdapterController AdapterController {
+            get;
+        }
+        
+        public void InitializeAdapter(){
+            var adapter = AdapterController.BuildAdapter();
 
             SetAdapter(adapter);
-            SetupDefaultItemAnimator(MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(context, attrs));
-            HasFixedSize = false;
-            adapterController.AttachRecyclerView(this);
+            AdapterController.AttachRecyclerView();
         }
-
-        private void SetupDefaultItemAnimator(bool isSwipeSupported)
-        {
-            ItemAnimator itemAnimator = null;
-
-			// Change animations are enabled by default since support-v7-recyclerview v22.
-			// Need to disable them when using animation indicator.
-			if (isSwipeSupported)
-                itemAnimator = new SwipeDismissItemAnimator() { SupportsChangeAnimations = false };
-            else
-                itemAnimator = new RefactoredDefaultItemAnimator() { SupportsChangeAnimations = false };
-            
-            SetItemAnimator(itemAnimator);
-        }
-
+        
         public IEnumerable ItemsSource
         {
-            get { return AdvancedRecyclerViewAdapter.ItemsSource; }
-            set { 
+            get => AdvancedRecyclerViewAdapter.ItemsSource;
+            set {
+                if (GetAdapter() == null)
+                    InitializeAdapter();
                 AdvancedRecyclerViewAdapter.ItemsSource = value; 
             }
         }
-
+        
         protected override void OnDetachedFromWindow()
         {
             base.OnDetachedFromWindow();
-            adapterController?.Dispose();
+            AdapterController?.Dispose();
         }
 
-        public IMvxAdvancedRecyclerViewAdapter AdvancedRecyclerViewAdapter => adapterController.AdvancedRecyclerViewAdapter;
+        public void SaveBundleState(Bundle bundle)
+        {
+            AdapterController.SaveToBundle(bundle);
+        }
+
+        public void RestoreBundleState(Bundle bundle)
+        {
+            AdapterController.RestoreFromBundle(bundle);
+        }
+
+        public ICommand HeaderClickCommand
+        {
+            get => AdapterController.HeaderFooterWrapperAdapter.HeaderClickCommand;
+            set => AdapterController.HeaderFooterWrapperAdapter.HeaderClickCommand = value;
+        }
+
+        public ICommand HeaderLongClickCommand
+        {
+            get => AdapterController.HeaderFooterWrapperAdapter.HeaderLongClickCommand;
+            set => AdapterController.HeaderFooterWrapperAdapter.HeaderLongClickCommand = value;
+        }
+
+        public ICommand FooterClickCommand
+        {
+            get => AdapterController.HeaderFooterWrapperAdapter.FooterClickCommand;
+            set => AdapterController.HeaderFooterWrapperAdapter.FooterClickCommand = value;
+        }
+
+        public ICommand FooterLongClickCommand
+        {
+            get => AdapterController.HeaderFooterWrapperAdapter.FooterLongClickCommand;
+            set => AdapterController.HeaderFooterWrapperAdapter.FooterLongClickCommand = value;
+        }
+        
+        public IMvxAdvancedRecyclerViewAdapter AdvancedRecyclerViewAdapter => AdapterController.AdvancedRecyclerViewAdapter;
+
     }
 }

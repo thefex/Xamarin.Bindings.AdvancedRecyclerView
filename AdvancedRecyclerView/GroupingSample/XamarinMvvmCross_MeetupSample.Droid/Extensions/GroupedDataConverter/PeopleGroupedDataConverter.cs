@@ -14,8 +14,6 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 		{
 		}
 
-	 
-
         public override MvxGroupedData ConvertToMvxGroupedData(object item)
         {
 			var groupedItem = item as GroupedData;
@@ -23,7 +21,8 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			return new MvxGroupedData()
 			{
                 GroupItems = groupedItem.Items,
-				Key = groupedItem.Key
+				Key = groupedItem.Key,
+                UniqueId = GetChildItemUniqueId("MvxGroupedData" + groupedItem.Key)
 			};   
         }
 

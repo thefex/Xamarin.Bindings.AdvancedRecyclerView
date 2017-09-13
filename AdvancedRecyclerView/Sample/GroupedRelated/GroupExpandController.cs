@@ -5,28 +5,28 @@ using MvvmCross.AdvancedRecyclerView.Utils;
 
 namespace Sample.GroupedRelated
 {
-    public class GroupExpandController : IMvxGroupExpandController
+    public class GroupExpandController : MvxGroupExpandController
     {
         public GroupExpandController()
         {
         }
 
-        public bool CanCollapseGroup(MvxGroupDetails groupDetails)
+        public override bool CanCollapseGroup(MvxGroupDetails groupDetails)
         {
             return true;
         }
 
-        public bool CanExpandGroup(MvxGroupDetails groupDetails)
+        public override bool CanExpandGroup(MvxGroupDetails groupDetails)
         {
             return true;
         }
 
-        public bool OnHookGroupCollapse(MvxHookGroupExpandCollapseArgs groupItemDetails)
+        public override bool OnHookGroupCollapse(MvxHookGroupExpandCollapseArgs groupItemDetails)
         {
             return true;
         }
 
-        public bool OnHookGroupExpand(MvxHookGroupExpandCollapseArgs groupItemDetails)
+        public override bool OnHookGroupExpand(MvxHookGroupExpandCollapseArgs groupItemDetails)
         {
             return true;
         }

@@ -7,6 +7,7 @@ using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView;
 using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
 using MvvmCross.AdvancedRecyclerView.Swipe;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
@@ -23,7 +24,7 @@ namespace Sample
 
     public class SwipeExampleActivity : MvxAppCompatActivity<SwipeExampleViewModel>
     {
-        private MvxAdvancedRecyclerView mRecyclerView;
+        private MvxAdvancedNonExpandableRecyclerView mRecyclerView;
        
         public SwipeExampleActivity()
         {
@@ -33,9 +34,9 @@ namespace Sample
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.swipe_example);
 
-            mRecyclerView = FindViewById<MvxAdvancedRecyclerView>(Resource.Id.RecyclerView);
+            mRecyclerView = FindViewById<MvxAdvancedNonExpandableRecyclerView>(Resource.Id.RecyclerView);
 
-            var mAdapter = mRecyclerView.AdvancedRecyclerViewAdapter as MvxAdvancedRecyclerViewAdapter;
+            var mAdapter = mRecyclerView.AdvancedRecyclerViewAdapter as MvxNonExpandableAdapter;
             mAdapter.SwipeResultActionFactory = new SwipeResultActionFactory();
 
             mAdapter.MvxViewHolderBound += (args) =>
@@ -61,6 +62,23 @@ namespace Sample
                 swipeHolder.SwipeItemHorizontalSlideAmount =
                     mAdapter.SwipeItemPinnedStateController.ForRightSwipe().IsPinned(args.DataContext) ? -0.5f : 0;
             };
+            
+            mAdapter.SwipeBackgroundSet += (args) =>
+			{
+				int bgRes = 0;
+				switch (args.Type)
+				{
+					case SwipeableItemConstants.DrawableSwipeNeutralBackground:
+						bgRes = Resource.Drawable.bg_swipe_item_neutral;
+						break;
+					case SwipeableItemConstants.DrawableSwipeLeftBackground:
+                        bgRes = Resource.Drawable.bg_item_swiping_state;
+						break;
+				}
+
+				if (bgRes != 0)
+					args.ViewHolder.ItemView.SetBackgroundResource(bgRes);
+			};
         }
 
 

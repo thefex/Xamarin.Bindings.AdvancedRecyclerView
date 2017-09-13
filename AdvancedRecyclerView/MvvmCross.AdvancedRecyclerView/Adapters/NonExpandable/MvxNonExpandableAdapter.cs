@@ -6,8 +6,8 @@ using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using MvvmCross.AdvancedRecyclerView.Data;
+using MvvmCross.AdvancedRecyclerView.Data.EventArguments;
 using MvvmCross.AdvancedRecyclerView.Extensions;
-using MvvmCross.AdvancedRecyclerView.Swipe;
 using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions;
 using MvvmCross.AdvancedRecyclerView.Swipe.State;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
@@ -16,18 +16,18 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using Object = Java.Lang.Object;
 
-namespace MvvmCross.AdvancedRecyclerView.Adapters
+namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
 {
-    public class MvxAdvancedRecyclerViewAdapter : MvxRecyclerAdapter, ISwipeableItemAdapter, IMvxAdvancedRecyclerViewAdapter
+    public class MvxNonExpandableAdapter : MvxRecyclerAdapter, ISwipeableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
         Lazy<DefaultSwipeableTemplate> _lazyDefaultSwipeableTemplate = new Lazy<DefaultSwipeableTemplate>();
 
-        public MvxAdvancedRecyclerViewAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
+        public MvxNonExpandableAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
         {
             HasStableIds = true;
         }
 
-        public MvxAdvancedRecyclerViewAdapter(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+        public MvxNonExpandableAdapter(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
 
         }
@@ -70,10 +70,12 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         public void OnSetSwipeBackground(Object viewHolder, int position, int type)
         {
             var advancedViewHolder = viewHolder as MvxAdvancedRecyclerViewHolder;
-            if (type == SwipeableItemConstants.DrawableSwipeNeutralBackground)
-                advancedViewHolder.UnderSwipeableContainerView.Visibility = ViewStates.Gone;
-            else
-                advancedViewHolder.UnderSwipeableContainerView.Visibility = ViewStates.Visible;
+            SwipeBackgroundSet?.Invoke(new MvxSwipeBackgroundSetEventArgs()
+            {
+                ViewHolder = advancedViewHolder,
+                Position = position,
+                Type = type
+            });
         }
 
         public SwipeResultAction OnSwipeItem(Object p0, int position, int result)
@@ -134,5 +136,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
                     SwipeItemPinnedStateController.SetPinnedForAllStates(itemsToRemove, false);
             }
         }
+
+        public event Action<MvxSwipeBackgroundSetEventArgs> SwipeBackgroundSet;
     }
 }

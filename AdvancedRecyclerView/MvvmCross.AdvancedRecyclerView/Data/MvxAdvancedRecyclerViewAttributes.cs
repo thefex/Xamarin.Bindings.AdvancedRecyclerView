@@ -19,5 +19,7 @@ namespace MvvmCross.AdvancedRecyclerView.Data
         public string SwipeableTemplateClassName { get; set; }
 
         public string UniqueItemIdProviderClassName { get; set; }
+        
+        public int ItemTemplateLayoutId { get; set; }
     }
 }

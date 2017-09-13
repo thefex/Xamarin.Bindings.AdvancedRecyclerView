@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../Bindings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../GroupingSample/XamarinMvvmCross_MeetupSample.Core" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../GroupingSample/XamarinMvvmCross_MeetupSample.Droid" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../MvvmCross.AdvancedRecyclerView" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../nuspec/MvvmCross.AdvancedRecyclerView.nuspec" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../nuspec/Xamarin.Bindings.AdvancedRecyclerView.nuspec" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Xamarin.Android.Support.Animated.Vector.Drawable.25.4.0.2/proguard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Xamarin.Android.Support.Core.UI.25.4.0.2/proguard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Xamarin.Android.Support.Design.25.4.0.2/proguard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Xamarin.Android.Support.v7.RecyclerView.25.4.0.2/proguard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Sample" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Bindings/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Bindings/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../GroupingSample/XamarinMvvmCross_MeetupSample.Core/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../GroupingSample/XamarinMvvmCross_MeetupSample.Core/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../GroupingSample/XamarinMvvmCross_MeetupSample.Droid/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../GroupingSample/XamarinMvvmCross_MeetupSample.Droid/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../MvvmCross.AdvancedRecyclerView/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../MvvmCross.AdvancedRecyclerView/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Sample/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Sample/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../packages" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

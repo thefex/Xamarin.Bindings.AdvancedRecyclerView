@@ -2,19 +2,20 @@ using System;
 using Android.Runtime;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
 
 namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 {
     public class MvxSwipeUnpinResultAction : SwipeResultActionDefault
     {
-        private MvxAdvancedRecyclerViewAdapter _adapter;
+        private MvxNonExpandableAdapter _adapter;
         private readonly int _position;
 
         public MvxSwipeUnpinResultAction(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
         }
 
-        public MvxSwipeUnpinResultAction(MvxAdvancedRecyclerViewAdapter adapter, int position)
+        public MvxSwipeUnpinResultAction(MvxNonExpandableAdapter adapter, int position)
         {
             _adapter = adapter;
             _position = position;

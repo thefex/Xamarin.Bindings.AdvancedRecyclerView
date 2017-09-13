@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layoutRoot">
-    <mvvmcross.advancedrecyclerview.MvxAdvancedRecyclerView
+    <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,7 +13,7 @@
         local:MvxGroupedDataConverter="@string/person_grouped_data_converter"
         local:MvxGroupExpandController="@string/person_group_expand_controller"
         local:MvxTemplateSelector="@string/special_person_item_template_selector"
-        local:MvxBind="ItemsSource Items; ItemClick PeopleTapped" />
+        local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"

@@ -1,104 +1,44 @@
 ﻿using System;
+using Android.Content;
+using Android.OS;
 using Android.Support.V7.Widget;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
+using Android.Util;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
-    public class MvxAdvancedRecyclerViewAdapterController : IDisposable
+    public abstract class MvxAdvancedRecyclerViewAdapterController : IDisposable
     {
-        RecyclerViewExpandableItemManager expandableItemManager;
-        RecyclerView.Adapter wrappedAdapter;
-        private RecyclerViewTouchActionGuardManager mRecyclerViewTouchActionGuardManager;
-        private RecyclerViewSwipeManager mRecyclerViewSwipeManager;
-
-        public MvxAdvancedRecyclerViewAdapterController()
+        protected readonly Android.Content.Context Context;
+        protected readonly Android.Util.IAttributeSet Attrs;
+        protected readonly RecyclerView RecyclerView;
+        protected readonly IMvxAndroidBindingContext BindingContext;
+        private RecyclerView.Adapter wrappedAdapter;
+        
+        
+        protected MvxAdvancedRecyclerViewAdapterController(Context context, IAttributeSet attrs, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
         {
+            this.Context = context;
+            this.Attrs = attrs;
+            this.RecyclerView = recyclerView;
+            this.BindingContext = bindingContext;
         }
 
-
-        public RecyclerView.Adapter BuildAdapter(Android.Content.Context context, Android.Util.IAttributeSet attrs, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
+        public RecyclerView.Adapter BuildAdapter()
         {
-			bool isGroupingSupported = MvxAdvancedRecyclerViewAttributeExtensions.IsGroupingSupported(context, attrs);
+            var templateSelector = BuildTemplateSelector();
+            wrappedAdapter = BuildWrappedAdapter(templateSelector);
 
-			if (isGroupingSupported)
-				return BuildExpandableAdapter(context, attrs, recyclerView, bindingContext);
-
-			return BuildAdvancedRecyclerViewAdapter(context, attrs, recyclerView, bindingContext);
-		}
-
-        public void AttachRecyclerView(RecyclerView recyclerView)
-        {
-			mRecyclerViewTouchActionGuardManager?.AttachRecyclerView(recyclerView);
-			mRecyclerViewSwipeManager?.AttachRecyclerView(recyclerView);
-			expandableItemManager?.AttachRecyclerView(recyclerView);
-		}
-
-        private RecyclerView.Adapter BuildAdvancedRecyclerViewAdapter(Android.Content.Context context, Android.Util.IAttributeSet attrs, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
-        {
-			var advancedRecyclerViewAdapter = new MvxAdvancedRecyclerViewAdapter(bindingContext);
-            RecyclerView.Adapter adapter = advancedRecyclerViewAdapter;
-			var templateSelector = MvxAdvancedRecyclerViewAttributeExtensions.BuildItemTemplateSelector(context, attrs);
-            var itemUniqueIdProvider = MvxAdvancedRecyclerViewAttributeExtensions.BuildUniqueItemIdProvider(context, attrs);
-            advancedRecyclerViewAdapter.UniqueIdProvider = itemUniqueIdProvider;
-            advancedRecyclerViewAdapter.ItemTemplateSelector = templateSelector;
-
-			AdvancedRecyclerViewAdapter = advancedRecyclerViewAdapter;
-
-            bool isSwipeEnabled = MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(context, attrs);
-
-            if (isSwipeEnabled)
-            {
-                var swipeableTemplate = MvxAdvancedRecyclerViewAttributeExtensions.BuildSwipeableTemplate(context, attrs);
-                advancedRecyclerViewAdapter.SwipeableTemplate = swipeableTemplate;
-
-                mRecyclerViewTouchActionGuardManager = new RecyclerViewTouchActionGuardManager();
-                mRecyclerViewTouchActionGuardManager.SetInterceptVerticalScrollingWhileAnimationRunning(true);
-                mRecyclerViewTouchActionGuardManager.Enabled = true;
-
-                mRecyclerViewSwipeManager = new RecyclerViewSwipeManager();
-
-                wrappedAdapter = mRecyclerViewSwipeManager.CreateWrappedAdapter(advancedRecyclerViewAdapter);
-                return wrappedAdapter;
-            }
-
-            return new MvxHeaderFooterWrapperAdapter(advancedRecyclerViewAdapter)
+            return HeaderFooterWrapperAdapter = new MvxHeaderFooterWrapperAdapter(wrappedAdapter, BindingContext)
             {
                 HeaderFooterDetails = BuildHeaderFooterDetails(templateSelector)
             };
         }
-
-        private RecyclerView.Adapter BuildExpandableAdapter(Android.Content.Context context, Android.Util.IAttributeSet attrs, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
-        {
-            expandableItemManager = new RecyclerViewExpandableItemManager(null);
-            expandableItemManager.DefaultGroupsExpandedState = true;
-
-            var expandableAdapter = new MvxExpandableItemAdapter(bindingContext as IMvxAndroidBindingContext);
-            AdvancedRecyclerViewAdapter = expandableAdapter;
-            var groupedDataConverter = MvxAdvancedRecyclerViewAttributeExtensions.BuildMvxGroupedDataConverter(context, attrs);
-
-            expandableAdapter.ExpandableDataConverter = groupedDataConverter;
-
-            var templateSelector = MvxAdvancedRecyclerViewAttributeExtensions.BuildItemTemplateSelector(context, attrs) as MvxExpandableTemplateSelector;
-            expandableAdapter.TemplateSelector = templateSelector ?? throw new InvalidOperationException("You can't use Expandable adapter without MvxExpandableTemplateSelector.");
-            expandableAdapter.GroupExpandController = MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupExpandController(context, attrs);
-
-            wrappedAdapter = expandableItemManager.CreateWrappedAdapter(expandableAdapter);
-
-            return new MvxHeaderFooterWrapperAdapter(wrappedAdapter, bindingContext)
-            {
-                HeaderFooterDetails = BuildHeaderFooterDetails(templateSelector)
-            };
-        }
-
+        
         private Data.MvxHeaderFooterDetails BuildHeaderFooterDetails(IMvxTemplateSelector templateSelector)
         {
             var headerFooterDetails = new Data.MvxHeaderFooterDetails();
@@ -113,19 +53,29 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
             return headerFooterDetails;
         }
 
-        public void Dispose()
+        protected virtual IMvxTemplateSelector BuildTemplateSelector() => MvxAdvancedRecyclerViewAttributeExtensions.BuildItemTemplateSelector(Context, Attrs);
+
+        protected abstract RecyclerView.Adapter BuildWrappedAdapter(IMvxTemplateSelector templateSelector);
+
+        public abstract void AttachRecyclerView();
+        
+        public IMvxAdvancedRecyclerViewAdapter AdvancedRecyclerViewAdapter { get; protected set; }
+        
+        public MvxHeaderFooterWrapperAdapter HeaderFooterWrapperAdapter { get; private set; }
+
+        public virtual void RestoreFromBundle(Bundle bundle)
         {
-            expandableItemManager?.Release();
-            mRecyclerViewTouchActionGuardManager?.Release();
-            mRecyclerViewSwipeManager?.Release();
-            expandableItemManager = null;
-            mRecyclerViewTouchActionGuardManager = null;
-            mRecyclerViewSwipeManager = null;
-            if (wrappedAdapter != null)
-                WrapperAdapterUtils.ReleaseAll(wrappedAdapter); 
-            wrappedAdapter = null;
         }
 
-        public IMvxAdvancedRecyclerViewAdapter AdvancedRecyclerViewAdapter { get; private set; }
+        public virtual void SaveToBundle(Bundle bundle)
+        {
+        }
+        
+        public virtual void Dispose()
+        {
+            if (wrappedAdapter != null)
+                WrapperAdapterUtils.ReleaseAll(wrappedAdapter);
+            wrappedAdapter = null;
+        }
     }
 }

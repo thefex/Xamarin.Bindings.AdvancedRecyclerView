@@ -2,12 +2,13 @@ using System;
 using Android.Runtime;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
 
 namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 {
     public class MvxSwipeToDirectionResultAction : SwipeResultActionMoveToSwipedDirection
     {
-        private MvxAdvancedRecyclerViewAdapter _adpater;
+        private MvxNonExpandableAdapter _adpater;
         private readonly SwipeDirection _swipeDirection;
         private readonly int _position;
         private bool isSetPinned;
@@ -16,7 +17,7 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
         {
         }
 
-        public MvxSwipeToDirectionResultAction(MvxAdvancedRecyclerViewAdapter adpater, SwipeDirection swipeDirection, int position)
+        public MvxSwipeToDirectionResultAction(MvxNonExpandableAdapter adpater, SwipeDirection swipeDirection, int position)
         {
             _adpater = adpater;
             _swipeDirection = swipeDirection;

@@ -101,9 +101,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapters\MvxAdvancedRecyclerViewAdapter.cs" />
-    <Compile Include="Adapters\MvxExpandableItemAdapter.cs" />
     <Compile Include="Adapters\MvxHeaderFooterWrapperAdapter.cs" />
+    <Compile Include="Adapters\NonExpandable\MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
     <Compile Include="Data\EventArguments\MvxExpandableItemAdapterBoundedArgs.cs" />
     <Compile Include="Data\EventArguments\MvxHookGroupExpandCollapseArgs.cs" />
     <Compile Include="Data\IMvxItemUniqueIdProvider.cs" />
@@ -111,6 +110,7 @@
     <Compile Include="Data\MvxGroupedData.cs" />
     <Compile Include="Data\MvxRecyclerViewItemsSourceBridge.cs" />
     <Compile Include="Extensions\ViewUtilities.cs" />
+    <Compile Include="MvxAdvancedRecyclerView.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Swipe\ResultActions\MvxSwipeResultActionFactory.cs" />
@@ -120,23 +120,30 @@
     <Compile Include="Swipe\State\SwipeItemPinnedStateControllerProvider.cs" />
     <Compile Include="Swipe\SwipeDirection.cs" />
     <Compile Include="TemplateSelectors\MvxDefaultExpandableTemplateSelector.cs" />
+    <Compile Include="TemplateSelectors\MvxDefaultHeaderFooterTemplateSelector.cs" />
     <Compile Include="TemplateSelectors\MvxExpandableTemplateSelector.cs" />
     <Compile Include="Utils\DefaultMvxGroupExpandController.cs" />
-    <Compile Include="Utils\IMvxGroupExpandController.cs" />
+    <Compile Include="Utils\MvxGroupExpandController.cs" />
     <Compile Include="Data\MvxGroupDetails.cs" />
     <Compile Include="ViewHolders\MvxExpandableRecyclerViewHolder.cs" />
     <Compile Include="ViewHolders\MvxAdvancedRecyclerViewHolder.cs" />
     <Compile Include="Data\MvxHeaderFooterDetails.cs" />
-    <Compile Include="MvxAdvancedRecyclerView.cs" />
+    <Compile Include="MvxAdvancedNonExpandableRecyclerView.cs" />
     <Compile Include="Extensions\MvxAdvancedRecyclerViewAttributeExtensions.cs" />
     <Compile Include="Data\MvxAdvancedRecyclerViewAttributes.cs" />
-    <Compile Include="Adapters\MvxAdvancedRecyclerViewAdapterController.cs" />
     <Compile Include="Adapters\IMvxAdvancedRecyclerViewAdapter.cs" />
     <Compile Include="TemplateSelectors\IMvxHeaderTemplate.cs" />
     <Compile Include="Data\MvxGroupedItemsSourceProvider.cs" />
     <Compile Include="TemplateSelectors\IMvxSwipeableTemplate.cs" />
     <Compile Include="TemplateSelectors\DefaultSwipeableTemplate.cs" />
     <Compile Include="TemplateSelectors\IMvxFooterTemplate.cs" />
+    <Compile Include="Utils\AccordionMvxGroupExpandController.cs" />
+    <Compile Include="MvxAdvancedExpandableRecyclerView.cs" />
+    <Compile Include="Adapters\Expandable\MvxExpandableItemAdapter.cs" />
+    <Compile Include="Adapters\Expandable\MvxAdvancedRecyclerViewExpandableAdapterController.cs" />
+    <Compile Include="Adapters\MvxAdvancedRecyclerViewAdapterController.cs" />
+    <Compile Include="Adapters\NonExpandable\MvxNonExpandableAdapter.cs" />
+    <Compile Include="Data\EventArguments\MvxSwipeBackgroundSetEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\packages.config" />
@@ -155,6 +162,8 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="Data\Adapters\" />
+    <Folder Include="Adapters\Expandable\" />
+    <Folder Include="Adapters\NonExpandable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets')" />

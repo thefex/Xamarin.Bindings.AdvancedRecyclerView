@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64d9e4b0-e0f5-4cce-a75c-b413c78880d5" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="MvxAdvancedRecyclerViewAdapterController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="57" column="107" lean-forward="false" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
+              <folding>
+                <marker date="1505317496000" expanded="false" signature="6:374" ph="..." />
+                <marker date="1505317496000" expanded="true" signature="995:1179" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1231:1604" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1497:1593" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1721:2250" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2845:2865" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2922:2942" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2989:3148" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxAdvancedRecyclerViewAttributeExtensions.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="150" column="12" lean-forward="true" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+              <folding>
+                <marker date="1505318474000" expanded="true" signature="6:416" ph="..." />
+                <marker date="1505318474000" expanded="true" signature="469:17144" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="531:17142" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="671:3873" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="1218:2828" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="1442:2814" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="2848:2915" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="3312:3862" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="4420:5757" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="4671:5028" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="5105:5358" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="5392:5665" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="5865:8123" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="6162:6682" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="6769:7016" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="7060:7327" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="8236:9569" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="8490:8848" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="8923:9174" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="9208:9479" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="9675:10985" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="9899:10323" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="10395:10601" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="10626:10852" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="11097:12407" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="11315:11739" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="11814:12023" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="12048:12265" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="12501:13377" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="12664:13281" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="12888:13223" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="13043:13205" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="13301:13367" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="13472:14348" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="13635:14252" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="13859:14194" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="14014:14176" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="14272:14338" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="14481:16316" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxDefaultExpandableTemplateSelector.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <marker date="1505209998000" expanded="true" signature="58:553" ph="{...}" />
+                <marker date="1505209998000" expanded="true" signature="146:551" ph="{...}" />
+                <marker date="1505209998000" expanded="true" signature="310:374" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxDefaultHeaderFooterTemplateSelector.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="53" />
+              <folding>
+                <marker date="1505318474000" expanded="true" signature="120:552" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="247:550" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="350:370" ph="{...}" />
+                <marker date="1505318474000" expanded="true" signature="427:447" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxAdvancedRecyclerViewAttributes.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding>
+                <marker date="1505318366000" expanded="true" signature="59:675" ph="{...}" />
+                <marker date="1505318366000" expanded="true" signature="112:673" ph="{...}" />
+                <marker date="1505318366000" expanded="true" signature="169:189" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxAdvancedRecyclerViewBindings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxHeaderFooterWrapperAdapter.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-47">
+              <caret line="15" column="25" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="15" selection-end-column="25" />
+              <folding>
+                <marker date="1505317496000" expanded="false" signature="6:468" ph="..." />
+                <marker date="1505317496000" expanded="true" signature="519:3899" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="647:3897" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1073:1094" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1216:1318" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1461:1696" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1772:2007" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2090:2617" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2452:2574" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2700:3227" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="3062:3184" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="3826:3891" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxAdvancedNonExpandableRecyclerView.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="771">
+              <caret line="71" column="15" lean-forward="false" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+              <folding>
+                <marker date="1505317496000" expanded="false" signature="6:611" ph="..." />
+                <marker date="1505317496000" expanded="true" signature="653:2564" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="822:2562" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="974:982" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1068:1076" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1187:1195" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1359:1629" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1693:2125" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1739:1876" ph="/* Change animations are enabled by default since support-v7-recyclerview v22. ... */" />
+                <marker date="1505317496000" expanded="true" signature="2154:2229" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2263:2346" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxAdvancedRecyclerView.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1182">
+              <caret line="96" column="20" lean-forward="false" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+              <folding>
+                <marker date="1505317496000" expanded="false" signature="6:265" ph="..." />
+                <marker date="1505317496000" expanded="true" signature="307:3434" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="447:3432" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="578:598" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="680:700" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="807:827" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="952:1245" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1418:1575" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1623:1884" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1710:1874" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1948:2051" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2103:2175" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2230:2307" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2351:2547" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2595:2799" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2843:3039" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="3087:3291" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <marker date="1505317496000" expanded="false" signature="6:350" ph="..." />
+                <marker date="1505317496000" expanded="true" signature="415:3121" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="531:3119" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="968:1001" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1109:2577" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="1803:2518" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2628:2807" ph="{...}" />
+                <marker date="1505317496000" expanded="true" signature="2847:3113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/IMvxAdvancedRecyclerViewAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxNonExpandableAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedExpandableRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxExpandableItemAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedExpandableRecyclerView.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1680" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateSelectors" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Values" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adapters" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adapters" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NonExpandable" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdvancedRecyclerView (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MvvmCross.AdvancedRecyclerView" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adapters" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Expandable" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="NonEx&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs&#10;Adaptercontroller&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs&#10;Expandableada&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Xamarin.Android.Android Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <option name="DEFAULT_DEVICE_TO_RUN" value="" />
+      <option name="DEFAULT_EMULATOR_TO_RUN" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <option name="DEFAULT_DEVICE_TO_RUN" value="" />
+      <option name="DEFAULT_EMULATOR_TO_RUN" value="" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue="Xamarin.Android.Android Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64d9e4b0-e0f5-4cce-a75c-b413c78880d5" name="Default" comment="" />
+      <created>1505311253234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505311253234</updated>
+      <workItem from="1505311255989" duration="5333000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5333000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1680" y="23" width="1920" height="1053" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22044729" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxExpandableItemAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3009">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1505317490000" expanded="true" signature="6:169" ph="..." />
+            <marker date="1505317490000" expanded="true" signature="871:10839" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="980:10837" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="1214:1234" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="1324:1932" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="2071:2091" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="2385:2828" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="2451:2818" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="3076:3205" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="3102:3195" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="3548:3609" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="3751:3839" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="3925:5497" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="3951:5168" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="3999:5154" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="4323:4603" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="5208:5487" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="5620:6089" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="5698:5896" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="6177:6742" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="6571:6699" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="6830:7395" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="7224:7352" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="7567:7700" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="7870:8003" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="8171:8266" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="8389:8775" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="8630:8763" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="8879:9250" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="9105:9238" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="9301:9478" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="9535:9674" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="9723:9868" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="10619:10680" ph="{...}" />
+            <marker date="1505317490000" expanded="true" signature="10770:10831" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxNonExpandableAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <marker date="1505317496000" expanded="false" signature="6:388" ph="..." />
+            <marker date="1505317496000" expanded="true" signature="750:5910" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="870:5908" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1090:1143" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1266:1287" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1400:1552" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1652:2388" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2261:2353" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2464:2719" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2804:3191" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="3274:4165" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="3312:4155" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="4219:4527" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="4537:4671" ph="/// Use SwipeableItemConstants.ReactionCan/CanNotSwipe to determine available swipe type. ... " />
+            <marker date="1505317496000" expanded="true" signature="4985:5209" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="5056:5199" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="5439:5902" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="5711:5892" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1505314941000" expanded="false" signature="6:510" ph="..." />
+            <marker date="1505314941000" expanded="true" signature="572:3824" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="685:3822" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="1196:1227" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="1335:2898" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="2957:3046" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="3086:3194" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="3257:3498" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="3556:3816" ph="{...}" />
+            <marker date="1505314941000" expanded="true" signature="3665:3812" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/packages.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/IMvxAdvancedRecyclerViewAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="52" />
+          <folding>
+            <marker date="1505310258000" expanded="false" signature="6:120" ph="..." />
+            <marker date="1505310258000" expanded="true" signature="171:286" ph="{...}" />
+            <marker date="1505310258000" expanded="true" signature="226:284" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedExpandableRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <marker date="1505317496000" expanded="true" signature="6:316" ph="..." />
+            <marker date="1505317496000" expanded="true" signature="358:2365" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="527:2363" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="665:685" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="774:794" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="908:928" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1063:1303" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1493:1649" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1693:1857" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1897:2053" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2097:2261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="71" column="15" lean-forward="false" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+          <folding>
+            <marker date="1505317496000" expanded="false" signature="6:611" ph="..." />
+            <marker date="1505317496000" expanded="true" signature="653:2564" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="822:2562" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="974:982" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1068:1076" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1187:1195" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1359:1629" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1693:2125" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1739:1876" ph="/* Change animations are enabled by default since support-v7-recyclerview v22. ... */" />
+            <marker date="1505317496000" expanded="true" signature="2154:2229" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2263:2346" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1182">
+          <caret line="96" column="20" lean-forward="false" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+          <folding>
+            <marker date="1505317496000" expanded="false" signature="6:265" ph="..." />
+            <marker date="1505317496000" expanded="true" signature="307:3434" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="447:3432" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="578:598" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="680:700" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="807:827" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="952:1245" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1418:1575" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1623:1884" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1710:1874" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1948:2051" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2103:2175" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2230:2307" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2351:2547" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2595:2799" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2843:3039" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="3087:3291" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <marker date="1505317496000" expanded="false" signature="6:468" ph="..." />
+            <marker date="1505317496000" expanded="true" signature="519:3899" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="647:3897" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1073:1094" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1216:1318" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1461:1696" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1772:2007" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2090:2617" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2452:2574" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2700:3227" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="3062:3184" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="3826:3891" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="57" column="107" lean-forward="false" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
+          <folding>
+            <marker date="1505317496000" expanded="false" signature="6:374" ph="..." />
+            <marker date="1505317496000" expanded="true" signature="995:1179" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1231:1604" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1497:1593" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1721:2250" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2845:2865" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2922:2942" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2989:3148" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <marker date="1505317496000" expanded="false" signature="6:350" ph="..." />
+            <marker date="1505317496000" expanded="true" signature="415:3121" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="531:3119" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="968:1001" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1109:2577" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="1803:2518" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2628:2807" ph="{...}" />
+            <marker date="1505317496000" expanded="true" signature="2847:3113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1505209998000" expanded="true" signature="58:553" ph="{...}" />
+            <marker date="1505209998000" expanded="true" signature="146:551" ph="{...}" />
+            <marker date="1505209998000" expanded="true" signature="310:374" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <marker date="1505318474000" expanded="true" signature="120:552" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="247:550" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="350:370" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="427:447" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <marker date="1505318366000" expanded="true" signature="59:675" ph="{...}" />
+            <marker date="1505318366000" expanded="true" signature="112:673" ph="{...}" />
+            <marker date="1505318366000" expanded="true" signature="169:189" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="150" column="12" lean-forward="true" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+          <folding>
+            <marker date="1505318474000" expanded="true" signature="6:416" ph="..." />
+            <marker date="1505318474000" expanded="true" signature="469:17144" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="531:17142" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="671:3873" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="1218:2828" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="1442:2814" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="2848:2915" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="3312:3862" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="4420:5757" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="4671:5028" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="5105:5358" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="5392:5665" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="5865:8123" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="6162:6682" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="6769:7016" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="7060:7327" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="8236:9569" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="8490:8848" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="8923:9174" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="9208:9479" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="9675:10985" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="9899:10323" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="10395:10601" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="10626:10852" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="11097:12407" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="11315:11739" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="11814:12023" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="12048:12265" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="12501:13377" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="12664:13281" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="12888:13223" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="13043:13205" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="13301:13367" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="13472:14348" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="13635:14252" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="13859:14194" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="14014:14176" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="14272:14338" ph="{...}" />
+            <marker date="1505318474000" expanded="true" signature="14481:16316" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

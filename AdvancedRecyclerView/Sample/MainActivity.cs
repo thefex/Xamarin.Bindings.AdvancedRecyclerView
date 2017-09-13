@@ -12,6 +12,7 @@ using Com.H6ah4i.Android.Widget.Advrecyclerview.Decoration;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Adapters.Expandable;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.Binding.BindingContext;
@@ -23,9 +24,7 @@ using Sample.ViewModels;
 namespace Sample
 {
     [Activity(Label = "Sample", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : MvxActivity<MainViewModel>,
-         RecyclerViewExpandableItemManager.IOnGroupCollapseListener,
-         RecyclerViewExpandableItemManager.IOnGroupExpandListener
+    public class MainActivity : MvxActivity<MainViewModel>
     {
         private MvxExpandableItemAdapter expandableAdapter;
         private RecyclerView.Adapter wrappedAdapter;
@@ -98,15 +97,7 @@ namespace Sample
             return (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Lollipop);
         }
 
-        public void OnGroupCollapse(int p0, bool p1)
-        {
-             
-        }
-
-        public void OnGroupExpand(int p0, bool p1)
-        {
-           
-        }
+   
     }
 }
 
