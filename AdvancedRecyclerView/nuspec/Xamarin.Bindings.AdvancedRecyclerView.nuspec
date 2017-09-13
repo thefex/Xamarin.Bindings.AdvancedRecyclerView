@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Xamarin.Bindings.AdvancedRecyclerView</id>
-		<version>1.10.6.1</version>
+		<version>1.10.6.4</version>
 		<title>Xamarin.Bindings.AdvancedRecyclerView</title>
 		<authors>Przemyslaw Raciborski [thefex]</authors>
     <projectUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</projectUrl>
