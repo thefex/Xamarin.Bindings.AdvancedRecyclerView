@@ -2262,6 +2262,12 @@ namespace MvvmCross.AdvancedRecyclerView
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f070021
+			public static int AccordionMvxGroupExpandController = 2131165217;
+			
+			// aapt resource value: 0x7f070022
+			public static int DefaultMvxGroupExpandController = 2131165218;
+			
 			// aapt resource value: 0x7f070000
 			public static int abc_action_bar_home_description = 2131165184;
 			

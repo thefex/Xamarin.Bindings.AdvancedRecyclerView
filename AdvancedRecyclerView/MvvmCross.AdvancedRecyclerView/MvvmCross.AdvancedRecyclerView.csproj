@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\MvxAdvancedRecyclerViewBindings.xml" />
+    <AndroidResource Include="Resources\Values\strings.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bindings\Xamarin.Bindings.AdvancedRecyclerView.csproj">
