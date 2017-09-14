@@ -8,6 +8,7 @@ using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Util;
 using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.Droid.Support.V7.RecyclerView.Model;
 
 namespace MvvmCross.AdvancedRecyclerView
 {
@@ -95,6 +96,16 @@ namespace MvvmCross.AdvancedRecyclerView
         {
             get => AdapterController.HeaderFooterWrapperAdapter.FooterLongClickCommand;
             set => AdapterController.HeaderFooterWrapperAdapter.FooterLongClickCommand = value;
+        }
+
+        public event Action<MvxViewHolderBoundEventArgs> MvxHeaderViewHolderBound {
+            add { AdapterController.HeaderFooterWrapperAdapter.MvxHeaderViewHolderBound += value; }
+            remove { AdapterController.HeaderFooterWrapperAdapter.MvxHeaderViewHolderBound -= value; }
+        }
+
+        public event Action<MvxViewHolderBoundEventArgs> MvxFooterViewHolderBound {
+            add { AdapterController.HeaderFooterWrapperAdapter.MvxFooterViewHolderBound += value; }
+            remove { AdapterController.HeaderFooterWrapperAdapter.MvxFooterViewHolderBound -= value; }
         }
         
         public IMvxAdvancedRecyclerViewAdapter AdvancedRecyclerViewAdapter => AdapterController.AdvancedRecyclerViewAdapter;

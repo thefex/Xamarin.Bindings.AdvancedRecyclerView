@@ -90,7 +90,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
             if (type == null)
             {
-                var message = $"Sorry but type with class name: {groupedDataConverterClassName} does not exist." +
+                var message = $"Can't build Grouped Data Converter." +
+                    $"Sorry but type with class name: {groupedDataConverterClassName} does not exist." +
                               $"Make sure you have provided full Type name: namespace + class name, AssemblyName.";
                 Mvx.Error(message);
                 throw new InvalidOperationException(message);
@@ -120,7 +121,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
             if (type == null && templateSelectorAttributes.ItemTemplateLayoutId == 0)
             {
-                var message = $"Sorry but type with class name: {templateSelectorAttributes} does not exist." +
+                var message = $"Cant create template selector." +
+                    $"Sorry but type with class name: {templateSelectorAttributes.TemplateSelectorClassName} does not exist." +
                              $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
                               $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
                 Mvx.Error(message);
@@ -166,7 +168,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
             if (type == null)
             {
-                var message = $"Sorry but type with class name: {groupExpandControllerClassName} does not exist." +
+                var message = $"Can't build GroupExpandController." +
+                    $"Sorry but type with class name: {groupExpandControllerClassName} does not exist." +
                               $"Make sure you have provided full Type name: namespace + class name, AssemblyName.";
                 Mvx.Error(message);
                 throw new InvalidOperationException(message);
@@ -196,7 +199,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
 			if (type == null)
 			{
-				var message = $"Sorry but type with class name: {templateSelectorAttributes} does not exist." +
+				var message = $"Can't build swipeable template." +
+                    $"Sorry but type with class name: {templateSelectorAttributes.SwipeableTemplateClassName} does not exist." +
 							 $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
 							  $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
 				Mvx.Error(message);
@@ -227,7 +231,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
 			if (type == null)
 			{
-				var message = $"Sorry but type with class name: {templateSelectorAttributes} does not exist." +
+				var message = $"Can't build unique item id provider." +
+                    $"Sorry but type with class name: {templateSelectorAttributes.UniqueItemIdProviderClassName} does not exist." +
 							 $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
 							  $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
 				Mvx.Error(message);
