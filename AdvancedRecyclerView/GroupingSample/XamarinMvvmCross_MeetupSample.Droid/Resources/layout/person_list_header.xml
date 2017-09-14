@@ -10,5 +10,6 @@
         android:text="This is sample Mvx List Header"
         android:gravity="center"
         android:textSize="16sp"
-        android:layout_margin="12dp" />
+        android:layout_margin="12dp"
+        local:MvxBind="Text ." />
 </LinearLayout>

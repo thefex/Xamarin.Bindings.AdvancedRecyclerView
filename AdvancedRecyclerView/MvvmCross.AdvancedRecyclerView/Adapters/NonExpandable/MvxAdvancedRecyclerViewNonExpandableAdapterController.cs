@@ -13,8 +13,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
     {
         private RecyclerViewTouchActionGuardManager _mRecyclerViewTouchActionGuardManager;
         private RecyclerViewSwipeManager _mRecyclerViewSwipeManager;
-        
-        
+
         public MvxAdvancedRecyclerViewNonExpandableAdapterController(Context context, IAttributeSet attrs,
             RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext) : base(context, attrs, recyclerView,
             bindingContext)

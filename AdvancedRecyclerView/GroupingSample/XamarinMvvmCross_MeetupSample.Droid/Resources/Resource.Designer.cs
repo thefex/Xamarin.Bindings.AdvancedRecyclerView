@@ -732,6 +732,8 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			global::MvvmCross.AdvancedRecyclerView.Resource.Layout.select_dialog_multichoice_material = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Layout.select_dialog_singlechoice_material = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::MvvmCross.AdvancedRecyclerView.Resource.Layout.support_simple_spinner_dropdown_item = global::XamarinMvvmCross_MeetupSample.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::MvvmCross.AdvancedRecyclerView.Resource.String.AccordionMvxGroupExpandController = global::XamarinMvvmCross_MeetupSample.Droid.Resource.String.AccordionMvxGroupExpandController;
+			global::MvvmCross.AdvancedRecyclerView.Resource.String.DefaultMvxGroupExpandController = global::XamarinMvvmCross_MeetupSample.Droid.Resource.String.DefaultMvxGroupExpandController;
 			global::MvvmCross.AdvancedRecyclerView.Resource.String.abc_action_bar_home_description = global::XamarinMvvmCross_MeetupSample.Droid.Resource.String.abc_action_bar_home_description;
 			global::MvvmCross.AdvancedRecyclerView.Resource.String.abc_action_bar_home_description_format = global::XamarinMvvmCross_MeetupSample.Droid.Resource.String.abc_action_bar_home_description_format;
 			global::MvvmCross.AdvancedRecyclerView.Resource.String.abc_action_bar_home_subtitle_description_format = global::XamarinMvvmCross_MeetupSample.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
@@ -6059,11 +6061,14 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f09002a
-			public const int ApplicationName = 2131296298;
-			
 			// aapt resource value: 0x7f090029
-			public const int Hello = 2131296297;
+			public const int AccordionMvxGroupExpandController = 2131296297;
+			
+			// aapt resource value: 0x7f09002c
+			public const int ApplicationName = 2131296300;
+			
+			// aapt resource value: 0x7f09002a
+			public const int DefaultMvxGroupExpandController = 2131296298;
 			
 			// aapt resource value: 0x7f09002b
 			public const int VersionName = 2131296299;
@@ -6170,11 +6175,11 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			// aapt resource value: 0x7f090023
 			public const int character_counter_pattern = 2131296291;
 			
-			// aapt resource value: 0x7f09002c
-			public const int login_hint = 2131296300;
-			
 			// aapt resource value: 0x7f09002d
-			public const int password_hint = 2131296301;
+			public const int login_hint = 2131296301;
+			
+			// aapt resource value: 0x7f09002e
+			public const int password_hint = 2131296302;
 			
 			// aapt resource value: 0x7f090024
 			public const int password_toggle_content_description = 2131296292;
@@ -6191,20 +6196,20 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			// aapt resource value: 0x7f090028
 			public const int path_password_strike_through = 2131296296;
 			
-			// aapt resource value: 0x7f090030
-			public const int person_group_expand_controller = 2131296304;
-			
 			// aapt resource value: 0x7f090031
-			public const int person_grouped_data_converter = 2131296305;
+			public const int person_group_expand_controller = 2131296305;
+			
+			// aapt resource value: 0x7f090032
+			public const int person_grouped_data_converter = 2131296306;
 			
 			// aapt resource value: 0x7f090013
 			public const int search_menu_title = 2131296275;
 			
-			// aapt resource value: 0x7f09002e
-			public const int sign_in_button_text = 2131296302;
-			
 			// aapt resource value: 0x7f09002f
-			public const int special_person_item_template_selector = 2131296303;
+			public const int sign_in_button_text = 2131296303;
+			
+			// aapt resource value: 0x7f090030
+			public const int special_person_item_template_selector = 2131296304;
 			
 			// aapt resource value: 0x7f090014
 			public const int status_bar_notification_info_overflow = 2131296276;

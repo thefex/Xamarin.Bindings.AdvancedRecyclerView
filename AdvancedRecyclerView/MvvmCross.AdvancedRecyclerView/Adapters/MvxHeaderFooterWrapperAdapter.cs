@@ -13,7 +13,7 @@ using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters
 {
-    public sealed class MvxHeaderFooterWrapperAdapter : AbstractHeaderFooterWrapperAdapter, IMvxRecyclerAdapterBindableHolder
+    public sealed class MvxHeaderFooterWrapperAdapter : AbstractHeaderFooterWrapperAdapter
     {
         public override int FooterItemCount => HeaderFooterDetails.HasFooter ? 1 : 0;
         public override int HeaderItemCount => HeaderFooterDetails.HasHeader ? 1 : 0;
@@ -36,13 +36,13 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         public override void OnBindFooterItemViewHolder(Object p0, int p1)
         {
             (p0 as IMvxRecyclerViewHolder).DataContext = BindingContext.DataContext;
-            OnMvxViewHolderBound(new MvxViewHolderBoundEventArgs(-1, BindingContext.DataContext, p0 as RecyclerView.ViewHolder));
+            MvxFooterViewHolderBound?.Invoke(new MvxViewHolderBoundEventArgs(-1, BindingContext.DataContext, p0 as RecyclerView.ViewHolder));
         }
 
         public override void OnBindHeaderItemViewHolder(Object p0, int p1)
         {
             (p0 as IMvxRecyclerViewHolder).DataContext = BindingContext.DataContext;
-            OnMvxViewHolderBound(new MvxViewHolderBoundEventArgs(-1, BindingContext.DataContext, p0 as RecyclerView.ViewHolder));
+            MvxHeaderViewHolderBound?.Invoke(new MvxViewHolderBoundEventArgs(-1, BindingContext.DataContext, p0 as RecyclerView.ViewHolder));
         }
 
         public override Object OnCreateFooterItemViewHolder(ViewGroup p0, int p1)
@@ -55,7 +55,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
                     itemBindingContext)
                 {
                     Click = FooterClickCommand,
-                    LongClick = FooterLongClickCommand
+                    LongClick = FooterLongClickCommand,
+                    DataContext = BindingContext.DataContext
                 };
 
             return viewHolder;
@@ -71,7 +72,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
                     itemBindingContext)
                 {
                     Click = HeaderClickCommand,
-                    LongClick = HeaderLongClickCommand
+                    LongClick = HeaderLongClickCommand,
+                    DataContext = BindingContext.DataContext
                 };
 
             return viewHolder;
@@ -86,11 +88,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         public ICommand FooterClickCommand { get; set; }
         public ICommand FooterLongClickCommand { get; set; }
 
-        public event Action<MvxViewHolderBoundEventArgs> MvxViewHolderBound;
-
-        private void OnMvxViewHolderBound(MvxViewHolderBoundEventArgs obj)
-        {
-            MvxViewHolderBound?.Invoke(obj);
-        }
+        public event Action<MvxViewHolderBoundEventArgs> MvxHeaderViewHolderBound;
+		public event Action<MvxViewHolderBoundEventArgs> MvxFooterViewHolderBound;
     }
 }
