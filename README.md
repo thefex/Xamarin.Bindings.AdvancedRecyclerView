@@ -7,6 +7,7 @@ This library is licensed under the Apache Software License, Version 2.0.
 See LICENSE for full of the license text.
 
 Copyright (C) 2015 Haruki Hasegawa ( Orginal Java library )
+
 Copyright (C) 2017 Przemysław Raciborski ( Bindings Library + MvvmCross Bindings )
 
 Licensed under the Apache License, Version 2.0 (the "License");
