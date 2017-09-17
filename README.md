@@ -124,16 +124,16 @@ Sample implementation:
 
 3. Lets update our base layout.
 
-	<mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
-		android:id="@+id/RecyclerView"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		local:MvxHeaderLayoutId="@layout/list_header_layout"
-		local:MvxFooterLayoutId="@layout/list_footer_layout"
-		local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
-		local:MvxSwipeableTemplate="@string/SwipeableTemplate"
-		local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
-		local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />
+		<mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
+			android:id="@+id/RecyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			local:MvxHeaderLayoutId="@layout/list_header_layout"
+			local:MvxFooterLayoutId="@layout/list_footer_layout"
+			local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
+			local:MvxSwipeableTemplate="@string/SwipeableTemplate"
+			local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
+			local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />
 
 Where **MvxSwipeableTemplate** is a string with full class name (as usual - in **MvxTemplateSelector** style)
 
@@ -156,16 +156,16 @@ Lets start from scratch.
 
 1. Implement AdvancedRecyclerView layout - this time using **MvxAdvancedExpandableRecyclerView** 
 
-    <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            local:MvxHeaderLayoutId="@layout/person_list_header"
-            local:MvxFooterLayoutId="@layout/person_list_footer"
-            local:MvxGroupedDataConverter="@string/person_grouped_data_converter"
-            local:MvxGroupExpandController="@string/person_group_expand_controller"
-            local:MvxTemplateSelector="@string/special_person_item_template_selector"
-            local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
+		<mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
+		    android:id="@+id/recyclerView"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    local:MvxHeaderLayoutId="@layout/person_list_header"
+		    local:MvxFooterLayoutId="@layout/person_list_footer"
+		    local:MvxGroupedDataConverter="@string/person_grouped_data_converter"
+		    local:MvxGroupExpandController="@string/person_group_expand_controller"
+		    local:MvxTemplateSelector="@string/special_person_item_template_selector"
+		    local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
 
 For header/footers nothing changes with grouped lists.
 
