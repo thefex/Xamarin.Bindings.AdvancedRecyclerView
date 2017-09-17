@@ -27,7 +27,9 @@ Use cases:
 
 2. Add header and footer layout. Both of those layouts get datacontext set to your current fragment/activity ViewModel. Layout name should be equal to **local:MvxHeaderLayoutId/local:MvxFooterLayoutId** you have set in previous step.
 
-3. Implement **IMvxItemUniqueIdProvider** interface. **AdvancedRecyclerView** internally needs to assign unique id to each item - implementation **IMvxItemUniqueIdProvider** should return unique id from your datacontext.
+3. Implement of **IMvxItemUniqueIdProvider** interface.
+
+**AdvancedRecyclerView** internally needs to assign unique id to each item - implementation of **IMvxItemUniqueIdProvider** should return unique id from your datacontext.
 
 Sample:
 https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/blob/master/AdvancedRecyclerView/Sample/Swipe/SwipeExampleUniqueIdProvider.cs
