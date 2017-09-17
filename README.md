@@ -3,6 +3,7 @@ Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedr
 
 # Documentatio
 As you can see in the documentation of Android Recycler View java library, it offers various RecyclerView extensions such as grouping, swipe-to-delete, header/footer and so on...
+
 In documentation I will focus on those currently supported as MvvmCross bindings - available in *MvvmCross.AdvancedRecyclerView* nuget package.
 
 Using **MvvmCross.AdvancedRecyclerView** is similar to orginal MvvmCross RecyclerView library.
