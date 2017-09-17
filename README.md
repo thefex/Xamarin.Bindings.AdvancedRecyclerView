@@ -19,6 +19,8 @@ Use cases:
 
 1. In your old RecyclerView/MvxRecyclerView .axml layout use:
 
+
+
 	    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView 
 			android:id="@+id/RecyclerView"
 			android:layout_width="match_parent"
@@ -50,7 +52,8 @@ String should have form of: Namespace.ClassName, AssemblyName
 
 # II. I want to add header, footer to non grouped list with multiple item layouts.
 
-1.
+1. Change your RecyclerView .axml:
+
 	    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
 			android:id="@+id/RecyclerView"
 			android:layout_width="match_parent"
@@ -344,7 +347,8 @@ For MvxAdvancedNonExpandableRecyclerView use:
 # VIII. How can I access bounded header/footer view in code ?
 
 **MvxAdvancedRecyclerView** exposes two events:
-**MvxHeaderViewHolderBound ** and **MvxFooterViewHolderBound** which gives you access to bound item viewholder.
+
+**MvxHeaderViewHolderBound** and **MvxFooterViewHolderBound** which gives you access to bound item viewholder.
 
 # IX. How can I attach command to item click ?
 
