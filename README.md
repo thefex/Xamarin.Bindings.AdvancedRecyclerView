@@ -1,7 +1,12 @@
-# Xamarin.Bindings.AdvancedRecyclerView
-Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedrecyclerview
+# *Xamarin.Bindings.AdvancedRecyclerView*
+Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedrecyclerview with MvvmCross support.
 
-# Documentatio
+**MvvmCross.AdvancedRecyclerView** currently has MvvmCross DataBinding support for:
+- expandable/grouped lists
+- swipe (for non expandable lists)
+- header/footer support for both - expandable and non-grouped lists
+
+# *Documentation*
 As you can see in the documentation of Android Recycler View java library, it offers various RecyclerView extensions such as grouping, swipe-to-delete, header/footer and so on...
 
 In documentation I will focus on those currently supported as MvvmCross bindings - available in *MvvmCross.AdvancedRecyclerView* nuget package.
@@ -10,7 +15,7 @@ Using **MvvmCross.AdvancedRecyclerView** is similar to orginal MvvmCross Recycle
 
 Use cases:
 
-**I. I want to add header, footer to non grouped list with simple, one item layout.**
+# I. I want to add header, footer to non grouped list with simple, one item layout.
 
 1. In your old RecyclerView/MvxRecyclerView .axml layout use:
 
@@ -43,7 +48,7 @@ String should have form of: Namespace.ClassName, AssemblyName
 
 5. You are done :)
 
-**II. I want to add header, footer to non grouped list with multiple item layouts.**
+# II. I want to add header, footer to non grouped list with multiple item layouts.
 
 1.
 	    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
@@ -84,7 +89,7 @@ Sample implementation:
 
 3. You are done :)
 
-**III. Ok, great - I want to add swipe support to previous example**
+# III. Ok, great - I want to add swipe support to previous example
 
 Well, that's a bit complex due to way how it has been implemented in **AdvancedRecyclerView**.
 
@@ -150,7 +155,7 @@ Please check https://github.com/h6ah4i/android-advancedrecyclerview documentatio
 
 // todo write more about swiping features
 
-*** IV. Ok, fine. This time I need grouped, non-expandable lists. **
+# IV. Ok, fine. This time I need grouped, non-expandable lists.
 
 Lets start from scratch.
 
@@ -275,7 +280,7 @@ Sample implementation:
 
 5. You are done :)
 
-** V. That's nice. However I want to change my grouped lists to expandable/collapsable lists. **
+# V. That's nice. However I want to change my grouped lists to expandable/collapsable lists.
 Just change your RecyclerView **MvxGroupExpandController** attribute to: "@string/DefaultMvxGroupExpandController". 
 
     <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
@@ -289,7 +294,7 @@ Just change your RecyclerView **MvxGroupExpandController** attribute to: "@strin
             local:MvxTemplateSelector="@string/special_person_item_template_selector"
             local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
 
-** VI. My client is VERY CREATIVE and changed app requiement once again. He thinks that only one section should be expanded at the one time (so called Accordion Expandable Lists)
+# VI. My client is VERY CREATIVE and changed app requiement once again. He thinks that only one section should be expanded at the one time (so called Accordion Expandable Lists)
 
 That's easy. The Accordion like Expand Controller is ready (https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/blob/master/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Utils/AccordionMvxGroupExpandController.cs)
 
@@ -307,11 +312,11 @@ Just change Expand Controller attribute:
             local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
 
 
-** VI. OK! How about adding swiping to grouped lists ? **
+# VI. OK! How about adding swiping to grouped lists ?
 Sorry, not supported yet with MvvmCross bindings.
 Feel free to make PR or just... wait :)
 
-** VII. How can I access bounded item view in code ? **
+# VII. How can I access bounded item view in code ?
 
 For MvxAdvancedExpandableRecyclerView (grouped/expandable lists use):
 
@@ -336,12 +341,12 @@ For MvxAdvancedNonExpandableRecyclerView use:
 	}
 
 
-** VIII. How can I access bounded header/footer view in code ? **
+# VIII. How can I access bounded header/footer view in code ?
 
 **MvxAdvancedRecyclerView** exposes two events:
-** MvxHeaderViewHolderBound ** and **MvxFooterViewHolderBound** which gives you access to bound item viewholder.
+**MvxHeaderViewHolderBound ** and **MvxFooterViewHolderBound** which gives you access to bound item viewholder.
 
-** IX. How can I attach command to item click ? **
+# IX. How can I attach command to item click ?
 
 You can bind to **MvxAdvancedRecyclerView** properties.
 
@@ -358,7 +363,7 @@ You can bind to **MvxAdvancedRecyclerView** properties.
 
 For more, please download repo and check two samples (one of this uses RX/DynamicData for grouping).
 
-# LICENSE 
+# *LICENSE*
 This library is licensed under the Apache Software License, Version 2.0.
 
 See LICENSE for full of the license text.
