@@ -8,20 +8,21 @@ In documentation I will focus on those currently supported as MvvmCross bindings
 Using **MvvmCross.AdvancedRecyclerView** is similar to orginal MvvmCross RecyclerView library.
 
 Use cases:
+
 **I. I want to add header, footer to non grouped list with simple, one item layout.**
+
 1. In your old RecyclerView/MvxRecyclerView .axml layout use:
 
-<code>
-    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
-        android:id="@+id/RecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        local:MvxHeaderLayoutId="@layout/list_header_layout"
-        local:MvxFooterLayoutId="@layout/list_footer_layout"
-        local:MvxItemTemplate="@layout/yourLayoutName" 
-        local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
-        local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />"
-</code>
+	    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView 
+			android:id="@+id/RecyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			local:MvxHeaderLayoutId="@layout/list_header_layout"
+			local:MvxFooterLayoutId="@layout/list_footer_layout"
+			local:MvxItemTemplate="@layout/yourLayoutName" 
+			local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
+			local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />"
+
 
 2. Add header and footer layout. Both of those layouts get datacontext set to your current fragment/activity ViewModel. Layout name should be equal to **local:MvxHeaderLayoutId/local:MvxFooterLayoutId** you have set in previous step.
 
@@ -39,51 +40,51 @@ String should have form of: Namespace.ClassName, AssemblyName
 
 5. You are done :)
 
-**II. I want to add header, footer to non grouped list with multiple item layouts.
+**II. I want to add header, footer to non grouped list with multiple item layouts.**
 
 1.
- <code>
-    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
-        android:id="@+id/RecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        local:MvxHeaderLayoutId="@layout/list_header_layout"
-        local:MvxFooterLayoutId="@layout/list_footer_layout"
-        local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
-        local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
-        local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />"
-</code>
+	    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
+			android:id="@+id/RecyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			local:MvxHeaderLayoutId="@layout/list_header_layout"
+			local:MvxFooterLayoutId="@layout/list_footer_layout"
+			local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
+			local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
+			local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />"
 
 Just use **MvxItemTemplateSelector** like you would use with orginal **MvxRecyclerView**
 
 2. Your **MvxTemplateSelector** should implement two interfaces - **IMvxHeaderTemplate, IMvxFooterTemplate** (if you want both, footer and header).
 
 Sample implementation:
-<code>
-   public class MyTemplateSelector : MvxTemplateSelector<MyCustomObject>, IMvxFooterTemplate, IMvxHeaderTemplate
-    {
-        public int HeaderLayoutId { get; set; }
-        public int FooterLayoutId { get; set; }
 
-        public override int GetItemLayoutId(int fromViewType)
-        {
-            if (fromViewType == 0)
-                return Resource.Layout.not_special_layout;
+	public class MyTemplateSelector : MvxTemplateSelector<MyCustomObject>, IMvxFooterTemplate, IMvxHeaderTemplate
+	{
+		public int HeaderLayoutId { get; set; }
+		public int FooterLayoutId { get; set; }
 
-            return Resource.Layout.special_layout;
-        }
+		public override int GetItemLayoutId(int fromViewType)
+		{
+		    if (fromViewType == 0)
+			return Resource.Layout.not_special_layout;
 
-        protected override int SelectItemViewType(MyCustomObject forItemObject)
-        {
-            return myCustomObject.IsSpecialTemplate ? 0 : 1;
-        }
-    }
+		    return Resource.Layout.special_layout;
+		}
 
-</code>
+		protected override int SelectItemViewType(MyCustomObject forItemObject)
+		{
+		    return myCustomObject.IsSpecialTemplate ? 0 : 1;
+		}
+	}
+
 
 3. You are done :)
 
+
+
 ** III. Ok, great - I want to add swipe support to previous example **
+
 Well, that's a bit complex due to way how it has been implemented in **AdvancedRecyclerView**.
 
 1. First of all, your item layout should contains two views - one of them will be visible during swipe/after swiped.
@@ -95,43 +96,43 @@ We've got an layout which has two containers: *underSwipe* and the default *cont
 
 2. When we have created an appropiate layout, lets implement special interface - called: **IMvxSwipeableTemplate**.
 According to that interface, **AdvancedRecyclerView** picks: 
+
 - in which direction swiping works (from left to right, from right to left, from top to bottom and so on..)
 - what is the view which represented swiped content,
 - what is the default view - in not swiping state
 
 Sample implementation:
-<code>
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 
-namespace Sample.Swipe
-{
-    public class SwipeableTemplate : IMvxSwipeableTemplate
-    {
-        public int SwipeContainerViewGroupId => Resource.Id.container;
+	using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
+	using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 
-        public int UnderSwipeContainerViewGroupId => Resource.Id.underSwipe;
+	namespace Sample.Swipe
+	{
+	    public class SwipeableTemplate : IMvxSwipeableTemplate
+	    {
+		public int SwipeContainerViewGroupId => Resource.Id.container;
 
-        public int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
-    }
-}
-</code>
+		public int UnderSwipeContainerViewGroupId => Resource.Id.underSwipe;
+
+		public int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
+	    }
+	}
+
 
 **SwipeableItemConstants** represents constants related to swiping direction.
 
 3. Lets update our base layout.
- <code>
-    <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
-        android:id="@+id/RecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        local:MvxHeaderLayoutId="@layout/list_header_layout"
-        local:MvxFooterLayoutId="@layout/list_footer_layout"
-        local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
-        local:MvxSwipeableTemplate="@string/SwipeableTemplate"
-        local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
-        local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />"
-</code>
+
+	<mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
+		android:id="@+id/RecyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		local:MvxHeaderLayoutId="@layout/list_header_layout"
+		local:MvxFooterLayoutId="@layout/list_footer_layout"
+		local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
+		local:MvxSwipeableTemplate="@string/SwipeableTemplate"
+		local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
+		local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />
 
 Where **MvxSwipeableTemplate** is a string with full class name (as usual - in **MvxTemplateSelector** style)
 
@@ -149,10 +150,11 @@ Please check https://github.com/h6ah4i/android-advancedrecyclerview documentatio
 // todo write more about swiping features
 
 *** IV. Ok, fine. This time I need grouped, non-expandable lists. **
+
 Lets start from scratch.
 
 1. Implement AdvancedRecyclerView layout - this time using **MvxAdvancedExpandableRecyclerView** 
-<code>
+
     <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
@@ -163,7 +165,6 @@ Lets start from scratch.
             local:MvxGroupExpandController="@string/person_group_expand_controller"
             local:MvxTemplateSelector="@string/special_person_item_template_selector"
             local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
-</code>
 
 For header/footers nothing changes with grouped lists.
 
@@ -172,40 +173,40 @@ However... we have an additional properties there which will be described in nex
 2. We have to implement **MvxExpandableDataConverter** - it is used to convert your Items DataSource to grouped data source -> **MvxGroupedData**
 
 Sample implementation:
-<code>
-public class PeopleGroupedDataConverter : MvxExpandableDataConverter
-	{
-        long index = 0;
-        Dictionary<string, long> _indexMap = new Dictionary<string, long>();
 
-		public PeopleGroupedDataConverter()
+	public class PeopleGroupedDataConverter : MvxExpandableDataConverter
 		{
+		long index = 0;
+		Dictionary<string, long> _indexMap = new Dictionary<string, long>();
+
+			public PeopleGroupedDataConverter()
+			{
+			}
+
+		public override MvxGroupedData ConvertToMvxGroupedData(object item)
+		{
+				var groupedItem = item as GroupedData;
+
+				return new MvxGroupedData()
+				{
+			GroupItems = groupedItem.Items,
+					Key = groupedItem.Key,
+			UniqueId = GetChildItemUniqueId("MvxGroupedData" + groupedItem.Key)
+				};   
 		}
 
-        public override MvxGroupedData ConvertToMvxGroupedData(object item)
-        {
-			var groupedItem = item as GroupedData;
+		protected override long GetChildItemUniqueId(object item)
+		{
+		    var key = item.ToString();
 
-			return new MvxGroupedData()
-			{
-                GroupItems = groupedItem.Items,
-				Key = groupedItem.Key,
-                UniqueId = GetChildItemUniqueId("MvxGroupedData" + groupedItem.Key)
-			};   
-        }
+		    if (_indexMap.ContainsKey(key))
+			return _indexMap[key];
 
-        protected override long GetChildItemUniqueId(object item)
-        {
-            var key = item.ToString();
+		    _indexMap.Add(key, index++);
+		    return _indexMap[key];
+		}
+	    }
 
-            if (_indexMap.ContainsKey(key))
-                return _indexMap[key];
-
-            _indexMap.Add(key, index++);
-            return _indexMap[key];
-        }
-    }
-</code>
 
 Our ViewModel/DataModel contains item which has: Child items (items inside group), Key (object to which every group layout datacontext will be bound), Unique Id for every group.
 Besides that - we have to return unique id for each child item - AdvancedRecyclerView uses it internally.
@@ -218,69 +219,64 @@ If you want to use default implementation - all groups can be expanded/collapsed
 
 Below I have presented sample code of MvxGroupExpandController which forbiddes expanding.
 
-<code>
-  public class PeopleGroupExpandController : MvxGroupExpandController
-    {
-        public PeopleGroupExpandController()
-        {
-        }
+	public class PeopleGroupExpandController : MvxGroupExpandController
+	{
+		public PeopleGroupExpandController()
+		{
+		}
 
-        public override bool CanCollapseGroup(MvxGroupDetails groupDetails)
-        {
-            return false;
-        }
+		public override bool CanCollapseGroup(MvxGroupDetails groupDetails)
+		{
+		    return false;
+		}
 
-        public override bool CanExpandGroup(MvxGroupDetails groupDetails)
-        {
-            return false;
-        }
+		public override bool CanExpandGroup(MvxGroupDetails groupDetails)
+		{
+		    return false;
+		}
 
-        public override bool OnHookGroupCollapse(MvxHookGroupExpandCollapseArgs groupItemDetails)
-        {
-            return true;
-        }
+		public override bool OnHookGroupCollapse(MvxHookGroupExpandCollapseArgs groupItemDetails)
+		{
+		    return true;
+		}
 
-        public override bool OnHookGroupExpand(MvxHookGroupExpandCollapseArgs groupItemDetails)
-        {
-            return true;
-        }
-    }
-</code>
+		public override bool OnHookGroupExpand(MvxHookGroupExpandCollapseArgs groupItemDetails)
+		{
+		    return true;
+		}
+	}
 
 4. We have also implement special **MvxItemTemplateSelector** - with support for groups, which is **MvxExpandableTemplateSelector**
 
 Sample implementation:
 
-<code>
- public class PeopleListTemplateSelector : MvxExpandableTemplateSelector, IMvxHeaderTemplate, IMvxFooterTemplate
-	{
-        public PeopleListTemplateSelector() : base(Resource.Layout.person_group_header)
-        {
-        }
-
-        public int HeaderLayoutId { get; set; }
-        public int FooterLayoutId { get; set; }
-
-        protected override int GetChildItemLayoutId(int fromViewType)
-        {
-		    return fromViewType == 1 ? Resource.Layout.special_person_layout : Resource.Layout.person_layout;
+	 public class PeopleListTemplateSelector : MvxExpandableTemplateSelector, IMvxHeaderTemplate, IMvxFooterTemplate
+		{
+		public PeopleListTemplateSelector() : base(Resource.Layout.person_group_header)
+		{
 		}
 
-        protected override int GetChildItemViewType(object forItemObject)
-        {
-            var person = forItemObject as Person;
+		public int HeaderLayoutId { get; set; }
+		public int FooterLayoutId { get; set; }
 
-            return person.IsSpecialPerson ? 1 : 2;
-        } 
-    }
-</code>
+		protected override int GetChildItemLayoutId(int fromViewType)
+		{
+			    return fromViewType == 1 ? Resource.Layout.special_person_layout : Resource.Layout.person_layout;
+			}
+
+		protected override int GetChildItemViewType(object forItemObject)
+		{
+		    var person = forItemObject as Person;
+
+		    return person.IsSpecialPerson ? 1 : 2;
+		} 
+	    }
 
 5. You are done :)
 
 ** V. That's nice. However I want to change my grouped lists to expandable/collapsable lists. **
 Just change your RecyclerView **MvxGroupExpandController** attribute to: "@string/DefaultMvxGroupExpandController". 
 
-<code>
     <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
@@ -291,7 +287,6 @@ Just change your RecyclerView **MvxGroupExpandController** attribute to: "@strin
            * local:MvxGroupExpandController="@string/DefaultMvxGroupExpandController"*
             local:MvxTemplateSelector="@string/special_person_item_template_selector"
             local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
-</code>
 
 ** VI. My client is VERY CREATIVE and changed app requiement once again. He thinks that only one section should be expanded at the one time (so called Accordion Expandable Lists)
 
@@ -299,7 +294,6 @@ That's easy. The Accordion like Expand Controller is ready (https://github.com/t
 
 Just change Expand Controller attribute:
 
-<code>
     <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
@@ -310,7 +304,7 @@ Just change Expand Controller attribute:
             *local:MvxGroupExpandController="@string/AccordionMvxGroupExpandController"*
             local:MvxTemplateSelector="@string/special_person_item_template_selector"
             local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
-</code>
+
 
 ** VI. OK! How about adding swiping to grouped lists ? **
 Sorry, not supported yet with MvvmCross bindings.
@@ -320,40 +314,45 @@ Feel free to make PR or just... wait :)
 
 For MvxAdvancedExpandableRecyclerView (grouped/expandable lists use):
 
-<code>
-            var expandableItemAdapter = recyclerView.AdvancedRecyclerViewAdapter as MvxExpandableItemAdapter;
-            expandableItemAdapter.ChildItemBound += (e) =>
-            {
-                e.ViewHolder.ItemView...
+    var expandableItemAdapter = recyclerView.AdvancedRecyclerViewAdapter as MvxExpandableItemAdapter;
+    expandableItemAdapter.ChildItemBound += (e) =>
+    {
+	e.ViewHolder.ItemView...
 
-            };
-            expandableItemAdapter.GroupItemBound += (e) =>{
-                e.ViewHolder.ItemView...
-            }
-</code>
+    };
+    expandableItemAdapter.GroupItemBound += (e) =>{
+	e.ViewHolder.ItemView...
+    }
 
 For MvxAdvancedNonExpandableRecyclerView use:
 
-<code>
-var mAdapter = mRecyclerView.AdvancedRecyclerViewAdapter as MvxNonExpandableAdapter;
 
-mAdapter.MvxViewHolderBound += (args) =>
-{
- // you have access to viewholder here..
-}
-</code>
+	var mAdapter = mRecyclerView.AdvancedRecyclerViewAdapter as MvxNonExpandableAdapter;
+
+	mAdapter.MvxViewHolderBound += (args) =>
+	{
+	 // you have access to viewholder here..
+	}
+
 
 ** VIII. How can I access bounded header/footer view in code ? **
+
 **MvxAdvancedRecyclerView** exposes two events:
 ** MvxHeaderViewHolderBound ** and **MvxFooterViewHolderBound** which gives you access to bound item viewholder.
 
 ** IX. How can I attach command to item click ? **
+
 You can bind to **MvxAdvancedRecyclerView** properties.
-For Header Click/LongClick bind to: **HeaderClickCommand**/**HeaderLongClickCommand**
-For Footer Click/LongClick bind to: **FooterClickCommand**/**FooterLongClickCommand**
-For Item Click (non expandable/grouped recyclerview) bind to: **ItemClick**/**ItemLongClick**
-For Group Item Click ( expandable/grouped recyclerview) bind to: **GroupItemClick**/**GroupItemLongClick**
-For Child Item Click ( expandable / grouped recyclerview) bind to: **ChildItemClick**/**ChildItemLongClick**
+
+1. For Header Click/LongClick bind to: **HeaderClickCommand**/**HeaderLongClickCommand**
+
+2. For Footer Click/LongClick bind to: **FooterClickCommand**/**FooterLongClickCommand**
+
+3. For Item Click (non expandable/grouped recyclerview) bind to: **ItemClick**/**ItemLongClick**
+
+4. For Group Item Click ( expandable/grouped recyclerview) bind to: **GroupItemClick**/**GroupItemLongClick**
+
+5. For Child Item Click ( expandable / grouped recyclerview) bind to: **ChildItemClick**/**ChildItemLongClick**
 
 
 For more, please download repo and check two samples (one of this uses RX/DynamicData for grouping).
