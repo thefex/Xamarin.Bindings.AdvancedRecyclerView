@@ -84,9 +84,7 @@ Sample implementation:
 
 3. You are done :)
 
-
-
-** III. Ok, great - I want to add swipe support to previous example **
+**III. Ok, great - I want to add swipe support to previous example**
 
 Well, that's a bit complex due to way how it has been implemented in **AdvancedRecyclerView**.
 
