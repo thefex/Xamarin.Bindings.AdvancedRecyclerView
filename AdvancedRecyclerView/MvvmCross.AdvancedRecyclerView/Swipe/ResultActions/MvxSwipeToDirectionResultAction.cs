@@ -11,7 +11,6 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
         private MvxNonExpandableAdapter _adpater;
         private readonly SwipeDirection _swipeDirection;
         private readonly int _position;
-        private bool isSetPinned;
 
         public MvxSwipeToDirectionResultAction(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
@@ -34,7 +33,6 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
             if (!stateController.IsPinned(item))
             {
                 stateController.SetPinnedState(item, true);
-                isSetPinned = true;
                 _adpater.NotifyItemChanged(_position);
             }
         }

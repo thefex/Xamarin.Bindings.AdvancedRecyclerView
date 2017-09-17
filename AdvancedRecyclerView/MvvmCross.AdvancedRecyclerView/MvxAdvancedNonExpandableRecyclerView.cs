@@ -58,18 +58,18 @@ namespace MvvmCross.AdvancedRecyclerView
 
 		public ICommand ItemClick
 		{
-			get => Adapter?.ItemClick;
-			set => Adapter.ItemClick = value;
+			get => NonExpandableAdapter?.ItemClick;
+			set => NonExpandableAdapter.ItemClick = value;
 		}
 
 
 		public ICommand ItemLongClick
 		{
-			get => Adapter?.ItemLongClick;
-			set => Adapter.ItemLongClick = value;
+			get => NonExpandableAdapter?.ItemLongClick;
+			set => NonExpandableAdapter.ItemLongClick = value;
 		}
 
-		public MvxNonExpandableAdapter Adapter => (AdapterController.AdvancedRecyclerViewAdapter as MvxNonExpandableAdapter);
+		public MvxNonExpandableAdapter NonExpandableAdapter => (AdapterController.AdvancedRecyclerViewAdapter as MvxNonExpandableAdapter);
 		
 		protected override MvxAdvancedRecyclerViewAdapterController AdapterController { get; }
 	}

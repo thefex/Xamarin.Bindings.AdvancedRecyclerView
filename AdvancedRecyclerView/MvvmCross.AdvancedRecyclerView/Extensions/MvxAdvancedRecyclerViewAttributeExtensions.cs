@@ -8,7 +8,6 @@ using MvvmCross.AdvancedRecyclerView.Utils;
 using MvvmCross.Binding.Droid.ResourceHelpers;
 using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 using MvvmCross.Platform;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.Binding.Droid.Views;
 
 namespace MvvmCross.AdvancedRecyclerView.Extensions

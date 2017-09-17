@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
 using MvvmCross.Binding.ExtensionMethods;
+using MvvmCross.Platform;
 using MvvmCross.Platform.WeakSubscription;
 
 namespace MvvmCross.AdvancedRecyclerView.Data
@@ -49,8 +50,6 @@ namespace MvvmCross.AdvancedRecyclerView.Data
                                     {
                                         var mvxGroupedData = groupedDataConverter.ConvertToMvxGroupedData(item);
 
-                                        foreach (var childItem in mvxGroupedData.GroupItems)
-                                            _observableItemsSource.Remove(childItem);
                                         _observableItemsSource.Remove(mvxGroupedData);
 
                                         if (_groupedDataDisposables.ContainsKey(mvxGroupedData))
@@ -61,7 +60,8 @@ namespace MvvmCross.AdvancedRecyclerView.Data
                                     }
                                     break;
                                 default:
-                                    throw new NotImplementedException("No move/replace in Grouped Items yet...");
+                                    Mvx.Error("We do not support replace/move in grouped items yet. If you want to speedup work on this, create reproduce sample and post an issue on github.");
+                                    break;
                             }
                         });
                 _collectionChangedDisposables.Add(observableGroupsDisposeSubscription);
@@ -111,7 +111,8 @@ namespace MvvmCross.AdvancedRecyclerView.Data
                                 ResetChildCollection(mvxGroupable);
                                 break;
                             default:
-                                throw new NotImplementedException("No move/replace in Grouped Items yet...");
+                                ChildItemsMovedOrReplaced?.Invoke();
+                                break;
                         }
                     }));
                 }
@@ -121,36 +122,17 @@ namespace MvvmCross.AdvancedRecyclerView.Data
         bool isModyfingChildItems;
         private void AddChildItems(MvxGroupedData toGroup, IEnumerable items)
         {
-            isModyfingChildItems = true;
-            var groupItems = toGroup.GroupItems as IList;
-            if (groupItems != null && !groupItems.IsReadOnly)
-            {
-                foreach (var item in items)
-                    groupItems.Add(item);
-            }
-            isModyfingChildItems = false;
             ChildItemsAdded?.Invoke(toGroup, items);
         }
 
         private void RemoveChildItems(MvxGroupedData toGroup, IEnumerable itemsToRemove){
-            isModyfingChildItems = true;
-            var groupItems = toGroup.GroupItems as IList;
-            foreach (var itemToRemove in itemsToRemove)
-            {
-                groupItems.Remove(itemToRemove);
-            }
-            isModyfingChildItems = false;
             ChildItemsRemoved(toGroup, itemsToRemove);
         }
 
         private void ResetChildCollection(MvxGroupedData ofGroupedData)
         {
-            isModyfingChildItems = true;
-            var groupItems = ofGroupedData.GroupItems as IList;
-            groupItems.Clear();
-            isModyfingChildItems = false;
             ChildItemsCollectionCleared?.Invoke(ofGroupedData);
-        }
+		}
 
         private void ClearData()
         {
@@ -163,5 +145,6 @@ namespace MvvmCross.AdvancedRecyclerView.Data
         public event Action<MvxGroupedData, IEnumerable> ChildItemsAdded;
         public event Action<MvxGroupedData, IEnumerable> ChildItemsRemoved;
         public event Action<MvxGroupedData> ChildItemsCollectionCleared;
+        public event Action ChildItemsMovedOrReplaced;
     }
 }

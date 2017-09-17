@@ -2,11 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MvvmCross.AdvancedRecyclerView</id>
-    <version>1.10.6.7</version>
+    <version>1.10.7</version>
     <title>MvvmCross.Bindings.AdvancedRecyclerView</title>
     <authors>Przemyslaw Raciborski [thefex]</authors>
     <projectUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>
         Mvx Wrapper for AdvancedRecyclerView library.
         Currently supports:
