@@ -41,7 +41,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             _expandableGroupedItemsSourceProvider.ChildItemsAdded += SourceItemChildChanged;
             _expandableGroupedItemsSourceProvider.ChildItemsRemoved += SourceItemChildChanged;
             _expandableGroupedItemsSourceProvider.ChildItemsCollectionCleared += (group) => base.NotifyDataSetChanged();
-            _expandableGroupedItemsSourceProvider.ChildItemsMovedOrReplaced += () => base.NotifyDataSetChanged();
+            _expandableGroupedItemsSourceProvider.ItemsMovedOrReplaced += () => base.NotifyDataSetChanged();
         }
 
         protected MvxExpandableItemAdapter(IntPtr javaReference, JniHandleOwnership transfer)
@@ -104,6 +104,9 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         {
             try
             {
+                NotifyDataSetChanged();
+                return;
+
                 switch (e.Action)
                 {
                     case NotifyCollectionChangedAction.Add:
