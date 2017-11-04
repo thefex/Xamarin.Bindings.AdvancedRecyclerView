@@ -17,6 +17,7 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Binding.ExtensionMethods;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Exceptions;
 using Object = Java.Lang.Object;
@@ -51,7 +52,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 
         protected IMvxAndroidBindingContext BindingContext { get; }
 
-        public MvxExpandableTemplateSelector TemplateSelector { get; set; }
+        public IMvxTemplateSelector TemplateSelector { get; set; }
 
         private ObservableCollection<object> GroupedItems => _expandableGroupedItemsSourceProvider.Source;
 

@@ -36,7 +36,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             expandableItemManager = new RecyclerViewExpandableItemManager(expandCollapseSavedState);
             var expandableAdapter = new MvxExpandableItemAdapter(BindingContext as IMvxAndroidBindingContext);
 
-            expandableAdapter.TemplateSelector = (templateSelector as MvxExpandableTemplateSelector) ?? throw new InvalidOperationException("You can't use Expandable adapter without MvxExpandableTemplateSelector.");
+            expandableAdapter.TemplateSelector = templateSelector;
             expandableAdapter.GroupExpandController = MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupExpandController(Context, Attrs);
             expandableItemManager.DefaultGroupsExpandedState = expandableAdapter.GroupExpandController.AreGroupsExpandedByDefault;
             expandableAdapter.GroupExpandController.ExpandableItemManager = expandableItemManager;

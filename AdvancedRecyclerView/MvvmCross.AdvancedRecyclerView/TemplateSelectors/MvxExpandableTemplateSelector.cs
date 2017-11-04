@@ -7,13 +7,12 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
     public abstract class MvxExpandableTemplateSelector : IMvxTemplateSelector
     {
         private const int GroupViewType = 12345276;
+        private int groupLayoutId;
 
         protected MvxExpandableTemplateSelector(int groupLayoutId)
         {
-            GroupLayoutId = groupLayoutId;
+            this.groupLayoutId = groupLayoutId;
         }
-
-        public int GroupLayoutId { get; }
 
         public int GetItemViewType(object forItemObject)
         {
@@ -26,7 +25,7 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
         public int GetItemLayoutId(int fromViewType)
         {
             if (fromViewType == GroupViewType)
-                return GroupLayoutId;
+                return groupLayoutId;
 
             return GetChildItemLayoutId(fromViewType);
         }
