@@ -24,16 +24,17 @@ namespace XamarinMvvmCross_MeetupSample.Core.ViewModels
 			return Task.FromResult(true);
 		}
 
-		public override void Appearing()
-		{
-			_messageObserversController.StartObserving();
-			base.Appearing();
-		}
+        public override void ViewAppeared()
+        {
+            _messageObserversController.StartObserving();
+            base.ViewAppeared();
+        }
 
-		public override void Disappearing()
-		{
-			_messageObserversController.StopObserving();
-			base.Disappearing();
-		}
+        public override void ViewDisappeared()
+        {
+            base.ViewDisappeared();
+            _messageObserversController.StopObserving();
+        }
+
     }
 }

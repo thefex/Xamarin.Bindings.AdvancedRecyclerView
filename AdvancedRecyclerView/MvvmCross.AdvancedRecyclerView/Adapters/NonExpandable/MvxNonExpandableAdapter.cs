@@ -5,6 +5,7 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
+using Java.Lang;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.EventArguments;
 using MvvmCross.AdvancedRecyclerView.Extensions;
@@ -135,6 +136,11 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
                 foreach(var itemsToRemove in e.OldItems)
                     SwipeItemPinnedStateController.SetPinnedForAllStates(itemsToRemove, false);
             }
+        }
+
+        public void OnSwipeItemStarted(Object p0, int p1)
+        {
+            this.NotifyDataSetChanged();
         }
 
         public event Action<MvxSwipeBackgroundSetEventArgs> SwipeBackgroundSet;

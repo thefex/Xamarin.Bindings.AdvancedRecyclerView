@@ -27,20 +27,20 @@ namespace XamarinMvvmCross_MeetupSample.Core
 
         public ReadOnlyObservableCollection<GroupedData> Items { get; private set; }
 
-        public override void Appearing()
+        public override void ViewAppeared()
         {
-            base.Appearing();
+            base.ViewAppeared();
             BuildAndSetObservable();
         }
 
-        public override void Disappearing()
+        public override void ViewDisappeared()
         {
-            base.Disappearing();
+            base.ViewDisappeared();
 
-			var itemsToDispose = DisposableItems.ToList();
-			DisposableItems.Clear();
-			foreach (var disposableItem in itemsToDispose)
-				disposableItem.Dispose();
+            var itemsToDispose = DisposableItems.ToList();
+            DisposableItems.Clear();
+            foreach (var disposableItem in itemsToDispose)
+                disposableItem.Dispose();
         }
 
         public override async System.Threading.Tasks.Task Load()
