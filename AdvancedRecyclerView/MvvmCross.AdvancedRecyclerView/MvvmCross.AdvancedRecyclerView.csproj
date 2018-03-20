@@ -114,6 +114,7 @@
     <Compile Include="Adapters\NonExpandable\MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
     <Compile Include="Data\EventArguments\MvxExpandableItemAdapterBoundedArgs.cs" />
     <Compile Include="Data\EventArguments\MvxHookGroupExpandCollapseArgs.cs" />
+    <Compile Include="Data\EventHandlerWeakSubscriptionHolder.cs" />
     <Compile Include="Data\IMvxItemUniqueIdProvider.cs" />
     <Compile Include="Data\MvxExpandableDataConverter.cs" />
     <Compile Include="Data\MvxGroupedData.cs" />
