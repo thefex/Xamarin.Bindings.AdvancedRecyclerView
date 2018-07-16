@@ -256,6 +256,11 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             return ExpandableDataConverter.GetItemUniqueId(mvxGroupedData);
         }
 
+        public override bool GetInitialGroupExpandedState (int groupPosition)
+        {
+            return GroupExpandController.GetInitialGroupExpandedState (groupPosition);
+        }
+
         private MvxGroupedData GetItemAt(int groupIndex)
             => GroupedItems.ElementAt(groupIndex) as MvxGroupedData;
 
