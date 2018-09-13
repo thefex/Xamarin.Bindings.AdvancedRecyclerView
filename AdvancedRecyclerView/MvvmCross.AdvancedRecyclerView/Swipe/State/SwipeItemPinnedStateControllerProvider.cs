@@ -1,5 +1,6 @@
 using System;
 using MvvmCross.AdvancedRecyclerView.Data;
+using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
 
 namespace MvvmCross.AdvancedRecyclerView.Swipe.State
 {

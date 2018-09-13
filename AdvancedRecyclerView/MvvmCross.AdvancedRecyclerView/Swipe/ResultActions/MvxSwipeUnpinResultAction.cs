@@ -1,42 +1,41 @@
 using System;
 using Android.Runtime;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
-using MvvmCross.AdvancedRecyclerView.Adapters;
-using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
+using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions.ItemManager;
 
 namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 {
     public class MvxSwipeUnpinResultAction : SwipeResultActionDefault
     {
-        private MvxNonExpandableAdapter _adapter;
-        private readonly int _position;
+        private IMvxSwipeResultActionItemManager _itemManager;
 
         public MvxSwipeUnpinResultAction(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
         }
 
-        public MvxSwipeUnpinResultAction(MvxNonExpandableAdapter adapter, int position)
+        public MvxSwipeUnpinResultAction(IMvxSwipeResultActionItemManager itemManager)
         {
-            _adapter = adapter;
-            _position = position;
+            _itemManager = itemManager;
         }
 
         protected override void OnPerformAction()
         {
             base.OnPerformAction();
 
-            var item = _adapter.GetItem(_position);
-            if (_adapter.SwipeItemPinnedStateController.IsPinnedForAnyState(item))
+            var item = _itemManager.GetItem();
+            var swipeItemPinedStateControlerProvider = _itemManager.GetAttachedPinnedStateControllerProviderWithItem();
+            
+            if (swipeItemPinedStateControlerProvider.IsPinnedForAnyState(item))
             {
-                _adapter.SwipeItemPinnedStateController.SetPinnedForAllStates(item, false);
-                _adapter.NotifyItemChanged(_position);
+                swipeItemPinedStateControlerProvider.SetPinnedForAllStates(item, false);
+                _itemManager.NotifyItemChanged();
             }
         }
 
         protected override void OnCleanUp()
         {
             base.OnCleanUp();
-            _adapter = null;
+            _itemManager = null;
         }
     }
 }

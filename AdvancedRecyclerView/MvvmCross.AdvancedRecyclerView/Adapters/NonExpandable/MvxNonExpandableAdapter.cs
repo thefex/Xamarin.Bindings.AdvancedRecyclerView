@@ -8,8 +8,10 @@ using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using Java.Lang;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.EventArguments;
+using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
 using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions;
+using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions.ItemManager;
 using MvvmCross.AdvancedRecyclerView.Swipe.State;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
@@ -84,15 +86,17 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             switch (result)
             {
                 case SwipeableItemConstants.ResultSwipedDown:
-                    return SwipeResultActionFactory.GetSwipeDownResultAction(this, position);
+                    return SwipeResultActionFactory.GetSwipeDownResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 case SwipeableItemConstants.ResultSwipedLeft:
-                    return SwipeResultActionFactory.GetSwipeLeftResultAction(this, position);
+                    return SwipeResultActionFactory.GetSwipeLeftResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 case SwipeableItemConstants.ResultSwipedRight:
-                    return SwipeResultActionFactory.GetSwipeRightResultAction(this, position);
+                    return SwipeResultActionFactory.GetSwipeRightResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 case SwipeableItemConstants.ResultSwipedUp:
-                    return SwipeResultActionFactory.GetSwipeUpResultAction(this, position);
+                    return SwipeResultActionFactory.GetSwipeUpResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 default:
-                    return position != RecyclerView.NoPosition ? SwipeResultActionFactory.GetUnpinSwipeResultAction(this, position) : new SwipeResultActionDoNothing();
+                    return position != RecyclerView.NoPosition ? 
+                        SwipeResultActionFactory.GetUnpinSwipeResultAction(new NonExpandableSwipeResultActionItemManager(this, position)) :
+                        new SwipeResultActionDoNothing();
             }
         }
 

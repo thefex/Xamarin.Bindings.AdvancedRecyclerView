@@ -14,6 +14,9 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 {
     public class MvxAdvancedRecyclerViewExpandableAdapterController : MvxAdvancedRecyclerViewAdapterController
     {
+        private RecyclerViewTouchActionGuardManager _mRecyclerViewTouchActionGuardManager;
+        private RecyclerViewSwipeManager _mRecyclerViewSwipeManager;
+        
         RecyclerViewExpandableItemManager expandableItemManager;
         RecyclerView.Adapter wrappedAdapter;
         IParcelable expandCollapseSavedState;
@@ -47,16 +50,48 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             expandableAdapter.ExpandableDataConverter = groupedDataConverter;
             wrappedAdapter = expandableItemManager.CreateWrappedAdapter(expandableAdapter);
 
+            bool isSwipeForExpandableSupported = MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeForExpandableSupported(Context, Attrs);
+
+            if (isSwipeForExpandableSupported)
+            {
+                if (MvxAdvancedRecyclerViewAttributeExtensions.IsGroupedSwipeSupported(Context, Attrs))
+                {
+                    var groupedSwipeableTemplate =
+                        MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupSwipeableTemplate(Context, Attrs);
+                    expandableAdapter.GroupSwipeableTemplate= groupedSwipeableTemplate;    
+                }
+
+                if (MvxAdvancedRecyclerViewAttributeExtensions.IsGroupedChildSwipeSupported(Context, Attrs))
+                {
+                    var childSwipeableTemplate =
+                        MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupChildSwipeableTemplate(Context, Attrs);
+                    expandableAdapter.GroupSwipeableTemplate = childSwipeableTemplate;
+                }
+
+                _mRecyclerViewTouchActionGuardManager = new RecyclerViewTouchActionGuardManager();
+                _mRecyclerViewTouchActionGuardManager.SetInterceptVerticalScrollingWhileAnimationRunning(true);
+                _mRecyclerViewTouchActionGuardManager.Enabled = true;
+
+                _mRecyclerViewSwipeManager = new RecyclerViewSwipeManager();
+                return _mRecyclerViewSwipeManager.CreateWrappedAdapter(wrappedAdapter);
+            }
+            
             return wrappedAdapter;
         }
         
         public override void AttachRecyclerView()
-        {
+        { 
+            _mRecyclerViewTouchActionGuardManager?.AttachRecyclerView(RecyclerView);
+            _mRecyclerViewSwipeManager?.AttachRecyclerView(RecyclerView);
             expandableItemManager?.AttachRecyclerView(RecyclerView);
         }
 
         public override void Dispose()
         {
+            _mRecyclerViewTouchActionGuardManager?.Release();
+            _mRecyclerViewSwipeManager?.Release();
+            _mRecyclerViewTouchActionGuardManager = null;
+            _mRecyclerViewSwipeManager = null;
             expandableItemManager?.Release();
             expandableItemManager = null;
         }

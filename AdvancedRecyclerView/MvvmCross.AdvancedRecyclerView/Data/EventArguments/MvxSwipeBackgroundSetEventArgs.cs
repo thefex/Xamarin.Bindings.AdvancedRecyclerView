@@ -12,7 +12,7 @@ namespace MvvmCross.AdvancedRecyclerView.Data.EventArguments
 
         public MvxAdvancedRecyclerViewHolder ViewHolder { get; internal set; }
 
-        public int Position { get; internal set; }
+        public virtual int Position { get; internal set; }
 
         public int Type { get; internal set; }
     }

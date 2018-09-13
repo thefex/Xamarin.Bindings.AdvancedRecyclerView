@@ -1,4 +1,4 @@
-namespace MvvmCross.AdvancedRecyclerView.Data
+namespace MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider
 {
     public interface IMvxItemUniqueIdProvider
     {

@@ -112,9 +112,13 @@
   <ItemGroup>
     <Compile Include="Adapters\MvxHeaderFooterWrapperAdapter.cs" />
     <Compile Include="Adapters\NonExpandable\MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
+    <Compile Include="Data\EventArguments\MvxChildSwipeBackgroundSetEventARgs.cs" />
     <Compile Include="Data\EventArguments\MvxExpandableItemAdapterBoundedArgs.cs" />
+    <Compile Include="Data\EventArguments\MvxGroupSwipeBackgroundSetEventArgs.cs" />
     <Compile Include="Data\EventArguments\MvxHookGroupExpandCollapseArgs.cs" />
-    <Compile Include="Data\IMvxItemUniqueIdProvider.cs" />
+    <Compile Include="Data\ItemUniqueIdProvider\GroupChildMvxItemUniqueIdProvider.cs" />
+    <Compile Include="Data\ItemUniqueIdProvider\GroupMvxItemUniqueIdProvider.cs" />
+    <Compile Include="Data\ItemUniqueIdProvider\IMvxItemUniqueIdProvider.cs" />
     <Compile Include="Data\MvxExpandableDataConverter.cs" />
     <Compile Include="Data\MvxGroupedData.cs" />
     <Compile Include="Data\MvxRecyclerViewItemsSourceBridge.cs" />
@@ -122,6 +126,10 @@
     <Compile Include="MvxAdvancedRecyclerView.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Swipe\ResultActions\ItemManager\ExpandableGroupChildSwipeResultActionItemManager.cs" />
+    <Compile Include="Swipe\ResultActions\ItemManager\ExpandableGroupSwipeResultActionItemManager.cs" />
+    <Compile Include="Swipe\ResultActions\ItemManager\IMvxSwipeResultActionItemManager.cs" />
+    <Compile Include="Swipe\ResultActions\ItemManager\NonExpandableSwipeResultActionItemManager.cs" />
     <Compile Include="Swipe\ResultActions\MvxSwipeResultActionFactory.cs" />
     <Compile Include="Swipe\ResultActions\MvxSwipeToDirectionResultAction.cs" />
     <Compile Include="Swipe\ResultActions\MvxSwipeUnpinResultAction.cs" />

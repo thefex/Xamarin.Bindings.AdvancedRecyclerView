@@ -7,9 +7,17 @@ using System.Windows.Input;
 using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Views;
+using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
+using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
+using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.EventArguments;
+using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
+using MvvmCross.AdvancedRecyclerView.Extensions;
+using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions;
+using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions.ItemManager;
+using MvvmCross.AdvancedRecyclerView.Swipe.State;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.Utils;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
@@ -24,10 +32,14 @@ using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 {
-    public class MvxExpandableItemAdapter : AbstractExpandableItemAdapter, IMvxAdvancedRecyclerViewAdapter
+    public class MvxExpandableItemAdapter : AbstractExpandableItemAdapter, IExpandableSwipeableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
+        private readonly Lazy<DefaultSwipeableTemplate> _lazyDefaultSwipeableTemplate = new Lazy<DefaultSwipeableTemplate>();
+           
         private readonly MvxGroupedItemsSourceProvider _expandableGroupedItemsSourceProvider;
         private IEnumerable itemsSource;
+        private IMvxSwipeableTemplate groupedSwipeableTemplate;
+        private IMvxSwipeableTemplate childSwipeableTemplate;
 
         public MvxExpandableItemAdapter() : this(MvxAndroidBindingContextHelpers.Current())
         {
@@ -43,12 +55,23 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             _expandableGroupedItemsSourceProvider.ChildItemsRemoved += SourceItemChildChanged;
             _expandableGroupedItemsSourceProvider.ChildItemsCollectionCleared += (group) => base.NotifyDataSetChanged();
             _expandableGroupedItemsSourceProvider.ItemsMovedOrReplaced += () => base.NotifyDataSetChanged();
+            GroupSwipeItemPinnedStateController = new SwipeItemPinnedStateControllerProvider()
+            {
+                UniqueIdProvider = new GroupMvxItemUniqueIdProvider(this)
+            };
+            ChildSwipeItemPinnedStateController = new SwipeItemPinnedStateControllerProvider()
+            {
+                UniqueIdProvider = new GroupChildMvxItemUniqueIdProvider(this)
+            };
         }
 
         protected MvxExpandableItemAdapter(IntPtr javaReference, JniHandleOwnership transfer)
             : base(javaReference, transfer)
         {
         }
+        
+        
+        
 
         protected IMvxAndroidBindingContext BindingContext { get; }
 
@@ -58,7 +81,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 
         public IEnumerable ItemsSource
         {
-            get { return itemsSource; }
+            get => itemsSource;
             set
             {
                 if (ReferenceEquals(itemsSource, value))
@@ -73,14 +96,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 
         public MvxGroupExpandController GroupExpandController { get; internal set; } = new DefaultMvxGroupExpandController();
 
-        public override int GroupCount
-        {
-            get
-            {
-                return
-                    GroupedItems.Count();
-            }
-        }
+        public override int GroupCount => GroupedItems.Count();
 
         public ICommand GroupItemClickCommand { get; set; }
 
@@ -163,6 +179,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             var viewHolder =
                 new MvxExpandableRecyclerViewHolder(
                     InflateViewForHolder(TemplateSelector.GetItemLayoutId(viewType), parent, viewType, itemBindingContext),
+                    ChildSwipeableTemplate.SwipeContainerViewGroupId,
+                    ChildSwipeableTemplate.UnderSwipeContainerViewGroupId,
                     itemBindingContext)
                 {
                     Click = ChildItemClickCommand,
@@ -179,6 +197,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             var viewHolder =
                 new MvxExpandableRecyclerViewHolder(
                     InflateViewForHolder(TemplateSelector.GetItemLayoutId(viewType), parent, viewType, itemBindingContext),
+                    GroupSwipeableTemplate.SwipeContainerViewGroupId,
+                    GroupSwipeableTemplate.UnderSwipeContainerViewGroupId,
                     itemBindingContext)
                 {
                     Click = GroupItemClickCommand,
@@ -256,10 +276,10 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             return ExpandableDataConverter.GetItemUniqueId(mvxGroupedData);
         }
 
-        private MvxGroupedData GetItemAt(int groupIndex)
+        public MvxGroupedData GetItemAt(int groupIndex)
             => GroupedItems.ElementAt(groupIndex) as MvxGroupedData;
 
-        private object GetItemAt(int groupIndex, int childIndex)
+        public object GetItemAt(int groupIndex, int childIndex)
             => GetItemAt(groupIndex).GroupItems.ElementAt(childIndex);
 
         public event Action<MvxExpandableItemAdapterBoundedArgs> GroupItemBound;
@@ -280,5 +300,122 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         {
             ChildItemBound?.Invoke(obj);
         }
+
+        public IMvxSwipeableTemplate GroupSwipeableTemplate
+        {
+            get => groupedSwipeableTemplate ?? _lazyDefaultSwipeableTemplate.Value;
+            set => groupedSwipeableTemplate = value;
+        }
+
+        public IMvxSwipeableTemplate ChildSwipeableTemplate
+        {
+            get => childSwipeableTemplate ?? _lazyDefaultSwipeableTemplate.Value;
+            set => childSwipeableTemplate = value;
+        }
+
+        public int GroupSwipeReactionType => GroupSwipeableTemplate.SwipeReactionType;
+
+        public int ChildSwipeReactionType => ChildSwipeableTemplate.SwipeReactionType;
+        
+        public MvxSwipeResultActionFactory GroupSwipeResultActionFactory { get; set; } = new MvxSwipeResultActionFactory();
+
+        public MvxSwipeResultActionFactory ChildSwipeResultActionFactory { get; set; } = new MvxSwipeResultActionFactory();
+
+        public SwipeItemPinnedStateControllerProvider GroupSwipeItemPinnedStateController { get; }
+
+        public SwipeItemPinnedStateControllerProvider ChildSwipeItemPinnedStateController { get; } 
+        
+        public int OnGetChildItemSwipeReactionType(Object p0, int p1, int p2, int x, int y)
+        {
+            var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
+
+            return viewHolder.SwipeableContainerView.HitTest(x, y)
+                ? ChildSwipeReactionType
+                : SwipeableItemConstants.ReactionCanNotSwipeAny;
+        }
+
+        public int OnGetGroupItemSwipeReactionType(Object p0, int p1, int x, int y)
+        {
+            var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
+
+            return viewHolder.SwipeableContainerView.HitTest(x, y)
+                ? GroupSwipeReactionType
+                : SwipeableItemConstants.ReactionCanNotSwipeAny;
+        }
+
+        public void OnSetChildItemSwipeBackground(Object p0, int position, int childPosition, int type)
+        {
+            var advancedViewHolder = p0 as MvxAdvancedRecyclerViewHolder;
+            ChildItemSwipeBackgroundSet?.Invoke(new MvxChildSwipeBackgroundSetEventARgs()
+            {
+                ViewHolder = advancedViewHolder,
+                Position = position,
+                ChildPosition = childPosition,
+                Type = type
+            });        
+        }
+
+        public void OnSetGroupItemSwipeBackground(Object p0, int position, int type)
+        {
+            var advancedViewHolder = p0 as MvxAdvancedRecyclerViewHolder;
+            GroupItemSwipeBackgroundSet?.Invoke(new MvxGroupSwipeBackgroundSetEventArgs()
+            {
+                ViewHolder = advancedViewHolder,
+                Position = position,
+                Type = type
+            });        
+        }
+
+        public void OnSwipeChildItemStarted(Object p0, int p1, int p2)
+        {
+            this.NotifyDataSetChanged();
+        }
+
+        public void OnSwipeGroupItemStarted(Object p0, int p1)
+        {
+            this.NotifyDataSetChanged();
+        }
+
+        public SwipeResultAction OnSwipeChildItem(Object p0, int groupPosition, int childPosition, int result)
+        {
+            switch (result)
+            {
+                case SwipeableItemConstants.ResultSwipedDown:
+                    return ChildSwipeResultActionFactory.GetSwipeDownResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
+                case SwipeableItemConstants.ResultSwipedLeft:
+                    return ChildSwipeResultActionFactory.GetSwipeLeftResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
+                case SwipeableItemConstants.ResultSwipedRight:
+                    return ChildSwipeResultActionFactory.GetSwipeRightResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
+                case SwipeableItemConstants.ResultSwipedUp:
+                    return ChildSwipeResultActionFactory.GetSwipeUpResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
+                default:
+                    return groupPosition != RecyclerView.NoPosition && childPosition != RecyclerView.NoPosition ? 
+                        ChildSwipeResultActionFactory.GetUnpinSwipeResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition)) : 
+                        new SwipeResultActionDoNothing();
+            }
+        }
+
+        public SwipeResultAction OnSwipeGroupItem(Object p0, int groupPosition, int result)
+        {
+            switch (result)
+            {
+                case SwipeableItemConstants.ResultSwipedDown:
+                    return GroupSwipeResultActionFactory.GetSwipeDownResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
+                case SwipeableItemConstants.ResultSwipedLeft:
+                    return GroupSwipeResultActionFactory.GetSwipeLeftResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
+                case SwipeableItemConstants.ResultSwipedRight:
+                    return GroupSwipeResultActionFactory.GetSwipeRightResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
+                case SwipeableItemConstants.ResultSwipedUp:
+                    return GroupSwipeResultActionFactory.GetSwipeUpResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
+                default:
+                    return groupPosition != RecyclerView.NoPosition ? 
+                        GroupSwipeResultActionFactory.GetUnpinSwipeResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition)) :
+                        new SwipeResultActionDoNothing();
+            }
+        }
+        
+        public event Action<MvxGroupSwipeBackgroundSetEventArgs> GroupItemSwipeBackgroundSet;
+
+        public event Action<MvxChildSwipeBackgroundSetEventARgs> ChildItemSwipeBackgroundSet;
     }
 }

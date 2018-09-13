@@ -9,4 +9,5 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
     {
         IEnumerable ItemsSource { get; set; }
     }
+
 }

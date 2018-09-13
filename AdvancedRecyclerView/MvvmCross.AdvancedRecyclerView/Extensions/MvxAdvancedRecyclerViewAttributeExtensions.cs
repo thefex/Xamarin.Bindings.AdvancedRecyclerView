@@ -3,6 +3,7 @@ using Android.Content;
 using Android.Content.Res;
 using Android.Util;
 using MvvmCross.AdvancedRecyclerView.Data;
+using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.Utils;
 using MvvmCross.Binding.Droid.ResourceHelpers;
@@ -81,6 +82,15 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
         public static bool IsSwipeSupported(Context context, IAttributeSet attrs)
             => !string.IsNullOrEmpty(ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).SwipeableTemplateClassName);
+
+        public static bool IsSwipeForExpandableSupported(Context context, IAttributeSet attrs)
+            => IsGroupedSwipeSupported(context, attrs) && IsGroupedChildSwipeSupported(context, attrs);
+
+        public static bool IsGroupedSwipeSupported(Context context, IAttributeSet attrs)
+            => false;
+
+        public static bool IsGroupedChildSwipeSupported(Context context, IAttributeSet attrs)
+            => false;
 
         public static MvxExpandableDataConverter BuildMvxGroupedDataConverter(Context context, IAttributeSet attrs)
         {
@@ -222,6 +232,16 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
             var swipeableTemplate = Activator.CreateInstance(type) as IMvxSwipeableTemplate;
 			return swipeableTemplate;
+        }
+
+        public static IMvxSwipeableTemplate BuildGroupSwipeableTemplate(Context context, IAttributeSet attrs)
+        {
+            return null;
+        }
+        
+        public static IMvxSwipeableTemplate BuildGroupChildSwipeableTemplate(Context context, IAttributeSet attrs)
+        {
+            return null;
         }
 
         public static IMvxItemUniqueIdProvider BuildUniqueItemIdProvider(Context context, IAttributeSet attrs){
