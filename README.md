@@ -8,6 +8,9 @@ Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedr
 
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
+v 1.12.0
+- Update to MvvmCross 6.0+
+
 v 1.11.1
 - fixed random crashes/list stopped working in ExpandableRecyclerView to work when group child collection changes
 
