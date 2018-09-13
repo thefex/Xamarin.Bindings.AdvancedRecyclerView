@@ -94,24 +94,31 @@ namespace MvvmCross.AdvancedRecyclerView.Data
 
                 if (!_groupedDataDisposables.ContainsKey(mvxGroupable))
                 {
-                    _groupedDataDisposables.Add(mvxGroupable, childNotifyCollectionChanged.WeakSubscribe((sender, args) =>
-                    {
-                        switch (args.Action)
-                        {
-                            case NotifyCollectionChangedAction.Add:
-                                AddChildItems(mvxGroupable, args.NewItems);
-                                break;
-                            case NotifyCollectionChangedAction.Remove:
-                                RemoveChildItems(mvxGroupable, args.OldItems);
-                                break;
-                            case NotifyCollectionChangedAction.Reset:
-                                ResetChildCollection(mvxGroupable);
-                                break;
-                            default:
-                                ItemsMovedOrReplaced?.Invoke();
-                                break;
-                        }
-                    }));
+	                EventHandler<NotifyCollectionChangedEventArgs> collectionChangedHandler = (sender, args) =>
+	                {
+		                switch (args.Action)
+		                {
+			                case NotifyCollectionChangedAction.Add:
+				                AddChildItems(mvxGroupable, args.NewItems);
+				                break;
+			                case NotifyCollectionChangedAction.Remove:
+				                RemoveChildItems(mvxGroupable, args.OldItems);
+				                break;
+			                case NotifyCollectionChangedAction.Reset:
+				                ResetChildCollection(mvxGroupable);
+				                break;
+			                default:
+				                ItemsMovedOrReplaced?.Invoke();
+				                break;
+		                }
+	                };
+	                
+	                _groupedDataDisposables.Add(mvxGroupable, 
+		                new EventHandlerWeakSubscriptionHolder(
+								collectionChangedHandler, 
+								childNotifyCollectionChanged.WeakSubscribe(collectionChangedHandler)
+			                )
+		                );
                 }
             }
         }

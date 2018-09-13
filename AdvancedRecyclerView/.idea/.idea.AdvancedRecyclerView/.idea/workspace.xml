@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64d9e4b0-e0f5-4cce-a75c-b413c78880d5" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PeopleListFragment.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/Fragments/PeopleListFragment.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding>
+                <marker date="1536844516093" expanded="true" signature="6:243" ph="..." />
+                <marker date="1536844516093" expanded="true" signature="290:864" ph="{...}" />
+                <marker date="1536844516093" expanded="true" signature="437:862" ph="{...}" />
+                <marker date="1536844516093" expanded="true" signature="470:478" ph="{...}" />
+                <marker date="1536844516093" expanded="true" signature="641:859" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PeopleListViewModel.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/PeopleListViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <marker date="1536844516082" expanded="true" signature="6:274" ph="..." />
+                <marker date="1536844516082" expanded="true" signature="419:4018" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="496:4016" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="783:803" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="1068:1158" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="1206:1460" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="1526:1690" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="1746:2652" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="1891:1980" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="2729:3248" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="3284:3460" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="3502:3566" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="3663:3796" ph="{...}" />
+                <marker date="1536844516082" expanded="true" signature="3874:4008" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/App.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <marker date="1536844516077" expanded="true" signature="6:209" ph="..." />
+                <marker date="1536844516077" expanded="true" signature="255:1333" ph="{...}" />
+                <marker date="1536844516077" expanded="true" signature="292:1331" ph="{...}" />
+                <marker date="1536844516077" expanded="true" signature="331:1328" ph="{...}" />
+                <marker date="1536844516077" expanded="true" signature="500:611" ph="{...}" />
+                <marker date="1536844516077" expanded="true" signature="996:1276" ph="/* Task.Run(async () =&gt; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XamarinMvvmCross_MeetupSample.Droid.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/XamarinMvvmCross_MeetupSample.Droid.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3423">
+              <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resource.Designer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Resource.Designer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <folding>
+                <marker date="1536844516104" expanded="true" signature="29:424" ph="/* ------------------------------------------------------------------------------ ... */" />
+                <marker date="1536844516104" expanded="true" signature="593:169166" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="722:169164" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="748:819" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="855:2144" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="2029:2103" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="2130:2140" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="2180:28909" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="28794:28868" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="28895:28905" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="28943:29644" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="29531:29605" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="29630:29640" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="29676:38767" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="38656:38730" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="38753:38763" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="38803:51863" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="51748:51822" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="51849:51859" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="51898:62448" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="62334:62408" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="62434:62444" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="62477:73834" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="73726:73800" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="73820:73830" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="73868:74537" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="74424:74498" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="74523:74533" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="74570:79609" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="79497:79571" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="79595:79605" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="79642:83367" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="83255:83329" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="83353:83363" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="83399:124467" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="124356:124430" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="124453:124463" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="124503:169161" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="124557:125051" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="127591:127607" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="127765:127781" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="127971:128074" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="128638:128673" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="128942:129060" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="129735:129802" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="130208:130275" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="130693:130799" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="131562:131697" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="132516:134536" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="146227:146245" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="146394:146442" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="146766:146816" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="147138:147275" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="148039:148142" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="148747:148844" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="149424:149568" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="150509:150570" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="151055:151086" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="151351:151442" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="152020:152386" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="154417:154557" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="155438:155473" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="155681:155699" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="155844:155862" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="156017:156052" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="156291:156445" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="157367:157415" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="157762:157780" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="157942:157977" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="158222:158406" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="159504:159786" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="161281:161359" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="161836:162069" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="163327:163527" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="164775:165265" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="167781:167863" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="168307:168357" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="168706:168752" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="169046:169120" ph="{...}" />
+                <marker date="1536844516104" expanded="true" signature="169147:169157" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resource.Designer.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resource.Designer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainApplication.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/MainApplication.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <marker date="1536844516084" expanded="true" signature="6:97" ph="..." />
+                <marker date="1536844516084" expanded="true" signature="455:803" ph="{...}" />
+                <marker date="1536844516084" expanded="true" signature="455:805" ph="{...}" />
+                <marker date="1536844516084" expanded="true" signature="552:560" ph="{...}" />
+                <marker date="1536844516084" expanded="true" signature="595:698" ph="{...}" />
+                <marker date="1536844516084" expanded="true" signature="736:799" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplashScreen.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/SplashScreen.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <marker date="1536844516091" expanded="true" signature="6:99" ph="..." />
+                <marker date="1536844516091" expanded="true" signature="478:556" ph="{...}" />
+                <marker date="1536844516091" expanded="true" signature="478:558" ph="{...}" />
+                <marker date="1536844516091" expanded="true" signature="545:553" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Setup.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Setup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding>
+                <marker date="1536844516091" expanded="true" signature="6:136" ph="..." />
+                <marker date="1536844516091" expanded="true" signature="183:519" ph="{...}" />
+                <marker date="1536844516091" expanded="true" signature="236:517" ph="{...}" />
+                <marker date="1536844516091" expanded="true" signature="342:376" ph="{...}" />
+                <marker date="1536844516091" expanded="true" signature="445:512" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>DebugTrace</find>
+      <find>HEAD]</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Services/ServicesLocation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Resource.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MvxAsyncGuardedCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/LoginVM/SignInCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MainVM/LogoutCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MvxExceptionGuardedCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/SwipeExampleActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/ViewHolders/MvxExpandableRecyclerViewHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/State/SwipeItemPinnedStateController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/IMvxAdvancedRecyclerViewAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxRecyclerViewItemsSourceBridge.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Setup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/State/SwipeItemPinnedStateControllerProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/GroupedRelated/AppGroupTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Configuration/ApplicationPresenter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/MainApplication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Messenging/Observers/ActivityMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/ViewModels/SwipeExampleViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Messenging/Observers/MessageDialogObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/ViewModels/MainViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventHandlerWeakSubscriptionHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/SwipeDirection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Messenging/Observers/QuestionDialogMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/ResultActions/MvxSwipeToDirectionResultAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/ResultActions/MvxSwipeResultActionFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/ResultActions/MvxSwipeUnpinResultAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxNonExpandableAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/ViewHolders/MvxAdvancedRecyclerViewHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeExampleUniqueIdProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxExpandableItemAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeResultActionFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxSwipeBackgroundSetEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/IMvxSwipeableTemplate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/App.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedExpandableRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxExpandableTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Observers/LongRunningAsyncOperationMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/LinkerPleaseInclude.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/ToastMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/Fragments/PeopleListFragment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/LongRunningAsyncOperationMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/LoginActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/IMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/BaseMvxActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/DialogMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/QuestionDialogMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/MessageObserversController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/MessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Setup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/BaseMvxViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/MainViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/PeopleListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/AkavacheSqliteLinkerOverride.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Extensions/LayerResponseExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedExpandableRecyclerView.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventHandlerWeakSubscriptionHolder.cs" />
+        <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs" />
+        <option value="$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs" />
+        <option value="$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="62" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Commands" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Commands" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="LoginVM" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Commands" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MainVM" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Extensions" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MessageObserver" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MessageObserver" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Messages" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MessageObserver" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Observers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Services" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Core (has missing packages)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ViewModels" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Configuration" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Messenging" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Messenging" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Observers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Resources" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Views" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="grouping" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Views" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Fragments" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="old_sample" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="old_sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Sample" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="old_sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="GroupedRelated" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="old_sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Properties" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="old_sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Resources" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="old_sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Swipe" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="old_sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Sample" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ViewModels" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Adapters" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Adapters" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Expandable" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Adapters" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="NonExpandable" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Data" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Extensions" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Properties" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="TemplateSelectors" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="AdvancedRecyclerView (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ViewHolders" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="Resour&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/Sample/Resources/Resource.Designer.cs&#10;Resource.Designer.cs&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs&#10;grouped&#9;null&#9;null&#10;NonEx&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs&#10;Adaptercontroller&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs&#10;Expandableada&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Xamarin.Android.Android Default">
+    <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <option name="DEFAULT_DEVICE_TO_RUN" value="" />
+      <option name="DEFAULT_EMULATOR_TO_RUN" value="" />
+    </configuration>
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <option name="DEFAULT_DEVICE_TO_RUN" value="" />
+      <option name="DEFAULT_EMULATOR_TO_RUN" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue="Xamarin.Android.Android Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64d9e4b0-e0f5-4cce-a75c-b413c78880d5" name="Default" comment="" />
+      <created>1505311253234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505311253234</updated>
+      <workItem from="1505311255989" duration="5333000" />
+      <workItem from="1505378513640" duration="4593000" />
+      <workItem from="1521553726044" duration="228000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10268000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1749" y="25" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22678572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22470714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/LinkerPleaseInclude.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding>
+            <marker date="1536844516083" expanded="true" signature="6:162" ph="..." />
+            <marker date="1536844516083" expanded="true" signature="238:2232" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="242:400" ph="/* This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and pro ... */" />
+            <marker date="1536844516083" expanded="true" signature="434:2230" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="474:543" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="585:678" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="717:807" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="841:932" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="970:1078" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1123:1231" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1273:1348" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1383:1465" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1502:1541" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1598:1777" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1644:1772" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1818:1926" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="1979:2055" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="2132:2227" ph="{...}" />
+            <marker date="1536844516083" expanded="true" signature="2181:2222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/AkavacheSqliteLinkerOverride.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/DebugTrace.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/MainApplication.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1536844516084" expanded="true" signature="6:97" ph="..." />
+            <marker date="1536844516084" expanded="true" signature="455:803" ph="{...}" />
+            <marker date="1536844516084" expanded="true" signature="455:805" ph="{...}" />
+            <marker date="1536844516084" expanded="true" signature="552:560" ph="{...}" />
+            <marker date="1536844516084" expanded="true" signature="595:698" ph="{...}" />
+            <marker date="1536844516084" expanded="true" signature="736:799" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/SplashScreen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1536844516091" expanded="true" signature="6:99" ph="..." />
+            <marker date="1536844516091" expanded="true" signature="478:556" ph="{...}" />
+            <marker date="1536844516091" expanded="true" signature="478:558" ph="{...}" />
+            <marker date="1536844516091" expanded="true" signature="545:553" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Setup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <marker date="1536844516091" expanded="true" signature="6:136" ph="..." />
+            <marker date="1536844516091" expanded="true" signature="183:519" ph="{...}" />
+            <marker date="1536844516091" expanded="true" signature="236:517" ph="{...}" />
+            <marker date="1536844516091" expanded="true" signature="342:376" ph="{...}" />
+            <marker date="1536844516091" expanded="true" signature="445:512" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/PeopleListViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <marker date="1536844516082" expanded="true" signature="6:274" ph="..." />
+            <marker date="1536844516082" expanded="true" signature="419:4018" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="496:4016" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="783:803" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="1068:1158" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="1206:1460" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="1526:1690" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="1746:2652" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="1891:1980" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="2729:3248" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="3284:3460" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="3502:3566" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="3663:3796" ph="{...}" />
+            <marker date="1536844516082" expanded="true" signature="3874:4008" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/App.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <marker date="1536844516077" expanded="true" signature="6:209" ph="..." />
+            <marker date="1536844516077" expanded="true" signature="255:1333" ph="{...}" />
+            <marker date="1536844516077" expanded="true" signature="292:1331" ph="{...}" />
+            <marker date="1536844516077" expanded="true" signature="331:1328" ph="{...}" />
+            <marker date="1536844516077" expanded="true" signature="500:611" ph="{...}" />
+            <marker date="1536844516077" expanded="true" signature="996:1276" ph="/* Task.Run(async () =&gt; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/XamarinMvvmCross_MeetupSample.Droid.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3423">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="107" lean-forward="false" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="15" lean-forward="false" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="20" lean-forward="false" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="57" column="107" lean-forward="false" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="71" column="15" lean-forward="false" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="96" column="20" lean-forward="false" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="150" column="12" lean-forward="true" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxExpandableItemAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3009">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxNonExpandableAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/IMvxAdvancedRecyclerViewAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedExpandableRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="15" lean-forward="false" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="20" lean-forward="false" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="107" lean-forward="false" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="69" lean-forward="false" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" column="110" lean-forward="false" selection-start-line="35" selection-start-column="110" selection-end-line="35" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventHandlerWeakSubscriptionHolder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="119" column="58" lean-forward="true" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/packages.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="70" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Resource.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <marker date="1536844516104" expanded="true" signature="29:424" ph="/* ------------------------------------------------------------------------------ ... */" />
+            <marker date="1536844516104" expanded="true" signature="593:169166" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="722:169164" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="748:819" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="855:2144" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="2029:2103" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="2130:2140" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="2180:28909" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="28794:28868" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="28895:28905" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="28943:29644" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="29531:29605" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="29630:29640" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="29676:38767" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="38656:38730" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="38753:38763" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="38803:51863" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="51748:51822" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="51849:51859" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="51898:62448" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="62334:62408" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="62434:62444" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="62477:73834" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="73726:73800" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="73820:73830" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="73868:74537" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="74424:74498" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="74523:74533" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="74570:79609" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="79497:79571" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="79595:79605" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="79642:83367" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="83255:83329" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="83353:83363" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="83399:124467" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="124356:124430" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="124453:124463" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="124503:169161" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="124557:125051" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="127591:127607" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="127765:127781" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="127971:128074" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="128638:128673" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="128942:129060" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="129735:129802" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="130208:130275" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="130693:130799" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="131562:131697" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="132516:134536" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="146227:146245" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="146394:146442" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="146766:146816" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="147138:147275" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="148039:148142" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="148747:148844" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="149424:149568" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="150509:150570" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="151055:151086" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="151351:151442" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="152020:152386" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="154417:154557" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="155438:155473" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="155681:155699" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="155844:155862" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="156017:156052" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="156291:156445" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="157367:157415" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="157762:157780" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="157942:157977" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="158222:158406" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="159504:159786" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="161281:161359" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="161836:162069" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="163327:163527" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="164775:165265" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="167781:167863" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="168307:168357" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="168706:168752" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="169046:169120" ph="{...}" />
+            <marker date="1536844516104" expanded="true" signature="169147:169157" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/Fragments/PeopleListFragment.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <marker date="1536844516093" expanded="true" signature="6:243" ph="..." />
+            <marker date="1536844516093" expanded="true" signature="290:864" ph="{...}" />
+            <marker date="1536844516093" expanded="true" signature="437:862" ph="{...}" />
+            <marker date="1536844516093" expanded="true" signature="470:478" ph="{...}" />
+            <marker date="1536844516093" expanded="true" signature="641:859" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
