@@ -1,24 +1,9 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Graphics.Drawables;
-using Android.Widget;
+﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
-using Android.Support.V4.Content;
 using Android.Support.V7.Widget;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Decoration;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
-using MvvmCross.AdvancedRecyclerView.Adapters;
 using MvvmCross.AdvancedRecyclerView.Adapters.Expandable;
-using MvvmCross.AdvancedRecyclerView.Data;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
-using MvvmCross.Binding.BindingContext;
-using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
-using MvvmCross.Droid.Views;
+using MvvmCross.Platforms.Android.Views;
 using Sample.ViewModels;
 
 namespace Sample

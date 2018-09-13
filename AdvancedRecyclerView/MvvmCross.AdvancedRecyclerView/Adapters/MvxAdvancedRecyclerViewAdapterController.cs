@@ -6,8 +6,8 @@ using Android.Util;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters
 {

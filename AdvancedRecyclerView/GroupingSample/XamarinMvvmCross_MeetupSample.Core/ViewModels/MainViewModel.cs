@@ -1,4 +1,4 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using MvvmCross.Commands;
 using XamarinMvvmCross_MeetupSample.Core.Services.Authentication;
 
 namespace XamarinMvvmCross_MeetupSample.Core.ViewModels

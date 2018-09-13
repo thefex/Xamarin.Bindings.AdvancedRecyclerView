@@ -1,8 +1,8 @@
 ﻿using System;
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using MvvmCross.Droid.Views;
+using MvvmCross.Platforms.Android.Views;
+using XamarinMvvmCross_MeetupSample.Core;
 
 namespace XamarinMvvmCross_MeetupSample.Droid
 {
@@ -13,7 +13,7 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 		, Theme = "@style/Theme.Splash"
 		, NoHistory = true
 		, ScreenOrientation = ScreenOrientation.Portrait)]
-	public class SplashScreen : MvxSplashScreenActivity
+    public class SplashScreen : MvxSplashScreenActivity<Setup, App>
 	{
 		public SplashScreen()
 			: base(Resource.Layout.SplashScreen)

@@ -1,14 +1,18 @@
 using Android.Content;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Droid.Platform;
+using MvvmCross;
+using MvvmCross.Platforms.Android.Core;
+using MvvmCross.ViewModels;
+using Sample.ViewModels;
 
 namespace Sample
 {
     public class Setup : MvxAndroidSetup
     {
-        public Setup(Context applicationContext) : base(applicationContext)
+        public Setup() : base()
         {
         }
+
+        
 
         protected override IMvxApplication CreateApp()
         {
@@ -17,7 +21,16 @@ namespace Sample
 
         class App : MvxApplication
         {
-            
+            public override void Initialize()
+            {
+                base.Initialize();
+                
+                
+                Mvx.RegisterType<SwipeExampleViewModel, SwipeExampleViewModel>();
+                Mvx.RegisterType<MainViewModel, MainViewModel>();
+
+                RegisterAppStart<MainViewModel>();
+            }
         }
     }
 }

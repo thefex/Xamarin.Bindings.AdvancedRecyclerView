@@ -10,16 +10,14 @@ using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.EventArguments;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.Utils;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
-using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Binding.ExtensionMethods;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.Binding.Extensions;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
-using MvvmCross.Platform;
-using MvvmCross.Platform.Exceptions;
+using MvvmCross.Exceptions;
+using MvvmCross.Logging;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
@@ -135,9 +133,9 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             }
             catch (Exception exception)
             {
-                Mvx.Warning(
-                    "Exception masked during Adapter RealNotifyDataSetChanged {0}. Are you trying to update your collection from a background task? See http://goo.gl/0nW0L6",
-                    exception.ToLongString());
+                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Warn, () => 
+                    $"Exception masked during Adapter RealNotifyDataSetChanged {exception.ToLongString()}. Are you trying to update your collection from a background task? See http://goo.gl/0nW0L6"
+                );
             }
         }
 

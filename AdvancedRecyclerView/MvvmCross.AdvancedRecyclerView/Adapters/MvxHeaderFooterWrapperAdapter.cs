@@ -4,11 +4,9 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Headerfooter;
 using MvvmCross.AdvancedRecyclerView.Data;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
-using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Droid.Support.V7.RecyclerView.Model;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters

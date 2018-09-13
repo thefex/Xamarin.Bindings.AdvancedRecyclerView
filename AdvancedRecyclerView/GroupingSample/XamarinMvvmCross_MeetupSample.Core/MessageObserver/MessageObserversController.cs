@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MvvmCross.Plugins.Messenger;
+using MvvmCross.Plugin.Messenger;
 
 namespace XamarinMvvmCross_MeetupSample.Core.MessageObserver
 {

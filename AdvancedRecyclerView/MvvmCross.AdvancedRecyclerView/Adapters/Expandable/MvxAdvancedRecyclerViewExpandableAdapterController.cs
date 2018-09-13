@@ -2,13 +2,9 @@
 using Android.OS;
 using Android.Support.V7.Widget;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView.Extensions;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 {

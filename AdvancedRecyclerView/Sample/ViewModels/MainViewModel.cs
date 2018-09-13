@@ -1,7 +1,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using MvvmCross.Core.ViewModels;
+using MvvmCross;
+using MvvmCross.Commands;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
 
 namespace Sample.ViewModels
 {
@@ -52,6 +55,6 @@ namespace Sample.ViewModels
             };
             Items.Add(group);
         });
-        public MvxCommand GoToSwipeExample => new MvxCommand(() => ShowViewModel<SwipeExampleViewModel>());
+        public MvxCommand GoToSwipeExample => new MvxCommand(() => Mvx.Resolve<IMvxNavigationService>().Navigate<SwipeExampleViewModel>());
     }
 }

@@ -1,14 +1,12 @@
-﻿using System;
-using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Droid.Shared.Attributes;
-using MvvmCross.Droid.Support.V4;
-using MvvmCross.Droid.Support.V7.RecyclerView;
+﻿using MvvmCross.Droid.Support.V4;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
+using MvvmCross.Platforms.Android.Presenters.Attributes;
 using XamarinMvvmCross_MeetupSample.Core;
 using XamarinMvvmCross_MeetupSample.Core.ViewModels;
 
 namespace XamarinMvvmCross_MeetupSample.Droid
 {
-	[MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
+	[MvxFragmentPresentation(typeof(MainViewModel), Resource.Id.content_frame)]
 	public class PeopleListFragment : MvxFragment<PeopleListViewModel>
 	{
 		public PeopleListFragment()

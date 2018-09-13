@@ -13,8 +13,8 @@ using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions;
 using MvvmCross.AdvancedRecyclerView.Swipe.State;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
