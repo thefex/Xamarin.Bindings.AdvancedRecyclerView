@@ -101,7 +101,6 @@
     <Compile Include="Data\IMvxItemUniqueIdProvider.cs" />
     <Compile Include="Data\MvxExpandableDataConverter.cs" />
     <Compile Include="Data\MvxGroupedData.cs" />
-    <Compile Include="Data\MvxRecyclerViewItemsSourceBridge.cs" />
     <Compile Include="Extensions\ViewUtilities.cs" />
     <Compile Include="MvxAdvancedRecyclerView.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

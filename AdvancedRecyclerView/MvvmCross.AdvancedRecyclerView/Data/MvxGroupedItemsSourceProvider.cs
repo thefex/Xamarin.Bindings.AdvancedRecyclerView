@@ -32,7 +32,13 @@ namespace MvvmCross.AdvancedRecyclerView.Data
 					AddItems(enumerableGroupedItems, groupedDataConverter);
 					break;
 				case NotifyCollectionChangedAction.Add:
-					AddItems(args.NewItems, groupedDataConverter);
+                    var enumerableGroupedItems2 = sender as IEnumerable ?? Enumerable.Empty<object>();
+                    _observableItemsSource.Clear();
+                    foreach (var disposables in _groupedDataDisposables.Values)
+                        disposables.Dispose();
+
+                    _groupedDataDisposables.Clear();
+                    AddItems(enumerableGroupedItems2, groupedDataConverter);
 					break;
 				case NotifyCollectionChangedAction.Remove:
 					foreach (var item in Enumerable.Cast<object>(args.OldItems))
