@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="AdvancedRecyclerView.sln" t="IncludeFlat" />
+      <e p="audio_list_grouped_sample" t="Include" />
       <e p="Bindings" t="IncludeRecursive">
         <e p="Additions" t="Include">
           <e p="AboutAdditions.txt" t="Include" />
@@ -110,6 +111,93 @@
             </e>
             <e p="library_project_jars" t="Include">
               <e p="classes.jar" t="Include" />
+            </e>
+            <e p="lp" t="Include">
+              <e p="1" t="Include">
+                <e p="jl" t="Include">
+                  <e p="arch-core-common.jar" t="Include" />
+                </e>
+              </e>
+              <e p="10" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="11" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="12" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="13" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="2" t="Include">
+                <e p="jl" t="Include">
+                  <e p="arch-lifecycle-common.jar" t="Include" />
+                </e>
+              </e>
+              <e p="3" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="4" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="5" t="Include">
+                <e p="jl" t="Include">
+                  <e p="support-annotations.jar" t="Include" />
+                </e>
+              </e>
+              <e p="6" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="7" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="8" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="9" t="Include">
+                <e p="jl" t="Include">
+                  <e p="bin" t="Include">
+                    <e p="classes.jar" t="Include" />
+                  </e>
+                </e>
+              </e>
             </e>
           </e>
         </e>
@@ -388,88 +476,170 @@
         <e p="MvvmCross.AdvancedRecyclerView.nuspec" t="Include" />
         <e p="Xamarin.Bindings.AdvancedRecyclerView.nuspec" t="Include" />
       </e>
-      <e p="old_sample" t="Include" />
       <e p="packages" t="ExcludeRecursive">
         <e p="Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
         <e p="Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
+        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
         <e p="Xamarin.Android.Support.Core.UI.27.0.2/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Core.UI.27.0.2.1/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
         <e p="Xamarin.Android.Support.Design.27.0.2/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
+        <e p="Xamarin.Android.Support.Design.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
         <e p="Xamarin.Android.Support.Media.Compat.27.0.2/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Media.Compat.27.0.2.1/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
         <e p="Xamarin.Android.Support.Transition.27.0.2/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
-        <e p="Xamarin.Android.Support.v7.Preference.27.0.2/proguard" t="Include">
+        <e p="Xamarin.Android.Support.Transition.27.0.2.1/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
         <e p="Xamarin.Android.Support.v7.RecyclerView.27.0.2/proguard" t="Include">
           <e p="proguard.txt" t="Include" />
         </e>
+        <e p="Xamarin.Android.Support.v7.RecyclerView.27.0.2.1/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
       </e>
-      <e p="Sample" t="IncludeRecursive">
+      <e p="RecordGuard.ListSample/RecordGuard.ListSample.Android" t="IncludeRecursive">
+        <e p="Activities" t="Include">
+          <e p="MainActivity.cs" t="Include" />
+        </e>
         <e p="Assets" t="Include">
           <e p="AboutAssets.txt" t="Include" />
+          <e p="empty_list_animation.json" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
-        <e p="GettingStarted.Xamarin" t="Include" />
-        <e p="GroupedRelated" t="Include">
-          <e p="AppGroupTemplateSelector.cs" t="Include" />
-          <e p="GroupExpandController.cs" t="Include" />
-          <e p="ItemGroupedDataConverter.cs" t="Include" />
+        <e p="extensions" t="Include">
+          <e p="CustomViews" t="Include">
+            <e p="PlayPauseDrawable.cs" t="Include" />
+            <e p="PlayPauseView.cs" t="Include" />
+          </e>
+          <e p="grouping" t="Include">
+            <e p="AudioListGroupedDataConverter.cs" t="Include" />
+            <e p="AudioListGroupExpandController.cs" t="Include" />
+          </e>
+          <e p="Listeners" t="Include">
+            <e p="ActionClickListenerWrapper.cs" t="Include" />
+            <e p="AnimatorActionListenerWrapper.cs" t="Include" />
+          </e>
+          <e p="TemplateSelectors" t="Include">
+            <e p="AudioItemTemplateSelector.cs" t="Include" />
+          </e>
+          <e p="ViewExtensions.cs" t="Include" />
         </e>
-        <e p="MainActivity.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
           <e p="AndroidManifest.xml" t="Include" />
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="RecordGuard.ListSample.Android.csproj" t="IncludeRecursive" />
         <e p="Resources" t="Include">
           <e p="AboutResources.txt" t="Include" />
           <e p="drawable" t="Include">
-            <e p="bg_item_normal_state.xml" t="Include" />
-            <e p="bg_item_swiping_active_state.xml" t="Include" />
-            <e p="bg_item_swiping_state.xml" t="Include" />
-            <e p="bg_swipe_item_neutral.xml" t="Include" />
-            <e p="Icon.png" t="Include" />
-            <e p="list_divider_h.xml" t="Include" />
+            <e p="button_shape_white.xml" t="Include" />
+            <e p="button_shape_white_default.xml" t="Include" />
+            <e p="button_shape_white_disabled.xml" t="Include" />
+            <e p="button_shape_white_pressed.xml" t="Include" />
+            <e p="check.xml" t="Include" />
+            <e p="close.xml" t="Include" />
+            <e p="delete.xml" t="Include" />
+            <e p="delete_grey.xml" t="Include" />
+            <e p="dots_vertical.xml" t="Include" />
+            <e p="icon_vector.xml" t="Include" />
+            <e p="microphone.xml" t="Include" />
+            <e p="overflow_icon.xml" t="Include" />
+            <e p="pause.xml" t="Include" />
+            <e p="pause_circle.xml" t="Include" />
+            <e p="play_circle.xml" t="Include" />
+            <e p="splashWindowBackgroundDrawable.xml" t="Include" />
+            <e p="stop_circle.xml" t="Include" />
+          </e>
+          <e p="drawable-hdpi" t="Include">
+            <e p="appIcon.png" t="Include" />
+            <e p="splashIcon.png" t="Include" />
+          </e>
+          <e p="drawable-mdpi" t="Include">
+            <e p="appIcon.png" t="Include" />
+            <e p="splashIcon.png" t="Include" />
+          </e>
+          <e p="drawable-xhdpi" t="Include">
+            <e p="appIcon.png" t="Include" />
+            <e p="splashIcon.png" t="Include" />
+          </e>
+          <e p="drawable-xxhdpi" t="Include">
+            <e p="appIcon.png" t="Include" />
+            <e p="splashIcon.png" t="Include" />
+          </e>
+          <e p="drawable-xxxhdpi" t="Include">
+            <e p="appIcon.png" t="Include" />
+            <e p="splashIcon.png" t="Include" />
           </e>
           <e p="layout" t="Include">
-            <e p="expand_child_template.xml" t="Include" />
-            <e p="expand_group_template.xml" t="Include" />
+            <e p="audio_item_template.xml" t="Include" />
+            <e p="audio_item_template_group_header.xml" t="Include" />
             <e p="Main.axml" t="Include" />
-            <e p="swipe_example.axml" t="Include" />
-            <e p="swipe_item_template.axml" t="Include" />
+            <e p="SplashScreen.axml" t="Include" />
+          </e>
+          <e p="menu" t="Include">
+            <e p="audio_item_menu.xml" t="Include" />
           </e>
           <e p="Resource.Designer.cs" t="Include" />
           <e p="Values" t="Include">
             <e p="colors.xml" t="Include" />
+            <e p="dimens.xml" t="Include" />
             <e p="strings.xml" t="Include" />
+            <e p="styleable.xml" t="Include" />
             <e p="styles.xml" t="Include" />
           </e>
         </e>
-        <e p="Sample.csproj" t="IncludeRecursive" />
         <e p="Setup.cs" t="Include" />
-        <e p="Swipe" t="Include">
-          <e p="SwipeableTemplate.cs" t="Include" />
-          <e p="SwipeExampleUniqueIdProvider.cs" t="Include" />
-          <e p="SwipeResultActionFactory.cs" t="Include" />
-          <e p="SwipeTemplateSelector.cs" t="Include" />
+        <e p="SplashScreen.cs" t="Include" />
+        <e p="ViewControllers" t="Include">
+          <e p="EmptyListAnimationController.cs" t="Include" />
         </e>
-        <e p="SwipeExampleActivity.cs" t="Include" />
-        <e p="ViewModels" t="Include">
-          <e p="ItemGroupModel.cs" t="Include" />
+      </e>
+      <e p="RecordGuard.ListSample.App" t="IncludeRecursive">
+        <e p="AppSetup.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Converters" t="Include">
+          <e p="HumanizeDateTimeValueConverter.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="AudioItem.cs" t="Include" />
+          <e p="GroupedData.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="RecordGuard.ListSample.App.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="RecordGuard.ListSample.App.csproj" t="IncludeRecursive" />
+        <e p="ViewModel" t="Include">
+          <e p="ListViewModel.cs" t="Include" />
           <e p="MainViewModel.cs" t="Include" />
-          <e p="SwipeExampleViewModel.cs" t="Include" />
         </e>
       </e>
     </e>

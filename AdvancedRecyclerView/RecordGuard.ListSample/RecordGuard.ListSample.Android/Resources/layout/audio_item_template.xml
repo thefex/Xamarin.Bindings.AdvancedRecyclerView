@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:alpha="0.7"
+    local:MvxBind="AlphaAnimate IsSelected">
+    <com.recordguard.PlayPauseView
+        android:id="@+id/play_pause_view"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        local:fill_color="#e1e1e1"
+        local:pause_bg="#FF631A"
+        local:play_bg="#EF4900"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical|left"
+            local:MvxBind="Text Title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="data"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical|right"
+            local:MvxBind="Text CreatedDateUtc" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/overflow_item"
+        local:srcCompat="@drawable/overflow_icon" />
+</LinearLayout>

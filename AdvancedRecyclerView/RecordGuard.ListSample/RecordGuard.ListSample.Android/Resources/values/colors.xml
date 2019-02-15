@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <color name="primary">#232333</color>
+    <color name="primaryDark">#1d1d2b</color>
+ 
+    <color name="whiteTintColor">#E5E5E5</color> 
+    <color name="backgroundColor">#3c3d57</color>
+
+    <color name="fabRed">#d32f2f</color>
+    <color name="fabRedDark">#c62828</color>
+    <color name="textColorPrimary">#BFBFBF</color> 
+
+    <color name="white_color_disabled">#E5E5E5</color>
+    <color name="white_color_tint">#E5E5E5</color>
+</resources>

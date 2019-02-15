@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_grouped_data_converter">
+        RecordGuard.ListSample.Android.Extensions.Grouping.AudioListGroupedDataConverter, RecordGuard.ListSample.Android
+    </string>
+
+    <string name="audio_group_expand_controller">
+        RecordGuard.ListSample.Android.Extensions.Grouping.AudioListGroupExpandController, RecordGuard.ListSample.Android
+    </string>
+
+    <string name="audio_item_template_selector">
+        RecordGuard.ListSample.Android.Extensions.TemplateSelectors.AudioItemTemplateSelector, RecordGuard.ListSample.Android
+    </string>
+</resources>

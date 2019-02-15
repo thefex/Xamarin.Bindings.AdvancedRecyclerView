@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="64d9e4b0-e0f5-4cce-a75c-b413c78880d5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/audio_list_grouped_sample__RecordGuard.ListSample.Android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample.App/Converters/HumanizeDateTimeValueConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample.App/Data/AudioItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample.App/Data/GroupedData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample.App/ViewModel/ListViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample.App/ViewModel/MainViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Assets/empty_list_animation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseDrawable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupExpandController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupedDataConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/ActionClickListenerWrapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/AnimatorActionListenerWrapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/TemplateSelectors/AudioItemTemplateSelector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/ViewExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-hdpi/appIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-hdpi/splashIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-mdpi/appIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-mdpi/splashIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xhdpi/appIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xhdpi/splashIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxhdpi/appIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxhdpi/splashIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxxhdpi/appIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxxhdpi/splashIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/button_shape_white.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/button_shape_white_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/button_shape_white_disabled.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/button_shape_white_pressed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/check.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/close.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/delete_grey.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/dots_vertical.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/icon_vector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/microphone.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/overflow_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/pause.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/pause_circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/play_circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/splashWindowBackgroundDrawable.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/stop_circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/SplashScreen.axml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template_group_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/menu/audio_item_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/styleable.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Setup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/SplashScreen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/ViewControllers/EmptyListAnimationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/Data/AudioItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/ViewModel/MainViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxRecyclerViewItemsSourceBridge.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/grouping__XamarinMvvmCross_MeetupSample.Droid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdvancedRecyclerView/grouping__XamarinMvvmCross_MeetupSample.Droid.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvancedRecyclerView.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedRecyclerView.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bindings/Xamarin.Bindings.AdvancedRecyclerView.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Bindings/Xamarin.Bindings.AdvancedRecyclerView.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/XamarinMvvmCross_MeetupSample.Droid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/XamarinMvvmCross_MeetupSample.Droid.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,156 +80,144 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample/GroupedRelated/AppGroupTemplateSelector.cs">
+        <entry file="file:///Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.Debugging.targets">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="511" column="74" selection-start-line="511" selection-start-column="74" selection-end-line="511" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/Strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Setup.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding>
-                <marker date="1505209998000" expanded="false" signature="6:69" ph="..." />
-                <marker date="1505209998000" expanded="true" signature="102:347" ph="{...}" />
-                <marker date="1505209998000" expanded="true" signature="185:345" ph="{...}" />
-                <marker date="1505209998000" expanded="true" signature="318:338" ph="{...}" />
+                <marker date="1550228996011" expanded="false" signature="6:73" ph="..." />
+                <marker date="1550228996011" expanded="true" signature="115:226" ph="{...}" />
+                <marker date="1550228996011" expanded="true" signature="168:224" ph="{...}" />
+                <marker date="1550228996011" expanded="true" signature="197:218" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/AppSetup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="224">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
-                <marker date="1536844516095" expanded="false" signature="6:292" ph="..." />
-                <marker date="1536844516095" expanded="true" signature="354:3457" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="467:3455" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="978:1009" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="1117:2531" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="2590:2679" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="2719:2827" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="2890:3131" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="3189:3449" ph="{...}" />
-                <marker date="1536844516095" expanded="true" signature="3298:3445" ph="{...}" />
+                <marker date="1550228965940" expanded="false" signature="6:88" ph="..." />
+                <marker date="1550228965940" expanded="true" signature="126:412" ph="{...}" />
+                <marker date="1550228965940" expanded="true" signature="171:410" ph="{...}" />
+                <marker date="1550228965940" expanded="true" signature="219:404" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Activities/MainActivity.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="108">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <marker date="1550226742957" expanded="true" signature="6:202" ph="..." />
-                <marker date="1550226742957" expanded="true" signature="249:5960" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="300:5958" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="862:2288" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="896:2278" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="1859:2199" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="2063:2192" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="2395:2792" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="2833:3183" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="3289:4967" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="3422:4957" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="3833:4943" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="3960:4634" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="4018:4615" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="5046:5119" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="5209:5275" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="5348:5426" ph="{...}" />
-                <marker date="1550226742957" expanded="true" signature="5460:5678" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="6:576" ph="..." />
+                <marker date="1550248048111" expanded="true" signature="629:3410" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="636:834" ph="[...]" />
+                <marker date="1550248048111" expanded="true" signature="902:3408" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="1045:1949" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="1877:1933" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="1999:3401" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="2217:3390" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="2435:2539" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="2736:3373" ph="{...}" />
+                <marker date="1550248048111" expanded="true" signature="3262:3354" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxExpandableDataConverter.cs">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/Main.axml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupedDataConverter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <marker date="1550233838552" expanded="false" signature="6:129" ph="..." />
+                <marker date="1550233838552" expanded="true" signature="191:1220" ph="{...}" />
+                <marker date="1550233838552" expanded="true" signature="269:1218" ph="{...}" />
+                <marker date="1550233838552" expanded="true" signature="484:794" ph="{...}" />
+                <marker date="1550233838552" expanded="true" signature="620:783" ph="{...}" />
+                <marker date="1550233838552" expanded="true" signature="861:986" ph="{...}" />
+                <marker date="1550233838552" expanded="true" signature="1026:1212" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupExpandController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <marker date="1550233838555" expanded="false" signature="6:144" ph="..." />
+                <marker date="1550233838555" expanded="true" signature="206:826" ph="{...}" />
+                <marker date="1550233838555" expanded="true" signature="283:824" ph="{...}" />
+                <marker date="1550233838555" expanded="true" signature="363:409" ph="{...}" />
+                <marker date="1550233838555" expanded="true" signature="486:532" ph="{...}" />
+                <marker date="1550233838555" expanded="true" signature="629:674" ph="{...}" />
+                <marker date="1550233838555" expanded="true" signature="773:818" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/TemplateSelectors/AudioItemTemplateSelector.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <caret line="2" column="69" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="69" />
               <folding>
-                <marker date="1505209998000" expanded="true" signature="45:473" ph="{...}" />
-                <marker date="1505209998000" expanded="true" signature="100:471" ph="{...}" />
-                <marker date="1505209998000" expanded="true" signature="233:397" ph="{...}" />
+                <marker date="1550233286331" expanded="true" signature="126:612" ph="{...}" />
+                <marker date="1550233286331" expanded="true" signature="203:610" ph="{...}" />
+                <marker date="1550233286331" expanded="true" signature="309:329" ph="{...}" />
+                <marker date="1550233286331" expanded="true" signature="404:480" ph="{...}" />
+                <marker date="1550233286331" expanded="true" signature="551:604" ph="{...}" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventHandlerWeakSubscriptionHolder.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1536844578194" expanded="false" signature="6:51" ph="..." />
-                <marker date="1536844578194" expanded="true" signature="98:592" ph="{...}" />
-                <marker date="1536844578194" expanded="true" signature="168:590" ph="{...}" />
-                <marker date="1536844578194" expanded="true" signature="437:527" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxHookGroupExpandCollapseArgs.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding>
-                <marker date="1528377002000" expanded="true" signature="60:305" ph="{...}" />
-                <marker date="1528377002000" expanded="true" signature="110:303" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxExpandableItemAdapterBoundedArgs.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding>
-                <marker date="1505209998000" expanded="true" signature="111:320" ph="{...}" />
-                <marker date="1505209998000" expanded="true" signature="166:318" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxSwipeBackgroundSetEventArgs.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <marker date="1536828409981" expanded="false" signature="6:96" ph="..." />
-                <marker date="1536828409981" expanded="true" signature="158:470" ph="{...}" />
-                <marker date="1536828409981" expanded="true" signature="208:468" ph="{...}" />
-                <marker date="1536828409981" expanded="true" signature="262:282" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxHeaderFooterDetails.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding>
-                <marker date="1505336521000" expanded="true" signature="59:393" ph="{...}" />
-                <marker date="1505336521000" expanded="true" signature="101:391" ph="{...}" />
-                <marker date="1505336521000" expanded="true" signature="147:167" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/packages.config">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -177,75 +227,53 @@
       <find>DebugTrace</find>
       <find>HEAD]</find>
       <find>var z</find>
+      <find>Content</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MvxExceptionGuardedCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sample/Setup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/ViewHolders/MvxExpandableRecyclerViewHolder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/LoginVM/SignInCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/ViewModel/ListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/Data/GroupedData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Extensions/LayerResponseExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MainVM/LogoutCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MvxAsyncGuardedCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/BaseMvxViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/MainViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Services/ServicesLocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/QuestionDialogMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/MessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/MessageObserversController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/DialogMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/BaseMvxActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxExpandableItemAdapterBoundedArgs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/IMvxAdvancedRecyclerViewAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/packages.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sample/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/MainActivity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/LoginActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxHeaderFooterDetails.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/LongRunningAsyncOperationMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxHookGroupExpandCollapseArgs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/IMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxExpandableDataConverter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Observers/LongRunningAsyncOperationMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Extensions/TemplateSelectors/PeopleListTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxExpandableItemAdapter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxNonExpandableAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/MessageObserver/Messages/ToastMvxMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxExpandableTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/PeopleListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/Data/AudioItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/IMvxSwipeableTemplate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeExampleUniqueIdProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeResultActionFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/App.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Setup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/ViewModel/MainViewModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxSwipeBackgroundSetEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/ResultActions/MvxSwipeUnpinResultAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/MainApplication.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Setup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/ViewHolders/MvxAdvancedRecyclerViewHolder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sample/ViewModels/SwipeExampleViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Messenging/Observers/QuestionDialogMessageObserver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/LinkerPleaseInclude.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/Fragments/PeopleListFragment.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sample/GroupedRelated/AppGroupTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/ResultActions/MvxSwipeResultActionFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/ResultActions/MvxSwipeToDirectionResultAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/AkavacheSqliteLinkerOverride.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Sample/ViewModels/MainViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Resource.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Messenging/Observers/MessageDialogObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/packages.config" root0="FORCE_HIGHLIGHTING" />
@@ -257,10 +285,55 @@
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/State/SwipeItemPinnedStateControllerProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Configuration/ApplicationPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sample/SwipeExampleActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventHandlerWeakSubscriptionHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Swipe/State/SwipeItemPinnedStateController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MvxExceptionGuardedCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/ViewHolders/MvxExpandableRecyclerViewHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/LoginVM/SignInCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MainVM/LogoutCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Commands/MvxAsyncGuardedCommandBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/Services/ServicesLocation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseDrawable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/IMvxAdvancedRecyclerViewAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Extensions/TemplateSelectors/PeopleListTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxExpandableItemAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxNonExpandableAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/PeopleListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/App.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeExampleUniqueIdProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/TemplateSelectors/AudioItemTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/Swipe/SwipeResultActionFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/App.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupedDataConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupExpandController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/AppSetup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/ViewControllers/EmptyListAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/ViewExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/Converters/HumanizeDateTimeValueConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/MainApplication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Setup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Activities/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/ActionClickListenerWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/AnimatorActionListenerWrapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/ViewModels/SwipeExampleViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/LinkerPleaseInclude.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/GroupedRelated/AppGroupTemplateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/AkavacheSqliteLinkerOverride.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Sample/ViewModels/MainViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/ViewModel/MainViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/Data/AudioItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sample/SwipeExampleActivity.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -279,14 +352,60 @@
         <option value="$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs" />
         <option value="$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs" />
         <option value="$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/MyClass.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/SplashScreen.axml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/Data/AudioItem.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample/ViewModel/MainViewModel.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample.App/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Setup.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample.App/ViewModel/ListViewModel.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample.App/ViewModel/MainViewModel.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample.App/Data/GroupedData.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample.App/Data/AudioItem.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/Main.axml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/colors.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/MainActivity.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/SplashScreen.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/ViewControllers/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/ActionClickListenerWrapper.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/menu/audio_item_menu.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseDrawable.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseView.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/styleable.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/TemplateSelectors/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupExpandController.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template_group_header.Designer.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template_group_header.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample.App/Converters/HumanizeDateTime.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample.App/Converters/HumanizeDateTimeValueConverter.cs" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/RecordGuard.ListSample.Android.csproj" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/styles.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/Strings.xml" />
+        <option value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Activities/MainActivity.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1764" />
-    <option name="y" value="228" />
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="audio_list_grouped_sample__RecordGuard.ListSample.Android/invalid/Android Facet - audio_list_grouped_sample__RecordGuard.ListSample.Android" />
+      <facet id="grouping__XamarinMvvmCross_MeetupSample.Droid/invalid/Android Facet - grouping__XamarinMvvmCross_MeetupSample.Droid" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1689" />
+    <option name="y" value="86" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -303,7 +422,161 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="References" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="References" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Assemblies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="References" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Projects" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Activities" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Extensions" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Extensions" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Grouping" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Extensions" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TemplateSelectors" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Resources" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Resources" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="drawable" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Resources" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="drawable-hdpi" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Resources" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="layout" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Resources" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="values" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.Android" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewControllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.App" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.App" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Data" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="audio_list_grouped_sample" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="RecordGuard.ListSample.App" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModel" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
               <item name="grouping" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="grouping" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="XamarinMvvmCross_MeetupSample.Core" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="grouping" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="grouping" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="XamarinMvvmCross_MeetupSample.Droid" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Configuration" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MvvmCross.AdvancedRecyclerView" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -319,6 +592,8 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="SearchEverywhereHistoryKey" value="Resour&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/Sample/Resources/Resource.Designer.cs&#10;Resource.Designer.cs&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs&#10;grouped&#9;null&#9;null&#10;NonEx&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs&#10;Adaptercontroller&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs&#10;Expandableada&#9;FILE&#9;file:///Users/przemekraciborski/git/Xamarin.Bindings.AdvancedRecyclerView/AdvancedRecyclerView/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="device.picker.selection" value="Nexus_4_API_26" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../recordguard/RecordGuard.Droid/Assets/empty_list_animation.json" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -352,8 +627,26 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="audio_list_grouped_sample\RecordGuard.ListSample.Android" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/bin/Debug/RecordGuard.ListSample.Android.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/RecordGuard.ListSample.Android.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="XamarinAndroid" />
+      <option name="PROJECT_TFM" value="MonoAndroid,Version=v9.0" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
-      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/RecordGuard.ListSample.Android.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
@@ -362,6 +655,14 @@
       <method v="2">
         <option name="Build" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="iOS Default" type="XamarinIOSProject" factoryName="Xamarin.iOS">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEFAULT_IPHONE_DEVICE" value="" />
+      <option name="DEFAULT_IPHONE_SIMULATOR" value="" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
@@ -374,8 +675,15 @@
     </configuration>
     <list>
       <item itemvalue=".NET Project.Default" />
+      <item itemvalue=".NET Project.audio_list_grouped_sample\RecordGuard.ListSample.Android" />
       <item itemvalue="Xamarin.Android.Android Default" />
+      <item itemvalue="Xamarin.iOS.iOS Default" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.audio_list_grouped_sample\RecordGuard.ListSample.Android" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -390,12 +698,12 @@
       <workItem from="1505311255989" duration="5333000" />
       <workItem from="1505378513640" duration="4593000" />
       <workItem from="1521553726044" duration="228000" />
-      <workItem from="1550226205350" duration="1029000" />
+      <workItem from="1550226205350" duration="9518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11297000" />
+    <option name="totallyTimeSpent" value="19786000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,12 +715,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="1689" y="86" width="1920" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="Captures" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22470714" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22470714" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
@@ -422,17 +731,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.49946752" weight="0.32953367" />
       <window_info anchor="bottom" id="Unit Tests" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3298647" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.34010696" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="12" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.3284974" />
       <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Preview" />
       <window_info anchor="right" id="Device File Explorer" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -457,505 +767,433 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/LinkerPleaseInclude.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-          <folding>
-            <marker date="1536844516083" expanded="true" signature="6:162" ph="..." />
-            <marker date="1536844516083" expanded="true" signature="238:2232" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="242:400" ph="/* This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and pro ... */" />
-            <marker date="1536844516083" expanded="true" signature="434:2230" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="474:543" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="585:678" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="717:807" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="841:932" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="970:1078" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1123:1231" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1273:1348" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1383:1465" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1502:1541" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1598:1777" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1644:1772" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1818:1926" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="1979:2055" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="2132:2227" ph="{...}" />
-            <marker date="1536844516083" expanded="true" signature="2181:2222" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/AkavacheSqliteLinkerOverride.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/DebugTrace.cs" />
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxExpandableItemAdapter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3009" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxNonExpandableAdapter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/IMvxAdvancedRecyclerViewAdapter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedExpandableRecyclerView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedNonExpandableRecyclerView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="15" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/MvxAdvancedRecyclerView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxHeaderFooterWrapperAdapter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="13" selection-start-column="48" selection-end-line="15" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/MvxAdvancedRecyclerViewAdapterController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="107" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Values/MvxAdvancedRecyclerViewBindings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultExpandableTemplateSelector.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/TemplateSelectors/MvxDefaultHeaderFooterTemplateSelector.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxAdvancedRecyclerViewAttributes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Extensions/MvxAdvancedRecyclerViewAttributeExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/NonExpandable/MvxAdvancedRecyclerViewNonExpandableAdapterController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="110" selection-start-line="35" selection-start-column="110" selection-end-line="35" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/packages.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Views/Fragments/PeopleListFragment.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <marker date="1536844516093" expanded="false" signature="6:243" ph="..." />
-            <marker date="1536844516093" expanded="true" signature="290:864" ph="{...}" />
-            <marker date="1536844516093" expanded="true" signature="437:862" ph="{...}" />
-            <marker date="1536844516093" expanded="true" signature="470:478" ph="{...}" />
-            <marker date="1536844516093" expanded="true" signature="641:859" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/ViewModels/PeopleListViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <marker date="1536844516082" expanded="true" signature="6:371" ph="..." />
-            <marker date="1536844516082" expanded="true" signature="417:4018" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="496:4016" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="783:803" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="934:1023" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="1068:1158" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="1206:1460" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="1526:1690" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="1746:2652" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="1891:1980" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="2729:3248" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="3284:3460" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="3502:3566" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="3663:3796" ph="{...}" />
-            <marker date="1536844516082" expanded="true" signature="3874:4008" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Core/App.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding>
-            <marker date="1536844516077" expanded="false" signature="6:209" ph="..." />
-            <marker date="1536844516077" expanded="true" signature="255:1333" ph="{...}" />
-            <marker date="1536844516077" expanded="true" signature="292:1331" ph="{...}" />
-            <marker date="1536844516077" expanded="true" signature="331:1328" ph="{...}" />
-            <marker date="1536844516077" expanded="true" signature="500:611" ph="{...}" />
-            <marker date="1536844516077" expanded="true" signature="996:1276" ph="/* Task.Run(async () =&gt; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/XamarinMvvmCross_MeetupSample.Droid.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Resources/Resource.Designer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <marker date="1536844516104" expanded="true" signature="29:424" ph="/* ------------------------------------------------------------------------------ ... */" />
-            <marker date="1536844516104" expanded="true" signature="593:169166" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="722:169164" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="748:819" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="855:2144" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="2029:2103" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="2130:2140" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="2180:28909" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="28794:28868" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="28895:28905" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="28943:29644" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="29531:29605" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="29630:29640" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="29676:38767" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="38656:38730" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="38753:38763" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="38803:51863" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="51748:51822" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="51849:51859" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="51898:62448" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="62334:62408" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="62434:62444" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="62477:73834" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="73726:73800" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="73820:73830" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="73868:74537" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="74424:74498" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="74523:74533" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="74570:79609" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="79497:79571" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="79595:79605" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="79642:83367" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="83255:83329" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="83353:83363" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="83399:124467" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="124356:124430" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="124453:124463" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="124503:169161" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="124557:125051" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="127591:127607" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="127765:127781" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="127971:128074" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="128638:128673" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="128942:129060" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="129735:129802" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="130208:130275" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="130693:130799" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="131562:131697" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="132516:134536" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="146227:146245" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="146394:146442" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="146766:146816" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="147138:147275" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="148039:148142" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="148747:148844" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="149424:149568" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="150509:150570" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="151055:151086" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="151351:151442" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="152020:152386" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="154417:154557" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="155438:155473" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="155681:155699" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="155844:155862" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="156017:156052" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="156291:156445" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="157367:157415" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="157762:157780" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="157942:157977" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="158222:158406" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="159504:159786" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="161281:161359" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="161836:162069" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="163327:163527" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="164775:165265" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="167781:167863" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="168307:168357" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="168706:168752" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="169046:169120" ph="{...}" />
-            <marker date="1536844516104" expanded="true" signature="169147:169157" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/Resource.Designer.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/check.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/MainApplication.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/microphone.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/button_shape_white_default.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/icon_vector.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/play_circle.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/delete.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/pause_circle.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/overflow_icon.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/close.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/delete_grey.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/dots_vertical.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable/splashWindowBackgroundDrawable.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-hdpi/appIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-hdpi/splashIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-mdpi/appIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-mdpi/splashIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xhdpi/appIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xhdpi/splashIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxhdpi/appIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxhdpi/splashIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxxhdpi/appIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/drawable-xxxhdpi/splashIcon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="160">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/SplashScreen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
           <folding>
-            <marker date="1536844516084" expanded="true" signature="6:180" ph="..." />
-            <marker date="1536844516084" expanded="true" signature="227:805" ph="{...}" />
-            <marker date="1536844516084" expanded="true" signature="450:803" ph="{...}" />
-            <marker date="1536844516084" expanded="true" signature="552:560" ph="{...}" />
-            <marker date="1536844516084" expanded="true" signature="595:698" ph="{...}" />
-            <marker date="1536844516084" expanded="true" signature="736:799" ph="{...}" />
+            <marker date="1550230178943" expanded="false" signature="6:119" ph="..." />
+            <marker date="1550230178943" expanded="true" signature="161:545" ph="{...}" />
+            <marker date="1550230178943" expanded="true" signature="168:359" ph="[...]" />
+            <marker date="1550230178943" expanded="true" signature="432:543" ph="{...}" />
+            <marker date="1550230178943" expanded="true" signature="517:537" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/SplashScreen.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/AnimatorActionListenerWrapper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="-141">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
-            <marker date="1536844516091" expanded="true" signature="6:141" ph="..." />
-            <marker date="1536844516091" expanded="true" signature="188:558" ph="{...}" />
-            <marker date="1536844516091" expanded="true" signature="192:410" ph="[...]" />
-            <marker date="1536844516091" expanded="true" signature="478:556" ph="{...}" />
-            <marker date="1536844516091" expanded="true" signature="545:553" ph="{...}" />
+            <marker date="1550230360119" expanded="false" signature="6:61" ph="..." />
+            <marker date="1550230360119" expanded="true" signature="124:1365" ph="{...}" />
+            <marker date="1550230360119" expanded="true" signature="222:1363" ph="{...}" />
+            <marker date="1550230360119" expanded="true" signature="598:746" ph="{...}" />
+            <marker date="1550230360119" expanded="true" signature="861:881" ph="{...}" />
+            <marker date="1550230360119" expanded="true" signature="940:1002" ph="{...}" />
+            <marker date="1550230360119" expanded="true" signature="1058:1117" ph="{...}" />
+            <marker date="1550230360119" expanded="true" signature="1176:1238" ph="{...}" />
+            <marker date="1550230360119" expanded="true" signature="1296:1357" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Setup.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/ViewExtensions.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="-109">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
-            <marker date="1536844516091" expanded="true" signature="6:136" ph="..." />
-            <marker date="1536844516091" expanded="true" signature="183:519" ph="{...}" />
-            <marker date="1536844516091" expanded="true" signature="236:517" ph="{...}" />
-            <marker date="1536844516091" expanded="true" signature="262:283" ph="{...}" />
-            <marker date="1536844516091" expanded="true" signature="342:376" ph="{...}" />
-            <marker date="1536844516091" expanded="true" signature="445:512" ph="{...}" />
+            <marker date="1550230369632" expanded="false" signature="6:79" ph="..." />
+            <marker date="1550230369632" expanded="true" signature="132:949" ph="{...}" />
+            <marker date="1550230369632" expanded="true" signature="170:947" ph="{...}" />
+            <marker date="1550230369632" expanded="true" signature="242:525" ph="{...}" />
+            <marker date="1550230369632" expanded="true" signature="628:940" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sample/Resources/Resource.Designer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Extensions/TemplateSelectors/PeopleListTemplateSelector.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <marker date="1505209998000" expanded="false" signature="6:172" ph="..." />
-            <marker date="1505209998000" expanded="true" signature="219:940" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="337:938" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="428:448" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="616:734" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="809:931" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample/GroupedRelated/AppGroupTemplateSelector.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/ViewControllers/EmptyListAnimationController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
-            <marker date="1505209998000" expanded="false" signature="6:69" ph="..." />
-            <marker date="1505209998000" expanded="true" signature="102:347" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="185:345" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="318:338" ph="{...}" />
+            <marker date="1550230379198" expanded="false" signature="6:69" ph="..." />
+            <marker date="1550230379198" expanded="true" signature="127:1467" ph="{...}" />
+            <marker date="1550230379198" expanded="true" signature="175:1465" ph="{...}" />
+            <marker date="1550230379198" expanded="true" signature="388:526" ph="{...}" />
+            <marker date="1550230379198" expanded="true" signature="653:1124" ph="{...}" />
+            <marker date="1550230379198" expanded="true" signature="711:1114" ph="{...}" />
+            <marker date="1550230379198" expanded="true" signature="801:1100" ph="{...}" />
+            <marker date="1550230379198" expanded="true" signature="1162:1292" ph="{...}" />
+            <marker date="1550230379198" expanded="true" signature="1329:1459" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Adapters/Expandable/MvxAdvancedRecyclerViewExpandableAdapterController.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Listeners/ActionClickListenerWrapper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="128">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
-            <marker date="1536844516095" expanded="false" signature="6:292" ph="..." />
-            <marker date="1536844516095" expanded="true" signature="354:3457" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="467:3455" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="978:1009" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="1117:2531" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="2590:2679" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="2719:2827" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="2890:3131" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="3189:3449" ph="{...}" />
-            <marker date="1536844516095" expanded="true" signature="3298:3445" ph="{...}" />
+            <marker date="1550230475308" expanded="true" signature="6:57" ph="..." />
+            <marker date="1550230475308" expanded="true" signature="120:572" ph="{...}" />
+            <marker date="1550230475308" expanded="true" signature="208:570" ph="{...}" />
+            <marker date="1550230475308" expanded="true" signature="374:394" ph="{...}" />
+            <marker date="1550230475308" expanded="true" signature="459:511" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxRecyclerViewItemsSourceBridge.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/menu/audio_item_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="384">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseDrawable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <marker date="1550233217932" expanded="false" signature="6:139" ph="..." />
+            <marker date="1550233217932" expanded="true" signature="204:5653" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="252:5651" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="854:874" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="925:1067" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="1128:1455" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="1505:4247" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="2203:2433" ph="/* Draw the left pause bar. The left pause bar transforms into the ... */" />
+            <marker date="1550233217932" expanded="true" signature="2700:2936" ph="/* Draw the right pause bar. The right pause bar transforms into the ... */" />
+            <marker date="1550233217932" expanded="true" signature="3447:3574" ph="/* (1) Pause --&gt; Play: rotate 0 to 90 degrees clockwise. ... */" />
+            <marker date="1550233217932" expanded="true" signature="4278:4353" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="4385:4461" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="4509:4724" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="4754:4802" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="4884:4968" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="5037:5087" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="5137:5223" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="5284:5373" ph="{...}" />
+            <marker date="1550233217932" expanded="true" signature="5449:5528" ph="/* Linear interpolate between a and b with parameter t. ... */" />
+            <marker date="1550233217932" expanded="true" signature="5589:5645" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/packages.config">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/CustomViews/PlayPauseView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3149">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <marker date="1550233221848" expanded="false" signature="6:302" ph="..." />
+            <marker date="1550233221848" expanded="true" signature="367:8277" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="463:8275" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="964:984" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="1048:1282" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="1374:2064" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="1580:1905" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="1914:1958" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="2109:2334" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="2398:2589" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="2665:2841" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="2930:3337" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="3419:3888" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="3633:3878" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="3723:3821" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="3959:4034" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="4095:4143" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="4206:4282" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="4338:4716" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="4726:4773" ph="/* Toogle the play/pause status ... */" />
+            <marker date="1550233221848" expanded="true" signature="4803:4840" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="4850:4951" ph="/* Change status to play or pause ... */" />
+            <marker date="1550233221848" expanded="true" signature="4992:5037" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="5047:5214" ph="/* Change status to play or pause ... */" />
+            <marker date="1550233221848" expanded="true" signature="5270:5381" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="5391:5509" ph="/* Toogle the play/pause status ... */" />
+            <marker date="1550233221848" expanded="true" signature="5552:6473" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="5580:6325" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="5624:5686" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="6520:6764" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="6546:6646" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="6795:6845" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="6876:7050" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="6941:7040" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="7102:7607" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="7223:7251" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="7307:7367" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="7456:7597" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="7678:8269" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="7888:7916" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="8003:8095" ph="{...}" />
+            <marker date="1550233221848" expanded="true" signature="8176:8259" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/styleable.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template_group_header.Designer.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxHeaderFooterDetails.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template_group_header.resx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="80">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template_group_header.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/Converters/HumanizeDateTimeValueConverter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
-            <marker date="1505336521000" expanded="true" signature="59:393" ph="{...}" />
-            <marker date="1505336521000" expanded="true" signature="101:391" ph="{...}" />
-            <marker date="1505336521000" expanded="true" signature="147:167" ph="{...}" />
+            <marker date="1550234182915" expanded="false" signature="6:86" ph="..." />
+            <marker date="1550234182915" expanded="true" signature="135:408" ph="{...}" />
+            <marker date="1550234182915" expanded="true" signature="223:406" ph="{...}" />
+            <marker date="1550234182915" expanded="true" signature="343:400" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxExpandableDataConverter.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/RecordGuard.ListSample.Android.csproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding>
-            <marker date="1505209998000" expanded="true" signature="45:473" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="100:471" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="233:397" ph="{...}" />
-          </folding>
+        <state relative-caret-position="186">
+          <caret line="205" column="20" selection-start-line="205" selection-start-column="20" selection-end-line="205" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventHandlerWeakSubscriptionHolder.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Assets/empty_list_animation.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1536844578194" expanded="false" signature="6:51" ph="..." />
-            <marker date="1536844578194" expanded="true" signature="98:592" ph="{...}" />
-            <marker date="1536844578194" expanded="true" signature="168:590" ph="{...}" />
-            <marker date="1536844578194" expanded="true" signature="437:527" ph="{...}" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="1702" column="4" selection-start-line="1702" selection-start-column="4" selection-end-line="1702" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxHookGroupExpandCollapseArgs.cs">
+    <entry file="file:///Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.Debugging.targets">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <marker date="1528377002000" expanded="true" signature="60:305" ph="{...}" />
-            <marker date="1528377002000" expanded="true" signature="110:303" ph="{...}" />
-          </folding>
+        <state relative-caret-position="161">
+          <caret line="511" column="74" selection-start-line="511" selection-start-column="74" selection-end-line="511" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxExpandableItemAdapterBoundedArgs.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Setup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
           <folding>
-            <marker date="1505209998000" expanded="true" signature="111:320" ph="{...}" />
-            <marker date="1505209998000" expanded="true" signature="166:318" ph="{...}" />
+            <marker date="1550228996011" expanded="false" signature="6:73" ph="..." />
+            <marker date="1550228996011" expanded="true" signature="115:226" ph="{...}" />
+            <marker date="1550228996011" expanded="true" signature="168:224" ph="{...}" />
+            <marker date="1550228996011" expanded="true" signature="197:218" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/EventArguments/MvxSwipeBackgroundSetEventArgs.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="576">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/Main.axml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupedDataConverter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <marker date="1536828409981" expanded="false" signature="6:96" ph="..." />
-            <marker date="1536828409981" expanded="true" signature="158:470" ph="{...}" />
-            <marker date="1536828409981" expanded="true" signature="208:468" ph="{...}" />
-            <marker date="1536828409981" expanded="true" signature="262:282" ph="{...}" />
+            <marker date="1550233838552" expanded="false" signature="6:129" ph="..." />
+            <marker date="1550233838552" expanded="true" signature="191:1220" ph="{...}" />
+            <marker date="1550233838552" expanded="true" signature="269:1218" ph="{...}" />
+            <marker date="1550233838552" expanded="true" signature="484:794" ph="{...}" />
+            <marker date="1550233838552" expanded="true" signature="620:783" ph="{...}" />
+            <marker date="1550233838552" expanded="true" signature="861:986" ph="{...}" />
+            <marker date="1550233838552" expanded="true" signature="1026:1212" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MvvmCross.AdvancedRecyclerView/Data/MvxGroupedItemsSourceProvider.cs">
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/Grouping/AudioListGroupExpandController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="367">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <marker date="1550226742957" expanded="true" signature="6:202" ph="..." />
-            <marker date="1550226742957" expanded="true" signature="249:5960" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="300:5958" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="862:2288" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="896:2278" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="1859:2199" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="2063:2192" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="2395:2792" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="2833:3183" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="3289:4967" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="3422:4957" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="3833:4943" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="3960:4634" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="4018:4615" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="5046:5119" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="5209:5275" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="5348:5426" ph="{...}" />
-            <marker date="1550226742957" expanded="true" signature="5460:5678" ph="{...}" />
+            <marker date="1550233838555" expanded="false" signature="6:144" ph="..." />
+            <marker date="1550233838555" expanded="true" signature="206:826" ph="{...}" />
+            <marker date="1550233838555" expanded="true" signature="283:824" ph="{...}" />
+            <marker date="1550233838555" expanded="true" signature="363:409" ph="{...}" />
+            <marker date="1550233838555" expanded="true" signature="486:532" ph="{...}" />
+            <marker date="1550233838555" expanded="true" signature="629:674" ph="{...}" />
+            <marker date="1550233838555" expanded="true" signature="773:818" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Extensions/TemplateSelectors/AudioItemTemplateSelector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="69" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="69" />
+          <folding>
+            <marker date="1550233286331" expanded="true" signature="126:612" ph="{...}" />
+            <marker date="1550233286331" expanded="true" signature="203:610" ph="{...}" />
+            <marker date="1550233286331" expanded="true" signature="309:329" ph="{...}" />
+            <marker date="1550233286331" expanded="true" signature="404:480" ph="{...}" />
+            <marker date="1550233286331" expanded="true" signature="551:604" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/values/Strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample.App/AppSetup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <marker date="1550228965940" expanded="false" signature="6:88" ph="..." />
+            <marker date="1550228965940" expanded="true" signature="126:412" ph="{...}" />
+            <marker date="1550228965940" expanded="true" signature="171:410" ph="{...}" />
+            <marker date="1550228965940" expanded="true" signature="219:404" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecordGuard.ListSample/RecordGuard.ListSample.Android/Activities/MainActivity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <marker date="1550248048111" expanded="true" signature="6:576" ph="..." />
+            <marker date="1550248048111" expanded="true" signature="629:3410" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="636:834" ph="[...]" />
+            <marker date="1550248048111" expanded="true" signature="902:3408" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="1045:1949" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="1877:1933" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="1999:3401" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="2217:3390" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="2435:2539" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="2736:3373" ph="{...}" />
+            <marker date="1550248048111" expanded="true" signature="3262:3354" ph="{...}" />
           </folding>
         </state>
       </provider>
