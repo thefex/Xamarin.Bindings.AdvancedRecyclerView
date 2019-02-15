@@ -22,7 +22,7 @@ namespace MvvmCross.AdvancedRecyclerView.Utils
         public abstract bool OnHookGroupExpand(MvxHookGroupExpandCollapseArgs groupItemDetails);
 
         public abstract bool OnHookGroupCollapse(MvxHookGroupExpandCollapseArgs groupItemDetails);
+
+        public virtual bool GetInitialGroupExpandedState (int groupPosition) => false;
     }
-
-
 }
