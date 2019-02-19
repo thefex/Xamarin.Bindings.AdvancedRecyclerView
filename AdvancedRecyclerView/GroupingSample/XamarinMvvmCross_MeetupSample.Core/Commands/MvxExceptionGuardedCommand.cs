@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.Commands;
 using XamarinMvvmCross_MeetupSample.Core.Services;
 
 namespace XamarinMvvmCross_MeetupSample.Core

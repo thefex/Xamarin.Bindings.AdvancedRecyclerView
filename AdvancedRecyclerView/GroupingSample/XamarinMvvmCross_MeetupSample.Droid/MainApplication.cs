@@ -3,7 +3,8 @@ using Akavache;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
-using MvvmCross.Droid.Views;
+using MvvmCross.Platforms.Android.Views;
+using XamarinMvvmCross_MeetupSample.Core;
 
 namespace XamarinMvvmCross_MeetupSample.Droid
 {
@@ -13,8 +14,8 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 #else
 	[Application(Debuggable = false)]
 #endif
-	public class MainApplication : Application
-	{
+    public class MainApplication : MvxAndroidApplication
+    {
 		public MainApplication(IntPtr handle, JniHandleOwnership transer)
 		  : base(handle, transer)
 		{

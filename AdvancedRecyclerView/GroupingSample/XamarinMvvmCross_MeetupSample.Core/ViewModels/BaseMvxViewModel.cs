@@ -1,5 +1,7 @@
 ﻿using System.Threading.Tasks;
-using MvvmCross.Core.ViewModels;
+using MvvmCross;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
 using XamarinMvvmCross_MeetupSample.Core.MessageObserver;
 using XamarinMvvmCross_MeetupSample.Core.Services;
 
@@ -16,7 +18,7 @@ namespace XamarinMvvmCross_MeetupSample.Core.ViewModels
 
 		public void NavigateTo<TViewModel>() where TViewModel : IMvxViewModel
 		{
-			ShowViewModel<TViewModel>();
+		    Mvx.Resolve<IMvxNavigationService>().Navigate<TViewModel>();
 		}
 
 		public virtual Task Load()

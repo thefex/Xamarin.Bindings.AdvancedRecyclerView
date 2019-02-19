@@ -1,5 +1,5 @@
 using System.Collections.ObjectModel;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.ViewModels;
 
 namespace Sample.ViewModels
 {

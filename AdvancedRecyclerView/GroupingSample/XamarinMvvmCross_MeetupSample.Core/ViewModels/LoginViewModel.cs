@@ -1,10 +1,8 @@
-﻿using MvvmCross.Core.ViewModels;
-using PropertyChanged;
+﻿using MvvmCross.Commands;
 using XamarinMvvmCross_MeetupSample.Core.Services.Authentication;
 
 namespace XamarinMvvmCross_MeetupSample.Core.ViewModels
 {
-    [AddINotifyPropertyChangedInterface]
 	public class LoginViewModel
 		: BaseMvxViewModel
 	{

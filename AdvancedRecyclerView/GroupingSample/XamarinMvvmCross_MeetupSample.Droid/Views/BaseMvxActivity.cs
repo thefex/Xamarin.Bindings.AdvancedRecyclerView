@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Android.OS;
 using Android.Runtime;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Core.Views;
 using MvvmCross.Droid.Support.V7.AppCompat;
-using MvvmCross.Platform;
-using XamarinMvvmCross_MeetupSample.Core;
+using MvvmCross.ViewModels;
 using XamarinMvvmCross_MeetupSample.Core.MessageObserver;
 using XamarinMvvmCross_MeetupSample.Core.Services;
 using XamarinMvvmCross_MeetupSample.Core.ViewModels;
 
 namespace XamarinMvvmCross_MeetupSample.Droid.Views
 {
-	public abstract class BaseMvxActivity<TViewModel> : MvxCachingFragmentCompatActivity<TViewModel> where TViewModel : class, IMvxViewModel
+	public abstract class BaseMvxActivity<TViewModel> : MvxAppCompatActivity<TViewModel> where TViewModel : class, IMvxViewModel
 	{
 		private MessageObserversController _messageObserversController;
 

@@ -4,8 +4,8 @@ using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.Binding.BindingContext;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace MvvmCross.AdvancedRecyclerView.ViewHolders
 {
@@ -143,6 +143,8 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
             _cachedDataContext = null;
             DataContext = null;
         }
+
+        public int Id { get; set; }
 
         protected override void Dispose(bool disposing)
         {

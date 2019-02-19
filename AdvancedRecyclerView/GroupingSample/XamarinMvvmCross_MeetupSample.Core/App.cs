@@ -1,17 +1,17 @@
 using System.Threading.Tasks;
 using Akavache;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Platform;
-using MvvmCross.Platform.IoC;
+using MvvmCross;
+using MvvmCross.ViewModels;
 using XamarinMvvmCross_MeetupSample.Core.Services.Authentication;
 using XamarinMvvmCross_MeetupSample.Core.ViewModels;
 
 namespace XamarinMvvmCross_MeetupSample.Core
 {
-	public class App : MvvmCross.Core.ViewModels.MvxApplication
+	public class App : MvxApplication
 	{
 		public override void Initialize()
 		{
+            base.Initialize();
 			BlobCache.ApplicationName = "Xamarines";
 			BlobCache.EnsureInitialized();
 
@@ -19,26 +19,24 @@ namespace XamarinMvvmCross_MeetupSample.Core
 		   {
 			   return new PersistAuthenticationDataServiceDecorator(new InMemoryAuthenticationService());
 		   });
+            Mvx.RegisterSingleton<ExceptionGuardService>(() => new ExceptionGuardService(new SampleBasedExceptionGuard()));
 			                                         
 
 			Mvx.RegisterType<LoginViewModel, LoginViewModel>();
 			Mvx.RegisterType<MainViewModel, MainViewModel>();
+			var authService = Mvx.Resolve<IAuthenticationService>();
+			
+			bool isSignedIn = false;
+            /*Task.Run(async () =>
+            {
+                isSignedIn = await authService.IsSignedIn();
 
-		    Mvx.RegisterType<IMvxAppStart>(() =>
-		    {
-		        var authService = Mvx.Resolve<IAuthenticationService>();
-				bool isSignedIn = false;
-				Task.Run(async () =>
-				{
-					isSignedIn = await authService.IsSignedIn();
-				}).Wait();
-		        
-		        if (isSignedIn)
-		            return new MvxAppStart<MainViewModel>();
-
-		        return new MvxAppStart<LoginViewModel>();
-		    });
-
+                if (isSignedIn)
+                    RegisterAppStart<MainViewModel>();
+                else
+                    RegisterAppStart<LoginViewModel>();
+            });*/
+            RegisterAppStart<LoginViewModel>();
 		}
 	}
 }

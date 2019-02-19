@@ -4,11 +4,9 @@ using Android.Support.V7.Widget;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView.Extensions;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 {
@@ -58,14 +56,14 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
                 {
                     var groupedSwipeableTemplate =
                         MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupSwipeableTemplate(Context, Attrs);
-                    expandableAdapter.GroupSwipeableTemplate= groupedSwipeableTemplate;    
+                    expandableAdapter.GroupSwipeableTemplate = groupedSwipeableTemplate;    
                 }
 
                 if (MvxAdvancedRecyclerViewAttributeExtensions.IsGroupedChildSwipeSupported(Context, Attrs))
                 {
                     var childSwipeableTemplate =
                         MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupChildSwipeableTemplate(Context, Attrs);
-                    expandableAdapter.GroupSwipeableTemplate = childSwipeableTemplate;
+                    expandableAdapter.ChildSwipeableTemplate = childSwipeableTemplate;
                 }
 
                 _mRecyclerViewTouchActionGuardManager = new RecyclerViewTouchActionGuardManager();

@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
-using MvvmCross.Binding.ExtensionMethods;
-using MvvmCross.Platform;
-using MvvmCross.Platform.WeakSubscription;
+using MvvmCross.WeakSubscription;
 
 namespace MvvmCross.AdvancedRecyclerView.Data
 {
@@ -34,7 +32,13 @@ namespace MvvmCross.AdvancedRecyclerView.Data
 					AddItems(enumerableGroupedItems, groupedDataConverter);
 					break;
 				case NotifyCollectionChangedAction.Add:
-					AddItems(args.NewItems, groupedDataConverter);
+                    var enumerableGroupedItems2 = sender as IEnumerable ?? Enumerable.Empty<object>();
+                    _observableItemsSource.Clear();
+                    foreach (var disposables in _groupedDataDisposables.Values)
+                        disposables.Dispose();
+
+                    _groupedDataDisposables.Clear();
+                    AddItems(enumerableGroupedItems2, groupedDataConverter);
 					break;
 				case NotifyCollectionChangedAction.Remove:
 					foreach (var item in Enumerable.Cast<object>(args.OldItems))
@@ -96,24 +100,31 @@ namespace MvvmCross.AdvancedRecyclerView.Data
 
                 if (!_groupedDataDisposables.ContainsKey(mvxGroupable))
                 {
-                    _groupedDataDisposables.Add(mvxGroupable, childNotifyCollectionChanged.WeakSubscribe((sender, args) =>
-                    {
-                        switch (args.Action)
-                        {
-                            case NotifyCollectionChangedAction.Add:
-                                AddChildItems(mvxGroupable, args.NewItems);
-                                break;
-                            case NotifyCollectionChangedAction.Remove:
-                                RemoveChildItems(mvxGroupable, args.OldItems);
-                                break;
-                            case NotifyCollectionChangedAction.Reset:
-                                ResetChildCollection(mvxGroupable);
-                                break;
-                            default:
-                                ItemsMovedOrReplaced?.Invoke();
-                                break;
-                        }
-                    }));
+	                EventHandler<NotifyCollectionChangedEventArgs> collectionChangedHandler = (sender, args) =>
+	                {
+		                switch (args.Action)
+		                {
+			                case NotifyCollectionChangedAction.Add:
+				                AddChildItems(mvxGroupable, args.NewItems);
+				                break;
+			                case NotifyCollectionChangedAction.Remove:
+				                RemoveChildItems(mvxGroupable, args.OldItems);
+				                break;
+			                case NotifyCollectionChangedAction.Reset:
+				                ResetChildCollection(mvxGroupable);
+				                break;
+			                default:
+				                ItemsMovedOrReplaced?.Invoke();
+				                break;
+		                }
+	                };
+	                
+	                _groupedDataDisposables.Add(mvxGroupable, 
+		                new EventHandlerWeakSubscriptionHolder(
+								collectionChangedHandler, 
+								childNotifyCollectionChanged.WeakSubscribe(collectionChangedHandler)
+			                )
+		                );
                 }
             }
         }

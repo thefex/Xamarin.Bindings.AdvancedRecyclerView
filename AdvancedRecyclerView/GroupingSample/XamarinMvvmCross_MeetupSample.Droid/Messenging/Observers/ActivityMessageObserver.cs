@@ -1,6 +1,6 @@
 ﻿using System;
 using Android.Support.V7.App;
-using MvvmCross.Plugins.Messenger;
+using MvvmCross.Plugin.Messenger;
 using XamarinMvvmCross_MeetupSample.Core;
 using XamarinMvvmCross_MeetupSample.Core.MessageObserver;
 

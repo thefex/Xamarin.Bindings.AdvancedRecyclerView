@@ -4,6 +4,7 @@ using System.Windows.Input;
 using Android.App;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.IoC;
 
 #pragma warning disable 219
 
@@ -74,9 +75,9 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 			command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
 		}
 
-		public void Include(MvvmCross.Platform.IoC.MvxPropertyInjector injector)
+		public void Include(MvxPropertyInjector injector)
 		{
-			injector = new MvvmCross.Platform.IoC.MvxPropertyInjector();
+			injector = new MvxPropertyInjector();
 			GC.KeepAlive(injector);
 		}
 

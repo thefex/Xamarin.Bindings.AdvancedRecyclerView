@@ -6,7 +6,7 @@ using Android.Util;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
 using MvvmCross.AdvancedRecyclerView.Adapters;
 using MvvmCross.AdvancedRecyclerView.Adapters.Expandable;
-using MvvmCross.Binding.Droid.BindingContext;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace MvvmCross.AdvancedRecyclerView
 {

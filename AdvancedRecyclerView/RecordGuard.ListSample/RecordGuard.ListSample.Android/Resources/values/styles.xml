@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources> 
+    <style name="splashTheme" parent="splashThemeBase">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splashWindowBackgroundDrawable</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+
+
+    </style>
+
+    <style name="splashThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+
+    <style name="appTheme" parent="appThemeBase">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+
+    <style name="appThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+</resources>

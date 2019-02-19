@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using Android.Content;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Droid.Shared.Presenter;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.ViewModels;
 using XamarinMvvmCross_MeetupSample.Core.ViewModels;
 
 namespace XamarinMvvmCross_MeetupSample.Droid
 {
-	public class ApplicationPresenter : MvxFragmentsPresenter
+	public class ApplicationPresenter : MvxAppCompatViewPresenter
 	{
 		public ApplicationPresenter(IEnumerable<Assembly> androidViewAssemblies) : base(androidViewAssemblies)
 		{
@@ -18,7 +17,7 @@ namespace XamarinMvvmCross_MeetupSample.Droid
 		{
 			var intent = base.CreateIntentForRequest(request);
 
-			if (Activity.GetType() == typeof(SplashScreen))
+			if (CurrentActivity.GetType() == typeof(SplashScreen))
 				intent.AddFlags(ActivityFlags.NoAnimation);
 
 			if (request.ViewModelType == typeof(MainViewModel) ||

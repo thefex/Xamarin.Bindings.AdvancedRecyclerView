@@ -3,9 +3,9 @@ using Android.Content.PM;
 using Android.Graphics;
 using Android.OS;
 using Android.Support.V7.Widget;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Core.Views;
-using MvvmCross.Platform;
+using MvvmCross;
+using MvvmCross.ViewModels;
+using MvvmCross.Views;
 using XamarinMvvmCross_MeetupSample.Core;
 using XamarinMvvmCross_MeetupSample.Core.ViewModels;
 

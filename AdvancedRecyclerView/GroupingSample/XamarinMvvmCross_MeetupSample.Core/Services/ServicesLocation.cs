@@ -1,5 +1,5 @@
-﻿using MvvmCross.Platform;
-using MvvmCross.Plugins.Messenger;
+﻿using MvvmCross;
+using MvvmCross.Plugin.Messenger;
 
 namespace XamarinMvvmCross_MeetupSample.Core.Services
 {

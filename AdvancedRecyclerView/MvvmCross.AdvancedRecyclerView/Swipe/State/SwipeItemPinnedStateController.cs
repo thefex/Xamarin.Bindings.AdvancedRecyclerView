@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
@@ -15,7 +16,17 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.State
             var itemId = UniqueIdProvider.GetUniqueId(forItem);
             if (!_pinnedStateDictionary.ContainsKey(itemId))
                 _pinnedStateDictionary.Add(itemId, false);
+
+            bool hasPinnedStateChanged = _pinnedStateDictionary[itemId] != isPinned;
             _pinnedStateDictionary[itemId] = isPinned;
+
+            if (!hasPinnedStateChanged)
+                return;
+            
+            if (isPinned)
+                Pinned?.Invoke(forItem);
+            else
+                Unpinned?.Invoke(forItem);
         }
 
         public bool IsPinned(object item)
@@ -25,5 +36,9 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.State
         }
 
         public void ResetState() => _pinnedStateDictionary.Clear();
+
+        public event Action<object> Pinned;
+
+        public event Action<object> Unpinned;
     }
 }

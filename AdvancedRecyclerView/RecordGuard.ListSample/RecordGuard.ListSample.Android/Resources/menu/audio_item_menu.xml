@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+  
+    <!--
+    <item
+      android:id="@+id/popup_action_audio_details"
+      android:enabled="true"
+      android:icon="@drawable/file_music"
+      android:title="Audio details"
+      local:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/popup_action_change_title"
+        android:enabled="true"
+        android:icon="@drawable/text_shadow"
+        android:title="Change title"
+        local:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/popup_action_share"
+        android:icon="@drawable/share_variant"
+        android:title="Share"
+        local:showAsAction="ifRoom"/>
+        
+       -->
+   
+    <item
+        android:id="@+id/popup_action_delete"
+        android:enabled="true"
+        android:icon="@drawable/delete_grey"
+        android:title="Delete"
+        local:showAsAction="ifRoom" />
+</menu>

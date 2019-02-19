@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Windows.Input;
 using Android.Content;
-using Android.OS;
 using Android.Runtime;
-using Android.Support.V7.Widget;
 using Android.Util;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
 using MvvmCross.AdvancedRecyclerView.Adapters;
-using MvvmCross.AdvancedRecyclerView.Adapters.Expandable;
 using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
 using MvvmCross.AdvancedRecyclerView.Extensions;
-using MvvmCross.Binding.Droid.BindingContext;
-using MvvmCross.Droid.Support.V7.RecyclerView;
-using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 
 namespace MvvmCross.AdvancedRecyclerView
 {

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schema.android.com/apk/res/android.support.design"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:id="@+id/LayoutRoot">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainViewLayout">
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listsViewContainer"
+            android:alpha="1">
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/emptyViewLayout"
+                android:alpha="0"
+                android:visibility="invisible"
+                android:layout_marginTop="-36dp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha="1"
+                    local:lottie_rawRes="@raw/empty_list_animation"
+                    local:lottie_loop="true"
+                    local:lottie_autoPlay="true" />
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:gravity="center"
+                    android:textColor="#EAEAEA"
+                    android:text="You do not have any recordings."
+                    android:layout_marginTop="12dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_shape_white"
+                    android:stateListAnimator="@null"
+                    android:elevation="@dimen/button_elevation"
+                    android:textColor="@android:color/black"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="START NEW RECORDING"
+                    local:MvxBind="Click Record" />
+            </LinearLayout>
+
+            <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:visibility="invisible"
+                local:MvxChildSwipeableTemplate="@string/audio_child_swipeable"
+                local:MvxGroupedDataConverter="@string/audio_grouped_data_converter"
+                local:MvxGroupExpandController="@string/audio_group_expand_controller"
+                local:MvxTemplateSelector="@string/audio_item_template_selector"
+                local:MvxBind="ItemsSource Items; ChildItemClick ItemTapped" />
+        </FrameLayout>
+
+    </LinearLayout> 
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab_main_bottom"
+        android:layout_marginRight="@dimen/fab_main_right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:elevation="0dp"
+        local:elevation="0dp"
+        local:backgroundTint="@color/fabRed"
+        local:rippleColor="@color/fabRedDark"
+        android:src="@drawable/microphone"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:id="@+id/fab"
+        android:fitsSystemWindows="true"
+        local:layout_anchorGravity="bottom|right|end"
+        local:MvxBind="Click Record" /> 
+</android.support.design.widget.CoordinatorLayout>

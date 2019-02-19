@@ -15,8 +15,8 @@ using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions.ItemManager;
 using MvvmCross.AdvancedRecyclerView.Swipe.State;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.Platforms.Android.Binding.BindingContext;
 using Object = Java.Lang.Object;
 
 namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
@@ -35,8 +35,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
 
         }
 
-        private IMvxSwipeableTemplate swipeableTemplate;
-        public IMvxSwipeableTemplate SwipeableTemplate
+        private MvxSwipeableTemplate swipeableTemplate;
+        public MvxSwipeableTemplate SwipeableTemplate
         {
             get { return swipeableTemplate ?? _lazyDefaultSwipeableTemplate.Value; }
             set { swipeableTemplate = value; }
@@ -61,6 +61,23 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             return vh;
         }
 
+        public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
+        {
+            base.OnBindViewHolder(holder, position);
+
+            var advancedRecyclerViewHolder = holder as MvxAdvancedRecyclerViewHolder;
+            if (SwipeableTemplate != null)
+            {
+                advancedRecyclerViewHolder.MaxLeftSwipeAmount = SwipeableTemplate.MaxLeftSwipeAmount;
+                advancedRecyclerViewHolder.MaxRightSwipeAmount = SwipeableTemplate.MaxRightSwipeAmount;
+                advancedRecyclerViewHolder.MaxDownSwipeAmount = SwipeableTemplate.MaxDownSwipeAmount;
+                advancedRecyclerViewHolder.MaxUpSwipeAmount = SwipeableTemplate.MaxUpSwipeAmount;
+                
+                SwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
+                SwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, SwipeItemPinnedStateController);
+            }
+        }
+
         public int OnGetSwipeReactionType(Object p0, int p1, int x, int y)
         {
             var viewHolder = p0 as MvxAdvancedRecyclerViewHolder;
@@ -73,12 +90,14 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
         public void OnSetSwipeBackground(Object viewHolder, int position, int type)
         {
             var advancedViewHolder = viewHolder as MvxAdvancedRecyclerViewHolder;
-            SwipeBackgroundSet?.Invoke(new MvxSwipeBackgroundSetEventArgs()
+            var args = new MvxSwipeBackgroundSetEventArgs()
             {
                 ViewHolder = advancedViewHolder,
                 Position = position,
                 Type = type
-            });
+            };
+            SwipeBackgroundSet?.Invoke(args);
+            SwipeableTemplate?.OnSwipeBackgroundSet(args);
         }
 
         public SwipeResultAction OnSwipeItem(Object p0, int position, int result)
@@ -114,7 +133,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
         /// </summary>
         public int SwipeReactionType => SwipeableTemplate.SwipeReactionType;
 
-        public MvxSwipeResultActionFactory SwipeResultActionFactory { get; set; } = new MvxSwipeResultActionFactory();
+        public MvxSwipeResultActionFactory SwipeResultActionFactory => SwipeableTemplate?.SwipeResultActionFactory ?? new MvxSwipeResultActionFactory();
 
         private IMvxItemUniqueIdProvider uniqueIdProvider;
         public IMvxItemUniqueIdProvider UniqueIdProvider

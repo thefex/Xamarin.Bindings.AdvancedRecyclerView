@@ -1,20 +1,10 @@
 using Android.App;
 using Android.OS;
-using Android.Support.V7.Widget;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Animator;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
-using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.AdvancedRecyclerView;
-using MvvmCross.AdvancedRecyclerView.Adapters;
 using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
-using MvvmCross.AdvancedRecyclerView.Swipe;
-using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
-using MvvmCross.Binding.BindingContext;
-using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.AppCompat;
-using MvvmCross.Droid.Views;
 using Sample.Swipe;
 using Sample.ViewModels;
 

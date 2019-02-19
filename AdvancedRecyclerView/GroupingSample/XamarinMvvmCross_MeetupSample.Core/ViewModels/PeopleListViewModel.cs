@@ -6,15 +6,13 @@ using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using DynamicData;
-using MvvmCross.Binding.ExtensionMethods;
-using MvvmCross.Core.ViewModels;
-using PropertyChanged;
+using MvvmCross.Binding.Extensions;
+using MvvmCross.Commands;
 using XamarinMvvmCross_MeetupSample.Core.Services;
 using XamarinMvvmCross_MeetupSample.Core.ViewModels;
 
 namespace XamarinMvvmCross_MeetupSample.Core
 {
-    [AddINotifyPropertyChangedInterface]
     public class PeopleListViewModel : BaseMvxViewModel, IIncrementalLoading
     {
         protected readonly IList<IDisposable> DisposableItems = new List<IDisposable>();
@@ -25,7 +23,11 @@ namespace XamarinMvvmCross_MeetupSample.Core
         {
         }
 
-        public ReadOnlyObservableCollection<GroupedData> Items { get; private set; }
+        private ReadOnlyObservableCollection<GroupedData> _items;
+        public ReadOnlyObservableCollection<GroupedData> Items {
+            get => _items;
+            set => SetProperty(ref _items, value);
+        }
 
         public override void ViewAppeared()
         {

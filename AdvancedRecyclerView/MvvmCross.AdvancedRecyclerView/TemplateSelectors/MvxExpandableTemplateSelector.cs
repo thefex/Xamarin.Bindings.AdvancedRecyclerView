@@ -30,6 +30,8 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
             return GetChildItemLayoutId(fromViewType);
         }
 
+        public int ItemTemplateId { get; set; }
+
         protected abstract int GetChildItemViewType(object forItemObject);
 
         protected abstract int GetChildItemLayoutId(int fromViewType);
