@@ -8,6 +8,12 @@ Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedr
 
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
+v 1.14.0
+- BREAKING CHANGE, see docs - Refactored Swipe to Dismiss feature (easier implementation)
+- BUGFIX - possible application crash with grouping / grouping sometimes created invalid groups (duplicated groups)
+- Added Swipe to Dismiss support on Grouped lists (group/child)
+- Docs adjustments
+
 v 1.12.0
 - Update to MvvmCross 6.0+
 
@@ -112,12 +118,14 @@ https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/blob/master/Adva
 
 We've got an layout which has two containers: *underSwipe* and the default *container*.
 
-2. When we have created an appropiate layout, lets implement special interface - called: **IMvxSwipeableTemplate**.
+2. When we have created an appropiate layout, lets implement special abstract class - called: **MvxSwipeableTemplate**.
 According to that interface, **AdvancedRecyclerView** picks: 
 
 - in which direction swiping works (from left to right, from right to left, from top to bottom and so on..)
 - what is the view which represented swiped content,
 - what is the default view - in not swiping state
+- SwipeResultActionFactory - what are actions after pinning to edge? (should we move to this direction or unpin?)
+- degree of swipe to left/right/up/bottom - (how much can we swipe in each direction? values of range [-1, 1] 
 
 Sample implementation:
 
@@ -126,13 +134,36 @@ Sample implementation:
 
 	namespace Sample.Swipe
 	{
-	    public class SwipeableTemplate : IMvxSwipeableTemplate
+	    public class SwipeableTemplate : MvxSwipeableTemplate
 	    {
-		public int SwipeContainerViewGroupId => Resource.Id.container;
+    		public override int SwipeContainerViewGroupId => Resource.Id.container;
+		
+        	public override int UnderSwipeContainerViewGroupId => Resource.Id.underSwipe;
 
-		public int UnderSwipeContainerViewGroupId => Resource.Id.underSwipe;
+    		public override int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
 
-		public int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
+		
+		public override float MaxLeftSwipeAmount => -1f;
+  
+                public override MvxSwipeResultActionFactory SwipeResultActionFactory => new SwipeResultActionFactory();
+	    }
+	    
+	    public class SwipeResultActionFactory : MvxSwipeResultActionFactory
+	    {
+		public override SwipeResultAction GetSwipeLeftResultAction(IMvxSwipeResultActionItemManager itemProvider)
+		{
+		    return new MvxSwipeToDirectionResultAction(itemProvider, SwipeDirection.FromLeft);
+		}
+
+		public override SwipeResultAction GetSwipeRightResultAction(IMvxSwipeResultActionItemManager itemProvider)
+		{
+		    return new MvxSwipeUnpinResultAction(itemProvider);
+		}
+
+		public override SwipeResultAction GetUnpinSwipeResultAction(IMvxSwipeResultActionItemManager itemProvider)
+		{
+		    return new MvxSwipeUnpinResultAction(itemProvider);
+		}
 	    }
 	}
 
@@ -154,18 +185,9 @@ Sample implementation:
 
 Where **MvxSwipeableTemplate** is a string with full class name (as usual - in **MvxTemplateSelector** style)
 
-4. We can control in code how much slide amount is available, what background is set in swiped state.
-We can control in code how item behaves after we swiped (should it go back to default state? should it be pinned?)
-
-Look at this samples:
-https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/blob/master/AdvancedRecyclerView/Sample/SwipeExampleActivity.cs
-https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/blob/master/AdvancedRecyclerView/Sample/Swipe/SwipeResultActionFactory.cs
-
-If you want to implement for ex. swipe-to-delete - you would have to create **MvxSwipeToDirectionResultAction** implementation and override **OnSlideAnimationEnd** method. Then, you should return instance of this class in SwipeResultActionFactory.
+Please, see https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/tree/master/AdvancedRecyclerView/RecordGuard.ListSample/RecordGuard.ListSample.Android for sample (grouped sample but this is the same, the only difference is usage of MvxSwipeableTemplate attribute)
 
 Please check https://github.com/h6ah4i/android-advancedrecyclerview documentation as well.
-
-// todo write more about swiping features
 
 # IV. Ok, fine. This time I need grouped, non-expandable lists.
 
@@ -325,8 +347,9 @@ Just change Expand Controller attribute:
 
 
 # VI. OK! How about adding swiping to grouped lists ?
-Sorry, not supported yet with MvvmCross bindings.
-Feel free to make PR or just... wait :)
+Please, see point III and following sample: https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView/tree/master/AdvancedRecyclerView/RecordGuard.ListSample/RecordGuard.ListSample.Android
+
+Use: MvxGroupSwipeableTemplate or MvxChildSwipeableTemplate attribute.
 
 # VII. How can I access bounded item view in code ?
 
