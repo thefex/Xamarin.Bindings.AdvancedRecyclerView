@@ -6,6 +6,8 @@ Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedr
 - swipe (for non expandable lists)
 - header/footer support for both - expandable and non-grouped lists
 
+Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.com/blog/mobile-development/xamarin-android-advanced-lists-in-mvvmcross/ 
+
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
 v 1.14.0
