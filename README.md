@@ -36,7 +36,7 @@ Use cases:
 
 1. In your old RecyclerView/MvxRecyclerView .axml layout use:
 
-```xaml
+```xml
 <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView 
     android:id="@+id/RecyclerView"
     android:layout_width="match_parent"
@@ -176,7 +176,7 @@ namespace Sample.Swipe
 
 3. Lets update our base layout.
 
-```xaml
+```xml
 <mvvmcross.advancedrecyclerview.MvxAdvancedNonExpandableRecyclerView
     android:id="@+id/RecyclerView"
     android:layout_width="match_parent"
@@ -201,7 +201,7 @@ Lets start from scratch.
 
 1. Implement AdvancedRecyclerView layout - this time using **MvxAdvancedExpandableRecyclerView** 
 
-```xaml
+```xml
 <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
 	android:id="@+id/recyclerView"
 	android:layout_width="match_parent"
