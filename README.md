@@ -97,7 +97,7 @@ public class MyTemplateSelector : MvxTemplateSelector<MyCustomObject>, IMvxFoote
     public override int GetItemLayoutId(int fromViewType)
     {
         if (fromViewType == 0)
-        return Resource.Layout.not_special_layout;
+            return Resource.Layout.not_special_layout;
 
         return Resource.Layout.special_layout;
     }
@@ -203,15 +203,15 @@ Lets start from scratch.
 
 ```xml
 <mvvmcross.advancedrecyclerview.MvxAdvancedExpandableRecyclerView
-	android:id="@+id/recyclerView"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	local:MvxHeaderLayoutId="@layout/person_list_header"
-	local:MvxFooterLayoutId="@layout/person_list_footer"
-	local:MvxGroupedDataConverter="@string/person_grouped_data_converter"
-	local:MvxGroupExpandController="@string/person_group_expand_controller"
-	local:MvxTemplateSelector="@string/special_person_item_template_selector"
-	local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    local:MvxHeaderLayoutId="@layout/person_list_header"
+    local:MvxFooterLayoutId="@layout/person_list_footer"
+    local:MvxGroupedDataConverter="@string/person_grouped_data_converter"
+    local:MvxGroupExpandController="@string/person_group_expand_controller"
+    local:MvxTemplateSelector="@string/special_person_item_template_selector"
+    local:MvxBind="ItemsSource Items; ChildItemClick PeopleTapped" />
 ```
 
 For header/footers nothing changes with grouped lists.
