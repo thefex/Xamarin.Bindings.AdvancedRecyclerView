@@ -11,7 +11,7 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
 
-v 1.15.0 
+v 1.15.2 
 - Swipe features can be customized (enabled/disabled/different percetange of swipe) now based on ViewHolder/DataModel property (see point X below)
 
 v 1.14.0
@@ -428,15 +428,23 @@ Suppose you have Contacts list - and you want to have "call when swiped right" a
 Your **MvxSwipeableTemplate** should look as follows:
 
 ```cs
- public class ContactOperationChildSwipeableTemplate : MvxSwipeableTemplate
- {
+public class ContactOperationChildSwipeableTemplate : MvxSwipeableTemplate
+{
     public override int SwipeContainerViewGroupId
     {
         get => Resource.Id.container_of_list_item; 
     }
     public override int UnderSwipeContainerViewGroupId => Resource.Id.underSwipe;
 
-    public override int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
+    protected override int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
+
+    public override int GetSwipeReactionType(object dataContext, MvxAdvancedRecyclerViewHolder holder)
+    {
+        if (dataContext is SelectableItem<ContactDetails> contactDetails && string.IsNullOrEmpty(contactDetails.Item.PhoneNumber))
+            return SwipeableItemConstants.ReactionCanNotSwipeAny;
+
+        return base.GetSwipeReactionType(dataContext, holder);
+    }
 
     protected override float MaxLeftSwipeAmount => -1f;
 
