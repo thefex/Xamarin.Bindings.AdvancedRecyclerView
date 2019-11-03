@@ -13,6 +13,6 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
 
         public override int UnderSwipeContainerViewGroupId => -1;
 
-        public override int SwipeReactionType => SwipeableItemConstants.ReactionCanNotSwipeAny;
+        protected override int SwipeReactionType => SwipeableItemConstants.ReactionCanNotSwipeAny;
     }
 }

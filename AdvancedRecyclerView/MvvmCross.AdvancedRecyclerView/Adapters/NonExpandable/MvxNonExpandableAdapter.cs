@@ -83,7 +83,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             var viewHolder = p0 as MvxAdvancedRecyclerViewHolder;
 
             return viewHolder.SwipeableContainerView.HitTest(x, y)
-                ? SwipeReactionType
+                ? SwipeableTemplate.GetSwipeReactionType(viewHolder.DataContext, viewHolder)
                 : SwipeableItemConstants.ReactionCanNotSwipeAny;
         }
 
@@ -127,12 +127,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             var item = GetItem(position);
             return UniqueIdProvider.GetUniqueId(item);
         }
-
-        /// <summary>
-        /// Use SwipeableItemConstants.ReactionCan/CanNotSwipe to determine available swipe type.
-        /// </summary>
-        public int SwipeReactionType => SwipeableTemplate.SwipeReactionType;
-
+ 
         public MvxSwipeResultActionFactory SwipeResultActionFactory => SwipeableTemplate?.SwipeResultActionFactory ?? new MvxSwipeResultActionFactory();
 
         private IMvxItemUniqueIdProvider uniqueIdProvider;

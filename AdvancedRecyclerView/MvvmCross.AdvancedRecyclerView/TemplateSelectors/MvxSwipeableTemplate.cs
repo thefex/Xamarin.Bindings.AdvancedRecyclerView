@@ -13,8 +13,10 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
 
         public abstract int UnderSwipeContainerViewGroupId { get; }
 
-        public abstract int SwipeReactionType { get; }
-        
+        protected abstract int SwipeReactionType { get; }
+
+        public virtual int GetSwipeReactionType(object dataContext, MvxAdvancedRecyclerViewHolder holder) => SwipeReactionType;
+
         /// <summary>
         /// Value from range [-1.0, 0.0]
         /// </summary>

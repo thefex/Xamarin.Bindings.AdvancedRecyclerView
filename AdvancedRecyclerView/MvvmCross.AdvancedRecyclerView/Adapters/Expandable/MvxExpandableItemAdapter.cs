@@ -312,11 +312,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             get => childSwipeableTemplate ?? _lazyDefaultSwipeableTemplate.Value;
             set => childSwipeableTemplate = value;
         }
-
-        public int GroupSwipeReactionType => GroupSwipeableTemplate.SwipeReactionType;
-
-        public int ChildSwipeReactionType => ChildSwipeableTemplate.SwipeReactionType;
-
+  
         public MvxSwipeResultActionFactory GroupSwipeResultActionFactory => GroupSwipeableTemplate?.SwipeResultActionFactory ?? new MvxSwipeResultActionFactory();
 
         public MvxSwipeResultActionFactory ChildSwipeResultActionFactory => ChildSwipeableTemplate?.SwipeResultActionFactory ?? new MvxSwipeResultActionFactory();
@@ -330,7 +326,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
 
             return viewHolder.SwipeableContainerView.HitTest(x, y)
-                ? ChildSwipeReactionType
+                ? ChildSwipeableTemplate.GetSwipeReactionType(viewHolder.DataContext, viewHolder)
                 : SwipeableItemConstants.ReactionCanNotSwipeAny;
         }
 
@@ -339,7 +335,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
 
             return viewHolder.SwipeableContainerView.HitTest(x, y)
-                ? GroupSwipeReactionType
+                ? GroupSwipeableTemplate.GetSwipeReactionType(viewHolder.DataContext, viewHolder)
                 : SwipeableItemConstants.ReactionCanNotSwipeAny;
         }
 
