@@ -3,7 +3,7 @@ Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedr
 
 **MvvmCross.AdvancedRecyclerView** currently has MvvmCross DataBinding support for:
 - expandable/grouped lists
-- swipe (for non expandable lists)
+- swipe (for both non expandable and grouped lists)
 - header/footer support for both - expandable and non-grouped lists
 
 Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.com/blog/mobile-development/xamarin-android-advanced-lists-in-mvvmcross/ 
@@ -421,7 +421,7 @@ You can bind to **MvxAdvancedRecyclerView** properties.
 
 # X. Love swipe to X feature! But I want to enable and disable "swipe to X" based on some of my list data model property (or even view one). Is that possible?
 
-This feature has been added in version v1.15.0
+This feature has been added in version v1.15.2
 
 Suppose you have Contacts list - and you want to have "call when swiped right" and "send sms when swiped left" features (as in default Android Samsung S10 Contacts app) when contact has phone number assigned.
 
