@@ -217,10 +217,10 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 
             if (ChildSwipeableTemplate != null)
             {
-                advancedRecyclerViewHolder.MaxLeftSwipeAmount = ChildSwipeableTemplate.MaxLeftSwipeAmount;
-                advancedRecyclerViewHolder.MaxRightSwipeAmount = ChildSwipeableTemplate.MaxRightSwipeAmount;
-                advancedRecyclerViewHolder.MaxDownSwipeAmount = ChildSwipeableTemplate.MaxDownSwipeAmount;
-                advancedRecyclerViewHolder.MaxUpSwipeAmount = ChildSwipeableTemplate.MaxUpSwipeAmount;
+                advancedRecyclerViewHolder.MaxLeftSwipeAmount = ChildSwipeableTemplate.GetMaxLeftSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxRightSwipeAmount = ChildSwipeableTemplate.GetMaxRightSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxDownSwipeAmount = ChildSwipeableTemplate.GetMaxDownSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxUpSwipeAmount = ChildSwipeableTemplate.GetMaxUpSwipeAmount(dataContext, advancedRecyclerViewHolder);
                 
                 ChildSwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
                 ChildSwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, ChildSwipeItemPinnedStateController);
@@ -240,10 +240,10 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             
             if (GroupSwipeableTemplate != null)
             {
-                advancedRecyclerViewHolder.MaxLeftSwipeAmount = GroupSwipeableTemplate.MaxLeftSwipeAmount;
-                advancedRecyclerViewHolder.MaxRightSwipeAmount = GroupSwipeableTemplate.MaxRightSwipeAmount;
-                advancedRecyclerViewHolder.MaxDownSwipeAmount = GroupSwipeableTemplate.MaxDownSwipeAmount;
-                advancedRecyclerViewHolder.MaxUpSwipeAmount = GroupSwipeableTemplate.MaxUpSwipeAmount;
+                advancedRecyclerViewHolder.MaxLeftSwipeAmount = GroupSwipeableTemplate.GetMaxLeftSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxRightSwipeAmount = GroupSwipeableTemplate.GetMaxRightSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxDownSwipeAmount = GroupSwipeableTemplate.GetMaxDownSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxUpSwipeAmount = GroupSwipeableTemplate.GetMaxUpSwipeAmount(dataContext, advancedRecyclerViewHolder);
                 
                 GroupSwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
                 GroupSwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, GroupSwipeItemPinnedStateController);

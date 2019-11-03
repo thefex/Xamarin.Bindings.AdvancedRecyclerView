@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE_ANDROID" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../Bindings" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="support-annotations-26.1.0.1" level="project" />
+    <orderEntry type="library" name="appcompat-v7-26.1.0.1" level="project" />
+    <orderEntry type="library" name="recyclerview-v7-26.1.0.1" level="project" />
+    <orderEntry type="library" name="support-vector-drawable-26.1.0.1" level="project" />
+  </component>
+</module>

@@ -18,22 +18,50 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
         /// <summary>
         /// Value from range [-1.0, 0.0]
         /// </summary>
-        public virtual float MaxLeftSwipeAmount { get; } = 0;
+        protected virtual float MaxLeftSwipeAmount { get; } = 0;
+
+        /// <summary>
+        /// You can override this method and change value of Left Swipe Amount (or completely disable) based on ViewHolder/Data model.
+        /// </summary>
+        /// <returns></returns>
+        public virtual float GetMaxLeftSwipeAmount(object dataContext, MvxAdvancedRecyclerViewHolder viewHolder)
+            => MaxLeftSwipeAmount;
         
         /// <summary>
         /// Value from range [0.0, 1.0]
         /// </summary>
-        public virtual float MaxRightSwipeAmount { get; } = 0;
+        protected virtual float MaxRightSwipeAmount { get; } = 0;
+        
+        /// <summary>
+        /// You can override this method and change value of Right Swipe Amount (or completely disable) based on ViewHolder/Data model.
+        /// </summary>
+        /// <returns></returns>
+        public virtual float GetMaxRightSwipeAmount(object dataContext, MvxAdvancedRecyclerViewHolder viewHolder)
+            => MaxRightSwipeAmount;
         
         /// <summary>
         /// Value from range [0.0, 1.0]
         /// </summary>
-        public virtual float MaxDownSwipeAmount { get; } = 0;
+        protected virtual float MaxDownSwipeAmount { get; } = 0;
+        
+        /// <summary>
+        /// You can override this method and change value of Down Swipe Amount (or completely disable) based on ViewHolder/Data model.
+        /// </summary>
+        /// <returns></returns>
+        public virtual float GetMaxDownSwipeAmount(object dataContext, MvxAdvancedRecyclerViewHolder viewHolder)
+            => MaxDownSwipeAmount;
         
         /// <summary>
         /// Value from range [-1.0, 0.0]
         /// </summary>
-        public virtual float MaxUpSwipeAmount { get; } = 0;
+        protected virtual float MaxUpSwipeAmount { get; } = 0;
+        
+        /// <summary>
+        /// You can override this method and change value of Up Swipe Amount (or completely disable) based on ViewHolder/Data model.
+        /// </summary>
+        /// <returns></returns>
+        public virtual float GetMaxUpSwipeAmount(object dataContext, MvxAdvancedRecyclerViewHolder viewHolder)
+            => MaxUpSwipeAmount;
         
         public void SetupSlideAmount(MvxAdvancedRecyclerViewHolder holder, SwipeItemPinnedStateControllerProvider swipeItemPinnedStateController)
         {

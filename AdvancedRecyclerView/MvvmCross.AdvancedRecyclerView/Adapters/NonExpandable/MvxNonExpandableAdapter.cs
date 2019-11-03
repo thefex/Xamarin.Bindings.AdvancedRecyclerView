@@ -68,10 +68,10 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             var advancedRecyclerViewHolder = holder as MvxAdvancedRecyclerViewHolder;
             if (SwipeableTemplate != null)
             {
-                advancedRecyclerViewHolder.MaxLeftSwipeAmount = SwipeableTemplate.MaxLeftSwipeAmount;
-                advancedRecyclerViewHolder.MaxRightSwipeAmount = SwipeableTemplate.MaxRightSwipeAmount;
-                advancedRecyclerViewHolder.MaxDownSwipeAmount = SwipeableTemplate.MaxDownSwipeAmount;
-                advancedRecyclerViewHolder.MaxUpSwipeAmount = SwipeableTemplate.MaxUpSwipeAmount;
+                advancedRecyclerViewHolder.MaxLeftSwipeAmount = SwipeableTemplate.GetMaxLeftSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxRightSwipeAmount = SwipeableTemplate.GetMaxRightSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxDownSwipeAmount = SwipeableTemplate.GetMaxDownSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxUpSwipeAmount = SwipeableTemplate.GetMaxUpSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
                 
                 SwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
                 SwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, SwipeItemPinnedStateController);
