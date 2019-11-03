@@ -10,6 +10,10 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
+
+v 1.15.0 
+- Swipe features can be customized (enabled/disabled/different percetange of swipe) now based on ViewHolder/DataModel property (see point X below)
+
 v 1.14.0
 - BREAKING CHANGE, see docs - Refactored Swipe to Dismiss feature (easier implementation)
 - BUGFIX - possible application crash with grouping / grouping sometimes created invalid groups (duplicated groups)
@@ -415,7 +419,53 @@ You can bind to **MvxAdvancedRecyclerView** properties.
 
 5. For Child Item Click ( expandable / grouped recyclerview) bind to: **ChildItemClick**/**ChildItemLongClick**
 
+# X. Love swipe to X feature! But I want to enable and disable "swipe to X" based on some of my list data model property (or even view one). Is that possible?
 
+This feature has been added in version v1.15.0
+Suppose you have Contacts list - and you want to have "call when swiped right" and "send sms when swiped left" (as in default Android Samsung S10 Contacts app) when contact has phone number assigned.
+
+Your **MvxSwipeableTemplate** should look as follows:
+
+```cs
+ public class ContactOperationChildSwipeableTemplate : MvxSwipeableTemplate
+    {
+        public override int SwipeContainerViewGroupId
+        {
+            get => Resource.Id.container_of_list_item; 
+        }
+        public override int UnderSwipeContainerViewGroupId => Resource.Id.underSwipe;
+
+        public override int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
+
+        protected override float MaxLeftSwipeAmount => -1f;
+
+        protected override float MaxRightSwipeAmount => 1f;
+
+        public override float GetMaxLeftSwipeAmount(object dataContext, MvxAdvancedRecyclerViewHolder viewHolder)
+        {
+            if (dataContext is SelectableItem<ContactDetails> contactDetails && string.IsNullOrEmpty(contactDetails.Item.PhoneNumber))
+                return 0;
+            
+            return base.GetMaxLeftSwipeAmount(dataContext, viewHolder);
+        }
+
+        public override float GetMaxRightSwipeAmount(object dataContext, MvxAdvancedRecyclerViewHolder viewHolder)
+        {
+            if (dataContext is SelectableItem<ContactDetails> contactDetails && string.IsNullOrEmpty(contactDetails.Item.PhoneNumber))
+                return 0;
+            
+            return base.GetMaxRightSwipeAmount(dataContext, viewHolder);
+        }
+
+        public override int ItemViewSwipeLeftBackgroundResourceId => -1;
+        //    Resource.Drawable.contact_bg_swipe_item_state_swiping_toLeft;
+
+        public override int ItemViewSwipeRightBackgroundResourceId => -1;
+         //   Resource.Drawable.bg_swipe_item_state_swiping_toRight;
+
+        public override MvxSwipeResultActionFactory SwipeResultActionFactory => new SwipeResultActionFactory();
+    }
+```
 For more, please download repo and check two samples (one of this uses RX/DynamicData for grouping).
 
 # *LICENSE*
