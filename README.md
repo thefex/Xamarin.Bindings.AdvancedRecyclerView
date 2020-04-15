@@ -10,6 +10,8 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
+v 1.16.0
+Updated MvvmCross to 6.4.2 
 
 v 1.15.2 
 - Swipe features can be customized (enabled/disabled/different percetange of swipe) now based on ViewHolder/DataModel property (see point X below)
