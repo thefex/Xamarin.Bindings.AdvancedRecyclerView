@@ -51,11 +51,20 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
                 new MvxRecyclerViewHolder(
                     InflateViewForHolder(HeaderFooterDetails.FooterLayoutId, p0, p1, itemBindingContext),
                     itemBindingContext)
-                {
-                    Click = FooterClickCommand,
-                    LongClick = FooterLongClickCommand,
+                { 
                     DataContext = BindingContext.DataContext
                 };
+
+            viewHolder.Click += (e, a) => {
+                if (FooterClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    FooterClickCommand.Execute(viewHolder.DataContext);
+            };
+
+            viewHolder.LongClick += (e, a) =>
+            {
+                if (FooterLongClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    FooterLongClickCommand.Execute(viewHolder.DataContext);
+            };
 
             return viewHolder;
         }
@@ -69,10 +78,19 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
                     InflateViewForHolder(HeaderFooterDetails.HeaderLayoutId, p0, p1, itemBindingContext),
                     itemBindingContext)
                 {
-                    Click = HeaderClickCommand,
-                    LongClick = HeaderLongClickCommand,
                     DataContext = BindingContext.DataContext
                 };
+
+            viewHolder.Click += (e,a) => {
+                if (HeaderClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    HeaderClickCommand.Execute(viewHolder.DataContext);
+            };
+
+            viewHolder.LongClick += (e, a) =>
+            {
+                if (HeaderLongClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    HeaderLongClickCommand.Execute(viewHolder.DataContext);
+            };
 
             return viewHolder;
         }

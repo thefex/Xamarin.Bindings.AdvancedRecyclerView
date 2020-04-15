@@ -155,9 +155,19 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
                     ChildSwipeableTemplate.UnderSwipeContainerViewGroupId,
                     itemBindingContext)
                 {
-                    Click = ChildItemClickCommand,
-                    LongClick = ChildItemLongClickCommand
                 };
+
+            viewHolder.Click += (e, a) =>
+            {
+                if (ChildItemClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    ChildItemClickCommand.Execute(viewHolder.DataContext);
+            };
+
+            viewHolder.LongClick += (e, a) =>
+            {
+                if (ChildItemLongClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    ChildItemLongClickCommand.Execute(viewHolder.DataContext);
+            };
 
             return viewHolder;
         }
@@ -172,10 +182,20 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
                     GroupSwipeableTemplate.SwipeContainerViewGroupId,
                     GroupSwipeableTemplate.UnderSwipeContainerViewGroupId,
                     itemBindingContext)
-                {
-                    Click = GroupItemClickCommand,
-                    LongClick = GroupItemLongClickCommand
+                { 
                 };
+
+            viewHolder.Click += (e, a) =>
+            {
+                if (GroupItemClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    GroupItemClickCommand.Execute(viewHolder.DataContext);
+            };
+
+            viewHolder.LongClick += (e, a) =>
+            {
+                if (GroupItemLongClickCommand?.CanExecute(viewHolder.DataContext) ?? false)
+                    GroupItemLongClickCommand.Execute(viewHolder.DataContext);
+            };
 
             return viewHolder;
         }

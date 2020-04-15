@@ -54,8 +54,18 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
                                                        SwipeableTemplate.UnderSwipeContainerViewGroupId,
                 itemBindingContext)
             {
-                Click = ItemClick,
-                LongClick = ItemLongClick
+                
+            };
+
+            vh.Click += (e, a) =>
+            {
+                if (ItemClick?.CanExecute(vh.DataContext) ?? false)
+                    ItemClick.Execute(vh.DataContext);
+            };
+            vh.LongClick += (e, a) =>
+            {
+                if (ItemLongClick?.CanExecute(vh.DataContext) ?? false)
+                    ItemLongClick.Execute(vh.DataContext);
             };
 
             return vh;
