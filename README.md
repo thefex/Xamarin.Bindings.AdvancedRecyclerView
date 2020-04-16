@@ -10,6 +10,9 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
+v 1.16.1
+Fixed bug with click commands acting twice on MvxNonExpandable RecyclerView/ADapter.
+
 v 1.16.0
 Updated MvvmCross to 6.4.2 
 
