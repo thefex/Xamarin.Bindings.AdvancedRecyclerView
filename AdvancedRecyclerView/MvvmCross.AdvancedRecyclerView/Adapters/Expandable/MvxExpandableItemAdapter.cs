@@ -297,6 +297,22 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             return GroupExpandController.GetInitialGroupExpandedState (groupPosition);
         }
 
+        public override void OnViewAttachedToWindow(Object holder)
+        {
+            base.OnViewAttachedToWindow(holder);
+
+            var viewHolder = (IMvxRecyclerViewHolder)holder;
+            viewHolder.OnAttachedToWindow();
+        }
+
+        public override void OnViewDetachedFromWindow(Object holder)
+        {
+            var viewHolder = (IMvxRecyclerViewHolder)holder;
+
+            viewHolder.OnDetachedFromWindow();
+            base.OnViewDetachedFromWindow(holder);
+        }
+
         public MvxGroupedData GetItemAt(int groupIndex)
             => GroupedItems.ElementAt(groupIndex) as MvxGroupedData;
 
