@@ -11,6 +11,9 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
 
+v 1.16.2
+Temporary workaround when using both AndroidX and support libraries. Issue #16 
+
 v 1.16.1
 Fixed bug with click commands acting twice on MvxNonExpandable RecyclerView/ADapter.
 
@@ -87,12 +90,12 @@ String should have form of: Namespace.ClassName, AssemblyName
     android:layout_height="match_parent"
     local:MvxHeaderLayoutId="@layout/list_header_layout"
     local:MvxFooterLayoutId="@layout/list_footer_layout"
-    local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
+    local:MvxTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
     local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
     local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />
 ```
 
-Just use **MvxItemTemplateSelector** like you would use with orginal **MvxRecyclerView**
+Just use **MvxTemplateSelector** like you would use with orginal **MvxRecyclerView**
 
 2. Your **MvxTemplateSelector** should implement two interfaces - **IMvxHeaderTemplate, IMvxFooterTemplate** (if you want both, footer and header).
 
@@ -193,7 +196,7 @@ namespace Sample.Swipe
     android:layout_height="match_parent"
     local:MvxHeaderLayoutId="@layout/list_header_layout"
     local:MvxFooterLayoutId="@layout/list_footer_layout"
-    local:MvxItemTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
+    local:MvxTemplateSelector="@string/itemTemplateSelectorClassLikeInMvxRecyclerView" 
     local:MvxSwipeableTemplate="@string/SwipeableTemplate"
     local:MvxUniqueItemIdProvider="@string/stringWithFullClassName"
     local:MvxBind="ItemsSource Items; ItemClick ItemClickCommand" />
@@ -308,7 +311,7 @@ public class PeopleGroupExpandController : MvxGroupExpandController
 }
 ```
 
-4. We have also implement special **MvxItemTemplateSelector** - with support for groups, which is **MvxExpandableTemplateSelector**
+4. We have also implement special **MvxTemplateSelector** - with support for groups, which is **MvxExpandableTemplateSelector**
 
 Sample implementation:
 
