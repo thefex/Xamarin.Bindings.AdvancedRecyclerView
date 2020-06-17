@@ -27,13 +27,38 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
 
         public MvxNonExpandableAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
         {
-            HasStableIds = true;
+            //HasStableIds = true;
+            SetHasStableIds(true); // there is a bug with Xamarin.Android 10.x - MethodNotFoundException for HasStbleIds setter
         }
 
         public MvxNonExpandableAdapter(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
 
         }
+
+
+        IntPtr pointerToSetHasStableId = IntPtr.Zero;
+        IntPtr class_ref = IntPtr.Zero;
+
+        [Register("setHasStableIds", "(Z)V", "")]
+        public unsafe void SetHasStableIds(bool hasStableIds)
+        {
+            if (pointerToSetHasStableId == IntPtr.Zero)
+            {
+                class_ref = JNIEnv.FindClass(typeof(RecyclerView.Adapter));
+                pointerToSetHasStableId = JNIEnv.GetMethodID(class_ref, "setHasStableIds", "(Z)V");
+            }
+            try
+            {
+                JValue* __args = stackalloc JValue[1];
+                __args[0] = new JValue(hasStableIds);
+                JNIEnv.CallVoidMethod(this.Handle, pointerToSetHasStableId, __args);
+            }
+            finally
+            {
+            }
+        }
+
 
         private MvxSwipeableTemplate swipeableTemplate;
         public MvxSwipeableTemplate SwipeableTemplate

@@ -47,7 +47,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         public MvxExpandableItemAdapter(IMvxAndroidBindingContext androidBindingContext)
         {
             BindingContext = androidBindingContext;
-            HasStableIds = true;
+            SetHasStableIds(true);
             _expandableGroupedItemsSourceProvider = new MvxGroupedItemsSourceProvider();
             _expandableGroupedItemsSourceProvider.Source.CollectionChanged += SourceOnCollectionChanged;
             _expandableGroupedItemsSourceProvider.ChildItemsAdded += SourceItemChildChanged;
@@ -69,7 +69,28 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         {
         }
         
-         
+        IntPtr pointerToSetHasStableId = IntPtr.Zero;
+        IntPtr class_ref = IntPtr.Zero;
+
+        [Register("setHasStableIds", "(Z)V", "")]
+        public unsafe void SetHasStableIds(bool hasStableIds)
+        {
+            if (pointerToSetHasStableId == IntPtr.Zero)
+            {
+                class_ref = JNIEnv.FindClass(typeof(RecyclerView.Adapter));
+                pointerToSetHasStableId = JNIEnv.GetMethodID(class_ref, "setHasStableIds", "(Z)V");
+            }
+            try
+            {
+                JValue* __args = stackalloc JValue[1];
+                __args[0] = new JValue(hasStableIds);
+                JNIEnv.CallVoidMethod(this.Handle, pointerToSetHasStableId, __args);
+            }
+            finally
+            {
+            }
+        }
+
         protected IMvxAndroidBindingContext BindingContext { get; }
 
         public IMvxTemplateSelector TemplateSelector { get; set; }
