@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.5.0-alpha.178" />
+    <PackageReference Include="MvvmCross.Plugin.Messenger" Version="8.0.2" />
     <PackageReference Include="akavache" Version="6.0.20" />
-    <PackageReference Include="DynamicData" Version="6.5.1.2479" />
+    <PackageReference Include="DynamicData" Version="7.12.1" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="MvvmCross" Version="6.5.0-alpha.178" />
+    <PackageReference Include="MvvmCross" Version="8.0.2" />
   </ItemGroup>
 
 </Project>

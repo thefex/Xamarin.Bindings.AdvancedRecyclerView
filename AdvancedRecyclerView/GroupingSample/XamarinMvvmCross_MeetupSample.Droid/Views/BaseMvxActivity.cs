@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Android.OS;
 using Android.Runtime;
 using AndroidX.AppCompat.App;
+using AndroidX.CoordinatorLayout.Widget;
 using MvvmCross.Platforms.Android.Views;
 using MvvmCross.ViewModels;
 using XamarinMvvmCross_MeetupSample.Core.MessageObserver;
@@ -16,12 +17,12 @@ namespace XamarinMvvmCross_MeetupSample.Droid.Views
 		private MessageObserversController _messageObserversController;
 
 		protected BaseMvxActivity()
-		{
+		{ 
 		}
 
-		//protected BaseMvxActivity(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
-		//{
-		//}
+		protected BaseMvxActivity(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+		{
+		}
 
 		protected override void OnCreate(Bundle bundle)
 		{

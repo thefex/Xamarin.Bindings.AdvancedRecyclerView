@@ -11,6 +11,7 @@ using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
+using Microsoft.Extensions.Logging;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.EventArguments;
 using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
@@ -123,7 +124,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             }
             catch (Exception exception)
             {
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Warn, () => 
+                Mvx.IoCProvider.TryResolve(out ILogger logger);
+                logger?.Log(LogLevel.Warning, 
                     $"Exception masked during Adapter RealNotifyDataSetChanged {exception.ToLongString()}. Are you trying to update your collection from a background task? See http://goo.gl/0nW0L6"
                 );
             }
@@ -361,7 +363,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         {
             var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
 
-            return viewHolder.SwipeableContainerView.HitTest(x, y)
+            return (viewHolder.SwipeableContainerView?.HitTest(x, y) ?? false)
                 ? ChildSwipeableTemplate.GetSwipeReactionType(viewHolder.DataContext, viewHolder)
                 : SwipeableItemConstants.ReactionCanNotSwipeAny;
         }
@@ -369,8 +371,9 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         public int OnGetGroupItemSwipeReactionType(Object p0, int p1, int x, int y)
         {
             var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
-
-            return viewHolder.SwipeableContainerView.HitTest(x, y)
+            
+            
+            return (viewHolder.SwipeableContainerView?.HitTest(x, y) ?? false)
                 ? GroupSwipeableTemplate.GetSwipeReactionType(viewHolder.DataContext, viewHolder)
                 : SwipeableItemConstants.ReactionCanNotSwipeAny;
         }

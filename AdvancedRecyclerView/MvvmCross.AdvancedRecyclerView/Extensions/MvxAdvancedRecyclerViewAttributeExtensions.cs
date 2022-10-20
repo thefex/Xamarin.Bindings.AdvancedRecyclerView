@@ -2,6 +2,7 @@
 using Android.Content;
 using Android.Content.Res;
 using Android.Util;
+using Microsoft.Extensions.Logging;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
@@ -105,27 +106,28 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
         {
             var groupedDataConverterClassName = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).GroupedDataConverterClassName;
             var type = Type.GetType(groupedDataConverterClassName);
+            Mvx.IoCProvider.TryResolve(out ILogger logger);
 
             if (type == null)
             {
                 var message = $"Can't build Grouped Data Converter." +
                     $"Sorry but type with class name: {groupedDataConverterClassName} does not exist." +
                               $"Make sure you have provided full Type name: namespace + class name, AssemblyName.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message); 
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (!typeof(MvxExpandableDataConverter).IsAssignableFrom(type))
             {
                 string message = $"Sorry but type: {type} does not implement {nameof(MvxExpandableDataConverter)} interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (type.IsAbstract)
             {
                 string message = $"Sorry can not instatiate {nameof(MvxExpandableDataConverter)} as provided type: {type} is abstract/interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
@@ -136,6 +138,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
         {
             var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.TemplateSelectorClassName);
+            Mvx.IoCProvider.TryResolve(out ILogger logger);
 
             if (type == null && templateSelectorAttributes.ItemTemplateLayoutId == 0)
             {
@@ -143,21 +146,21 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
                     $"Sorry but type with class name: {templateSelectorAttributes.TemplateSelectorClassName} does not exist." +
                              $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
                               $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (type != null && !typeof(IMvxTemplateSelector).IsAssignableFrom(type))
             {
                 string message = $"Sorry but type: {type} does not implement {nameof(IMvxTemplateSelector)} interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (type?.IsAbstract ?? false)
             {
                 string message = $"Sorry can not instatiate {nameof(IMvxTemplateSelector)} as provided type: {type} is abstract/interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
@@ -183,27 +186,28 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
         {
             var groupExpandControllerClassName = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).GroupExpandControllerClassName;
             var type = Type.GetType(groupExpandControllerClassName);
+            Mvx.IoCProvider.TryResolve(out ILogger logger);
 
             if (type == null)
             {
                 var message = $"Can't build GroupExpandController." +
                     $"Sorry but type with class name: {groupExpandControllerClassName} does not exist." +
                               $"Make sure you have provided full Type name: namespace + class name, AssemblyName.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (!typeof(MvxGroupExpandController).IsAssignableFrom(type))
             {
                 string message = $"Sorry but type: {type} does not implement {nameof(MvxGroupExpandController)} interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (type.IsAbstract)
             {
                 string message = $"Sorry can not instatiate {nameof(MvxGroupExpandController)} as provided type: {type} is abstract/interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
@@ -214,6 +218,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
         {
 			var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.SwipeableTemplateClassName);
+            Mvx.IoCProvider.TryResolve(out ILogger logger);
 
 			if (type == null)
 			{
@@ -221,22 +226,22 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
                     $"Sorry but type with class name: {templateSelectorAttributes.SwipeableTemplateClassName} does not exist." +
 							 $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
 							  $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
-			    Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
-			    throw new InvalidOperationException(message);
+                logger?.Log(LogLevel.Error, message);
+                throw new InvalidOperationException(message);
 			}
 
             if (!typeof(MvxSwipeableTemplate).IsAssignableFrom(type))
 			{
                 string message = $"Sorry but type: {type} does not implement {nameof(MvxSwipeableTemplate)} interface.";
-			    Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
-			    throw new InvalidOperationException(message);
+                logger?.Log(LogLevel.Error, message);
+                throw new InvalidOperationException(message);
 			}
 
 			if (type.IsAbstract)
 			{
                 string message = $"Sorry can not instatiate {nameof(MvxSwipeableTemplate)} as provided type: {type} is abstract/interface.";
-			    Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
-			    throw new InvalidOperationException(message);
+                logger?.Log(LogLevel.Error, message);
+                throw new InvalidOperationException(message);
 			}
 
             var swipeableTemplate = Activator.CreateInstance(type) as MvxSwipeableTemplate;
@@ -247,6 +252,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
         {
             var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.GroupSwipeableTemplateClassName);
+            Mvx.IoCProvider.TryResolve(out ILogger logger);
 
             if (type == null)
             {
@@ -254,21 +260,21 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
                               $"Sorry but type with class name: {templateSelectorAttributes.GroupSwipeableTemplateClassName} does not exist." +
                               $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
                               $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (!typeof(MvxSwipeableTemplate).IsAssignableFrom(type))
             {
                 string message = $"Sorry but type: {type} does not implement {nameof(MvxSwipeableTemplate)} interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (type.IsAbstract)
             {
                 string message = $"Sorry can not instatiate {nameof(MvxSwipeableTemplate)} as provided type: {type} is abstract/interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
@@ -279,6 +285,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
         {
             var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.ChildSwipeableTemplateClassName);
+            Mvx.IoCProvider.TryResolve(out ILogger logger);
 
             if (type == null)
             {
@@ -286,21 +293,21 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
                               $"Sorry but type with class name: {templateSelectorAttributes.ChildSwipeableTemplateClassName} does not exist." +
                               $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
                               $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (!typeof(MvxSwipeableTemplate).IsAssignableFrom(type))
             {
                 string message = $"Sorry but type: {type} does not implement {nameof(MvxSwipeableTemplate)} interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
             if (type.IsAbstract)
             {
                 string message = $"Sorry can not instatiate {nameof(MvxSwipeableTemplate)} as provided type: {type} is abstract/interface.";
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
+                logger?.Log(LogLevel.Error, message);
                 throw new InvalidOperationException(message);
             }
 
@@ -312,6 +319,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
         public static IMvxItemUniqueIdProvider BuildUniqueItemIdProvider(Context context, IAttributeSet attrs){
 			var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.UniqueItemIdProviderClassName);
+            Mvx.IoCProvider.TryResolve(out ILogger logger);
 
 			if (type == null)
 			{
@@ -319,22 +327,22 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
                     $"Sorry but type with class name: {templateSelectorAttributes.UniqueItemIdProviderClassName} does not exist." +
 							 $"Make sure you have provided full Type name: namespace + class name, AssemblyName." +
 							  $"Example (check Example.Droid sample!): Example.Droid.Common.TemplateSelectors.MultiItemTemplateModelTemplateSelector, Example.Droid";
-			    Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
-			    throw new InvalidOperationException(message);
+                logger?.Log(LogLevel.Error, message);
+                throw new InvalidOperationException(message);
 			}
 
             if (!typeof(IMvxItemUniqueIdProvider).IsAssignableFrom(type))
 			{
                 string message = $"Sorry but type: {type} does not implement {nameof(IMvxItemUniqueIdProvider)} interface.";
-			    Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
-			    throw new InvalidOperationException(message);
+                logger?.Log(LogLevel.Error, message);
+                throw new InvalidOperationException(message);
 			}
 
 			if (type.IsAbstract)
 			{
 				string message = $"Sorry can not instatiate {nameof(IMvxItemUniqueIdProvider)} as provided type: {type} is abstract/interface.";
-			    Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Error, () => message);
-			    throw new InvalidOperationException(message);
+                logger?.Log(LogLevel.Error, message);
+                throw new InvalidOperationException(message);
 			}
 
             var uniqueItemIdProvider = Activator.CreateInstance(type) as IMvxItemUniqueIdProvider;

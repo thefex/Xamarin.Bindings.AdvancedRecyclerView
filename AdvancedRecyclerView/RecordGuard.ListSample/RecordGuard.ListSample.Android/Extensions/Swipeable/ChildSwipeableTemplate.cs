@@ -9,9 +9,9 @@ namespace RecordGuard.ListSample.Android.Extensions.Swipeable
         public override int SwipeContainerViewGroupId => Resource.Id.container;
         public override int UnderSwipeContainerViewGroupId => Resource.Id.underSwipe;
 
-        public override int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
+        protected override int SwipeReactionType => SwipeableItemConstants.ReactionCanSwipeBothH;
 
-        public override float MaxLeftSwipeAmount => -1f;
+        protected override float MaxLeftSwipeAmount => -1f;
   
         public override MvxSwipeResultActionFactory SwipeResultActionFactory => new SwipeResultActionFactory();
     }
