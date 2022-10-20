@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using Android.OS;
 using Android.Runtime;
-using MvvmCross.Droid.Support.V7.AppCompat;
+using AndroidX.AppCompat.App;
+using AndroidX.CoordinatorLayout.Widget;
+using MvvmCross.Platforms.Android.Views;
 using MvvmCross.ViewModels;
 using XamarinMvvmCross_MeetupSample.Core.MessageObserver;
 using XamarinMvvmCross_MeetupSample.Core.Services;
@@ -10,12 +12,12 @@ using XamarinMvvmCross_MeetupSample.Core.ViewModels;
 
 namespace XamarinMvvmCross_MeetupSample.Droid.Views
 {
-	public abstract class BaseMvxActivity<TViewModel> : MvxAppCompatActivity<TViewModel> where TViewModel : class, IMvxViewModel
+	public abstract class BaseMvxActivity<TViewModel> : MvxActivity<TViewModel> where TViewModel : class, IMvxViewModel
 	{
 		private MessageObserversController _messageObserversController;
 
 		protected BaseMvxActivity()
-		{
+		{ 
 		}
 
 		protected BaseMvxActivity(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
@@ -40,8 +42,8 @@ namespace XamarinMvvmCross_MeetupSample.Droid.Views
 
 		protected virtual IEnumerable<IMessageObserver> GetMessageObservers()
 		{
-			yield return new QuestionDialogMessageObserver(new WeakReference<Android.Support.V7.App.AppCompatActivity>(this));
-			yield return new MessageDialogObserver(new WeakReference<Android.Support.V7.App.AppCompatActivity>(this));
+			yield return new QuestionDialogMessageObserver(new WeakReference<AppCompatActivity>(this));
+			yield return new MessageDialogObserver(new WeakReference<AppCompatActivity>(this));
 		}
 
 		protected override void OnResume()

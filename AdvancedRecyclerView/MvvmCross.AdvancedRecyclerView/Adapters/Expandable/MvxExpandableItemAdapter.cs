@@ -5,12 +5,13 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Windows.Input;
 using Android.Runtime;
-using Android.Support.V7.Widget;
+using AndroidX.RecyclerView.Widget;
 using Android.Views;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
+using Microsoft.Extensions.Logging;
 using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Data.EventArguments;
 using MvvmCross.AdvancedRecyclerView.Data.ItemUniqueIdProvider;
@@ -22,8 +23,8 @@ using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.AdvancedRecyclerView.Utils;
 using MvvmCross.AdvancedRecyclerView.ViewHolders;
 using MvvmCross.Binding.Extensions;
-using MvvmCross.Droid.Support.V7.RecyclerView;
-using MvvmCross.Droid.Support.V7.RecyclerView.ItemTemplates;
+using MvvmCross.DroidX.RecyclerView;
+using MvvmCross.DroidX.RecyclerView.ItemTemplates;
 using MvvmCross.Exceptions;
 using MvvmCross.Logging;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
@@ -144,7 +145,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             }
             catch (Exception exception)
             {
-                Mvx.Resolve<IMvxLog>().Log(MvxLogLevel.Warn, () => 
+                Mvx.IoCProvider.TryResolve(out ILogger logger);
+                logger?.Log(LogLevel.Warning, 
                     $"Exception masked during Adapter RealNotifyDataSetChanged {exception.ToLongString()}. Are you trying to update your collection from a background task? See http://goo.gl/0nW0L6"
                 );
             }
@@ -318,6 +320,22 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             return GroupExpandController.GetInitialGroupExpandedState (groupPosition);
         }
 
+        public override void OnViewAttachedToWindow(Object holder)
+        {
+            base.OnViewAttachedToWindow(holder);
+
+            var viewHolder = (IMvxRecyclerViewHolder)holder;
+            viewHolder.OnAttachedToWindow();
+        }
+
+        public override void OnViewDetachedFromWindow(Object holder)
+        {
+            var viewHolder = (IMvxRecyclerViewHolder)holder;
+
+            viewHolder.OnDetachedFromWindow();
+            base.OnViewDetachedFromWindow(holder);
+        }
+
         public MvxGroupedData GetItemAt(int groupIndex)
             => GroupedItems.ElementAt(groupIndex) as MvxGroupedData;
 
@@ -366,7 +384,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         {
             var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
 
-            return viewHolder.SwipeableContainerView.HitTest(x, y)
+            return (viewHolder.SwipeableContainerView?.HitTest(x, y) ?? false)
                 ? ChildSwipeableTemplate.GetSwipeReactionType(viewHolder.DataContext, viewHolder)
                 : SwipeableItemConstants.ReactionCanNotSwipeAny;
         }
@@ -374,8 +392,9 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
         public int OnGetGroupItemSwipeReactionType(Object p0, int p1, int x, int y)
         {
             var viewHolder = p0 as MvxExpandableRecyclerViewHolder;
-
-            return viewHolder.SwipeableContainerView.HitTest(x, y)
+            
+            
+            return (viewHolder.SwipeableContainerView?.HitTest(x, y) ?? false)
                 ? GroupSwipeableTemplate.GetSwipeReactionType(viewHolder.DataContext, viewHolder)
                 : SwipeableItemConstants.ReactionCanNotSwipeAny;
         }

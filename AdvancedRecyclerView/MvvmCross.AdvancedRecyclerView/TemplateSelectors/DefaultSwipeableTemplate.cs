@@ -1,5 +1,6 @@
 ﻿using System;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
+using MvvmCross.AdvancedRecyclerView.ViewHolders;
 
 namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
 {

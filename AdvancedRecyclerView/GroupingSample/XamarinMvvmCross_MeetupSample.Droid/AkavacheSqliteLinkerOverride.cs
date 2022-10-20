@@ -3,7 +3,7 @@ using Akavache.Sqlite3;
 
 // Note: This class file is *required* for iOS to work correctly, and is 
 // also a good idea for Android if you enable "Link All Assemblies".
-namespace XamarinMvvmCross_MeetupSample.Droid
+namespace XamarinMvvmCross_MeetupSample
 {
     [Preserve]
     public static class LinkerPreserve

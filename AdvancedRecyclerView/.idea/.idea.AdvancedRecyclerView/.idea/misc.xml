@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/drawable/splash_drawable.xml" value="0.202" />
+        <entry key="GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/layout/main.xml" value="0.15572916666666667" />
+        <entry key="GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/layout/people_list_fragment.xml" value="0.15572916666666667" />
+        <entry key="GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/layout/person_layout.xml" value="0.15572916666666667" />
+        <entry key="GroupingSample/XamarinMvvmCross_MeetupSample.Droid/Resources/layout/person_list_footer.xml" value="0.15572916666666667" />
+        <entry key="RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/Main.axml" value="0.19427083333333334" />
+        <entry key="RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template.xml" value="0.19427083333333334" />
+        <entry key="RecordGuard.ListSample/RecordGuard.ListSample.Android/Resources/layout/audio_item_template_group_header.xml" value="0.19427083333333334" />
+        <entry key="RecordGuard.ListSample/RecordGuard.ListSample.Android/obj/Debug/res/layout/main.xml" value="0.15572916666666667" />
+      </map>
+    </option>
+  </component>
   <component name="com.jetbrains.rider.android.RiderAndroidMiscFileCreationComponent">
     <option name="ENSURE_MISC_FILE_EXISTS" value="true" />
   </component>

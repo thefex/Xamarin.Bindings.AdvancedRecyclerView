@@ -5,19 +5,18 @@ using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
 using MvvmCross.Base;
 using MvvmCross.Binding.BindingContext;
-using MvvmCross.Droid.Support.V7.RecyclerView;
+using MvvmCross.DroidX.RecyclerView;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
 using MvvmCross.WeakSubscription;
 
 namespace MvvmCross.AdvancedRecyclerView.ViewHolders
 {
-    public class MvxAdvancedRecyclerViewHolder : AbstractSwipeableItemViewHolder, IMvxRecyclerViewHolder, IMvxBindingContextOwner
+    public class MvxAdvancedRecyclerViewHolder : AbstractSwipeableItemViewHolder, IMvxRecyclerViewHolder
     {
         private IMvxBindingContext _bindingContext;
 
         private object _cachedDataContext;
         private View swipeableView;
-        private IDisposable clickSubscription, longClickSubscription;
         private IDisposable itemViewClickSubscription, itemViewLongClickSubscription;
  
         public MvxAdvancedRecyclerViewHolder(View itemView, int swipeableContainerViewId, int underSwipeContainerViewId, IMvxAndroidBindingContext context)
@@ -67,11 +66,11 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
         {
             if (_cachedDataContext != null && DataContext == null)
                 DataContext = _cachedDataContext;
-
+            
             if (itemViewClickSubscription == null)
-                itemViewClickSubscription = ItemView.WeakSubscribe(nameof(View.Click), OnItemViewClick);
+                  itemViewClickSubscription = ItemView.WeakSubscribe(nameof(View.Click), OnItemViewClick);
             if (itemViewLongClickSubscription == null)
-                itemViewLongClickSubscription = ItemView.WeakSubscribe<View, View.LongClickEventArgs>(nameof(View.LongClick), OnItemViewLongClick);
+               itemViewLongClickSubscription = ItemView.WeakSubscribe<View, View.LongClickEventArgs>(nameof(View.LongClick), OnItemViewLongClick);
         }
 
         protected virtual void OnItemViewClick(object sender, EventArgs e)
@@ -113,8 +112,6 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
             itemViewLongClickSubscription = null;
 
             _cachedDataContext = null;
-            clickSubscription?.Dispose();
-            longClickSubscription?.Dispose();
 
             if (_bindingContext != null)
             {

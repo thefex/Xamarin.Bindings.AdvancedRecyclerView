@@ -1,14 +1,16 @@
+using System;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Support.Design.Widget;
-using Android.Support.V7.View.Menu;
-using Android.Support.V7.Widget;
+using Android.Runtime; 
 using Android.Views;
+using AndroidX.AppCompat.View.Menu;
+using AndroidX.AppCompat.Widget; 
+using Google.Android.Material.FloatingActionButton;
 using MvvmCross.AdvancedRecyclerView;
 using MvvmCross.AdvancedRecyclerView.Adapters.Expandable;
 using MvvmCross.Binding.BindingContext;
-using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Platforms.Android.Views;
 using RecordGuard.ListSample.Android.Extensions.CustomViews;
 using RecordGuard.ListSample.Android.Extensions.Listeners;
 using RecordGuard.ListSample.Android.ViewControllers;
@@ -18,9 +20,16 @@ namespace RecordGuard.ListSample.Android.Activities
 {
     [Activity(ScreenOrientation = ScreenOrientation.Portrait, WindowSoftInputMode = SoftInput.AdjustPan, ClearTaskOnLaunch = true, LaunchMode = LaunchMode.SingleTask,
         Theme = "@style/appTheme")]
-    public class MainActivity : MvxAppCompatActivity<MainViewModel>
+    public class MainActivity : MvxActivity<MainViewModel>
     {
-        EmptyListAnimationController _emptyListAnimationController;
+        EmptyListAnimationController _emptyListAnimationController; 
+        public MainActivity()
+        {
+        }
+
+        public MainActivity(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+        {
+        }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -49,7 +58,7 @@ namespace RecordGuard.ListSample.Android.Activities
             fab.PostDelayed(() =>
             {
                 fab.Show();
-            }, 75);
+            }, 75); 
         }
         
         private void SetupRecyclerView()

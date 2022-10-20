@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     xmlns:design="http://schema.android.com/apk/res/android.support.design"
     android:layout_width="match_parent"
@@ -67,11 +67,11 @@
                 local:MvxGroupedDataConverter="@string/audio_grouped_data_converter"
                 local:MvxGroupExpandController="@string/audio_group_expand_controller"
                 local:MvxTemplateSelector="@string/audio_item_template_selector"
-                local:MvxBind="ItemsSource Items; ChildItemClick ItemTapped" />
+                local:MvxBind="ItemsSource Items" />
         </FrameLayout>
 
     </LinearLayout> 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/fab_main_bottom"
@@ -90,4 +90,4 @@
         android:fitsSystemWindows="true"
         local:layout_anchorGravity="bottom|right|end"
         local:MvxBind="Click Record" /> 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
