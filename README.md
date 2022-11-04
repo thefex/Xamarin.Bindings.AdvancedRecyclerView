@@ -11,34 +11,54 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
 
+v 2.1.0.2
+- Support for both Mvvmcross 8.0.2 and MvvmCross 7.1.2 (nuspec update).
+
+- Fixed crash when using inside ViewPager2. 
+
+<b>NOTE: You need to call AdvancedRecyclerView.OnViewDestroy() on Acitivty/Fragment OnViewDestroy() manually now!</b>
+
+
 v 2.1.0.0
+
 Support for MvvmCross 8.2, updated to fully support AndroidX.
+
 Uses custom AndroidRecyclerView build - so it supports AndroidX.RecyclerView v1.2.14+ packages.
 
 Thanks to https://github.com/alexshikov for providing PR of update to AndroidX (adjusted it to Mvx 8)
 
 v 1.16.2
+
 Temporary workaround when using both AndroidX and support libraries. Issue #16 
 
 v 1.16.1
+
 Fixed bug with click commands acting twice on MvxNonExpandable RecyclerView/ADapter.
 
 v 1.16.0
+
 Updated MvvmCross to 6.4.2 
 
 v 1.15.2 
+
 - Swipe features can be customized (enabled/disabled/different percetange of swipe) now based on ViewHolder/DataModel property (see point X below)
 
 v 1.14.0
+
 - BREAKING CHANGE, see docs - Refactored Swipe to Dismiss feature (easier implementation)
+
 - BUGFIX - possible application crash with grouping / grouping sometimes created invalid groups (duplicated groups)
+
 - Added Swipe to Dismiss support on Grouped lists (group/child)
+
 - Docs adjustments
 
 v 1.12.0
+
 - Update to MvvmCross 6.0+
 
 v 1.11.1
+
 - fixed random crashes/list stopped working in ExpandableRecyclerView to work when group child collection changes
 
 
