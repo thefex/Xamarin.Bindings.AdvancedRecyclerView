@@ -11,6 +11,12 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
 
+v 2.1.0.0
+Support for MvvmCross 8.2, updated to fully support AndroidX.
+Uses custom AndroidRecyclerView build - so it supports AndroidX.RecyclerView v1.2.14+ packages.
+
+Thanks to https://github.com/alexshikov for providing PR of update to AndroidX (adjusted it to Mvx 8)
+
 v 1.16.2
 Temporary workaround when using both AndroidX and support libraries. Issue #16 
 
