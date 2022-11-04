@@ -58,12 +58,14 @@ namespace MvvmCross.AdvancedRecyclerView
             }
         }
         
-        protected override void OnDetachedFromWindow()
+        /// <summary>
+        /// Call it whenever your activity/fragment is destroyed to cleanup resources.
+        /// </summary>
+        public void OnViewDestroyed()
         {
-            base.OnDetachedFromWindow();
             AdapterController?.Dispose();
         }
-
+        
         public void SaveBundleState(Bundle bundle)
         {
             AdapterController.SaveToBundle(bundle);
