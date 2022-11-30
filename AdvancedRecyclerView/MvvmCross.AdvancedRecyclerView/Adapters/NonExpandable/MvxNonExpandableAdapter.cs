@@ -36,7 +36,6 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
 
         }
 
-
         IntPtr pointerToSetHasStableId = IntPtr.Zero;
         IntPtr class_ref = IntPtr.Zero;
 
@@ -100,24 +99,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
                 SwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
                 SwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, SwipeItemPinnedStateController);
             }
-        }
-
-        public override void OnViewAttachedToWindow(Object holder)
-        {
-            base.OnViewAttachedToWindow(holder);
-
-            var viewHolder = (IMvxRecyclerViewHolder)holder;
-            viewHolder.OnAttachedToWindow();
-        }
-
-        public override void OnViewDetachedFromWindow(Object holder)
-        {
-            var viewHolder = (IMvxRecyclerViewHolder)holder;
-
-            viewHolder.OnDetachedFromWindow();
-            base.OnViewDetachedFromWindow(holder);
-        }
-
+        } 
+        
         public int OnGetSwipeReactionType(Object p0, int p1, int x, int y)
         {
             var viewHolder = p0 as MvxAdvancedRecyclerViewHolder;

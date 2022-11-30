@@ -11,7 +11,12 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
 
+v 2.1.0.3
+
+- Non Expandable Advanced Recycler View fix (for ex. swipe without grouping) - fixed a bug which caused item datacontext ('blank items') to be nullified. Introduced with some MvvmCross.RecyclerView package update (7.x/8.x+?)
+
 v 2.1.0.2
+
 - Support for both Mvvmcross 8.0.2 and MvvmCross 7.1.2 (nuspec update).
 
 - Fixed crash when using inside ViewPager2. 

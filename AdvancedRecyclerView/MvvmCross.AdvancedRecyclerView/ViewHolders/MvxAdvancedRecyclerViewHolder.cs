@@ -27,6 +27,7 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
             _bindingContext = context;
         }
 
+        [Preserve(Conditional = true)]
         public MvxAdvancedRecyclerViewHolder(IntPtr handle, Android.Runtime.JniHandleOwnership ownership) : base(handle, ownership)
         {
         }
@@ -41,32 +42,29 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
 
         public IMvxBindingContext BindingContext
         {
-            get { return _bindingContext; }
-            set { throw new NotImplementedException("BindingContext is readonly in the list item"); }
+            get => _bindingContext;
+            set => throw new NotImplementedException("BindingContext is readonly in the list item");
         }
 
         public object DataContext
         {
-            get
-            {
-                return _bindingContext.DataContext;
-            }
+            get => _bindingContext.DataContext;
             set
             {
                 _bindingContext.DataContext = value;
 
                 // This is just a precaution.  If we've set the DataContext to something
                 // then we don't need to have the old one still cached.
-                if (value != null)
-                    _cachedDataContext = null;
+                _cachedDataContext = null;
             }
         }
-               
+
         public virtual void OnAttachedToWindow()
         {
             if (_cachedDataContext != null && DataContext == null)
-                DataContext = _cachedDataContext;
-            
+                _bindingContext.DataContext = _cachedDataContext;
+            _cachedDataContext = null;
+
             if (itemViewClickSubscription == null)
                   itemViewClickSubscription = ItemView.WeakSubscribe(nameof(View.Click), OnItemViewClick);
             if (itemViewLongClickSubscription == null)
@@ -85,19 +83,24 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
  
         public virtual void OnDetachedFromWindow()
         {
+            if (itemViewClickSubscription == null)
+            {
+                // just in case if detached from window called multiple times (as it would destroy cached state)
+                return;
+            }
             itemViewClickSubscription?.Dispose();
             itemViewClickSubscription = null;
             itemViewLongClickSubscription?.Dispose();
             itemViewLongClickSubscription = null;
 
             _cachedDataContext = DataContext;
-            DataContext = null;
+            _bindingContext.DataContext = null;
         }
 
         public virtual void OnViewRecycled()
         {
             _cachedDataContext = null;
-            DataContext = null;
+            _bindingContext.DataContext = null;
         }
 
         public int Id { get; set; }
