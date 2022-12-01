@@ -99,8 +99,7 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
 
         public virtual void OnViewRecycled()
         {
-            _cachedDataContext = null;
-            _bindingContext.DataContext = null;
+            // no need to recycle as it will be done in OnDetachedFromWindow...
         }
 
         public int Id { get; set; }
