@@ -421,27 +421,54 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 
             var resourceTypeFinder = Mvx.IoCProvider.Resolve<IMvxAppResourceTypeFinder>().Find();
             var styleableType = resourceTypeFinder.GetNestedType("Styleable");
-
-            MvxRecyclerViewGroupId = (int[])styleableType.GetField("MvxRecyclerView").GetValue(null);
-            MvxRecyclerViewItemTemplateSelector = (int)styleableType.GetField("MvxRecyclerView_MvxTemplateSelector").GetValue(null);
-            MvxRecyclerViewHeaderLayoutId = (int)styleableType.GetField("MvxRecyclerView_MvxHeaderLayoutId").GetValue(null);
-            MvxRecyclerViewFooterLayoutId = (int)styleableType.GetField("MvxRecyclerView_MvxFooterLayoutId").GetValue(null);
-            MvxRecyclerViewGroupExpandController =
-                (int)styleableType.GetField("MvxRecyclerView_MvxGroupExpandController").GetValue(null);
-            MvxRecyclerViewGroupedDataConverter =
-                (int)styleableType.GetField("MvxRecyclerView_MvxGroupedDataConverter").GetValue(null);
-            MvxRecyclerViewHidesHeaderIfEmpty =
-                (int)styleableType.GetField("MvxRecyclerView_MvxHidesHeaderIfEmpty").GetValue(null);
-            MvxRecyclerViewHidesFooterIfEmpty =
-                (int)styleableType.GetField("MvxRecyclerView_MvxHidesFooterIfEmpty").GetValue(null);
-            MvxRecyclerViewSwipeableTemplate =
-                (int)styleableType.GetField("MvxRecyclerView_MvxSwipeableTemplate").GetValue(null);
-            MvxRecyclerViewUniqueItemIdProvider =
-                (int)styleableType.GetField("MvxRecyclerView_MvxUniqueItemIdProvider").GetValue(null);
-            MvxRecyclerViewGroupSwipeableTemplate =
-                (int)styleableType.GetField("MvxRecyclerView_MvxGroupSwipeableTemplate").GetValue(null);
-            MvxRecyclerViewChildSwipeableTemplate =
-                (int)styleableType.GetField("MvxRecyclerView_MvxChildSwipeableTemplate").GetValue(null);
+  
+            // support both old and new resource generation system introduced in net8.0-android
+            if (styleableType.GetField("MvxRecyclerView") == null)
+            {
+                MvxRecyclerViewGroupId = (int[])styleableType.GetProperty("MvxRecyclerView").GetValue(null);
+                MvxRecyclerViewItemTemplateSelector = (int)styleableType.GetProperty("MvxRecyclerView_MvxTemplateSelector").GetValue(null);
+                MvxRecyclerViewHeaderLayoutId = (int)styleableType.GetProperty("MvxRecyclerView_MvxHeaderLayoutId").GetValue(null);
+                MvxRecyclerViewFooterLayoutId = (int)styleableType.GetProperty("MvxRecyclerView_MvxFooterLayoutId").GetValue(null);
+                MvxRecyclerViewGroupExpandController =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxGroupExpandController").GetValue(null);
+                MvxRecyclerViewGroupedDataConverter =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxGroupedDataConverter").GetValue(null);
+                MvxRecyclerViewHidesHeaderIfEmpty =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxHidesHeaderIfEmpty").GetValue(null);
+                MvxRecyclerViewHidesFooterIfEmpty =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxHidesFooterIfEmpty").GetValue(null);
+                MvxRecyclerViewSwipeableTemplate =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxSwipeableTemplate").GetValue(null);
+                MvxRecyclerViewUniqueItemIdProvider =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxUniqueItemIdProvider").GetValue(null);
+                MvxRecyclerViewGroupSwipeableTemplate =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxGroupSwipeableTemplate").GetValue(null);
+                MvxRecyclerViewChildSwipeableTemplate =
+                    (int)styleableType.GetProperty("MvxRecyclerView_MvxChildSwipeableTemplate").GetValue(null);
+            }
+            else
+            {
+                MvxRecyclerViewGroupId = (int[])styleableType.GetField("MvxRecyclerView").GetValue(null);
+                MvxRecyclerViewItemTemplateSelector = (int)styleableType.GetField("MvxRecyclerView_MvxTemplateSelector").GetValue(null);
+                MvxRecyclerViewHeaderLayoutId = (int)styleableType.GetField("MvxRecyclerView_MvxHeaderLayoutId").GetValue(null);
+                MvxRecyclerViewFooterLayoutId = (int)styleableType.GetField("MvxRecyclerView_MvxFooterLayoutId").GetValue(null);
+                MvxRecyclerViewGroupExpandController =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxGroupExpandController").GetValue(null);
+                MvxRecyclerViewGroupedDataConverter =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxGroupedDataConverter").GetValue(null);
+                MvxRecyclerViewHidesHeaderIfEmpty =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxHidesHeaderIfEmpty").GetValue(null);
+                MvxRecyclerViewHidesFooterIfEmpty =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxHidesFooterIfEmpty").GetValue(null);
+                MvxRecyclerViewSwipeableTemplate =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxSwipeableTemplate").GetValue(null);
+                MvxRecyclerViewUniqueItemIdProvider =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxUniqueItemIdProvider").GetValue(null);
+                MvxRecyclerViewGroupSwipeableTemplate =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxGroupSwipeableTemplate").GetValue(null);
+                MvxRecyclerViewChildSwipeableTemplate =
+                    (int)styleableType.GetField("MvxRecyclerView_MvxChildSwipeableTemplate").GetValue(null);
+            }
         }
 
         private static int[] MvxRecyclerViewGroupId { get; set; }

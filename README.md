@@ -11,6 +11,13 @@ Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.c
 # *Changelog*
 MvvmCross.AdvancedRecyclerView
 
+v 9.2.0
+
+- Migrated to net8.0-android34
+- Updated to MvvmCross 9.2.0 - now MvvmCross.AdvancedRecyclerView versioning = mvvmcross version
+- Updated Xamarin.Bindings.Advanced.Recycler.View (2.1.3.1) - versioning MajorRevision(2).RecyclerViewPackageVersion (1.3.1.x)
+- MvvmCross.AdvancedRecyclerView is compatible only with new default resource generation system from net8.0-android34
+
 v 2.1.0.3
 
 - Non Expandable Advanced Recycler View fix (for ex. swipe without grouping) - fixed a bug which caused item datacontext ('blank items') to be nullified. Introduced with some MvvmCross.RecyclerView package update (7.x/8.x+?)

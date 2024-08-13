@@ -1,24 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <TargetPlatformVersion>34</TargetPlatformVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{765FE19E-8953-4EAE-832B-EA83564BB1C5}</ProjectGuid>
-    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MvvmCross.AdvancedRecyclerView</RootNamespace>
     <AssemblyName>MvvmCross.AdvancedRecyclerView</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
-    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <LangVersion>9</LangVersion>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies> 
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,72 +32,7 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Mono.Android" />
-    <Reference Include="Mono.Android.Export" />
-    <Reference Include="mscorlib" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Java.Interop" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Adapters\MvxHeaderFooterWrapperAdapter.cs" />
-    <Compile Include="Adapters\NonExpandable\MvxAdvancedRecyclerViewNonExpandableAdapterController.cs" />
-    <Compile Include="Data\EventArguments\MvxChildSwipeBackgroundSetEventARgs.cs" />
-    <Compile Include="Data\EventArguments\MvxExpandableItemAdapterBoundedArgs.cs" />
-    <Compile Include="Data\EventArguments\MvxGroupSwipeBackgroundSetEventArgs.cs" />
-    <Compile Include="Data\EventArguments\MvxHookGroupExpandCollapseArgs.cs" />
-    <Compile Include="Data\ItemUniqueIdProvider\GroupChildMvxItemUniqueIdProvider.cs" />
-    <Compile Include="Data\ItemUniqueIdProvider\GroupMvxItemUniqueIdProvider.cs" />
-    <Compile Include="Data\ItemUniqueIdProvider\IMvxItemUniqueIdProvider.cs" />
-    <Compile Include="Data\EventHandlerWeakSubscriptionHolder.cs" />
-    <Compile Include="Data\MvxExpandableDataConverter.cs" />
-    <Compile Include="Data\MvxGroupedData.cs" />
-    <Compile Include="Extensions\ViewUtilities.cs" />
-    <Compile Include="MvxAdvancedRecyclerView.cs" />
-    <Compile Include="Resources\Resource.Designer.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Swipe\ResultActions\ItemManager\ExpandableGroupChildSwipeResultActionItemManager.cs" />
-    <Compile Include="Swipe\ResultActions\ItemManager\ExpandableGroupSwipeResultActionItemManager.cs" />
-    <Compile Include="Swipe\ResultActions\ItemManager\IMvxSwipeResultActionItemManager.cs" />
-    <Compile Include="Swipe\ResultActions\ItemManager\NonExpandableSwipeResultActionItemManager.cs" />
-    <Compile Include="Swipe\ResultActions\MvxSwipeResultActionFactory.cs" />
-    <Compile Include="Swipe\ResultActions\MvxSwipeToDirectionResultAction.cs" />
-    <Compile Include="Swipe\ResultActions\MvxSwipeUnpinResultAction.cs" />
-    <Compile Include="Swipe\State\SwipeItemPinnedStateController.cs" />
-    <Compile Include="Swipe\State\SwipeItemPinnedStateControllerProvider.cs" />
-    <Compile Include="Swipe\SwipeDirection.cs" />
-    <Compile Include="TemplateSelectors\MvxDefaultExpandableTemplateSelector.cs" />
-    <Compile Include="TemplateSelectors\MvxDefaultHeaderFooterTemplateSelector.cs" />
-    <Compile Include="TemplateSelectors\MvxExpandableTemplateSelector.cs" />
-    <Compile Include="Utils\DefaultMvxGroupExpandController.cs" />
-    <Compile Include="Utils\MvxGroupExpandController.cs" />
-    <Compile Include="Data\MvxGroupDetails.cs" />
-    <Compile Include="ViewHolders\MvxExpandableRecyclerViewHolder.cs" />
-    <Compile Include="ViewHolders\MvxAdvancedRecyclerViewHolder.cs" />
-    <Compile Include="Data\MvxHeaderFooterDetails.cs" />
-    <Compile Include="MvxAdvancedNonExpandableRecyclerView.cs" />
-    <Compile Include="Extensions\MvxAdvancedRecyclerViewAttributeExtensions.cs" />
-    <Compile Include="Data\MvxAdvancedRecyclerViewAttributes.cs" />
-    <Compile Include="Adapters\IMvxAdvancedRecyclerViewAdapter.cs" />
-    <Compile Include="TemplateSelectors\IMvxHeaderTemplate.cs" />
-    <Compile Include="Data\MvxGroupedItemsSourceProvider.cs" />
-    <Compile Include="TemplateSelectors\MvxSwipeableTemplate.cs" />
-    <Compile Include="TemplateSelectors\DefaultSwipeableTemplate.cs" />
-    <Compile Include="TemplateSelectors\IMvxFooterTemplate.cs" />
-    <Compile Include="Utils\AccordionMvxGroupExpandController.cs" />
-    <Compile Include="MvxAdvancedExpandableRecyclerView.cs" />
-    <Compile Include="Adapters\Expandable\MvxExpandableItemAdapter.cs" />
-    <Compile Include="Adapters\Expandable\MvxAdvancedRecyclerViewExpandableAdapterController.cs" />
-    <Compile Include="Adapters\MvxAdvancedRecyclerViewAdapterController.cs" />
-    <Compile Include="Adapters\NonExpandable\MvxNonExpandableAdapter.cs" />
-    <Compile Include="Data\EventArguments\MvxSwipeBackgroundSetEventArgs.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
-  </ItemGroup>
+  
   <ItemGroup>
     <AndroidResource Include="Resources\Values\MvxAdvancedRecyclerViewBindings.xml" />
     <AndroidResource Include="Resources\Values\strings.xml" />
@@ -123,11 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross.DroidX.RecyclerView">
-      <Version>8.0.2</Version>
+      <Version>9.2.0</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.RecyclerView">
-      <Version>1.2.1</Version>
+      <Version>1.3.1.1</Version>
     </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
