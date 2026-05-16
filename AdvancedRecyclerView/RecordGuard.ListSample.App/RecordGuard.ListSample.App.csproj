@@ -7,7 +7,7 @@
     <ItemGroup>
       <PackageReference Include="DynamicData" Version="7.12.1" />
       <PackageReference Include="Humanizer" Version="2.14.1" />
-      <PackageReference Include="MvvmCross" Version="8.0.2" />
+      <PackageReference Include="MvvmCross" Version="10.1.2" />
     </ItemGroup>
 
 </Project>
