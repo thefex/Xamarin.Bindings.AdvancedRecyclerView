@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Bindings\Xamarin.Bindings.AdvancedRecyclerView.csproj" />
     <ProjectReference Include="..\..\MvvmCross-Support\MvvmCross.AdvancedRecyclerView.csproj" />
     <ProjectReference Include="..\Sample.Core\Sample.Core.csproj" />
   </ItemGroup>
