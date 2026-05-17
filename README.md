@@ -1,17 +1,41 @@
 # *Xamarin.Bindings.AdvancedRecyclerView*
-Xamarin Android binding library for: https://github.com/h6ah4i/android-advancedrecyclerview with MvvmCross support.
+.NET Android binding library for the AdvancedRecyclerView Android library, based on the fork at https://github.com/thefex/android-advancedrecyclerview (originally https://github.com/h6ah4i/android-advancedrecyclerview). Includes MvvmCross support via a separate NuGet package.
 
 **MvvmCross.AdvancedRecyclerView** currently has MvvmCross DataBinding support for:
 - expandable/grouped lists
 - swipe (for both non expandable and grouped lists)
 - header/footer support for both - expandable and non-grouped lists
 
-Read more our case study with MvvmCros.AdvancedRecyclerView: https://insanelab.com/blog/mobile-development/xamarin-android-advanced-lists-in-mvvmcross/ 
+# *Versioning*
+
+| Package | Versioning scheme |
+|---|---|
+| `Xamarin.Bindings.AdvancedRecyclerView` | Follows the **AdvancedRecyclerView** native Android library version (e.g. `1.4.0` tracks `androidx.recyclerview:recyclerview:1.4.0`) |
+| `MvvmCross.AdvancedRecyclerView` | Follows the **MvvmCross** version it is built against (e.g. `10.1.2` = MvvmCross 10.1.2) |
 
 # *Changelog*
-MvvmCross.AdvancedRecyclerView
 
-v 9.2.0
+## MvvmCross.AdvancedRecyclerView
+
+### v 10.1.2
+
+- Migrated to net10.0-android (SDK 36)
+- Updated to MvvmCross 10.1.2
+- **Versioning change**: package version now tracks MvvmCross version directly
+
+## Xamarin.Bindings.AdvancedRecyclerView
+
+### v 1.4.0
+
+- Migrated to net10.0-android (SDK 36)
+- Updated native AAR from https://github.com/thefex/android-advancedrecyclerview v1.4.0 (AndroidX RecyclerView 1.4.0, AGP 8.6.1, Gradle 8.x)
+- **Versioning change**: package version now tracks the native AdvancedRecyclerView library version
+
+---
+
+## MvvmCross.AdvancedRecyclerView (legacy)
+
+### v 9.2.0
 
 - Migrated to net8.0-android34
 - Updated to MvvmCross 9.2.0 - now MvvmCross.AdvancedRecyclerView versioning = mvvmcross version

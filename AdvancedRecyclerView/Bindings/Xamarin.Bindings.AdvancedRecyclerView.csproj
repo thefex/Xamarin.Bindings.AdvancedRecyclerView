@@ -9,7 +9,21 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Xamarin.Bindings.AdvancedRecyclerView</RootNamespace>
     <AssemblyName>Xamarin.Bindings.AdvancedRecyclerView</AssemblyName>
-    <FileAlignment>512</FileAlignment> 
+    <FileAlignment>512</FileAlignment>
+
+    <!-- NuGet package metadata -->
+    <PackageId>Xamarin.Bindings.AdvancedRecyclerView</PackageId>
+    <Version>1.4.0</Version>
+    <Authors>thefex</Authors>
+    <Description>.NET Android binding library for the AdvancedRecyclerView library (https://github.com/h6ah4i/android-advancedrecyclerview). Provides drag &amp; drop, swipe-to-dismiss, expandable/grouped lists, and header/footer support for AndroidX RecyclerView.</Description>
+    <PackageTags>android;recyclerview;advancedrecyclerview;xamarin;dotnet;bindings;androidx;drag-drop;swipe</PackageTags>
+    <PackageProjectUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thefex/Xamarin.Bindings.AdvancedRecyclerView</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
