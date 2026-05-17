@@ -7,4 +7,11 @@
     <string name="title_expandable_list">Expandable List</string>
     <string name="add_item">Add Item</string>
     <string name="delete">Delete</string>
+
+    <!-- MvvmCross AdvancedRecyclerView class name registrations -->
+    <string name="simple_list_unique_id_provider">Sample.Android.Adapters.SimpleList.SimpleListUniqueIdProvider, Sample.Android</string>
+    <string name="simple_list_swipeable_template">Sample.Android.Adapters.SimpleList.SimpleListSwipeableTemplate, Sample.Android</string>
+    <string name="expandable_grouped_data_converter">Sample.Android.Adapters.Expandable.SampleGroupedDataConverter, Sample.Android</string>
+    <string name="expandable_template_selector">Sample.Android.Adapters.Expandable.SampleExpandableTemplateSelector, Sample.Android</string>
+    <string name="default_group_expand_controller">MvvmCross.AdvancedRecyclerView.Utils.DefaultMvxGroupExpandController, MvvmCross.AdvancedRecyclerView</string>
 </resources>

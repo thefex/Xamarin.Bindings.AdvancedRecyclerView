@@ -11,8 +11,8 @@
         android:layout_height="match_parent"
         local:MvxBind="ItemsSource Items"
         local:MvxItemTemplate="@layout/item_expandable_child"
-        local:MvxGroupedDataConverter="Sample.Android.Adapters.Expandable.SampleGroupedDataConverter, Sample.Android"
-        local:MvxTemplateSelector="Sample.Android.Adapters.Expandable.SampleExpandableTemplateSelector, Sample.Android"
-        local:MvxGroupExpandController="MvvmCross.AdvancedRecyclerView.Utils.DefaultMvxGroupExpandController, MvvmCross.AdvancedRecyclerView" />
+        local:MvxGroupedDataConverter="@string/expandable_grouped_data_converter"
+        local:MvxTemplateSelector="@string/expandable_template_selector"
+        local:MvxGroupExpandController="@string/default_group_expand_controller" />
 
 </LinearLayout>

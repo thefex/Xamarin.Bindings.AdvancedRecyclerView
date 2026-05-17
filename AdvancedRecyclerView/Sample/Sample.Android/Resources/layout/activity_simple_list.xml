@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         local:MvxBind="ItemsSource Items"
         local:MvxItemTemplate="@layout/item_simple_list"
-        local:MvxSwipeableTemplate="Sample.Android.Adapters.SimpleList.SimpleListSwipeableTemplate, Sample.Android"
-        local:MvxUniqueItemIdProvider="Sample.Android.Adapters.SimpleList.SimpleListUniqueIdProvider, Sample.Android" />
+        local:MvxSwipeableTemplate="@string/simple_list_swipeable_template"
+        local:MvxUniqueItemIdProvider="@string/simple_list_unique_id_provider" />
 
 </LinearLayout>
