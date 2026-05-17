@@ -1,4 +1,4 @@
 [submodule "android-advancedrecyclerview"]
 	path = android-advancedrecyclerview
 	url = https://github.com/thefex/android-advancedrecyclerview.git
-	branch = copilot/update-androidx-libraries
+	branch = copilot/update-android-libraries
