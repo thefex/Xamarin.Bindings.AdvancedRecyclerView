@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
@@ -36,8 +35,6 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
     public class MvxExpandableItemAdapter : AbstractExpandableItemAdapter, IExpandableSwipeableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
         private readonly Lazy<DefaultSwipeableTemplate> _lazyDefaultSwipeableTemplate = new Lazy<DefaultSwipeableTemplate>();
-        private readonly Dictionary<long, SwipeResultAction> _pendingGroupSwipeActions = new Dictionary<long, SwipeResultAction>();
-        private readonly Dictionary<long, SwipeResultAction> _pendingChildSwipeActions = new Dictionary<long, SwipeResultAction>();
            
         private readonly MvxGroupedItemsSourceProvider _expandableGroupedItemsSourceProvider;
         private IEnumerable itemsSource;
@@ -127,9 +124,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             catch (Exception exception)
             {
                 Mvx.IoCProvider.TryResolve(out ILogger logger);
-                logger?.Log(LogLevel.Warning, 
-                    $"Exception masked during Adapter RealNotifyDataSetChanged {exception.Message}. Are you trying to update your collection from a background task? See http://goo.gl/0nW0L6"
-                );
+                logger?.Log(LogLevel.Warning, "Exception masked during Adapter RealNotifyDataSetChanged {ExceptionMessage}. Are you trying to update your collection from a background task? See http://goo.gl/0nW0L6", exception.Message);
             }
         }
 
@@ -243,7 +238,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             {
                 advancedRecyclerViewHolder.MaxLeftSwipeAmount = ChildSwipeableTemplate.GetMaxLeftSwipeAmount(dataContext, advancedRecyclerViewHolder);
                 advancedRecyclerViewHolder.MaxRightSwipeAmount = ChildSwipeableTemplate.GetMaxRightSwipeAmount(dataContext, advancedRecyclerViewHolder);
-                // MaxDownSwipeAmount/MaxUpSwipeAmount removed from new library
+                advancedRecyclerViewHolder.MaxDownSwipeAmount = ChildSwipeableTemplate.GetMaxDownSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxUpSwipeAmount = ChildSwipeableTemplate.GetMaxUpSwipeAmount(dataContext, advancedRecyclerViewHolder);
                 
                 ChildSwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
                 ChildSwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, ChildSwipeItemPinnedStateController);
@@ -265,7 +261,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             {
                 advancedRecyclerViewHolder.MaxLeftSwipeAmount = GroupSwipeableTemplate.GetMaxLeftSwipeAmount(dataContext, advancedRecyclerViewHolder);
                 advancedRecyclerViewHolder.MaxRightSwipeAmount = GroupSwipeableTemplate.GetMaxRightSwipeAmount(dataContext, advancedRecyclerViewHolder);
-                // MaxDownSwipeAmount/MaxUpSwipeAmount removed from new library
+                advancedRecyclerViewHolder.MaxDownSwipeAmount = GroupSwipeableTemplate.GetMaxDownSwipeAmount(dataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxUpSwipeAmount = GroupSwipeableTemplate.GetMaxUpSwipeAmount(dataContext, advancedRecyclerViewHolder);
                 
                 GroupSwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
                 GroupSwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, GroupSwipeItemPinnedStateController);
@@ -294,7 +291,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             return ExpandableDataConverter.GetItemUniqueId(mvxGroupedData);
         }
 
-        public bool GetInitialGroupExpandedState(int groupPosition)
+        public override bool GetInitialGroupExpandedState (int groupPosition)
         {
             return GroupExpandController.GetInitialGroupExpandedState (groupPosition);
         }
@@ -415,78 +412,41 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
             this.NotifyDataSetChanged();
         }
 
-        public int OnSwipeChildItem(Object p0, int groupPosition, int childPosition, int result)
+        public SwipeResultAction OnSwipeChildItem(Object p0, int groupPosition, int childPosition, int result)
         {
-            SwipeResultAction action;
             switch (result)
             {
                 case SwipeableItemConstants.ResultSwipedDown:
-                    action = ChildSwipeResultActionFactory.GetSwipeDownResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
-                    break;
+                    return ChildSwipeResultActionFactory.GetSwipeDownResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
                 case SwipeableItemConstants.ResultSwipedLeft:
-                    action = ChildSwipeResultActionFactory.GetSwipeLeftResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
-                    break;
+                    return ChildSwipeResultActionFactory.GetSwipeLeftResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
                 case SwipeableItemConstants.ResultSwipedRight:
-                    action = ChildSwipeResultActionFactory.GetSwipeRightResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
-                    break;
+                    return ChildSwipeResultActionFactory.GetSwipeRightResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
                 case SwipeableItemConstants.ResultSwipedUp:
-                    action = ChildSwipeResultActionFactory.GetSwipeUpResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
-                    break;
+                    return ChildSwipeResultActionFactory.GetSwipeUpResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition));
                 default:
-                    action = groupPosition != RecyclerView.NoPosition && childPosition != RecyclerView.NoPosition ?
-                        ChildSwipeResultActionFactory.GetUnpinSwipeResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition)) :
+                    return groupPosition != RecyclerView.NoPosition && childPosition != RecyclerView.NoPosition ? 
+                        ChildSwipeResultActionFactory.GetUnpinSwipeResultAction(new ExpandableGroupChildSwipeResultActionItemManager(this, groupPosition, childPosition)) : 
                         new SwipeResultActionDoNothing();
-                    break;
             }
-            _pendingChildSwipeActions[(long)groupPosition << 32 | (uint)childPosition] = action;
-            return action._resultCode;
         }
 
-        public int OnSwipeGroupItem(Object p0, int groupPosition, int result)
+        public SwipeResultAction OnSwipeGroupItem(Object p0, int groupPosition, int result)
         {
-            SwipeResultAction action;
             switch (result)
             {
                 case SwipeableItemConstants.ResultSwipedDown:
-                    action = GroupSwipeResultActionFactory.GetSwipeDownResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
-                    break;
+                    return GroupSwipeResultActionFactory.GetSwipeDownResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
                 case SwipeableItemConstants.ResultSwipedLeft:
-                    action = GroupSwipeResultActionFactory.GetSwipeLeftResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
-                    break;
+                    return GroupSwipeResultActionFactory.GetSwipeLeftResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
                 case SwipeableItemConstants.ResultSwipedRight:
-                    action = GroupSwipeResultActionFactory.GetSwipeRightResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
-                    break;
+                    return GroupSwipeResultActionFactory.GetSwipeRightResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
                 case SwipeableItemConstants.ResultSwipedUp:
-                    action = GroupSwipeResultActionFactory.GetSwipeUpResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
-                    break;
+                    return GroupSwipeResultActionFactory.GetSwipeUpResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition));
                 default:
-                    action = groupPosition != RecyclerView.NoPosition ?
+                    return groupPosition != RecyclerView.NoPosition ? 
                         GroupSwipeResultActionFactory.GetUnpinSwipeResultAction(new ExpandableGroupSwipeResultActionItemManager(this, groupPosition)) :
                         new SwipeResultActionDoNothing();
-                    break;
-            }
-            _pendingGroupSwipeActions[groupPosition] = action;
-            return action._resultCode;
-        }
-
-        public void OnPerformAfterSwipeChildReaction(Object p0, int groupPosition, int childPosition, int result, int reaction)
-        {
-            var key = (long)groupPosition << 32 | (uint)childPosition;
-            if (_pendingChildSwipeActions.TryGetValue(key, out var action))
-            {
-                action.PerformAction();
-                action.CleanUp();
-                _pendingChildSwipeActions.Remove(key);
-            }
-        }
-
-        public void OnPerformAfterSwipeGroupReaction(Object p0, int groupPosition, int result, int reaction)
-        {
-            if (_pendingGroupSwipeActions.TryGetValue(groupPosition, out var action))
-            {
-                action.PerformAction();
-                action.CleanUp();
-                _pendingGroupSwipeActions.Remove(groupPosition);
             }
         }
         

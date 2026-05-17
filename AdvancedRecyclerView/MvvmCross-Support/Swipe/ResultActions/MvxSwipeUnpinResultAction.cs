@@ -1,3 +1,5 @@
+using System;
+using Android.Runtime;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
 using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions.ItemManager;
 
@@ -7,6 +9,10 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
     {
         private IMvxSwipeResultActionItemManager _itemManager;
 
+        public MvxSwipeUnpinResultAction(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+        {
+        }
+
         public MvxSwipeUnpinResultAction(IMvxSwipeResultActionItemManager itemManager)
         {
             _itemManager = itemManager;
@@ -14,6 +20,7 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 
         protected override void OnPerformAction()
         {
+            base.OnPerformAction();
 
             var item = _itemManager.GetItem();
             var swipeItemPinedStateControlerProvider = _itemManager.GetAttachedPinnedStateControllerProviderWithItem();
@@ -27,6 +34,7 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 
         protected override void OnCleanUp()
         {
+            base.OnCleanUp();
             _itemManager = null;
         }
     }

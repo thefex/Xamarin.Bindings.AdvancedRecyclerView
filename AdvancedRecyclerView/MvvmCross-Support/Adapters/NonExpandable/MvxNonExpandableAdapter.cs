@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using Android.Runtime;
 using AndroidX.RecyclerView.Widget;
@@ -25,7 +24,6 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
     public class MvxNonExpandableAdapter : MvxRecyclerAdapter, ISwipeableItemAdapter, IMvxAdvancedRecyclerViewAdapter
     {
         Lazy<DefaultSwipeableTemplate> _lazyDefaultSwipeableTemplate = new Lazy<DefaultSwipeableTemplate>();
-        private readonly Dictionary<int, SwipeResultAction> _pendingSwipeActions = new Dictionary<int, SwipeResultAction>();
 
         public MvxNonExpandableAdapter(IMvxAndroidBindingContext bindingContext) : base(bindingContext)
         {
@@ -36,7 +34,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
         {
 
         }
-        
+
         private MvxSwipeableTemplate swipeableTemplate;
         public MvxSwipeableTemplate SwipeableTemplate
         {
@@ -47,6 +45,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             var itemBindingContext = new MvxAndroidBindingContext(parent.Context, BindingContext.LayoutInflaterHolder);
+            var itemTemplateSelector = ItemTemplateSelector;
+
             var viewForHolder = InflateViewForHolder(parent, viewType, itemBindingContext);
 
             var vh = new MvxAdvancedRecyclerViewHolder(viewForHolder,
@@ -69,7 +69,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             {
                 advancedRecyclerViewHolder.MaxLeftSwipeAmount = SwipeableTemplate.GetMaxLeftSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
                 advancedRecyclerViewHolder.MaxRightSwipeAmount = SwipeableTemplate.GetMaxRightSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
-                // MaxDownSwipeAmount/MaxUpSwipeAmount removed from new library
+                advancedRecyclerViewHolder.MaxDownSwipeAmount = SwipeableTemplate.GetMaxDownSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
+                advancedRecyclerViewHolder.MaxUpSwipeAmount = SwipeableTemplate.GetMaxUpSwipeAmount(advancedRecyclerViewHolder.DataContext, advancedRecyclerViewHolder);
                 
                 SwipeableTemplate.SetupUnderSwipeBackground(advancedRecyclerViewHolder);
                 SwipeableTemplate.SetupSlideAmount(advancedRecyclerViewHolder, SwipeItemPinnedStateController);
@@ -98,40 +99,22 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             SwipeableTemplate?.OnSwipeBackgroundSet(args);
         }
 
-        public int OnSwipeItem(Object p0, int position, int result)
+        public SwipeResultAction OnSwipeItem(Object p0, int position, int result)
         {
-            SwipeResultAction action;
             switch (result)
             {
                 case SwipeableItemConstants.ResultSwipedDown:
-                    action = SwipeResultActionFactory.GetSwipeDownResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
-                    break;
+                    return SwipeResultActionFactory.GetSwipeDownResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 case SwipeableItemConstants.ResultSwipedLeft:
-                    action = SwipeResultActionFactory.GetSwipeLeftResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
-                    break;
+                    return SwipeResultActionFactory.GetSwipeLeftResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 case SwipeableItemConstants.ResultSwipedRight:
-                    action = SwipeResultActionFactory.GetSwipeRightResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
-                    break;
+                    return SwipeResultActionFactory.GetSwipeRightResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 case SwipeableItemConstants.ResultSwipedUp:
-                    action = SwipeResultActionFactory.GetSwipeUpResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
-                    break;
+                    return SwipeResultActionFactory.GetSwipeUpResultAction(new NonExpandableSwipeResultActionItemManager(this, position));
                 default:
-                    action = position != RecyclerView.NoPosition ?
+                    return position != RecyclerView.NoPosition ? 
                         SwipeResultActionFactory.GetUnpinSwipeResultAction(new NonExpandableSwipeResultActionItemManager(this, position)) :
                         new SwipeResultActionDoNothing();
-                    break;
-            }
-            _pendingSwipeActions[position] = action;
-            return action._resultCode;
-        }
-
-        public void OnPerformAfterSwipeReaction(Object p0, int position, int result, int reaction)
-        {
-            if (_pendingSwipeActions.TryGetValue(position, out var action))
-            {
-                action.PerformAction();
-                action.CleanUp();
-                _pendingSwipeActions.Remove(position);
             }
         }
 

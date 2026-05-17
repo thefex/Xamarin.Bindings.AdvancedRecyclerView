@@ -17,6 +17,12 @@ namespace MvvmCross.AdvancedRecyclerView.ViewHolders
         {
         }
 
-        public int ExpandStateFlags { get; set; }
+        public int ExpandStateFlags
+        {
+            get => ExpandState.Flags;
+            set => ExpandState.Flags = value;
+        }
+
+        public ExpandableItemState ExpandState { get; } = new ExpandableItemState();
     }
 }

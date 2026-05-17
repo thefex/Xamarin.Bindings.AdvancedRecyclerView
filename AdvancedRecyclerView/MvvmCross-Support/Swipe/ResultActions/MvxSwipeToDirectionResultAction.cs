@@ -1,4 +1,8 @@
+using System;
+using Android.Runtime;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable.Action;
+using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable;
 using MvvmCross.AdvancedRecyclerView.Swipe.ResultActions.ItemManager;
 
 namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
@@ -8,6 +12,10 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
         private IMvxSwipeResultActionItemManager _itemProvider;
         private readonly SwipeDirection _swipeDirection;
 
+        public MvxSwipeToDirectionResultAction(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+        {
+        }
+
         public MvxSwipeToDirectionResultAction(IMvxSwipeResultActionItemManager itemProvider, SwipeDirection swipeDirection)
         {
             _itemProvider = itemProvider;
@@ -16,6 +24,7 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 
         protected override void OnPerformAction()
         {
+            base.OnPerformAction();
 
             var stateController = _itemProvider.GetAttachedPinnedStateControllerProviderWithItem().FromSwipeDirection(_swipeDirection);
 
@@ -29,6 +38,7 @@ namespace MvvmCross.AdvancedRecyclerView.Swipe.ResultActions
 
         protected override void OnCleanUp()
         {
+            base.OnCleanUp();
             _itemProvider = null;
         }
     }

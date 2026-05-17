@@ -39,6 +39,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 
             expandableAdapter.TemplateSelector = templateSelector;
             expandableAdapter.GroupExpandController = MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupExpandController(Context, Attrs);
+            expandableItemManager.DefaultGroupsExpandedState = expandableAdapter.GroupExpandController.AreGroupsExpandedByDefault;
             expandableAdapter.GroupExpandController.ExpandableItemManager = expandableItemManager;
 
             AdvancedRecyclerViewAdapter = expandableAdapter;

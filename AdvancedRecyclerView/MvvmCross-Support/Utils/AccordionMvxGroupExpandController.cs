@@ -26,21 +26,19 @@ namespace MvvmCross.AdvancedRecyclerView.Utils
 
         public override bool OnHookGroupCollapse(MvxHookGroupExpandCollapseArgs groupItemDetails)
         {
-			currentlyExpandedIndex = -1;
+            currentlyExpandedIndex = -1;
             return true;
-		}
+        }
 
         public override bool OnHookGroupExpand(MvxHookGroupExpandCollapseArgs groupItemDetails)
         {
-			if (currentlyExpandedIndex != -1)
+            if (currentlyExpandedIndex != -1)
                 ExpandableItemManager.CollapseGroup(currentlyExpandedIndex);
 
             currentlyExpandedIndex = groupItemDetails.GroupPosition;
 
             if (ItemHeight.HasValue)
-            {
-                // ScrollToGroup removed from new library version - skip scroll
-            }
+                ExpandableItemManager.ScrollToGroup(currentlyExpandedIndex, ItemHeight.Value, 20, 20);
 
             return true;
         }

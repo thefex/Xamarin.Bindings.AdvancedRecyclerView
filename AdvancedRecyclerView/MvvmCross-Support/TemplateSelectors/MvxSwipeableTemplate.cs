@@ -68,10 +68,14 @@ namespace MvvmCross.AdvancedRecyclerView.TemplateSelectors
         public void SetupSlideAmount(MvxAdvancedRecyclerViewHolder holder, SwipeItemPinnedStateControllerProvider swipeItemPinnedStateController)
         {
             if (swipeItemPinnedStateController.ForLeftSwipe().IsPinned(holder.DataContext))
-                holder.SwipeItemSlideAmount = MaxLeftSwipeAmount;
+                holder.SwipeItemHorizontalSlideAmount = MaxLeftSwipeAmount;
             else if (swipeItemPinnedStateController.ForRightSwipe().IsPinned(holder.DataContext))
-                holder.SwipeItemSlideAmount = MaxRightSwipeAmount;
-            // Up/Down swipe slide amounts are not supported in new library version
+                holder.SwipeItemHorizontalSlideAmount = MaxRightSwipeAmount;
+
+            if (swipeItemPinnedStateController.ForTopSwipe().IsPinned(holder.DataContext))
+                holder.SwipeItemVerticalSlideAmount = MaxUpSwipeAmount;
+            else if (swipeItemPinnedStateController.ForBottomSwipe().IsPinned(holder.DataContext))
+                holder.SwipeItemVerticalSlideAmount = MaxDownSwipeAmount;
         }
         
         public virtual int UnderSwipeBackgroundResourceIdWhenSwipeActive { get; } = -1;

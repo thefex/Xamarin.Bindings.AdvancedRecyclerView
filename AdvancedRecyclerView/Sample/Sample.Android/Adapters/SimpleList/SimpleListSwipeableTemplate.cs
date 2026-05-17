@@ -15,7 +15,7 @@ public class SimpleListSwipeableTemplate : MvxSwipeableTemplate
     public override int SwipeContainerViewGroupId => Resource.Id.swipe_container;
     public override int UnderSwipeContainerViewGroupId => Resource.Id.under_swipe_container;
 
-    protected override int SwipeReactionType => RecyclerViewSwipeManager.ReactionCanSwipeLeft;
+    protected override int SwipeReactionType => ISwipeableItemConstants.ReactionCanSwipeLeft;
 
     protected override float MaxLeftSwipeAmount => -1.0f;
 
