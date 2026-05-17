@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ARV Sample</string>
+    <string name="simple_list">Simple List (Swipe to Delete)</string>
+    <string name="expandable_list">Expandable List</string>
+    <string name="title_simple_list">Simple List</string>
+    <string name="title_expandable_list">Expandable List</string>
+    <string name="add_item">Add Item</string>
+    <string name="delete">Delete</string>
+</resources>
