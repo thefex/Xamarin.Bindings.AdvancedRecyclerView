@@ -42,12 +42,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+  </PropertyGroup> 
   
-  <ItemGroup>
-    <!-- AAR built from android-advancedrecyclerview submodule via build-aar.sh -->
-    <AndroidLibrary Include="Jars\advrecyclerview.aar" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.RecyclerView" Version="1.4.0.5" />
   </ItemGroup>
