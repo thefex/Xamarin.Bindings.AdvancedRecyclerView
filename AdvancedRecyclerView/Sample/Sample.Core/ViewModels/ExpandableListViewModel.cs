@@ -53,4 +53,8 @@ public class ExpandableListViewModel : MvxViewModel
     }
 
     public ObservableCollection<CategoryGroup> Items { get; }
+
+    public string HeaderTitle => "Food Categories";
+    public string HeaderSubtitle => $"{Items.Count} groups · tap a group to expand";
+    public string FooterText => "End of list · only one group expands at a time (Accordion)";
 }

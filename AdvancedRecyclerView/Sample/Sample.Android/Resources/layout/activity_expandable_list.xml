@@ -13,6 +13,8 @@
         local:MvxItemTemplate="@layout/item_expandable_child"
         local:MvxGroupedDataConverter="@string/expandable_grouped_data_converter"
         local:MvxTemplateSelector="@string/expandable_template_selector"
-        local:MvxGroupExpandController="@string/default_group_expand_controller" />
+        local:MvxGroupExpandController="@string/accordion_group_expand_controller"
+        local:MvxHeaderLayoutId="@layout/list_header"
+        local:MvxFooterLayoutId="@layout/list_footer" />
 
 </LinearLayout>

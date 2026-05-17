@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using MvvmCross.Commands;
 using MvvmCross.ViewModels;
 using Sample.Core.Models;
@@ -20,6 +21,8 @@ public class SimpleListViewModel : MvxViewModel
             new() { Id = 5, Title = "Epsilon", Description = "Fifth item"  },
         };
 
+        Items.CollectionChanged += (_, _) => RaisePropertyChanged(nameof(HeaderSubtitle));
+
         AddItemCommand = new MvxCommand(() =>
         {
             int id = _nextId++;
@@ -32,4 +35,8 @@ public class SimpleListViewModel : MvxViewModel
     public ObservableCollection<ListItem> Items { get; }
     public IMvxCommand AddItemCommand { get; }
     public IMvxCommand<ListItem> DeleteItemCommand { get; }
+
+    public string HeaderTitle => "Simple List";
+    public string HeaderSubtitle => $"{Items.Count} items — swipe left to delete";
+    public string FooterText => "End of list · Tap 'Add Item' to add more";
 }

@@ -4,12 +4,15 @@ using Sample.Core.Models;
 
 namespace Sample.Android.Adapters.Expandable;
 
-public class SampleExpandableTemplateSelector : MvxExpandableTemplateSelector
+public class SampleExpandableTemplateSelector : MvxExpandableTemplateSelector, IMvxHeaderTemplate, IMvxFooterTemplate
 {
     public SampleExpandableTemplateSelector()
         : base(Resource.Layout.item_group_header)
     {
     }
+
+    public int HeaderLayoutId { get; set; }
+    public int FooterLayoutId { get; set; }
 
     protected override int GetChildItemViewType(object forItemObject) => 0;
 

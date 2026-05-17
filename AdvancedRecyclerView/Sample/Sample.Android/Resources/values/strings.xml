@@ -13,5 +13,6 @@
     <string name="simple_list_swipeable_template">Sample.Android.Adapters.SimpleList.SimpleListSwipeableTemplate, Sample.Android</string>
     <string name="expandable_grouped_data_converter">Sample.Android.Adapters.Expandable.SampleGroupedDataConverter, Sample.Android</string>
     <string name="expandable_template_selector">Sample.Android.Adapters.Expandable.SampleExpandableTemplateSelector, Sample.Android</string>
+    <string name="accordion_group_expand_controller">MvvmCross.AdvancedRecyclerView.Utils.AccordionMvxGroupExpandController, MvvmCross.AdvancedRecyclerView</string>
     <string name="default_group_expand_controller">MvvmCross.AdvancedRecyclerView.Utils.DefaultMvxGroupExpandController, MvvmCross.AdvancedRecyclerView</string>
 </resources>

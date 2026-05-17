@@ -20,6 +20,8 @@
         local:MvxBind="ItemsSource Items"
         local:MvxItemTemplate="@layout/item_simple_list"
         local:MvxSwipeableTemplate="@string/simple_list_swipeable_template"
-        local:MvxUniqueItemIdProvider="@string/simple_list_unique_id_provider" />
+        local:MvxUniqueItemIdProvider="@string/simple_list_unique_id_provider"
+        local:MvxHeaderLayoutId="@layout/list_header"
+        local:MvxFooterLayoutId="@layout/list_footer" />
 
 </LinearLayout>

@@ -28,6 +28,14 @@ namespace Com.H6ah4i.Android.Widget.Advrecyclerview.Headerfooter
 
         public override int ItemCount => (WrappedAdapter?.ItemCount ?? 0) + HeaderItemCount + FooterItemCount;
 
+        public override long GetItemId(int position)
+        {
+            if (position < HeaderItemCount) return ViewTypeHeader;
+            int wrappedCount = WrappedAdapter?.ItemCount ?? 0;
+            if (position >= HeaderItemCount + wrappedCount) return ViewTypeFooter;
+            return WrappedAdapter.GetItemId(position - HeaderItemCount);
+        }
+
         public override int GetItemViewType(int position)
         {
             if (position < HeaderItemCount) return ViewTypeHeader;
