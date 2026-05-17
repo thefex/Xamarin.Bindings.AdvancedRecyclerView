@@ -1,27 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14 
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{95788EF7-0A3C-4930-96B4-C9CDAE2E1317}"
-	ProjectSection(SolutionItems) = preProject
-		nuspec\MvvmCross.AdvancedRecyclerView.nuspec = nuspec\MvvmCross.AdvancedRecyclerView.nuspec
-		nuspec\Xamarin.Bindings.AdvancedRecyclerView.nuspec = nuspec\Xamarin.Bindings.AdvancedRecyclerView.nuspec
-	EndProjectSection
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bindings", "Bindings", "{A1B2C3D4-0001-0001-0001-000000000001}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MvvmCross-Support", "MvvmCross-Support", "{A1B2C3D4-0002-0002-0002-000000000002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{A1B2C3D4-0003-0003-0003-000000000003}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Bindings.AdvancedRecyclerView", "Bindings\Xamarin.Bindings.AdvancedRecyclerView.csproj", "{473774EE-BDED-4F73-BA4B-B0A977BB3ABB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.AdvancedRecyclerView", "MvvmCross.AdvancedRecyclerView\MvvmCross.AdvancedRecyclerView.csproj", "{765FE19E-8953-4EAE-832B-EA83564BB1C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.AdvancedRecyclerView", "MvvmCross-Support\MvvmCross.AdvancedRecyclerView.csproj", "{765FE19E-8953-4EAE-832B-EA83564BB1C5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grouping", "grouping", "{F4897E54-B8C2-4339-90FB-B85D8CBA6F0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Core", "Sample\Sample.Core\Sample.Core.csproj", "{B1C2D3E4-0001-0001-0001-000000000001}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMvvmCross_MeetupSample.Droid", "GroupingSample\XamarinMvvmCross_MeetupSample.Droid\XamarinMvvmCross_MeetupSample.Droid.csproj", "{E9B7E9FF-7BAE-48D8-A58B-2CB16E986108}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMvvmCross_MeetupSample.Core", "GroupingSample\XamarinMvvmCross_MeetupSample.Core\XamarinMvvmCross_MeetupSample.Core.csproj", "{8AFA931F-02AC-424C-B796-8BF518A31778}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "audio_list_grouped_sample", "audio_list_grouped_sample", "{AD2FC056-BAB6-4F7C-AADA-D6C13A17ABC8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordGuard.ListSample.Android", "RecordGuard.ListSample\RecordGuard.ListSample.Android\RecordGuard.ListSample.Android.csproj", "{FF5FDACB-BA79-4B5F-B579-6072082FE0A9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordGuard.ListSample.App", "RecordGuard.ListSample.App\RecordGuard.ListSample.App.csproj", "{4173AE6C-288A-4352-80AD-27E72D781A06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Android", "Sample\Sample.Android\Sample.Android.csproj", "{B1C2D3E4-0002-0002-0002-000000000002}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,30 +31,22 @@ Global
 		{765FE19E-8953-4EAE-832B-EA83564BB1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765FE19E-8953-4EAE-832B-EA83564BB1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765FE19E-8953-4EAE-832B-EA83564BB1C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9B7E9FF-7BAE-48D8-A58B-2CB16E986108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9B7E9FF-7BAE-48D8-A58B-2CB16E986108}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9B7E9FF-7BAE-48D8-A58B-2CB16E986108}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9B7E9FF-7BAE-48D8-A58B-2CB16E986108}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AFA931F-02AC-424C-B796-8BF518A31778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AFA931F-02AC-424C-B796-8BF518A31778}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AFA931F-02AC-424C-B796-8BF518A31778}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AFA931F-02AC-424C-B796-8BF518A31778}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF5FDACB-BA79-4B5F-B579-6072082FE0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF5FDACB-BA79-4B5F-B579-6072082FE0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF5FDACB-BA79-4B5F-B579-6072082FE0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF5FDACB-BA79-4B5F-B579-6072082FE0A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4173AE6C-288A-4352-80AD-27E72D781A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4173AE6C-288A-4352-80AD-27E72D781A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4173AE6C-288A-4352-80AD-27E72D781A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4173AE6C-288A-4352-80AD-27E72D781A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C2D3E4-0001-0001-0001-000000000001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C2D3E4-0001-0001-0001-000000000001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C2D3E4-0001-0001-0001-000000000001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C2D3E4-0001-0001-0001-000000000001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C2D3E4-0002-0002-0002-000000000002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C2D3E4-0002-0002-0002-000000000002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C2D3E4-0002-0002-0002-000000000002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C2D3E4-0002-0002-0002-000000000002}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E9B7E9FF-7BAE-48D8-A58B-2CB16E986108} = {F4897E54-B8C2-4339-90FB-B85D8CBA6F0F}
-		{8AFA931F-02AC-424C-B796-8BF518A31778} = {F4897E54-B8C2-4339-90FB-B85D8CBA6F0F}
-		{FF5FDACB-BA79-4B5F-B579-6072082FE0A9} = {AD2FC056-BAB6-4F7C-AADA-D6C13A17ABC8}
-		{4173AE6C-288A-4352-80AD-27E72D781A06} = {AD2FC056-BAB6-4F7C-AADA-D6C13A17ABC8}
+		{473774EE-BDED-4F73-BA4B-B0A977BB3ABB} = {A1B2C3D4-0001-0001-0001-000000000001}
+		{765FE19E-8953-4EAE-832B-EA83564BB1C5} = {A1B2C3D4-0002-0002-0002-000000000002}
+		{B1C2D3E4-0001-0001-0001-000000000001} = {A1B2C3D4-0003-0003-0003-000000000003}
+		{B1C2D3E4-0002-0002-0002-000000000002} = {A1B2C3D4-0003-0003-0003-000000000003}
 	EndGlobalSection
 EndGlobal
