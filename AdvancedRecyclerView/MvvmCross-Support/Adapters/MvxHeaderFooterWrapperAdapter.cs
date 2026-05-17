@@ -24,8 +24,8 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
         }
 
         public MvxHeaderFooterWrapperAdapter(RecyclerView.Adapter baseAdapter, IMvxAndroidBindingContext bindingContext)
+            : base(baseAdapter)
         {
-            SetAdapter(baseAdapter);
             BindingContext = bindingContext;
         }
 
