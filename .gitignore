@@ -214,3 +214,4 @@ ModelManifest.xml
 
 # Android AAR files (built from submodule via build-aar.sh)
 AdvancedRecyclerView/Bindings/Jars/*.aar
+*.snupkg
