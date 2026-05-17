@@ -68,10 +68,11 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             if (string.IsNullOrEmpty(groupExpandControllerClassName))
                 groupExpandControllerClassName = typeof(DefaultMvxGroupExpandController).FullName;
 
+            var templateLayoutId = MvxAttributeHelpers.ReadListItemTemplateId(context, attrs);
             return new MvxAdvancedRecyclerViewAttributes()
             {
                 TemplateSelectorClassName = templateSelectorClassName,
-                ItemTemplateLayoutId = MvxAttributeHelpers.ReadListItemTemplateId(context, attrs),
+                ItemTemplateLayoutId = templateLayoutId,
                 FooterLayoutId = footerLayoutId,
                 HeaderLayoutId = headerLayoutId,
                 GroupedDataConverterClassName = groupedDataConverterClassName,
