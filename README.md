@@ -11,11 +11,16 @@
 | Package | Versioning scheme |
 |---|---|
 | `Xamarin.Bindings.AdvancedRecyclerView` | Follows the **AdvancedRecyclerView** native Android library version (e.g. `1.4.0` tracks `androidx.recyclerview:recyclerview:1.4.0`) |
-| `MvvmCross.AdvancedRecyclerView` | Follows the **MvvmCross** version it is built against (e.g. `10.1.2` = MvvmCross 10.1.2) |
+| `MvvmCross.AdvancedRecyclerView` | Follows the **MvvmCross** version it is built against, with optional revision suffix when needed (e.g. `10.1.2.1`) |
 
 # *Changelog*
 
 ## MvvmCross.AdvancedRecyclerView
+
+### v 10.1.2.1
+
+- Fixed a bug that could lead to a runtime crash due to invalid `IAttributeSet` access after view construction. AdvancedRecyclerView was broken when used inside `ViewPager2`.
+- Removed deadcode
 
 ### v 10.1.2
 

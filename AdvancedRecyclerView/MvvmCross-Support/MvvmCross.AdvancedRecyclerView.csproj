@@ -15,7 +15,7 @@
 
     <!-- NuGet package metadata -->
     <PackageId>MvvmCross.AdvancedRecyclerView</PackageId>
-    <Version>10.1.2</Version>
+    <Version>10.1.2.1</Version>
     <Authors>thefex</Authors>
     <Description>MvvmCross DataBinding support for the AdvancedRecyclerView library. Provides expandable/grouped lists, swipe-to-dismiss, and header/footer support with full MvvmCross data binding integration for .NET Android.</Description>
     <PackageTags>android;mvvmcross;recyclerview;advancedrecyclerview;xamarin;dotnet;expandable;swipe;grouping</PackageTags>

@@ -31,9 +31,9 @@ namespace MvvmCross.AdvancedRecyclerView
 			int defStyle) : base(context, attrs, defStyle)
 		{
 			AdapterController =
-				new MvxAdvancedRecyclerViewNonExpandableAdapterController(context, attrs, this,
+				new MvxAdvancedRecyclerViewNonExpandableAdapterController(context, ParsedAttributes, this,
 					MvxAndroidBindingContextHelpers.Current());
-			SetupDefaultItemAnimator(MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(context, attrs));
+			SetupDefaultItemAnimator(MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(ParsedAttributes));
 		}
 
 		private void SetupDefaultItemAnimator(bool isSwipeSupported)
