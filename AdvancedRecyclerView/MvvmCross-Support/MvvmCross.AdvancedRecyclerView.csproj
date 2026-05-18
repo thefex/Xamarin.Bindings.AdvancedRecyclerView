@@ -47,19 +47,9 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  
-  <ItemGroup>
-    <AndroidResource Include="Resources\Values\MvxAdvancedRecyclerViewBindings.xml" />
-    <AndroidResource Include="Resources\Values\strings.xml" />
-  </ItemGroup>
+   
   <ItemGroup>
     <ProjectReference Include="..\Bindings\Xamarin.Bindings.AdvancedRecyclerView.csproj" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Data\Adapters\" />
-    <Folder Include="Adapters\Expandable\" />
-    <Folder Include="Adapters\NonExpandable\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross.DroidX.RecyclerView" Version="10.1.2" />

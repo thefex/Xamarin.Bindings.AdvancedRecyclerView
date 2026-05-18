@@ -346,72 +346,11 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 			return uniqueItemIdProvider;
         }
 
-        public static bool IsHidesHeaderIfEmptyEnabled(Context context, IAttributeSet attrs)
-        {
-            TypedArray typedArray = null;
-            bool hidesHeaderIfEmpty = true;
-
-            try
-            {
-                typedArray = context.ObtainStyledAttributes(attrs, MvxRecyclerViewGroupId);
-                int numberOfStyles = typedArray.IndexCount;
-
-                for (int i = 0; i < numberOfStyles; ++i)
-                {
-                    var attributeId = typedArray.GetIndex(i);
-
-                    if (attributeId == MvxRecyclerViewHidesHeaderIfEmpty)
-                    {
-                        hidesHeaderIfEmpty = typedArray.GetBoolean(attributeId, true);
-                        break;
-                    }
-                }
-
-                return hidesHeaderIfEmpty;
-            }
-            finally
-            {
-                typedArray.Recycle();
-            }
-        }
-
-
-        public static bool IsHidesFooterIfEmptyEnabled(Context context, IAttributeSet attrs)
-        {
-            TypedArray typedArray = null;
-            bool hidesFooterIfEmpty = true;
-
-            try
-            {
-                typedArray = context.ObtainStyledAttributes(attrs, MvxRecyclerViewGroupId);
-                int numberOfStyles = typedArray.IndexCount;
-
-                for (int i = 0; i < numberOfStyles; ++i)
-                {
-                    var attributeId = typedArray.GetIndex(i);
-
-                    if (attributeId == MvxRecyclerViewHidesFooterIfEmpty)
-                    {
-                        hidesFooterIfEmpty = typedArray.GetBoolean(attributeId, true);
-                        break;
-                    }
-                }
-
-                return hidesFooterIfEmpty;
-            }
-            finally
-            {
-                typedArray.Recycle();
-            }
-        }
-
         private static int[] MvxRecyclerViewGroupId { get; } = Resource.Styleable.MvxRecyclerView;
         private static int MvxRecyclerViewItemTemplateSelector { get; } = Resource.Styleable.MvxRecyclerView_MvxTemplateSelector;
         private static int MvxRecyclerViewGroupExpandController { get; } = Resource.Styleable.MvxRecyclerView_MvxGroupExpandController;
         private static int MvxRecyclerViewHeaderLayoutId { get; } = Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId;
         private static int MvxRecyclerViewFooterLayoutId { get; } = Resource.Styleable.MvxRecyclerView_MvxFooterLayoutId;
-        private static int MvxRecyclerViewHidesHeaderIfEmpty { get; } = Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty;
-        private static int MvxRecyclerViewHidesFooterIfEmpty { get; } = Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty;
         public static int MvxRecyclerViewGroupedDataConverter { get; } = Resource.Styleable.MvxRecyclerView_MvxGroupedDataConverter;
         public static int MvxRecyclerViewSwipeableTemplate { get; } = Resource.Styleable.MvxRecyclerView_MvxSwipeableTemplate;
         public static int MvxRecyclerViewUniqueItemIdProvider { get; } = Resource.Styleable.MvxRecyclerView_MvxUniqueItemIdProvider;
