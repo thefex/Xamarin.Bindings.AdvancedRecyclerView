@@ -4,6 +4,7 @@ using AndroidX.RecyclerView.Widget;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Expandable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
+using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.DroidX.RecyclerView.ItemTemplates;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
@@ -21,48 +22,43 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.Expandable
 
         private string ExpandManagerParcelableKey = "ExpandManagerStateParcelKey";
 
-        public MvxAdvancedRecyclerViewExpandableAdapterController(Android.Content.Context context, Android.Util.IAttributeSet attrs, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
-         : base(context, attrs, recyclerView, bindingContext)
+        public MvxAdvancedRecyclerViewExpandableAdapterController(Android.Content.Context context, MvxAdvancedRecyclerViewAttributes parsedAttributes, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
+         : base(context, parsedAttributes, recyclerView, bindingContext)
         {
-          
         }
 
         protected override RecyclerView.Adapter BuildWrappedAdapter(IMvxTemplateSelector templateSelector)
         {
-            bool isGroupingSupported = MvxAdvancedRecyclerViewAttributeExtensions.IsGroupingSupported(Context, Attrs);
-
-            if (!isGroupingSupported)
+            if (!MvxAdvancedRecyclerViewAttributeExtensions.IsGroupingSupported(ParsedAttributes))
                 throw new InvalidOperationException($"You are using {nameof(MvxAdvancedExpandableRecyclerView)} without using grouping attributes. Check documentation.");
                 
             expandableItemManager = new RecyclerViewExpandableItemManager(expandCollapseSavedState);
             var expandableAdapter = new MvxExpandableItemAdapter(BindingContext as IMvxAndroidBindingContext);
 
             expandableAdapter.TemplateSelector = templateSelector;
-            expandableAdapter.GroupExpandController = MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupExpandController(Context, Attrs);
+            expandableAdapter.GroupExpandController = MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupExpandController(ParsedAttributes);
             expandableItemManager.DefaultGroupsExpandedState = expandableAdapter.GroupExpandController.AreGroupsExpandedByDefault;
             expandableAdapter.GroupExpandController.ExpandableItemManager = expandableItemManager;
 
             AdvancedRecyclerViewAdapter = expandableAdapter;
-            var groupedDataConverter = MvxAdvancedRecyclerViewAttributeExtensions.BuildMvxGroupedDataConverter(Context, Attrs);
+            var groupedDataConverter = MvxAdvancedRecyclerViewAttributeExtensions.BuildMvxGroupedDataConverter(ParsedAttributes);
 
             expandableAdapter.ExpandableDataConverter = groupedDataConverter;
             wrappedAdapter = expandableItemManager.CreateWrappedAdapter(expandableAdapter);
 
-            bool isSwipeForExpandableSupported = MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeForExpandableSupported(Context, Attrs);
-
-            if (isSwipeForExpandableSupported)
+            if (MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeForExpandableSupported(ParsedAttributes))
             {
-                if (MvxAdvancedRecyclerViewAttributeExtensions.IsGroupedSwipeSupported(Context, Attrs))
+                if (MvxAdvancedRecyclerViewAttributeExtensions.IsGroupedSwipeSupported(ParsedAttributes))
                 {
                     var groupedSwipeableTemplate =
-                        MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupSwipeableTemplate(Context, Attrs);
+                        MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupSwipeableTemplate(ParsedAttributes);
                     expandableAdapter.GroupSwipeableTemplate = groupedSwipeableTemplate;    
                 }
 
-                if (MvxAdvancedRecyclerViewAttributeExtensions.IsGroupedChildSwipeSupported(Context, Attrs))
+                if (MvxAdvancedRecyclerViewAttributeExtensions.IsGroupedChildSwipeSupported(ParsedAttributes))
                 {
                     var childSwipeableTemplate =
-                        MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupChildSwipeableTemplate(Context, Attrs);
+                        MvxAdvancedRecyclerViewAttributeExtensions.BuildGroupChildSwipeableTemplate(ParsedAttributes);
                     expandableAdapter.ChildSwipeableTemplate = childSwipeableTemplate;
                 }
 

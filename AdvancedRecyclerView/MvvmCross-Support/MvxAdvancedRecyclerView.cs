@@ -8,6 +8,8 @@ using Android.Runtime;
 using Android.Util;
 using AndroidX.RecyclerView.Widget;
 using MvvmCross.AdvancedRecyclerView.Adapters;
+using MvvmCross.AdvancedRecyclerView.Data;
+using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.DroidX.RecyclerView.Model;
 
 namespace MvvmCross.AdvancedRecyclerView
@@ -15,11 +17,9 @@ namespace MvvmCross.AdvancedRecyclerView
     [Register("mvvmcross.advancedrecyclerview.MvxAdvancedRecyclerView")]
     public abstract class MvxAdvancedRecyclerView : RecyclerView
     {
-        protected MvxAdvancedRecyclerView(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
-        {
-        }
+        protected MvxAdvancedRecyclerViewAttributes ParsedAttributes { get; }
 
-        protected MvxAdvancedRecyclerView(Context context) : this(context, null)
+        protected MvxAdvancedRecyclerView(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         {
         }
 
@@ -29,6 +29,7 @@ namespace MvvmCross.AdvancedRecyclerView
 
         public MvxAdvancedRecyclerView(Context context, IAttributeSet attrs, int defStyle) : base(context, attrs, defStyle)
         {
+            ParsedAttributes = MvxAdvancedRecyclerViewAttributeExtensions.ParseRecyclerViewAttributes(context, attrs);
             var currentLayoutManager = base.GetLayoutManager();
 
             if (currentLayoutManager == null)

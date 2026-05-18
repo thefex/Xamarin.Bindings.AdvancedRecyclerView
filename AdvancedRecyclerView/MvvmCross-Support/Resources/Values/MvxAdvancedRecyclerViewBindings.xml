@@ -5,8 +5,6 @@
 		<attr name="MvxFooterLayoutId" format="string" />
 		<attr name="MvxGroupedDataConverter" format="string"/>
 		<attr name="MvxGroupExpandController" format="string" />
-		<attr name="MvxHidesHeaderIfEmpty" format="boolean"/>
-		<attr name="MvxHidesFooterIfEmpty" format="boolean"/>
 		<attr name="MvxSwipeableTemplate" format="string"/>
 		<attr name="MvxGroupSwipeableTemplate" format="string"/>
 		<attr name="MvxChildSwipeableTemplate" format="string"/>

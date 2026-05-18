@@ -2,8 +2,8 @@
 using Android.Content;
 using Android.OS;
 using AndroidX.RecyclerView.Widget;
-using Android.Util;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Utils;
+using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.AdvancedRecyclerView.TemplateSelectors;
 using MvvmCross.DroidX.RecyclerView.ItemTemplates;
@@ -14,16 +14,16 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
     public abstract class MvxAdvancedRecyclerViewAdapterController : IDisposable
     {
         protected readonly Android.Content.Context Context;
-        protected readonly Android.Util.IAttributeSet Attrs;
+        protected readonly MvxAdvancedRecyclerViewAttributes ParsedAttributes;
         protected readonly RecyclerView RecyclerView;
         protected readonly IMvxAndroidBindingContext BindingContext;
         private RecyclerView.Adapter wrappedAdapter;
         
         
-        protected MvxAdvancedRecyclerViewAdapterController(Context context, IAttributeSet attrs, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
+        protected MvxAdvancedRecyclerViewAdapterController(Context context, MvxAdvancedRecyclerViewAttributes parsedAttributes, RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext)
         {
             this.Context = context;
-            this.Attrs = attrs;
+            ParsedAttributes = parsedAttributes;
             this.RecyclerView = recyclerView;
             this.BindingContext = bindingContext;
         }
@@ -53,7 +53,7 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters
             return headerFooterDetails;
         }
 
-        protected virtual IMvxTemplateSelector BuildTemplateSelector() => MvxAdvancedRecyclerViewAttributeExtensions.BuildItemTemplateSelector(Context, Attrs);
+        protected virtual IMvxTemplateSelector BuildTemplateSelector() => MvxAdvancedRecyclerViewAttributeExtensions.BuildItemTemplateSelector(ParsedAttributes);
 
         protected abstract RecyclerView.Adapter BuildWrappedAdapter(IMvxTemplateSelector templateSelector);
 

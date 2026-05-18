@@ -1,8 +1,8 @@
 ﻿using Android.Content;
 using AndroidX.RecyclerView.Widget;
-using Android.Util;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Swipeable;
 using Com.H6ah4i.Android.Widget.Advrecyclerview.Touchguard;
+using MvvmCross.AdvancedRecyclerView.Data;
 using MvvmCross.AdvancedRecyclerView.Extensions;
 using MvvmCross.DroidX.RecyclerView.ItemTemplates;
 using MvvmCross.Platforms.Android.Binding.BindingContext;
@@ -14,11 +14,10 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
         private RecyclerViewTouchActionGuardManager _mRecyclerViewTouchActionGuardManager;
         private RecyclerViewSwipeManager _mRecyclerViewSwipeManager;
 
-        public MvxAdvancedRecyclerViewNonExpandableAdapterController(Context context, IAttributeSet attrs,
-            RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext) : base(context, attrs, recyclerView,
+        public MvxAdvancedRecyclerViewNonExpandableAdapterController(Context context, MvxAdvancedRecyclerViewAttributes parsedAttributes,
+            RecyclerView recyclerView, IMvxAndroidBindingContext bindingContext) : base(context, parsedAttributes, recyclerView,
             bindingContext)
         {
-            
         }
 
         protected override RecyclerView.Adapter BuildWrappedAdapter(IMvxTemplateSelector templateSelector)
@@ -27,18 +26,16 @@ namespace MvvmCross.AdvancedRecyclerView.Adapters.NonExpandable
             RecyclerView.Adapter adapter = advancedRecyclerViewAdapter;
 
             var itemUniqueIdProvider =
-                MvxAdvancedRecyclerViewAttributeExtensions.BuildUniqueItemIdProvider(Context, Attrs);
+                MvxAdvancedRecyclerViewAttributeExtensions.BuildUniqueItemIdProvider(ParsedAttributes);
             advancedRecyclerViewAdapter.UniqueIdProvider = itemUniqueIdProvider;
             advancedRecyclerViewAdapter.ItemTemplateSelector = templateSelector;
 
             AdvancedRecyclerViewAdapter = advancedRecyclerViewAdapter;
 
-            bool isSwipeEnabled = MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(Context, Attrs);
-
-            if (isSwipeEnabled)
+            if (MvxAdvancedRecyclerViewAttributeExtensions.IsSwipeSupported(ParsedAttributes))
             {
                 var swipeableTemplate =
-                    MvxAdvancedRecyclerViewAttributeExtensions.BuildSwipeableTemplate(Context, Attrs);
+                    MvxAdvancedRecyclerViewAttributeExtensions.BuildSwipeableTemplate(ParsedAttributes);
                 advancedRecyclerViewAdapter.SwipeableTemplate = swipeableTemplate;
 
                 _mRecyclerViewTouchActionGuardManager = new RecyclerViewTouchActionGuardManager();

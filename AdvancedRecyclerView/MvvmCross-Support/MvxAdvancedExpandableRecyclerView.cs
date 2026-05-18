@@ -27,7 +27,7 @@ namespace MvvmCross.AdvancedRecyclerView
 
         public MvxAdvancedExpandableRecyclerView(Context context, IAttributeSet attrs, int defStyle) : base(context, attrs, defStyle)
         {
-            AdapterController = new MvxAdvancedRecyclerViewExpandableAdapterController(context, attrs, this, MvxAndroidBindingContextHelpers.Current()); 
+            AdapterController = new MvxAdvancedRecyclerViewExpandableAdapterController(context, ParsedAttributes, this, MvxAndroidBindingContextHelpers.Current()); 
             SetItemAnimator(new RefactoredDefaultItemAnimator());
         }
 

@@ -15,7 +15,10 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 {
     static class MvxAdvancedRecyclerViewAttributeExtensions
     {
-        static MvxAdvancedRecyclerViewAttributes ReadRecyclerViewItemTemplateSelectorAttributes(Context context, IAttributeSet attrs)
+        public static MvxAdvancedRecyclerViewAttributes ParseRecyclerViewAttributes(Context context, IAttributeSet attrs)
+            => ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
+
+        private static MvxAdvancedRecyclerViewAttributes ReadRecyclerViewItemTemplateSelectorAttributes(Context context, IAttributeSet attrs)
         {            TypedArray typedArray = null;
 
             string templateSelectorClassName = string.Empty;
@@ -84,24 +87,24 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             };
         }
 
-        public static bool IsGroupingSupported(Context context, IAttributeSet attrs)
-            => !string.IsNullOrEmpty(ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).GroupedDataConverterClassName);
+        public static bool IsGroupingSupported(MvxAdvancedRecyclerViewAttributes attributes)
+            => !string.IsNullOrEmpty(attributes.GroupedDataConverterClassName);
 
-        public static bool IsSwipeSupported(Context context, IAttributeSet attrs)
-            => !string.IsNullOrEmpty(ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).SwipeableTemplateClassName);
+        public static bool IsSwipeSupported(MvxAdvancedRecyclerViewAttributes attributes)
+            => !string.IsNullOrEmpty(attributes.SwipeableTemplateClassName);
 
-        public static bool IsSwipeForExpandableSupported(Context context, IAttributeSet attrs)
-            => IsGroupedSwipeSupported(context, attrs) || IsGroupedChildSwipeSupported(context, attrs);
+        public static bool IsSwipeForExpandableSupported(MvxAdvancedRecyclerViewAttributes attributes)
+            => IsGroupedSwipeSupported(attributes) || IsGroupedChildSwipeSupported(attributes);
 
-        public static bool IsGroupedSwipeSupported(Context context, IAttributeSet attrs)
-            => !string.IsNullOrEmpty(ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).GroupSwipeableTemplateClassName);
+        public static bool IsGroupedSwipeSupported(MvxAdvancedRecyclerViewAttributes attributes)
+            => !string.IsNullOrEmpty(attributes.GroupSwipeableTemplateClassName);
 
-        public static bool IsGroupedChildSwipeSupported(Context context, IAttributeSet attrs)
-            => !string.IsNullOrEmpty(ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).ChildSwipeableTemplateClassName);
+        public static bool IsGroupedChildSwipeSupported(MvxAdvancedRecyclerViewAttributes attributes)
+            => !string.IsNullOrEmpty(attributes.ChildSwipeableTemplateClassName);
 
-        public static MvxExpandableDataConverter BuildMvxGroupedDataConverter(Context context, IAttributeSet attrs)
+        public static MvxExpandableDataConverter BuildMvxGroupedDataConverter(MvxAdvancedRecyclerViewAttributes attributes)
         {
-            var groupedDataConverterClassName = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).GroupedDataConverterClassName;
+            var groupedDataConverterClassName = attributes.GroupedDataConverterClassName;
             var type = Type.GetType(groupedDataConverterClassName);
             Mvx.IoCProvider.TryResolve(out ILogger logger);
 
@@ -131,9 +134,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             return Activator.CreateInstance(type) as MvxExpandableDataConverter;
         }
 
-        public static IMvxTemplateSelector BuildItemTemplateSelector(Context context, IAttributeSet attrs)
+        public static IMvxTemplateSelector BuildItemTemplateSelector(MvxAdvancedRecyclerViewAttributes templateSelectorAttributes)
         {
-            var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.TemplateSelectorClassName);
             Mvx.IoCProvider.TryResolve(out ILogger logger);
 
@@ -179,9 +181,9 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             return templateSelector;
         }
 
-        public static MvxGroupExpandController BuildGroupExpandController(Context context, IAttributeSet attrs)
+        public static MvxGroupExpandController BuildGroupExpandController(MvxAdvancedRecyclerViewAttributes attributes)
         {
-            var groupExpandControllerClassName = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs).GroupExpandControllerClassName;
+            var groupExpandControllerClassName = attributes.GroupExpandControllerClassName;
             var type = Type.GetType(groupExpandControllerClassName);
             Mvx.IoCProvider.TryResolve(out ILogger logger);
 
@@ -211,9 +213,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             return Activator.CreateInstance(type) as MvxGroupExpandController;
         }
 
-        public static MvxSwipeableTemplate BuildSwipeableTemplate(Context context, IAttributeSet attrs)
+        public static MvxSwipeableTemplate BuildSwipeableTemplate(MvxAdvancedRecyclerViewAttributes templateSelectorAttributes)
         {
-			var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.SwipeableTemplateClassName);
             Mvx.IoCProvider.TryResolve(out ILogger logger);
 
@@ -245,9 +246,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 			return swipeableTemplate;
         }
 
-        public static MvxSwipeableTemplate BuildGroupSwipeableTemplate(Context context, IAttributeSet attrs)
+        public static MvxSwipeableTemplate BuildGroupSwipeableTemplate(MvxAdvancedRecyclerViewAttributes templateSelectorAttributes)
         {
-            var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.GroupSwipeableTemplateClassName);
             Mvx.IoCProvider.TryResolve(out ILogger logger);
 
@@ -278,9 +278,8 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
             var swipeableTemplate = Activator.CreateInstance(type) as MvxSwipeableTemplate;
             return swipeableTemplate;        }
         
-        public static MvxSwipeableTemplate BuildGroupChildSwipeableTemplate(Context context, IAttributeSet attrs)
+        public static MvxSwipeableTemplate BuildGroupChildSwipeableTemplate(MvxAdvancedRecyclerViewAttributes templateSelectorAttributes)
         {
-            var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
             var type = Type.GetType(templateSelectorAttributes.ChildSwipeableTemplateClassName);
             Mvx.IoCProvider.TryResolve(out ILogger logger);
 
@@ -313,8 +312,7 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
            
         }
 
-        public static IMvxItemUniqueIdProvider BuildUniqueItemIdProvider(Context context, IAttributeSet attrs){
-			var templateSelectorAttributes = ReadRecyclerViewItemTemplateSelectorAttributes(context, attrs);
+        public static IMvxItemUniqueIdProvider BuildUniqueItemIdProvider(MvxAdvancedRecyclerViewAttributes templateSelectorAttributes){
             var type = Type.GetType(templateSelectorAttributes.UniqueItemIdProviderClassName);
             Mvx.IoCProvider.TryResolve(out ILogger logger);
 
@@ -346,72 +344,11 @@ namespace MvvmCross.AdvancedRecyclerView.Extensions
 			return uniqueItemIdProvider;
         }
 
-        public static bool IsHidesHeaderIfEmptyEnabled(Context context, IAttributeSet attrs)
-        {
-            TypedArray typedArray = null;
-            bool hidesHeaderIfEmpty = true;
-
-            try
-            {
-                typedArray = context.ObtainStyledAttributes(attrs, MvxRecyclerViewGroupId);
-                int numberOfStyles = typedArray.IndexCount;
-
-                for (int i = 0; i < numberOfStyles; ++i)
-                {
-                    var attributeId = typedArray.GetIndex(i);
-
-                    if (attributeId == MvxRecyclerViewHidesHeaderIfEmpty)
-                    {
-                        hidesHeaderIfEmpty = typedArray.GetBoolean(attributeId, true);
-                        break;
-                    }
-                }
-
-                return hidesHeaderIfEmpty;
-            }
-            finally
-            {
-                typedArray.Recycle();
-            }
-        }
-
-
-        public static bool IsHidesFooterIfEmptyEnabled(Context context, IAttributeSet attrs)
-        {
-            TypedArray typedArray = null;
-            bool hidesFooterIfEmpty = true;
-
-            try
-            {
-                typedArray = context.ObtainStyledAttributes(attrs, MvxRecyclerViewGroupId);
-                int numberOfStyles = typedArray.IndexCount;
-
-                for (int i = 0; i < numberOfStyles; ++i)
-                {
-                    var attributeId = typedArray.GetIndex(i);
-
-                    if (attributeId == MvxRecyclerViewHidesFooterIfEmpty)
-                    {
-                        hidesFooterIfEmpty = typedArray.GetBoolean(attributeId, true);
-                        break;
-                    }
-                }
-
-                return hidesFooterIfEmpty;
-            }
-            finally
-            {
-                typedArray.Recycle();
-            }
-        }
-
         private static int[] MvxRecyclerViewGroupId { get; } = Resource.Styleable.MvxRecyclerView;
         private static int MvxRecyclerViewItemTemplateSelector { get; } = Resource.Styleable.MvxRecyclerView_MvxTemplateSelector;
         private static int MvxRecyclerViewGroupExpandController { get; } = Resource.Styleable.MvxRecyclerView_MvxGroupExpandController;
         private static int MvxRecyclerViewHeaderLayoutId { get; } = Resource.Styleable.MvxRecyclerView_MvxHeaderLayoutId;
         private static int MvxRecyclerViewFooterLayoutId { get; } = Resource.Styleable.MvxRecyclerView_MvxFooterLayoutId;
-        private static int MvxRecyclerViewHidesHeaderIfEmpty { get; } = Resource.Styleable.MvxRecyclerView_MvxHidesHeaderIfEmpty;
-        private static int MvxRecyclerViewHidesFooterIfEmpty { get; } = Resource.Styleable.MvxRecyclerView_MvxHidesFooterIfEmpty;
         public static int MvxRecyclerViewGroupedDataConverter { get; } = Resource.Styleable.MvxRecyclerView_MvxGroupedDataConverter;
         public static int MvxRecyclerViewSwipeableTemplate { get; } = Resource.Styleable.MvxRecyclerView_MvxSwipeableTemplate;
         public static int MvxRecyclerViewUniqueItemIdProvider { get; } = Resource.Styleable.MvxRecyclerView_MvxUniqueItemIdProvider;
